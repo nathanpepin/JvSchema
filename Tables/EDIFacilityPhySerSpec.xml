@@ -1,17 +1,1 @@
-<table catalog="Jv-1.44.18.6_FK" name="EDIFacilityPhySerSpec" remarks="" schema="dbo" type="TABLE">
-  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="ConnectorID" nullable="false" remarks="" size="4" type="int" typeCode="4">
-    <parent catalog="Jv-1.44.18.6_FK" column="ConnectorID" foreignKey="FK__EDIFacili__Conne__0BD27C8D" implied="false" onDeleteCascade="false" schema="dbo" table="EDIFacilityPhysicianAffl" />
-  </column>
-  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="ServiceSpecialty" nullable="false" remarks="" size="100" type="varchar" typeCode="12" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="EDIID" nullable="false" remarks="" size="4" type="int" typeCode="4" />
-  <primaryKey column="ConnectorID" sequenceNumberInPK="1" />
-  <primaryKey column="ServiceSpecialty" sequenceNumberInPK="2" />
-  <primaryKey column="EDIID" sequenceNumberInPK="3" />
-  <index name="PK__EDIFacil__051D166243E7F483" unique="true">
-    <column ascending="true" name="ConnectorID" />
-    <column ascending="true" name="ServiceSpecialty" />
-    <column ascending="true" name="EDIID" />
-  </index>
-</table>
+<table catalog="Jv-1.44.18.6_FK" name="EDIFacilityPhySerSpec" remarks="" schema="dbo" type="TABLE"><column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" /><column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" /><column autoUpdated="false" defaultValue="null" digits="0" id="2" name="ConnectorID" nullable="false" remarks="" size="4" type="int" typeCode="4"><parent catalog="Jv-1.44.18.6_FK" column="ConnectorID" foreignKey="FK__EDIFacili__Conne__0BD27C8D" implied="false" onDeleteCascade="false" schema="dbo" table="EDIFacilityPhysicianAffl" /></column><column autoUpdated="false" defaultValue="null" digits="0" id="3" name="ServiceSpecialty" nullable="false" remarks="" size="100" type="varchar" typeCode="12" /><column autoUpdated="false" defaultValue="null" digits="0" id="4" name="EDIID" nullable="false" remarks="" size="4" type="int" typeCode="4" /><primaryKey column="ConnectorID" sequenceNumberInPK="1" /><primaryKey column="ServiceSpecialty" sequenceNumberInPK="2" /><primaryKey column="EDIID" sequenceNumberInPK="3" /><index name="PK__EDIFacil__051D166243E7F483" unique="true"><column ascending="true" name="ConnectorID" /><column ascending="true" name="ServiceSpecialty" /><column ascending="true" name="EDIID" /></index></table>

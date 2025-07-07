@@ -1,16 +1,1 @@
-<table catalog="Jv-1.44.18.6_FK" name="CDHPEntitySetup" remarks="" schema="dbo" type="TABLE">
-  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="CDHPEntityID" nullable="false" remarks="" size="15" type="varchar" typeCode="12" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="EntityDescription" nullable="true" remarks="" size="75" type="varchar" typeCode="12" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="EntityStatus" nullable="true" remarks="" size="15" type="varchar" typeCode="12" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="EDIBasePath" nullable="true" remarks="" size="999" type="varchar" typeCode="12" />
-  <primaryKey column="CDHPEntityID" sequenceNumberInPK="1" />
-  <index name="PK__CDHPEnti__DE20C87E4B7E46EE" unique="true">
-    <column ascending="true" name="CDHPEntityID" />
-  </index>
-  <index name="CDHPEntityID_Search1" unique="false">
-    <column ascending="true" name="CDHPEntityID" />
-    <column ascending="true" name="EntityStatus" />
-  </index>
-</table>
+<table catalog="Jv-1.44.18.6_FK" name="CDHPEntitySetup" remarks="" schema="dbo" type="TABLE"><column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" /><column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" /><column autoUpdated="false" defaultValue="null" digits="0" id="2" name="CDHPEntityID" nullable="false" remarks="" size="15" type="varchar" typeCode="12" /><column autoUpdated="false" defaultValue="null" digits="0" id="3" name="EntityDescription" nullable="true" remarks="" size="75" type="varchar" typeCode="12" /><column autoUpdated="false" defaultValue="null" digits="0" id="4" name="EntityStatus" nullable="true" remarks="" size="15" type="varchar" typeCode="12" /><column autoUpdated="false" defaultValue="null" digits="0" id="5" name="EDIBasePath" nullable="true" remarks="" size="999" type="varchar" typeCode="12" /><primaryKey column="CDHPEntityID" sequenceNumberInPK="1" /><index name="PK__CDHPEnti__DE20C87E4B7E46EE" unique="true"><column ascending="true" name="CDHPEntityID" /></index><index name="CDHPEntityID_Search1" unique="false"><column ascending="true" name="CDHPEntityID" /><column ascending="true" name="EntityStatus" /></index></table>

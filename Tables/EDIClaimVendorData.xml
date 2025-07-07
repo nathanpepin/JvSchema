@@ -1,18 +1,1 @@
-<table catalog="Jv-1.44.18.6_FK" name="EDIClaimVendorData" remarks="" schema="dbo" type="TABLE">
-  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="EdiClaimnumber" nullable="false" remarks="" size="19" type="varchar" typeCode="12" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="VendorName" nullable="false" remarks="" size="7" type="varchar" typeCode="12" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="NSAConsentRcvd" nullable="true" remarks="" size="1" type="char" typeCode="1" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="RecogAmtLoc" nullable="true" remarks="" size="100" type="varchar" typeCode="12" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="QPAAmtLoc" nullable="true" remarks="" size="100" type="varchar" typeCode="12" />
-  <column autoUpdated="false" defaultValue="null" digits="2" id="7" name="RecogAmt" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
-  <column autoUpdated="false" defaultValue="null" digits="2" id="8" name="QPAAmt" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="NSAAmountPresent" nullable="true" remarks="" size="1" type="char" typeCode="1" />
-  <primaryKey column="EdiClaimnumber" sequenceNumberInPK="1" />
-  <primaryKey column="VendorName" sequenceNumberInPK="2" />
-  <index name="PK__EDIClaim__5004EEEECD90AD2F" unique="true">
-    <column ascending="true" name="EdiClaimnumber" />
-    <column ascending="true" name="VendorName" />
-  </index>
-</table>
+<table catalog="Jv-1.44.18.6_FK" name="EDIClaimVendorData" remarks="" schema="dbo" type="TABLE"><column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" /><column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" /><column autoUpdated="false" defaultValue="null" digits="0" id="2" name="EdiClaimnumber" nullable="false" remarks="" size="19" type="varchar" typeCode="12" /><column autoUpdated="false" defaultValue="null" digits="0" id="3" name="VendorName" nullable="false" remarks="" size="7" type="varchar" typeCode="12" /><column autoUpdated="false" defaultValue="null" digits="0" id="4" name="NSAConsentRcvd" nullable="true" remarks="" size="1" type="char" typeCode="1" /><column autoUpdated="false" defaultValue="null" digits="0" id="5" name="RecogAmtLoc" nullable="true" remarks="" size="100" type="varchar" typeCode="12" /><column autoUpdated="false" defaultValue="null" digits="0" id="6" name="QPAAmtLoc" nullable="true" remarks="" size="100" type="varchar" typeCode="12" /><column autoUpdated="false" defaultValue="null" digits="2" id="7" name="RecogAmt" nullable="true" remarks="" size="13" type="decimal" typeCode="3" /><column autoUpdated="false" defaultValue="null" digits="2" id="8" name="QPAAmt" nullable="true" remarks="" size="13" type="decimal" typeCode="3" /><column autoUpdated="false" defaultValue="null" digits="0" id="9" name="NSAAmountPresent" nullable="true" remarks="" size="1" type="char" typeCode="1" /><primaryKey column="EdiClaimnumber" sequenceNumberInPK="1" /><primaryKey column="VendorName" sequenceNumberInPK="2" /><index name="PK__EDIClaim__5004EEEECD90AD2F" unique="true"><column ascending="true" name="EdiClaimnumber" /><column ascending="true" name="VendorName" /></index></table>

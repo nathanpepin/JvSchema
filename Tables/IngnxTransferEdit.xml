@@ -1,15 +1,1 @@
-<table catalog="Jv-1.44.18.6_FK" name="IngnxTransferEdit" remarks="" schema="dbo" type="TABLE">
-  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="id" nullable="false" remarks="" size="4" type="int" typeCode="4" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="transfer_id" nullable="true" remarks="" size="10" type="varchar" typeCode="12" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="update_ind" nullable="true" remarks="" size="1" type="varchar" typeCode="12" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="grouper_id" nullable="true" remarks="" size="10" type="varchar" typeCode="12" />
-  <primaryKey column="id" sequenceNumberInPK="1" />
-  <index name="PK__IngnxTra__3213E83F7C8F2232" unique="true">
-    <column ascending="true" name="id" />
-  </index>
-  <index name="transfer_Search1" unique="false">
-    <column ascending="true" name="transfer_id" />
-  </index>
-</table>
+<table catalog="Jv-1.44.18.6_FK" name="IngnxTransferEdit" remarks="" schema="dbo" type="TABLE"><column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" /><column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" /><column autoUpdated="false" defaultValue="null" digits="0" id="2" name="id" nullable="false" remarks="" size="4" type="int" typeCode="4" /><column autoUpdated="false" defaultValue="null" digits="0" id="3" name="transfer_id" nullable="true" remarks="" size="10" type="varchar" typeCode="12" /><column autoUpdated="false" defaultValue="null" digits="0" id="4" name="update_ind" nullable="true" remarks="" size="1" type="varchar" typeCode="12" /><column autoUpdated="false" defaultValue="null" digits="0" id="5" name="grouper_id" nullable="true" remarks="" size="10" type="varchar" typeCode="12" /><primaryKey column="id" sequenceNumberInPK="1" /><index name="PK__IngnxTra__3213E83F7C8F2232" unique="true"><column ascending="true" name="id" /></index><index name="transfer_Search1" unique="false"><column ascending="true" name="transfer_id" /></index></table>

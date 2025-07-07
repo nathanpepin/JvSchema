@@ -1,12 +1,1 @@
-<table catalog="Jv-1.44.18.6_FK" name="ProviderIDBackUp" remarks="" schema="dbo" type="TABLE">
-  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="OldProviderID" nullable="false" remarks="" size="4" type="int" typeCode="4" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="NewProviderID" nullable="false" remarks="" size="4" type="int" typeCode="4" />
-  <primaryKey column="OldProviderID" sequenceNumberInPK="1" />
-  <primaryKey column="NewProviderID" sequenceNumberInPK="2" />
-  <index name="PK__Provider__4196F089776C871B" unique="true">
-    <column ascending="true" name="OldProviderID" />
-    <column ascending="true" name="NewProviderID" />
-  </index>
-</table>
+<table catalog="Jv-1.44.18.6_FK" name="ProviderIDBackUp" remarks="" schema="dbo" type="TABLE"><column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" /><column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" /><column autoUpdated="false" defaultValue="null" digits="0" id="2" name="OldProviderID" nullable="false" remarks="" size="4" type="int" typeCode="4" /><column autoUpdated="false" defaultValue="null" digits="0" id="3" name="NewProviderID" nullable="false" remarks="" size="4" type="int" typeCode="4" /><primaryKey column="OldProviderID" sequenceNumberInPK="1" /><primaryKey column="NewProviderID" sequenceNumberInPK="2" /><index name="PK__Provider__4196F089776C871B" unique="true"><column ascending="true" name="OldProviderID" /><column ascending="true" name="NewProviderID" /></index></table>

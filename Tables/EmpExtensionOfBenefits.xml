@@ -1,13 +1,1 @@
-<table catalog="Jv-1.44.18.6_FK" name="EmpExtensionOfBenefits" remarks="" schema="dbo" type="TABLE">
-  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="EmployeeID" nullable="false" remarks="" size="4" type="int" typeCode="4">
-    <parent catalog="Jv-1.44.18.6_FK" column="EmployeeID" foreignKey="FK__EmpExtens__Emplo__5DD6A7B3" implied="false" onDeleteCascade="false" schema="dbo" table="Employee" />
-  </column>
-  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="ApplyExtOfBenefits" nullable="true" remarks="" size="1" type="char" typeCode="1" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="DefaultDenialReason" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
-  <primaryKey column="EmployeeID" sequenceNumberInPK="1" />
-  <index name="PK__EmpExten__7AD04FF1EE855602" unique="true">
-    <column ascending="true" name="EmployeeID" />
-  </index>
-</table>
+<table catalog="Jv-1.44.18.6_FK" name="EmpExtensionOfBenefits" remarks="" schema="dbo" type="TABLE"><column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" /><column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" /><column autoUpdated="false" defaultValue="null" digits="0" id="2" name="EmployeeID" nullable="false" remarks="" size="4" type="int" typeCode="4"><parent catalog="Jv-1.44.18.6_FK" column="EmployeeID" foreignKey="FK__EmpExtens__Emplo__5DD6A7B3" implied="false" onDeleteCascade="false" schema="dbo" table="Employee" /></column><column autoUpdated="false" defaultValue="null" digits="0" id="3" name="ApplyExtOfBenefits" nullable="true" remarks="" size="1" type="char" typeCode="1" /><column autoUpdated="false" defaultValue="null" digits="0" id="4" name="DefaultDenialReason" nullable="true" remarks="" size="3" type="varchar" typeCode="12" /><primaryKey column="EmployeeID" sequenceNumberInPK="1" /><index name="PK__EmpExten__7AD04FF1EE855602" unique="true"><column ascending="true" name="EmployeeID" /></index></table>

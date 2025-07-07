@@ -1,15 +1,1 @@
-<table catalog="Jv-1.44.18.6_FK" name="CategoryAdmissionType" remarks="" schema="dbo" type="TABLE">
-  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="CategoryID" nullable="false" remarks="" size="4" type="int" typeCode="4" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="RangeFrom" nullable="false" remarks="" size="2" type="varchar" typeCode="12" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="RangeTo" nullable="false" remarks="" size="2" type="varchar" typeCode="12" />
-  <primaryKey column="CategoryID" sequenceNumberInPK="1" />
-  <primaryKey column="RangeFrom" sequenceNumberInPK="2" />
-  <primaryKey column="RangeTo" sequenceNumberInPK="3" />
-  <index name="PK__Category__D912E406624DF53E" unique="true">
-    <column ascending="true" name="CategoryID" />
-    <column ascending="true" name="RangeFrom" />
-    <column ascending="true" name="RangeTo" />
-  </index>
-</table>
+<table catalog="Jv-1.44.18.6_FK" name="CategoryAdmissionType" remarks="" schema="dbo" type="TABLE"><column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" /><column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" /><column autoUpdated="false" defaultValue="null" digits="0" id="2" name="CategoryID" nullable="false" remarks="" size="4" type="int" typeCode="4" /><column autoUpdated="false" defaultValue="null" digits="0" id="3" name="RangeFrom" nullable="false" remarks="" size="2" type="varchar" typeCode="12" /><column autoUpdated="false" defaultValue="null" digits="0" id="4" name="RangeTo" nullable="false" remarks="" size="2" type="varchar" typeCode="12" /><primaryKey column="CategoryID" sequenceNumberInPK="1" /><primaryKey column="RangeFrom" sequenceNumberInPK="2" /><primaryKey column="RangeTo" sequenceNumberInPK="3" /><index name="PK__Category__D912E406624DF53E" unique="true"><column ascending="true" name="CategoryID" /><column ascending="true" name="RangeFrom" /><column ascending="true" name="RangeTo" /></index></table>

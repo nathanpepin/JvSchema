@@ -1,16 +1,1 @@
-<table catalog="Jv-1.44.18.6_FK" name="DisSalaryDetails" remarks="" schema="dbo" type="TABLE">
-  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="UniqueSalID" nullable="false" remarks="" size="4" type="int" typeCode="4" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="Claimnumber" nullable="false" remarks="" size="19" type="varchar" typeCode="12">
-    <parent catalog="Jv-1.44.18.6_FK" column="Claimnumber" foreignKey="FK__DisSalary__Claim__55766BDC" implied="false" onDeleteCascade="false" schema="dbo" table="DisabilityMaintenance" />
-  </column>
-  <column autoUpdated="false" defaultValue="null" digits="2" id="4" name="Salary" nullable="true" remarks="" size="12" type="decimal" typeCode="3" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="SalaryEffDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
-  <primaryKey column="Claimnumber" sequenceNumberInPK="1" />
-  <primaryKey column="UniqueSalID" sequenceNumberInPK="2" />
-  <index name="PK__DisSalar__5AF76DCAE728681F" unique="true">
-    <column ascending="true" name="Claimnumber" />
-    <column ascending="true" name="UniqueSalID" />
-  </index>
-</table>
+<table catalog="Jv-1.44.18.6_FK" name="DisSalaryDetails" remarks="" schema="dbo" type="TABLE"><column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" /><column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" /><column autoUpdated="false" defaultValue="null" digits="0" id="2" name="UniqueSalID" nullable="false" remarks="" size="4" type="int" typeCode="4" /><column autoUpdated="false" defaultValue="null" digits="0" id="3" name="Claimnumber" nullable="false" remarks="" size="19" type="varchar" typeCode="12"><parent catalog="Jv-1.44.18.6_FK" column="Claimnumber" foreignKey="FK__DisSalary__Claim__55766BDC" implied="false" onDeleteCascade="false" schema="dbo" table="DisabilityMaintenance" /></column><column autoUpdated="false" defaultValue="null" digits="2" id="4" name="Salary" nullable="true" remarks="" size="12" type="decimal" typeCode="3" /><column autoUpdated="false" defaultValue="null" digits="0" id="5" name="SalaryEffDate" nullable="true" remarks="" size="20" type="date" typeCode="12" /><primaryKey column="Claimnumber" sequenceNumberInPK="1" /><primaryKey column="UniqueSalID" sequenceNumberInPK="2" /><index name="PK__DisSalar__5AF76DCAE728681F" unique="true"><column ascending="true" name="Claimnumber" /><column ascending="true" name="UniqueSalID" /></index></table>

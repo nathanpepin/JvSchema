@@ -1,13 +1,1 @@
-<table catalog="Jv-1.44.18.6_FK" name="COBRAMaxMapping" remarks="" schema="dbo" type="TABLE">
-  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="CobraReasonCode" nullable="false" remarks="" size="3" type="varchar" typeCode="12" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="CobraMax" nullable="false" remarks="" size="2" type="varchar" typeCode="12" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="Descr" nullable="true" remarks="" size="255" type="varchar" typeCode="12" />
-  <primaryKey column="CobraMax" sequenceNumberInPK="1" />
-  <primaryKey column="CobraReasonCode" sequenceNumberInPK="2" />
-  <index name="PK__COBRAMax__D9CF682F34A6D0E0" unique="true">
-    <column ascending="true" name="CobraMax" />
-    <column ascending="true" name="CobraReasonCode" />
-  </index>
-</table>
+<table catalog="Jv-1.44.18.6_FK" name="COBRAMaxMapping" remarks="" schema="dbo" type="TABLE"><column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" /><column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" /><column autoUpdated="false" defaultValue="null" digits="0" id="2" name="CobraReasonCode" nullable="false" remarks="" size="3" type="varchar" typeCode="12" /><column autoUpdated="false" defaultValue="null" digits="0" id="3" name="CobraMax" nullable="false" remarks="" size="2" type="varchar" typeCode="12" /><column autoUpdated="false" defaultValue="null" digits="0" id="4" name="Descr" nullable="true" remarks="" size="255" type="varchar" typeCode="12" /><primaryKey column="CobraMax" sequenceNumberInPK="1" /><primaryKey column="CobraReasonCode" sequenceNumberInPK="2" /><index name="PK__COBRAMax__D9CF682F34A6D0E0" unique="true"><column ascending="true" name="CobraMax" /><column ascending="true" name="CobraReasonCode" /></index></table>

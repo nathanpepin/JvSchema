@@ -1,15 +1,1 @@
-<table catalog="Jv-1.44.18.6_FK" name="ExternalID" remarks="" schema="dbo" type="TABLE">
-  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="ExternalId" nullable="false" remarks="" size="60" type="varchar" typeCode="12" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="EntityType" nullable="false" remarks="" size="60" type="varchar" typeCode="12" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="ProcessType" nullable="false" remarks="" size="60" type="varchar" typeCode="12" />
-  <primaryKey column="ExternalId" sequenceNumberInPK="1" />
-  <primaryKey column="EntityType" sequenceNumberInPK="2" />
-  <primaryKey column="ProcessType" sequenceNumberInPK="3" />
-  <index name="PK__External__CF5F7101BC694333" unique="true">
-    <column ascending="true" name="ExternalId" />
-    <column ascending="true" name="EntityType" />
-    <column ascending="true" name="ProcessType" />
-  </index>
-</table>
+<table catalog="Jv-1.44.18.6_FK" name="ExternalID" remarks="" schema="dbo" type="TABLE"><column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" /><column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" /><column autoUpdated="false" defaultValue="null" digits="0" id="2" name="ExternalId" nullable="false" remarks="" size="60" type="varchar" typeCode="12" /><column autoUpdated="false" defaultValue="null" digits="0" id="3" name="EntityType" nullable="false" remarks="" size="60" type="varchar" typeCode="12" /><column autoUpdated="false" defaultValue="null" digits="0" id="4" name="ProcessType" nullable="false" remarks="" size="60" type="varchar" typeCode="12" /><primaryKey column="ExternalId" sequenceNumberInPK="1" /><primaryKey column="EntityType" sequenceNumberInPK="2" /><primaryKey column="ProcessType" sequenceNumberInPK="3" /><index name="PK__External__CF5F7101BC694333" unique="true"><column ascending="true" name="ExternalId" /><column ascending="true" name="EntityType" /><column ascending="true" name="ProcessType" /></index></table>

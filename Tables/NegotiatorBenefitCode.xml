@@ -1,15 +1,1 @@
-<table catalog="Jv-1.44.18.6_FK" name="NegotiatorBenefitCode" remarks="" schema="dbo" type="TABLE">
-  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="NegotiatorRuleSetID" nullable="false" remarks="" size="4" type="int" typeCode="4" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="NegotiatorRuleSetType" nullable="false" remarks="" size="7" type="varchar" typeCode="12" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="BenefitCode" nullable="false" remarks="" size="3" type="varchar" typeCode="12" />
-  <primaryKey column="NegotiatorRuleSetID" sequenceNumberInPK="1" />
-  <primaryKey column="NegotiatorRuleSetType" sequenceNumberInPK="2" />
-  <primaryKey column="BenefitCode" sequenceNumberInPK="3" />
-  <index name="PK__Negotiat__B702D9EBCAA5DA35" unique="true">
-    <column ascending="true" name="NegotiatorRuleSetID" />
-    <column ascending="true" name="NegotiatorRuleSetType" />
-    <column ascending="true" name="BenefitCode" />
-  </index>
-</table>
+<table catalog="Jv-1.44.18.6_FK" name="NegotiatorBenefitCode" remarks="" schema="dbo" type="TABLE"><column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" /><column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" /><column autoUpdated="false" defaultValue="null" digits="0" id="2" name="NegotiatorRuleSetID" nullable="false" remarks="" size="4" type="int" typeCode="4" /><column autoUpdated="false" defaultValue="null" digits="0" id="3" name="NegotiatorRuleSetType" nullable="false" remarks="" size="7" type="varchar" typeCode="12" /><column autoUpdated="false" defaultValue="null" digits="0" id="4" name="BenefitCode" nullable="false" remarks="" size="3" type="varchar" typeCode="12" /><primaryKey column="NegotiatorRuleSetID" sequenceNumberInPK="1" /><primaryKey column="NegotiatorRuleSetType" sequenceNumberInPK="2" /><primaryKey column="BenefitCode" sequenceNumberInPK="3" /><index name="PK__Negotiat__B702D9EBCAA5DA35" unique="true"><column ascending="true" name="NegotiatorRuleSetID" /><column ascending="true" name="NegotiatorRuleSetType" /><column ascending="true" name="BenefitCode" /></index></table>

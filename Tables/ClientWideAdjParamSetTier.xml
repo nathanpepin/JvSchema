@@ -1,12 +1,1 @@
-<table catalog="Jv-1.44.18.6_FK" name="ClientWideAdjParamSetTier" remarks="" schema="dbo" type="TABLE">
-  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="CwaParameterID" nullable="false" remarks="" size="4" type="int" typeCode="4" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="ProcessTierName" nullable="false" remarks="" size="2" type="varchar" typeCode="12" />
-  <primaryKey column="CwaParameterID" sequenceNumberInPK="1" />
-  <primaryKey column="ProcessTierName" sequenceNumberInPK="2" />
-  <index name="PK__ClientWi__9EC238EB55328C87" unique="true">
-    <column ascending="true" name="CwaParameterID" />
-    <column ascending="true" name="ProcessTierName" />
-  </index>
-</table>
+<table catalog="Jv-1.44.18.6_FK" name="ClientWideAdjParamSetTier" remarks="" schema="dbo" type="TABLE"><column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" /><column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" /><column autoUpdated="false" defaultValue="null" digits="0" id="2" name="CwaParameterID" nullable="false" remarks="" size="4" type="int" typeCode="4" /><column autoUpdated="false" defaultValue="null" digits="0" id="3" name="ProcessTierName" nullable="false" remarks="" size="2" type="varchar" typeCode="12" /><primaryKey column="CwaParameterID" sequenceNumberInPK="1" /><primaryKey column="ProcessTierName" sequenceNumberInPK="2" /><index name="PK__ClientWi__9EC238EB55328C87" unique="true"><column ascending="true" name="CwaParameterID" /><column ascending="true" name="ProcessTierName" /></index></table>

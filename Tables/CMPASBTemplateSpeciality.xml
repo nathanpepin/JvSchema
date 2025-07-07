@@ -1,14 +1,1 @@
-<table catalog="Jv-1.44.18.6_FK" name="CMPASBTemplateSpeciality" remarks="" schema="dbo" type="TABLE">
-  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="SBTemplateID" nullable="false" remarks="" size="4" type="int" typeCode="4">
-    <parent catalog="Jv-1.44.18.6_FK" column="SBTemplateID" foreignKey="FK__CMPASBTem__SBTem__100D21C5" implied="false" onDeleteCascade="false" schema="dbo" table="CMPASuperBillTemplate" />
-  </column>
-  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="SpecialityCode" nullable="false" remarks="" size="3" type="varchar" typeCode="12" />
-  <primaryKey column="SBTemplateID" sequenceNumberInPK="1" />
-  <primaryKey column="SpecialityCode" sequenceNumberInPK="2" />
-  <index name="PK__CMPASBTe__64634CA8A0642FF8" unique="true">
-    <column ascending="true" name="SBTemplateID" />
-    <column ascending="true" name="SpecialityCode" />
-  </index>
-</table>
+<table catalog="Jv-1.44.18.6_FK" name="CMPASBTemplateSpeciality" remarks="" schema="dbo" type="TABLE"><column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" /><column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" /><column autoUpdated="false" defaultValue="null" digits="0" id="2" name="SBTemplateID" nullable="false" remarks="" size="4" type="int" typeCode="4"><parent catalog="Jv-1.44.18.6_FK" column="SBTemplateID" foreignKey="FK__CMPASBTem__SBTem__100D21C5" implied="false" onDeleteCascade="false" schema="dbo" table="CMPASuperBillTemplate" /></column><column autoUpdated="false" defaultValue="null" digits="0" id="3" name="SpecialityCode" nullable="false" remarks="" size="3" type="varchar" typeCode="12" /><primaryKey column="SBTemplateID" sequenceNumberInPK="1" /><primaryKey column="SpecialityCode" sequenceNumberInPK="2" /><index name="PK__CMPASBTe__64634CA8A0642FF8" unique="true"><column ascending="true" name="SBTemplateID" /><column ascending="true" name="SpecialityCode" /></index></table>

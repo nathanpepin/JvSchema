@@ -1,15 +1,1 @@
-<table catalog="Jv-1.44.18.6_FK" name="ClaimPymtLockDtl" remarks="" schema="dbo" type="TABLE">
-  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="JobId" nullable="false" remarks="" size="50" type="varchar" typeCode="12" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="Status" nullable="true" remarks="" size="1" type="char" typeCode="1" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="AdditionalInfo" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="2005" />
-  <primaryKey column="JobId" sequenceNumberInPK="1" />
-  <index name="PK__ClaimPym__056690C2F92555F7" unique="true">
-    <column ascending="true" name="JobId" />
-  </index>
-  <index name="ClaimPymtLockDtl_Search1" unique="false">
-    <column ascending="true" name="JobId" />
-    <column ascending="true" name="Status" />
-  </index>
-</table>
+<table catalog="Jv-1.44.18.6_FK" name="ClaimPymtLockDtl" remarks="" schema="dbo" type="TABLE"><column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" /><column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" /><column autoUpdated="false" defaultValue="null" digits="0" id="2" name="JobId" nullable="false" remarks="" size="50" type="varchar" typeCode="12" /><column autoUpdated="false" defaultValue="null" digits="0" id="3" name="Status" nullable="true" remarks="" size="1" type="char" typeCode="1" /><column autoUpdated="false" defaultValue="null" digits="0" id="4" name="AdditionalInfo" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="2005" /><primaryKey column="JobId" sequenceNumberInPK="1" /><index name="PK__ClaimPym__056690C2F92555F7" unique="true"><column ascending="true" name="JobId" /></index><index name="ClaimPymtLockDtl_Search1" unique="false"><column ascending="true" name="JobId" /><column ascending="true" name="Status" /></index></table>

@@ -1,15 +1,1 @@
-<table catalog="Jv-1.44.18.6_FK" name="PBNetwBlindNetwState" remarks="" schema="dbo" type="TABLE">
-  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="NetID" nullable="false" remarks="" size="4" type="int" typeCode="4" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="StateSt" nullable="false" remarks="" size="2" type="varchar" typeCode="12" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="TypeOfFeeCalculation" nullable="true" remarks="" size="2" type="varchar" typeCode="12" />
-  <column autoUpdated="false" defaultValue="null" digits="3" id="5" name="Percentage" nullable="true" remarks="" size="8" type="decimal" typeCode="3" />
-  <column autoUpdated="false" defaultValue="null" digits="2" id="6" name="Dollars" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
-  <primaryKey column="NetID" sequenceNumberInPK="1" />
-  <primaryKey column="StateSt" sequenceNumberInPK="2" />
-  <index name="PK__PBNetwBl__433ACF3B16060760" unique="true">
-    <column ascending="true" name="NetID" />
-    <column ascending="true" name="StateSt" />
-  </index>
-</table>
+<table catalog="Jv-1.44.18.6_FK" name="PBNetwBlindNetwState" remarks="" schema="dbo" type="TABLE"><column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" /><column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" /><column autoUpdated="false" defaultValue="null" digits="0" id="2" name="NetID" nullable="false" remarks="" size="4" type="int" typeCode="4" /><column autoUpdated="false" defaultValue="null" digits="0" id="3" name="StateSt" nullable="false" remarks="" size="2" type="varchar" typeCode="12" /><column autoUpdated="false" defaultValue="null" digits="0" id="4" name="TypeOfFeeCalculation" nullable="true" remarks="" size="2" type="varchar" typeCode="12" /><column autoUpdated="false" defaultValue="null" digits="3" id="5" name="Percentage" nullable="true" remarks="" size="8" type="decimal" typeCode="3" /><column autoUpdated="false" defaultValue="null" digits="2" id="6" name="Dollars" nullable="true" remarks="" size="13" type="decimal" typeCode="3" /><primaryKey column="NetID" sequenceNumberInPK="1" /><primaryKey column="StateSt" sequenceNumberInPK="2" /><index name="PK__PBNetwBl__433ACF3B16060760" unique="true"><column ascending="true" name="NetID" /><column ascending="true" name="StateSt" /></index></table>

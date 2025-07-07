@@ -1,13 +1,1 @@
-<table catalog="Jv-1.44.18.6_FK" name="EnrAgeSettings" remarks="" schema="dbo" type="TABLE">
-  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="AgeSettingID" nullable="false" remarks="" size="4" type="int" typeCode="4">
-    <child catalog="Jv-1.44.18.6_FK" column="AgeSettingID" foreignKey="FK__EnrAgeSet__AgeSe__11564BB9" implied="false" onDeleteCascade="false" schema="dbo" table="EnrAgeSettingAddtnlInfo" />
-    <child catalog="Jv-1.44.18.6_FK" column="AgeSettingID" foreignKey="FK__EnrAgeSet__AgeSe__124A6FF2" implied="false" onDeleteCascade="false" schema="dbo" table="EnrAgeSettingException" />
-  </column>
-  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="Age" nullable="true" remarks="" size="4" type="int" typeCode="4" />
-  <primaryKey column="AgeSettingID" sequenceNumberInPK="1" />
-  <index name="PK__EnrAgeSe__1E9D7C3E0D899A57" unique="true">
-    <column ascending="true" name="AgeSettingID" />
-  </index>
-</table>
+<table catalog="Jv-1.44.18.6_FK" name="EnrAgeSettings" remarks="" schema="dbo" type="TABLE"><column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" /><column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" /><column autoUpdated="false" defaultValue="null" digits="0" id="2" name="AgeSettingID" nullable="false" remarks="" size="4" type="int" typeCode="4"><child catalog="Jv-1.44.18.6_FK" column="AgeSettingID" foreignKey="FK__EnrAgeSet__AgeSe__11564BB9" implied="false" onDeleteCascade="false" schema="dbo" table="EnrAgeSettingAddtnlInfo" /><child catalog="Jv-1.44.18.6_FK" column="AgeSettingID" foreignKey="FK__EnrAgeSet__AgeSe__124A6FF2" implied="false" onDeleteCascade="false" schema="dbo" table="EnrAgeSettingException" /></column><column autoUpdated="false" defaultValue="null" digits="0" id="3" name="Age" nullable="true" remarks="" size="4" type="int" typeCode="4" /><primaryKey column="AgeSettingID" sequenceNumberInPK="1" /><index name="PK__EnrAgeSe__1E9D7C3E0D899A57" unique="true"><column ascending="true" name="AgeSettingID" /></index></table>

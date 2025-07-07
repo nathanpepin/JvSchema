@@ -1,15 +1,1 @@
-<table catalog="Jv-1.44.18.6_FK" name="FeeRuleAnesthesiaRate" remarks="" schema="dbo" type="TABLE">
-  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="FeeRuleID" nullable="false" remarks="" size="4" type="int" typeCode="4">
-    <parent catalog="Jv-1.44.18.6_FK" column="FeeRuleID" foreignKey="FK__FeeRuleAn__FeeRu__42EDA74D" implied="false" onDeleteCascade="false" schema="dbo" table="FeeRule" />
-  </column>
-  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="RoundingRequired" nullable="false" remarks="" size="1" type="char" typeCode="1" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="RoundingMinutes" nullable="true" remarks="" size="4" type="int" typeCode="4" />
-  <primaryKey column="FeeRuleID" sequenceNumberInPK="1" />
-  <primaryKey column="RoundingRequired" sequenceNumberInPK="2" />
-  <index name="PK__FeeRuleA__9D863610591E3C56" unique="true">
-    <column ascending="true" name="FeeRuleID" />
-    <column ascending="true" name="RoundingRequired" />
-  </index>
-</table>
+<table catalog="Jv-1.44.18.6_FK" name="FeeRuleAnesthesiaRate" remarks="" schema="dbo" type="TABLE"><column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" /><column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" /><column autoUpdated="false" defaultValue="null" digits="0" id="2" name="FeeRuleID" nullable="false" remarks="" size="4" type="int" typeCode="4"><parent catalog="Jv-1.44.18.6_FK" column="FeeRuleID" foreignKey="FK__FeeRuleAn__FeeRu__42EDA74D" implied="false" onDeleteCascade="false" schema="dbo" table="FeeRule" /></column><column autoUpdated="false" defaultValue="null" digits="0" id="3" name="RoundingRequired" nullable="false" remarks="" size="1" type="char" typeCode="1" /><column autoUpdated="false" defaultValue="null" digits="0" id="4" name="RoundingMinutes" nullable="true" remarks="" size="4" type="int" typeCode="4" /><primaryKey column="FeeRuleID" sequenceNumberInPK="1" /><primaryKey column="RoundingRequired" sequenceNumberInPK="2" /><index name="PK__FeeRuleA__9D863610591E3C56" unique="true"><column ascending="true" name="FeeRuleID" /><column ascending="true" name="RoundingRequired" /></index></table>

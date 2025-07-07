@@ -1,15 +1,1 @@
-<table catalog="Jv-1.44.18.6_FK" name="ClaimPymtAmpsInb" remarks="" schema="dbo" type="TABLE">
-  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="AmpsInbId" nullable="false" remarks="" size="4" type="int" typeCode="4" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="FileName" nullable="true" remarks="" size="100" type="varchar" typeCode="12" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="InbDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="ValidClmsInFile" nullable="true" remarks="" size="4" type="int" typeCode="4" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="unfundedClmCnt" nullable="true" remarks="" size="4" type="int" typeCode="4" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="BatchesInFile" nullable="true" remarks="" size="200" type="varchar" typeCode="12" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="AffectedBatches" nullable="true" remarks="" size="200" type="varchar" typeCode="12" />
-  <primaryKey column="AmpsInbId" sequenceNumberInPK="1" />
-  <index name="PK__ClaimPym__606EF68AA7AA5880" unique="true">
-    <column ascending="true" name="AmpsInbId" />
-  </index>
-</table>
+<table catalog="Jv-1.44.18.6_FK" name="ClaimPymtAmpsInb" remarks="" schema="dbo" type="TABLE"><column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" /><column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" /><column autoUpdated="false" defaultValue="null" digits="0" id="2" name="AmpsInbId" nullable="false" remarks="" size="4" type="int" typeCode="4" /><column autoUpdated="false" defaultValue="null" digits="0" id="3" name="FileName" nullable="true" remarks="" size="100" type="varchar" typeCode="12" /><column autoUpdated="false" defaultValue="null" digits="0" id="4" name="InbDate" nullable="true" remarks="" size="20" type="date" typeCode="12" /><column autoUpdated="false" defaultValue="null" digits="0" id="5" name="ValidClmsInFile" nullable="true" remarks="" size="4" type="int" typeCode="4" /><column autoUpdated="false" defaultValue="null" digits="0" id="6" name="unfundedClmCnt" nullable="true" remarks="" size="4" type="int" typeCode="4" /><column autoUpdated="false" defaultValue="null" digits="0" id="7" name="BatchesInFile" nullable="true" remarks="" size="200" type="varchar" typeCode="12" /><column autoUpdated="false" defaultValue="null" digits="0" id="8" name="AffectedBatches" nullable="true" remarks="" size="200" type="varchar" typeCode="12" /><primaryKey column="AmpsInbId" sequenceNumberInPK="1" /><index name="PK__ClaimPym__606EF68AA7AA5880" unique="true"><column ascending="true" name="AmpsInbId" /></index></table>

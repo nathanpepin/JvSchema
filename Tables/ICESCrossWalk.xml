@@ -1,17 +1,1 @@
-<table catalog="Jv-1.44.18.6_FK" name="ICESCrossWalk" remarks="" schema="dbo" type="TABLE">
-  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="ICESMnemonicID" nullable="false" remarks="" size="4" type="int" typeCode="4" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="ICESMnemonic" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="ExceptionReasonCode" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="DeniedReasonCode" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="SaveOrder" nullable="true" remarks="" size="4" type="int" typeCode="4" />
-  <primaryKey column="ICESMnemonicID" sequenceNumberInPK="1" />
-  <index name="PK__ICESCros__F20A2D9467E5234B" unique="true">
-    <column ascending="true" name="ICESMnemonicID" />
-  </index>
-  <index name="ICESCrossWalk_Search1" unique="false">
-    <column ascending="true" name="SaveOrder" />
-    <column ascending="true" name="ICESMnemonic" />
-  </index>
-</table>
+<table catalog="Jv-1.44.18.6_FK" name="ICESCrossWalk" remarks="" schema="dbo" type="TABLE"><column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" /><column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" /><column autoUpdated="false" defaultValue="null" digits="0" id="2" name="ICESMnemonicID" nullable="false" remarks="" size="4" type="int" typeCode="4" /><column autoUpdated="false" defaultValue="null" digits="0" id="3" name="ICESMnemonic" nullable="true" remarks="" size="20" type="varchar" typeCode="12" /><column autoUpdated="false" defaultValue="null" digits="0" id="4" name="ExceptionReasonCode" nullable="true" remarks="" size="5" type="varchar" typeCode="12" /><column autoUpdated="false" defaultValue="null" digits="0" id="5" name="DeniedReasonCode" nullable="true" remarks="" size="3" type="varchar" typeCode="12" /><column autoUpdated="false" defaultValue="null" digits="0" id="6" name="SaveOrder" nullable="true" remarks="" size="4" type="int" typeCode="4" /><primaryKey column="ICESMnemonicID" sequenceNumberInPK="1" /><index name="PK__ICESCros__F20A2D9467E5234B" unique="true"><column ascending="true" name="ICESMnemonicID" /></index><index name="ICESCrossWalk_Search1" unique="false"><column ascending="true" name="SaveOrder" /><column ascending="true" name="ICESMnemonic" /></index></table>

@@ -1,17 +1,1 @@
-<table catalog="Jv-1.44.18.6_FK" name="IngnxProcedureDescription" remarks="" schema="dbo" type="TABLE">
-  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="id" nullable="false" remarks="" size="4" type="int" typeCode="4" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="std_cpt_code" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="sub_code" nullable="true" remarks="" size="2" type="varchar" typeCode="12" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="bilateral_digit" nullable="true" remarks="" size="1" type="varchar" typeCode="12" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="category" nullable="true" remarks="" size="6" type="varchar" typeCode="12" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="description" nullable="true" remarks="" size="48" type="varchar" typeCode="12" />
-  <primaryKey column="id" sequenceNumberInPK="1" />
-  <index name="PK__IngnxPro__3213E83F8C4A90BF" unique="true">
-    <column ascending="true" name="id" />
-  </index>
-  <index name="procedure_desc_Search1" unique="false">
-    <column ascending="true" name="std_cpt_code" />
-  </index>
-</table>
+<table catalog="Jv-1.44.18.6_FK" name="IngnxProcedureDescription" remarks="" schema="dbo" type="TABLE"><column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" /><column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" /><column autoUpdated="false" defaultValue="null" digits="0" id="2" name="id" nullable="false" remarks="" size="4" type="int" typeCode="4" /><column autoUpdated="false" defaultValue="null" digits="0" id="3" name="std_cpt_code" nullable="true" remarks="" size="5" type="varchar" typeCode="12" /><column autoUpdated="false" defaultValue="null" digits="0" id="4" name="sub_code" nullable="true" remarks="" size="2" type="varchar" typeCode="12" /><column autoUpdated="false" defaultValue="null" digits="0" id="5" name="bilateral_digit" nullable="true" remarks="" size="1" type="varchar" typeCode="12" /><column autoUpdated="false" defaultValue="null" digits="0" id="6" name="category" nullable="true" remarks="" size="6" type="varchar" typeCode="12" /><column autoUpdated="false" defaultValue="null" digits="0" id="7" name="description" nullable="true" remarks="" size="48" type="varchar" typeCode="12" /><primaryKey column="id" sequenceNumberInPK="1" /><index name="PK__IngnxPro__3213E83F8C4A90BF" unique="true"><column ascending="true" name="id" /></index><index name="procedure_desc_Search1" unique="false"><column ascending="true" name="std_cpt_code" /></index></table>

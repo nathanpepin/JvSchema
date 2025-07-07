@@ -1,9 +1,1 @@
-<table catalog="Jv-1.44.18.6_FK" name="AccumLock" remarks="" schema="dbo" type="TABLE">
-  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="LockAccums" nullable="false" remarks="" size="1" type="char" typeCode="1" />
-  <primaryKey column="LockAccums" sequenceNumberInPK="1" />
-  <index name="PK__AccumLoc__2861533CE15E4896" unique="true">
-    <column ascending="true" name="LockAccums" />
-  </index>
-</table>
+<table catalog="Jv-1.44.18.6_FK" name="AccumLock" remarks="" schema="dbo" type="TABLE"><column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" /><column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" /><column autoUpdated="false" defaultValue="null" digits="0" id="2" name="LockAccums" nullable="false" remarks="" size="1" type="char" typeCode="1" /><primaryKey column="LockAccums" sequenceNumberInPK="1" /><index name="PK__AccumLoc__2861533CE15E4896" unique="true"><column ascending="true" name="LockAccums" /></index></table>

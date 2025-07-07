@@ -1,16 +1,1 @@
-<table catalog="Jv-1.44.18.6_FK" name="NetworkAfflCallGroup" remarks="" schema="dbo" type="TABLE">
-  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="NetworkAfflSeqID" nullable="false" remarks="" size="4" type="int" typeCode="4">
-    <parent catalog="Jv-1.44.18.6_FK" column="NetworkAfflSeqID" foreignKey="FK__NetworkAf__Netwo__0E44D4E4" implied="false" onDeleteCascade="false" schema="dbo" table="NetworkAffiliations" />
-  </column>
-  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="CallGroupId" nullable="false" remarks="" size="10" type="varchar" typeCode="12">
-    <parent catalog="Jv-1.44.18.6_FK" column="CallGroupID" foreignKey="FK__NetworkAf__CallG__0F38F91D" implied="false" onDeleteCascade="false" schema="dbo" table="CallGroup" />
-  </column>
-  <primaryKey column="NetworkAfflSeqID" sequenceNumberInPK="1" />
-  <primaryKey column="CallGroupId" sequenceNumberInPK="2" />
-  <index name="PK__NetworkA__2BFE94CB9176D2B4" unique="true">
-    <column ascending="true" name="NetworkAfflSeqID" />
-    <column ascending="true" name="CallGroupId" />
-  </index>
-</table>
+<table catalog="Jv-1.44.18.6_FK" name="NetworkAfflCallGroup" remarks="" schema="dbo" type="TABLE"><column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" /><column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" /><column autoUpdated="false" defaultValue="null" digits="0" id="2" name="NetworkAfflSeqID" nullable="false" remarks="" size="4" type="int" typeCode="4"><parent catalog="Jv-1.44.18.6_FK" column="NetworkAfflSeqID" foreignKey="FK__NetworkAf__Netwo__0E44D4E4" implied="false" onDeleteCascade="false" schema="dbo" table="NetworkAffiliations" /></column><column autoUpdated="false" defaultValue="null" digits="0" id="3" name="CallGroupId" nullable="false" remarks="" size="10" type="varchar" typeCode="12"><parent catalog="Jv-1.44.18.6_FK" column="CallGroupID" foreignKey="FK__NetworkAf__CallG__0F38F91D" implied="false" onDeleteCascade="false" schema="dbo" table="CallGroup" /></column><primaryKey column="NetworkAfflSeqID" sequenceNumberInPK="1" /><primaryKey column="CallGroupId" sequenceNumberInPK="2" /><index name="PK__NetworkA__2BFE94CB9176D2B4" unique="true"><column ascending="true" name="NetworkAfflSeqID" /><column ascending="true" name="CallGroupId" /></index></table>
