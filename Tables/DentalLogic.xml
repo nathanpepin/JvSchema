@@ -1,0 +1,60 @@
+<table catalog="Jv-1.44.18.6_FK" name="DentalLogic" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="RuleSetID" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="DentalLogicRuleSeqNo" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="ExeOrder" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="ADACode" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="2005" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="DenyReasonCode" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="PendComment" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="PayAsADACode" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="PriceAsADACode" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="CombineIntoADACode" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="BenefitCodes" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="Condition" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="13" name="DefineCondition" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="14" name="FurtherDefineCondition" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="15" name="ReportedWithServiceType" nullable="true" remarks="" size="2" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="16" name="Actions" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="17" name="Operand" nullable="true" remarks="" size="65" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="18" name="BeginSectionName" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="19" name="EndSectionName" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="20" name="NumberOfOccurences" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="21" name="WithInNumOfMonths" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="22" name="PatientAgeF" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="23" name="PatientAgeT" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="24" name="GoToSectionName" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="25" name="SectionName" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="26" name="Notes" nullable="true" remarks="" size="80" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="27" name="ClaimRemarks" nullable="true" remarks="" size="80" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="28" name="InsertNotes" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="29" name="InternalID" nullable="true" remarks="" size="12" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="30" name="Action" nullable="true" remarks="" size="200" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="31" name="ToothValuesForDefCond" nullable="true" remarks="" size="300" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="32" name="ADAValuesForDisplay" nullable="true" remarks="" size="8000" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="33" name="ToothValuesForDisplay" nullable="true" remarks="" size="300" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="34" name="Occurences" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="35" name="HasORADACode" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="36" name="DentalRuleFlag" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <primaryKey column="RuleSetID" sequenceNumberInPK="1" />
+  <primaryKey column="DentalLogicRuleSeqNo" sequenceNumberInPK="2" />
+  <index name="PK__DentalLo__25CB2AB7245EBFC5" unique="true">
+    <column ascending="true" name="RuleSetID" />
+    <column ascending="true" name="DentalLogicRuleSeqNo" />
+  </index>
+  <index name="DentalLogic_Search2" unique="false">
+    <column ascending="true" name="RuleSetID" />
+    <column ascending="true" name="ExeOrder" />
+    <column ascending="true" name="BeginSectionName" />
+    <column ascending="true" name="DentalLogicRuleSeqNo" />
+    <column ascending="true" name="Operand" />
+    <column ascending="true" name="Actions" />
+    <column ascending="true" name="Condition" />
+    <column ascending="true" name="DefineCondition" />
+    <column ascending="true" name="FurtherDefineCondition" />
+    <column ascending="true" name="ReportedWithServiceType" />
+  </index>
+  <index name="DentalLogic_Search3" unique="true">
+    <column ascending="true" name="InternalID" />
+  </index>
+</table>

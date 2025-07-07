@@ -1,0 +1,53 @@
+<table catalog="Jv-1.44.18.6_FK" name="EDIProviderAuthorization" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="AuthorizationNumber" nullable="false" remarks="" size="19" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="ServiceNumber" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="ProviderNumber" nullable="false" remarks="" size="15" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="PROVENTID" nullable="true" remarks="" size="35" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="PROVENTTYPE" nullable="true" remarks="" size="35" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="PROVLNAME" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="PROVFNAME" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="PROVMNAME" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="PROVPREFIX" nullable="true" remarks="" size="35" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="PROVSUFFIX" nullable="true" remarks="" size="35" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="PROVIDQUAL" nullable="true" remarks="" size="35" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="13" name="PROVID" nullable="true" remarks="" size="35" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="14" name="PROVSUPIDQUAL" nullable="true" remarks="" size="35" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="15" name="PROVSUPID" nullable="true" remarks="" size="50" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="16" name="PROVDESC" nullable="true" remarks="" size="80" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="17" name="PROVADD1" nullable="true" remarks="" size="35" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="18" name="PROVADD2" nullable="true" remarks="" size="35" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="19" name="PROVCITY" nullable="true" remarks="" size="35" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="20" name="PROVSTATE" nullable="true" remarks="" size="35" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="21" name="PROVPOSTALCD" nullable="true" remarks="" size="35" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="22" name="PROVCOUNTRY" nullable="true" remarks="" size="35" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="23" name="PROVCOUNTRYSUB" nullable="true" remarks="" size="35" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="24" name="PROVCONTACTFCD" nullable="true" remarks="" size="35" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="25" name="PROVCONTACTNM" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="26" name="PROVCONTACTCMQUAL1" nullable="true" remarks="" size="35" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="27" name="PROVCONTACTCM1" nullable="true" remarks="" size="35" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="28" name="PROVCONTACTCMQUAL2" nullable="true" remarks="" size="35" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="29" name="PROVCONTACTCM2" nullable="true" remarks="" size="35" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="30" name="PROVCONTACTCMQUAL3" nullable="true" remarks="" size="35" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="31" name="PROVCONTACTCM3" nullable="true" remarks="" size="35" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="32" name="PROVPROVCD" nullable="true" remarks="" size="35" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="33" name="PROVPROVREFIDQUAL" nullable="true" remarks="" size="35" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="34" name="PROVPROVREFID" nullable="true" remarks="" size="35" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="35" name="PROVNOFIND" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="36" name="AAA012010FA" nullable="true" remarks="" size="35" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="37" name="AAA032010FA" nullable="true" remarks="" size="35" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="38" name="AAA042010FA" nullable="true" remarks="" size="35" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="39" name="ActualAuthNumber" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <primaryKey column="AuthorizationNumber" sequenceNumberInPK="1" />
+  <primaryKey column="ServiceNumber" sequenceNumberInPK="2" />
+  <primaryKey column="ProviderNumber" sequenceNumberInPK="3" />
+  <index name="PK__EDIProvi__BC8D857F5E939FAB" unique="true">
+    <column ascending="true" name="AuthorizationNumber" />
+    <column ascending="true" name="ServiceNumber" />
+    <column ascending="true" name="ProviderNumber" />
+  </index>
+  <index name="EDIProviderAuth_search1" unique="false">
+    <column ascending="true" name="ActualAuthNumber" />
+  </index>
+</table>

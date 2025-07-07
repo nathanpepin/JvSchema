@@ -1,0 +1,43 @@
+<table catalog="Jv-1.44.18.6_FK" name="FeeRule" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="FeeRuleID" nullable="false" remarks="" size="4" type="int" typeCode="4">
+    <child catalog="Jv-1.44.18.6_FK" column="FeeRuleID" foreignKey="FK__FeeRuleAn__FeeRu__43E1CB86" implied="false" onDeleteCascade="false" schema="dbo" table="FeeRuleAnesthesia" />
+    <child catalog="Jv-1.44.18.6_FK" column="FeeRuleID" foreignKey="FK__FeeRuleAn__FeeRu__42EDA74D" implied="false" onDeleteCascade="false" schema="dbo" table="FeeRuleAnesthesiaRate" />
+    <child catalog="Jv-1.44.18.6_FK" column="FeeRuleID" foreignKey="FK__FeeRuleGe__FeeRu__44D5EFBF" implied="false" onDeleteCascade="false" schema="dbo" table="FeeRuleGeneralProcedure" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="FeeRuleName" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="EffectiveDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="TerminationDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="SpecialtyCodeFrom" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="SpecialtyCodeTo" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="SpecialtyCodeDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="Active" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <primaryKey column="FeeRuleID" sequenceNumberInPK="1" />
+  <index name="PK__FeeRule__6A4750493CC1117E" unique="true">
+    <column ascending="true" name="FeeRuleID" />
+  </index>
+  <index name="FeeRule_Search1" unique="false">
+    <column ascending="true" name="FeeRuleName" />
+    <column ascending="true" name="EffectiveDate" />
+    <column ascending="true" name="TerminationDate" />
+    <column ascending="true" name="SpecialtyCodeFrom" />
+    <column ascending="true" name="SpecialtyCodeTo" />
+  </index>
+  <index name="FeeRule_Search5" unique="false">
+    <column ascending="true" name="FeeRuleName" />
+    <column ascending="true" name="EffectiveDate" />
+    <column ascending="true" name="Active" />
+  </index>
+  <index name="FeeRule_SearchPopup" unique="false">
+    <column ascending="true" name="FeeRuleName" />
+    <column ascending="true" name="EffectiveDate" />
+    <column ascending="true" name="SpecialtyCodeFrom" />
+    <column ascending="true" name="SpecialtyCodeTo" />
+    <column ascending="true" name="Active" />
+  </index>
+  <index name="FeeRule_Unique" unique="true">
+    <column ascending="true" name="FeeRuleName" />
+    <column ascending="true" name="EffectiveDate" />
+  </index>
+</table>

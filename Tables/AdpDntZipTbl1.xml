@@ -1,0 +1,27 @@
+<table catalog="Jv-1.44.18.6_FK" name="AdpDntZipTbl1" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="Id" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="Startzipcode" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="Endzipcode" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="Geographicziparea" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="Ziptextdescription" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="Zipcoveredareas" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="Rvsid" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="Effectivedate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="ISCVersion" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="Zipcode" nullable="true" remarks="" size="13" type="varchar" typeCode="12" />
+  <primaryKey column="Id" sequenceNumberInPK="1" />
+  <index name="PK__AdpDntZi__3214EC07B44ED53C" unique="true">
+    <column ascending="true" name="Id" />
+  </index>
+  <index name="AdpDntZipTbl1_search2" unique="false">
+    <column ascending="true" name="Effectivedate" />
+    <column ascending="true" name="Startzipcode" />
+    <column ascending="true" name="Endzipcode" />
+  </index>
+  <index name="AdpDntZipTbl1_search3" unique="false">
+    <column ascending="true" name="Effectivedate" />
+    <column ascending="true" name="Zipcode" />
+  </index>
+</table>

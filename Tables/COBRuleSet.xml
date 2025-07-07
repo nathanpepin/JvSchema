@@ -1,0 +1,78 @@
+<table catalog="Jv-1.44.18.6_FK" name="COBRuleSet" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="COBRuleSetID" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="COBRuleSetName" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="EffectiveDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="Description" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="TerminationDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="DenyEntireClaim" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="DeniedReason" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="COBType" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="TraditionalCOB" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="NonDupCOBType" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="AccumulateSavings" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="13" name="OtherCovgTerms" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="14" name="AllowableType" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="3" id="15" name="AllowPercentage" nullable="true" remarks="" size="8" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="16" name="InEligPendReason" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="17" name="ReqInvestigate" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="18" name="InvPendReason" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="19" name="InvestigateAfter" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="20" name="AnyOtherCoverage" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="21" name="PrimaryCoverage" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="22" name="SecondaryCoverage" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="23" name="UnknownCoverage" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="24" name="AppliesToEmployee" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="25" name="AppliesToDependents" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="26" name="AppliesToSpouse" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="27" name="AppliesToChildren" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="28" name="AgeOption" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="29" name="Age" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="30" name="UpdAccumsPriorCOB" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="31" name="GenClmForEveyCOBCov" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="32" name="NoCoverage" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="33" name="UsePartA" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="34" name="COBRuleSetPartA" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="35" name="UsePartAB" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="36" name="COBRuleSetPartAB" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="37" name="UsePartB" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="38" name="COBRuleSetPartB" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="39" name="UsePartAD" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="40" name="COBRuleSetPartAD" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="41" name="UsePartABD" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="42" name="COBRuleSetPartABD" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="43" name="UsePartBD" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="44" name="COBRuleSetPartBD" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="45" name="UsePartD" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="46" name="COBRuleSetPartD" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="47" name="COBDiscrepancy" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="48" name="COBDscpyPndRsnCd" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="49" name="COBDscpyDnyRsnCd" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="50" name="SecLiabilityFactor" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="51" name="ApplyTaxes" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="52" name="COBGeDisDnyRsnCd" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="53" name="COBGeIneligDnyRsnCd" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="54" name="TerOrSubPayerResp" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="55" name="TerOrSubPayerRespPndRsnCd" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="56" name="RetainPricingForSameNetwork" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <primaryKey column="COBRuleSetID" sequenceNumberInPK="1" />
+  <index name="PK__COBRuleS__DE8B6DF03F218548" unique="true">
+    <column ascending="true" name="COBRuleSetID" />
+  </index>
+  <index name="COBRuleSet_Search1" unique="true">
+    <column ascending="true" name="COBRuleSetName" />
+    <column ascending="true" name="EffectiveDate" />
+  </index>
+  <index name="COBRuleSet_Search2" unique="false">
+    <column ascending="true" name="COBRuleSetName" />
+    <column ascending="true" name="Description" />
+    <column ascending="true" name="EffectiveDate" />
+    <column ascending="true" name="TerminationDate" />
+  </index>
+  <index name="COBRuleSet_Search3" unique="false">
+    <column ascending="true" name="COBRuleSetName" />
+    <column ascending="true" name="EffectiveDate" />
+    <column ascending="true" name="Description" />
+  </index>
+</table>

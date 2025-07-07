@@ -1,0 +1,13 @@
+<table catalog="Jv-1.44.18.6_FK" name="CMPAPrefPharmacy" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="PharmacyID" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="PharmacyName" nullable="true" remarks="" size="75" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="Address" nullable="true" remarks="" size="55" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="City" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="PhoneNumber" nullable="true" remarks="" size="15" type="varchar" typeCode="12" />
+  <primaryKey column="PharmacyID" sequenceNumberInPK="1" />
+  <index name="PK__CMPAPref__BD9D2A8E48F2F912" unique="true">
+    <column ascending="true" name="PharmacyID" />
+  </index>
+</table>

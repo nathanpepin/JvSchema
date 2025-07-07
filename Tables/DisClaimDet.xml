@@ -1,0 +1,24 @@
+<table catalog="Jv-1.44.18.6_FK" name="DisClaimDet" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="DisClaimDetID" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="Claimnumber" nullable="true" remarks="" size="19" type="varchar" typeCode="12">
+    <parent catalog="Jv-1.44.18.6_FK" column="Claimnumber" foreignKey="FK__DisClaimD__Claim__51A5DAF8" implied="false" onDeleteCascade="false" schema="dbo" table="AdjudicationResult" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="2" id="4" name="DisBenefitAmt" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="5" name="SosSecWagesAmt" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="6" name="MedWagesAmt" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="7" name="FICAWithheldAmt" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="8" name="MedicareWithheldAmt" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="NoOfPayments" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="10" name="TotPaymentAmt" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="DisabilityClaimFlow" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="ReasonCode" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <primaryKey column="DisClaimDetID" sequenceNumberInPK="1" />
+  <index name="PK__DisClaim__1ECD5F6589C88DA1" unique="true">
+    <column ascending="true" name="DisClaimDetID" />
+  </index>
+  <index name="DisClaimDet_search1" unique="false">
+    <column ascending="true" name="Claimnumber" />
+  </index>
+</table>

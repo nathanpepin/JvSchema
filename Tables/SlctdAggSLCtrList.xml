@@ -1,0 +1,23 @@
+<table catalog="Jv-1.44.18.6_FK" name="SlctdAggSLCtrList" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="SlctdAggSLCtrID" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="ParameterSetName" nullable="false" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="AggregateContractName" nullable="true" remarks="" size="10" type="varchar" typeCode="12">
+    <parent catalog="Jv-1.44.18.6_FK" column="AggregateContractName" foreignKey="FK__SlctdAggSLCtrLis__3AE27131" implied="false" onDeleteCascade="false" schema="dbo" table="AggCntrMaintenance" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="AggrContractID" nullable="true" remarks="" size="10" type="varchar" typeCode="12">
+    <parent catalog="Jv-1.44.18.6_FK" column="AggrContractID" foreignKey="FK__SlctdAggSLCtrLis__3AE27131" implied="false" onDeleteCascade="false" schema="dbo" table="AggCntrMaintenance" />
+  </column>
+  <primaryKey column="ParameterSetName" sequenceNumberInPK="1" />
+  <primaryKey column="SlctdAggSLCtrID" sequenceNumberInPK="2" />
+  <index name="PK__SlctdAgg__92F02CFF5C83D85E" unique="true">
+    <column ascending="true" name="ParameterSetName" />
+    <column ascending="true" name="SlctdAggSLCtrID" />
+  </index>
+  <index name="SlctdAggSLCtrList_Search2" unique="false">
+    <column ascending="true" name="ParameterSetName" />
+    <column ascending="true" name="AggregateContractName" />
+    <column ascending="true" name="AggrContractID" />
+  </index>
+</table>

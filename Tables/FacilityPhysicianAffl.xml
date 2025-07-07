@@ -1,0 +1,180 @@
+<table catalog="Jv-1.44.18.6_FK" name="FacilityPhysicianAffl" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="ConnectorID" nullable="false" remarks="" size="4" type="int" typeCode="4">
+    <child catalog="Jv-1.44.18.6_FK" column="ConnectorID" foreignKey="FK__Dependent__Conne__2C745649" implied="false" onDeleteCascade="false" schema="dbo" table="DependentDentalProvider" />
+    <child catalog="Jv-1.44.18.6_FK" column="ConnectorID" foreignKey="FK__Dependent__Conne__31390B66" implied="false" onDeleteCascade="false" schema="dbo" table="DependentMedicalProvider" />
+    <child catalog="Jv-1.44.18.6_FK" column="ConnectorID" foreignKey="FK__Dependent__Conne__34157811" implied="false" onDeleteCascade="false" schema="dbo" table="DependentVisionProvider" />
+    <child catalog="Jv-1.44.18.6_FK" column="ConnectorID" foreignKey="FK__DepPrescr__Conne__4634284C" implied="false" onDeleteCascade="false" schema="dbo" table="DepPrescriptionProvider" />
+    <child catalog="Jv-1.44.18.6_FK" column="ConnectorID" foreignKey="FK__EmployeeD__Conne__6D18EB43" implied="false" onDeleteCascade="false" schema="dbo" table="EmployeeDentalProvider" />
+    <child catalog="Jv-1.44.18.6_FK" column="ConnectorID" foreignKey="FK__EmployeeM__Conne__71DDA060" implied="false" onDeleteCascade="false" schema="dbo" table="EmployeeMedicalProvider" />
+    <child catalog="Jv-1.44.18.6_FK" column="ConnectorID" foreignKey="FK__EmployeeV__Conne__779679B6" implied="false" onDeleteCascade="false" schema="dbo" table="EmployeeVisionProvider" />
+    <child catalog="Jv-1.44.18.6_FK" column="ConnectorID" foreignKey="FK__EmpPrescr__Conne__09B529F1" implied="false" onDeleteCascade="false" schema="dbo" table="EmpPrescriptionProvider" />
+    <child catalog="Jv-1.44.18.6_FK" column="ConnectorID" foreignKey="FK__FacilityP__Conne__387018DA" implied="false" onDeleteCascade="false" schema="dbo" table="FacilityPhyContract" />
+    <child catalog="Jv-1.44.18.6_FK" column="ConnectorID" foreignKey="FK__FacilityP__Conne__3A58614C" implied="false" onDeleteCascade="false" schema="dbo" table="FacilityPhySecSpec" />
+    <child catalog="Jv-1.44.18.6_FK" column="ConnectorID" foreignKey="FK__FacilityP__Conne__3B4C8585" implied="false" onDeleteCascade="false" schema="dbo" table="FacilityPhySerSpec" />
+    <child catalog="Jv-1.44.18.6_FK" column="ConnectorID" foreignKey="FK__FacPhyOIG__Conne__41055EDB" implied="false" onDeleteCascade="false" schema="dbo" table="FacPhyOIGExclusionList" />
+    <child catalog="Jv-1.44.18.6_FK" column="ConnectorID" foreignKey="FK__FacPhysAd__Conne__41F98314" implied="false" onDeleteCascade="false" schema="dbo" table="FacPhysAddress" />
+    <child catalog="Jv-1.44.18.6_FK" column="FacilityConnectorID" foreignKey="FK__NetworkAf__Facil__0B686839" implied="false" onDeleteCascade="false" schema="dbo" table="NetworkAffiliations" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="FacilityID" nullable="true" remarks="" size="4" type="int" typeCode="4">
+    <parent catalog="Jv-1.44.18.6_FK" column="FacilityID" foreignKey="FK__FacilityP__Facil__3C40A9BE" implied="false" onDeleteCascade="false" schema="dbo" table="Facility" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="PhysicianID" nullable="true" remarks="" size="4" type="int" typeCode="4">
+    <parent catalog="Jv-1.44.18.6_FK" column="PhysicianID" foreignKey="FK__FacilityP__Physi__3D34CDF7" implied="false" onDeleteCascade="false" schema="dbo" table="Physician" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="EffectiveDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="TerminationDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="TerminationReason" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="Delegated" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="PracticeType" nullable="true" remarks="" size="4" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="UseFacilityNet" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="UseInDirectory" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="MondayFrom1" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="13" name="MondayFrom2" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="14" name="MondayTo1" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="15" name="MondayTo2" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="16" name="TuesdayFrom1" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="17" name="TuesdayFrom2" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="18" name="TuesdayTo1" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="19" name="TuesdayTo2" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="20" name="WednesdayFrom1" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="21" name="WednesdayFrom2" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="22" name="WednesdayTo1" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="23" name="WednesdayTo2" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="24" name="ThursdayFrom1" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="25" name="ThursdayFrom2" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="26" name="ThursdayTo1" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="27" name="ThursdayTo2" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="28" name="FridayFrom1" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="29" name="FridayFrom2" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="30" name="FridayTo1" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="31" name="FridayTo2" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="32" name="SaturdayFrom1" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="33" name="SaturdayFrom2" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="34" name="SaturdayTo1" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="35" name="SaturdayTo2" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="36" name="SundayFrom1" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="37" name="SundayFrom2" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="38" name="SundayTo1" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="39" name="SundayTo2" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="40" name="AcceptNewPatients" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="41" name="AcceptMedcarePat" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="42" name="AcceptMedcaidPat" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="43" name="AcceptWorkCompPat" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="44" name="MinPatientAge" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="45" name="MaxPatientAge" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="46" name="DiffSchedNewPat" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="47" name="Gender" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="48" name="MaxNumPatients" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="49" name="SameDayAppoint" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="50" name="PrimarySpecs" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="51" name="PriSpecEffDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="52" name="PriSpecTermDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="53" name="VerifiedBy" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="54" name="VerDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="55" name="VerMethod" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="56" name="BillingAddrID" nullable="true" remarks="" size="4" type="int" typeCode="4">
+    <parent catalog="Jv-1.44.18.6_FK" column="BillingAddrID" foreignKey="FK__FacilityP__Billi__3E28F230" implied="false" onDeleteCascade="false" schema="dbo" table="BillingAddrInfo" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="57" name="UserField1" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="58" name="UserField2" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="59" name="UserField3" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="60" name="UserField4" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="61" name="UserField5" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="62" name="UserField6" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="63" name="IsDummy" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="64" name="UsePMCS" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="65" name="ConnectorCertNumber" nullable="true" remarks="" size="12" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="66" name="Status" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="67" name="HoldReason" nullable="true" remarks="" size="10" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="68" name="PendReason" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="69" name="ContactName" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="70" name="Email" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="71" name="HomePhoneOne" nullable="true" remarks="" size="15" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="72" name="HomeExtOne" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="73" name="HomePhoneTwo" nullable="true" remarks="" size="15" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="74" name="HomeExtTwo" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="75" name="WorkPhoneOne" nullable="true" remarks="" size="15" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="76" name="WorkExtOne" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="77" name="WorkPhoneTwo" nullable="true" remarks="" size="15" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="78" name="WorkExtTwo" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="79" name="MobilePhoneOne" nullable="true" remarks="" size="15" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="80" name="MobilePhoneTwo" nullable="true" remarks="" size="15" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="81" name="FaxOne" nullable="true" remarks="" size="15" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="82" name="FaxTwo" nullable="true" remarks="" size="15" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="83" name="EnableProvOverpayRec" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="84" name="RestrictNetwork" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="85" name="SuppressInMESA" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="86" name="Conversionid" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="87" name="ApplyInterest" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="88" name="ApplyStateTaxes" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="89" name="BLIKey" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="90" name="BLIKeyDate" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="91" name="EPayPaymentCode" nullable="true" remarks="" size="7" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="92" name="LastDirectUpdateDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="93" name="WebsiteAddress" nullable="true" remarks="" size="2100" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="94" name="MIPSEligible" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="95" name="LastDirectUpdateUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="96" name="CreatedTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="97" name="CreatedUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="98" name="LCU" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="99" name="CSU" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="100" name="ReferralCircle" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="101" name="ReferralScope" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="102" name="Comments" nullable="true" remarks="" size="512" type="varchar" typeCode="12" />
+  <primaryKey column="ConnectorID" sequenceNumberInPK="1" />
+  <index name="PK__Facility__9B30415A9E394DAC" unique="true">
+    <column ascending="true" name="ConnectorID" />
+  </index>
+  <index name="Connector_Conv" unique="false">
+    <column ascending="true" name="FacilityID" />
+    <column ascending="true" name="PhysicianID" />
+    <column ascending="true" name="Conversionid" />
+    <column ascending="true" name="IsDummy" />
+  </index>
+  <index name="Connector_Conv_Search" unique="false">
+    <column ascending="true" name="Conversionid" />
+  </index>
+  <index name="FacilityPhy_Search1" unique="true">
+    <column ascending="true" name="FacilityID" />
+    <column ascending="true" name="PhysicianID" />
+    <column ascending="true" name="EffectiveDate" />
+  </index>
+  <index name="FacilityPhy_Search2" unique="false">
+    <column ascending="true" name="BillingAddrID" />
+  </index>
+  <index name="FacilityPhy_Search3" unique="false">
+    <column ascending="true" name="FacilityID" />
+    <column ascending="true" name="PhysicianID" />
+    <column ascending="true" name="BillingAddrID" />
+    <column ascending="true" name="ConnectorID" />
+    <column ascending="true" name="PrimarySpecs" />
+  </index>
+  <index name="FacilityPhy_Search4" unique="false">
+    <column ascending="true" name="PhysicianID" />
+    <column ascending="true" name="BillingAddrID" />
+    <column ascending="true" name="ConnectorID" />
+    <column ascending="true" name="PrimarySpecs" />
+  </index>
+  <index name="FacilityPhy_Search7" unique="false">
+    <column ascending="true" name="FacilityID" />
+    <column ascending="true" name="PhysicianID" />
+    <column ascending="true" name="EffectiveDate" />
+    <column ascending="true" name="TerminationDate" />
+    <column ascending="true" name="TerminationReason" />
+    <column ascending="true" name="PrimarySpecs" />
+    <column ascending="true" name="IsDummy" />
+    <column ascending="true" name="Status" />
+    <column ascending="true" name="ConnectorCertNumber" />
+    <column ascending="true" name="HoldReason" />
+    <column ascending="true" name="PendReason" />
+  </index>
+  <index name="FacilityPhys_BLIKey" unique="false">
+    <column ascending="true" name="BLIKey" />
+    <column ascending="true" name="BLIKeyDate" />
+  </index>
+  <index name="FacilityPhys_CertNumber" unique="true">
+    <column ascending="true" name="ConnectorCertNumber" />
+  </index>
+</table>

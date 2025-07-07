@@ -1,0 +1,38 @@
+<table catalog="Jv-1.44.18.6_FK" name="IDCardParameterSet" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="ParameterSetName" nullable="false" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="VendorName" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="ECardQuantity" nullable="true" remarks="" size="1" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="SCardQuantity" nullable="true" remarks="" size="1" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="CCardQuantity" nullable="true" remarks="" size="1" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="SortOrder_1" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="SortOrder_2" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="SortOrder_3" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="SortOrder_4" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="SortOrder_5" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="EligibilityDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="13" name="PrintRqstCard" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="14" name="MaintainSortopt" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="15" name="SortOrder_6" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="16" name="SortOption" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="17" name="Age" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="18" name="GeneratePDF" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="19" name="EmployeeID" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="20" name="GenerateIDCardForFamily" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="21" name="ShowEligibilityAsOf" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="22" name="DaysToAdd" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="23" name="ResetPriorCovgFlag" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="24" name="AddedCoverage" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="25" name="ChangedCoverage" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="26" name="LostStolenCard" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="27" name="AdditionalIDCard" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <primaryKey column="ParameterSetName" sequenceNumberInPK="1" />
+  <index name="PK__IDCardPa__4900169748609893" unique="true">
+    <column ascending="true" name="ParameterSetName" />
+  </index>
+  <index name="IDCardParameterSet_Search1" unique="false">
+    <column ascending="true" name="ParameterSetName" />
+    <column ascending="true" name="VendorName" />
+  </index>
+</table>

@@ -1,0 +1,22 @@
+<table catalog="Jv-1.44.18.6_FK" name="ClaimPymtChkRecFileFmtDtl" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="FileFormatName" nullable="false" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="Section" nullable="false" remarks="" size="10" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="Position" nullable="false" remarks="" size="10" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="FieldLength" nullable="true" remarks="" size="10" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="UserEntry" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="KeywordId" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="Comments" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="JustifyLR" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="ZeroFillFlag" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="FldDataFmt" nullable="true" remarks="" size="10" type="varchar" typeCode="12" />
+  <primaryKey column="FileFormatName" sequenceNumberInPK="1" />
+  <primaryKey column="Section" sequenceNumberInPK="2" />
+  <primaryKey column="Position" sequenceNumberInPK="3" />
+  <index name="PK__ClaimPym__45265D75B7D627CD" unique="true">
+    <column ascending="true" name="FileFormatName" />
+    <column ascending="true" name="Section" />
+    <column ascending="true" name="Position" />
+  </index>
+</table>

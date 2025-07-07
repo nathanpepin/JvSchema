@@ -1,0 +1,18 @@
+<table catalog="Jv-1.44.18.6_FK" name="ClaimDateVerification" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="MasterID" nullable="false" remarks="" size="4" type="int" typeCode="4">
+    <parent catalog="Jv-1.44.18.6_FK" column="MasterID" foreignKey="FK__ClaimDate__Maste__56D4A469" implied="false" onDeleteCascade="false" schema="dbo" table="PlanBuildingMaster" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="MonthsPriorToSystemDt" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="ReceivedDateIsOutOfRange" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="PendReasonCode" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="DenyReasonCode" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <primaryKey column="MasterID" sequenceNumberInPK="1" />
+  <index name="PK__ClaimDat__F6B782C494F294FA" unique="true">
+    <column ascending="true" name="MasterID" />
+  </index>
+  <index name="IEClaimDateVerification_id" unique="false">
+    <column ascending="true" name="MasterID" />
+  </index>
+</table>

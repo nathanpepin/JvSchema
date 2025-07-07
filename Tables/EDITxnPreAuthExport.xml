@@ -1,0 +1,38 @@
+<table catalog="Jv-1.44.18.6_FK" name="EDITxnPreAuthExport" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="EDITransaction" nullable="true" remarks="" size="50" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="ParameterSetName" nullable="false" remarks="" size="30" type="varchar" typeCode="12">
+    <parent catalog="Jv-1.44.18.6_FK" column="ParameterSetName" foreignKey="FK__EDITxnPre__Param__4CAC1BB1" implied="false" onDeleteCascade="false" schema="dbo" table="EDIParamSetData" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="BlkOfBusID" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="ClientID" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="EDILocation" nullable="true" remarks="" size="12" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="SocialSecurityNumber" nullable="true" remarks="" size="9" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="CertificateNumber" nullable="true" remarks="" size="29" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="ExtractDependents" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="AuthorizationStatus" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="AutorizationTypeCM" nullable="true" remarks="" size="6" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="AutorizationTypeUR" nullable="true" remarks="" size="6" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="13" name="AutorizationTypePC" nullable="true" remarks="" size="6" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="14" name="AutorizationTypePA" nullable="true" remarks="" size="6" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="15" name="AutorizationTypeRF" nullable="true" remarks="" size="6" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="16" name="AutorizationTypeWC" nullable="true" remarks="" size="6" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="17" name="AutorizationTypeEW" nullable="true" remarks="" size="6" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="18" name="AutorizationTypeMC" nullable="true" remarks="" size="6" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="19" name="FromCreatedDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="20" name="ToCreatedDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="21" name="MedicalProduct" nullable="true" remarks="" size="2" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="22" name="DentalProduct" nullable="true" remarks="" size="2" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="23" name="VisionProduct" nullable="true" remarks="" size="2" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="24" name="RXProduct" nullable="true" remarks="" size="2" type="varchar" typeCode="12" />
+  <primaryKey column="ParameterSetName" sequenceNumberInPK="1" />
+  <index name="PK__EDITxnPr__490016972408D45D" unique="true">
+    <column ascending="true" name="ParameterSetName" />
+  </index>
+  <index name="EDITxnPreAuthExport_CT" unique="false">
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="ParameterSetName" />
+  </index>
+</table>

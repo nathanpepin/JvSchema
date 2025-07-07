@@ -1,0 +1,6 @@
+<table catalog="Jv-1.44.18.6_FK" name="QRTZ_BLOB_TRIGGERS" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="TRIGGER_NAME" nullable="false" remarks="" size="80" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="TRIGGER_GROUP" nullable="false" remarks="" size="80" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="BLOB_DATA" nullable="true" remarks="" size="2147483647" type="image" typeCode="2004" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="SCHED_NAME" nullable="false" remarks="" size="120" type="varchar" typeCode="12" />
+</table>

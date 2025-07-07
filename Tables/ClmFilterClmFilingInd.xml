@@ -1,0 +1,18 @@
+<table catalog="Jv-1.44.18.6_FK" name="ClmFilterClmFilingInd" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="FilterID" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="NetworkType" nullable="false" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="ClmFilingInd" nullable="false" remarks="" size="2" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="SubscriberOROther" nullable="false" remarks="" size="1" type="char" typeCode="1" />
+  <primaryKey column="FilterID" sequenceNumberInPK="1" />
+  <primaryKey column="NetworkType" sequenceNumberInPK="2" />
+  <primaryKey column="ClmFilingInd" sequenceNumberInPK="3" />
+  <primaryKey column="SubscriberOROther" sequenceNumberInPK="4" />
+  <index name="PK__ClmFilte__87ED04F9EAADD56B" unique="true">
+    <column ascending="true" name="FilterID" />
+    <column ascending="true" name="NetworkType" />
+    <column ascending="true" name="ClmFilingInd" />
+    <column ascending="true" name="SubscriberOROther" />
+  </index>
+</table>

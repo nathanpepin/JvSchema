@@ -1,0 +1,170 @@
+<table catalog="Jv-1.44.18.6_FK" name="BrokerPayables" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="BlkOfBusID" nullable="true" remarks="" size="5" type="varchar" typeCode="12">
+    <parent catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__BrokerPay__BlkOf__3573B09E" implied="false" onDeleteCascade="false" schema="dbo" table="BlockOfBusiness" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="BrokerID" nullable="true" remarks="" size="11" type="varchar" typeCode="12">
+    <parent catalog="Jv-1.44.18.6_FK" column="Code" foreignKey="FK__BrokerPay__Broke__3A3865BB" implied="false" onDeleteCascade="false" schema="dbo" table="BrokerDemographic" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="CashPostedDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="BatchKey" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="ClientID" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="LocationName" nullable="true" remarks="" size="12" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="CertificateNumber" nullable="true" remarks="" size="29" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="BillCycleDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="CoverageFromDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="Product" nullable="true" remarks="" size="2" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="FundType" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="13" name="BillPlan" nullable="true" remarks="" size="10" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="14" name="Tier" nullable="true" remarks="" size="2" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="15" name="EmployeeStatus" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="16" name="CoverageLevel" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="17" name="CommissionPaidDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="18" name="AccountID" nullable="true" remarks="" size="50" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="19" name="BrokerPaid" nullable="true" remarks="" size="11" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="20" name="CheckNumber" nullable="true" remarks="" size="12" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="21" name="TaxID" nullable="true" remarks="" size="9" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="22" name="TotalReceived" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="23" name="EmployeeLives" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="24" name="DependentLives" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="25" name="ChildLives" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="26" name="Commission" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="27" name="Premium" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="28" name="Fee" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="29" name="UnmatchedCreditIndicator" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="30" name="AdvancePaymentDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="31" name="AdvancePaymentCheckNumber" nullable="true" remarks="" size="12" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="32" name="Volume" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="33" name="Rate" nullable="true" remarks="" size="12" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="34" name="Note" nullable="true" remarks="" size="40" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="35" name="CompensationType" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="36" name="PerHeadFeeRate" nullable="true" remarks="" size="12" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="37" name="CreditReversalIndicator" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="38" name="FastTrackIndicator" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="39" name="PSPMIndicator" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="40" name="PrepayIndicator" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="41" name="SystemDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="42" name="BillMode" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="3" id="43" name="CommissionPercentage" nullable="true" remarks="" size="8" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="44" name="FeeDescription" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="45" name="CoverageThruDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="46" name="ReportEmployeeID" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="47" name="BrokerPayablesID" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="48" name="CommissionPaidStatus" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <primaryKey column="BrokerPayablesID" sequenceNumberInPK="1" />
+  <index name="PK__BrokerPa__BEED23067C61A000" unique="true">
+    <column ascending="true" name="BrokerPayablesID" />
+  </index>
+  <index name="BrokerPayables_CT" unique="false">
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="BrokerPayablesID" />
+  </index>
+  <index name="BrokerPayables_idx2" unique="false">
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="BrokerID" />
+    <column ascending="true" name="CashPostedDate" />
+    <column ascending="true" name="BatchKey" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="LocationName" />
+    <column ascending="true" name="CertificateNumber" />
+    <column ascending="true" name="BillCycleDate" />
+    <column ascending="true" name="CoverageFromDate" />
+    <column ascending="true" name="CoverageThruDate" />
+    <column ascending="true" name="Product" />
+    <column ascending="true" name="FundType" />
+    <column ascending="true" name="BillPlan" />
+    <column ascending="true" name="Tier" />
+    <column ascending="true" name="EmployeeStatus" />
+    <column ascending="true" name="CoverageLevel" />
+  </index>
+  <index name="BrokerPayables_Search1" unique="false">
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="BrokerID" />
+    <column ascending="true" name="BillCycleDate" />
+    <column ascending="true" name="LocationName" />
+    <column ascending="true" name="CashPostedDate" />
+    <column ascending="true" name="CommissionPaidStatus" />
+    <column ascending="true" name="BrokerPayablesID" />
+  </index>
+  <index name="BrokerPayables_Search10" unique="false">
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="BrokerID" />
+    <column ascending="true" name="CashPostedDate" />
+    <column ascending="true" name="BatchKey" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="LocationName" />
+    <column ascending="true" name="CertificateNumber" />
+    <column ascending="true" name="BillCycleDate" />
+    <column ascending="true" name="CoverageFromDate" />
+    <column ascending="true" name="Product" />
+    <column ascending="true" name="FundType" />
+    <column ascending="true" name="BillPlan" />
+    <column ascending="true" name="Tier" />
+    <column ascending="true" name="EmployeeStatus" />
+    <column ascending="true" name="CoverageLevel" />
+    <column ascending="true" name="FeeDescription" />
+  </index>
+  <index name="BrokerPayables_Search11" unique="false">
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="AccountID" />
+    <column ascending="true" name="CheckNumber" />
+    <column ascending="true" name="BatchKey" />
+  </index>
+  <index name="BrokerPayables_Search12" unique="false">
+    <column ascending="true" name="BrokerPayablesID" />
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="BrokerID" />
+    <column ascending="true" name="BillCycleDate" />
+    <column ascending="true" name="LocationName" />
+    <column ascending="true" name="CommissionPaidDate" />
+  </index>
+  <index name="BrokerPayables_Search13" unique="false">
+    <column ascending="true" name="BrokerPayablesID" />
+    <column ascending="true" name="AccountID" />
+    <column ascending="true" name="CheckNumber" />
+    <column ascending="true" name="CommissionPaidDate" />
+  </index>
+  <index name="BrokerPayables_Search14" unique="false">
+    <column ascending="true" name="BrokerID" />
+  </index>
+  <index name="BrokerPayables_Search3" unique="false">
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="AccountID" />
+    <column ascending="true" name="CheckNumber" />
+  </index>
+  <index name="BrokerPayables_Search5" unique="false">
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="BrokerID" />
+    <column ascending="true" name="BillCycleDate" />
+    <column ascending="true" name="CashPostedDate" />
+  </index>
+  <index name="BrokerPayables_Search7" unique="false">
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="BatchKey" />
+  </index>
+  <index name="BrokerPayables_Search8" unique="false">
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="LocationName" />
+    <column ascending="true" name="CertificateNumber" />
+    <column ascending="true" name="BillCycleDate" />
+    <column ascending="true" name="BatchKey" />
+  </index>
+  <index name="BrokerPayables_Search9" unique="false">
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="LocationName" />
+    <column ascending="true" name="CertificateNumber" />
+    <column ascending="true" name="BrokerID" />
+    <column ascending="true" name="SystemDate" />
+    <column ascending="true" name="BatchKey" />
+    <column ascending="true" name="FeeDescription" />
+  </index>
+</table>

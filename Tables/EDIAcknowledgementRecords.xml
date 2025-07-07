@@ -1,0 +1,26 @@
+<table catalog="Jv-1.44.18.6_FK" name="EDIAcknowledgementRecords" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="Edibatchnumber" nullable="false" remarks="" size="36" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="RecordID" nullable="false" remarks="" size="19" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="VerificationCode" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="ReasonCode" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="IsProcessed" nullable="true" remarks="" size="1" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="TransType" nullable="true" remarks="" size="1" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="EDITransaction" nullable="true" remarks="" size="50" type="varchar" typeCode="12" />
+  <primaryKey column="Edibatchnumber" sequenceNumberInPK="1" />
+  <primaryKey column="RecordID" sequenceNumberInPK="2" />
+  <index name="PK__EDIAckno__DC51038CD0C32004" unique="true">
+    <column ascending="true" name="Edibatchnumber" />
+    <column ascending="true" name="RecordID" />
+  </index>
+  <index name="EDIAcknowledgementRecords_Search" unique="false">
+    <column ascending="true" name="Edibatchnumber" />
+    <column ascending="true" name="RecordID" />
+    <column ascending="true" name="IsProcessed" />
+  </index>
+  <index name="EDIAcknowledgementRecords_Search1" unique="false">
+    <column ascending="true" name="Edibatchnumber" />
+    <column ascending="true" name="IsProcessed" />
+  </index>
+</table>

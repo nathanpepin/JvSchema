@@ -1,0 +1,14 @@
+<table catalog="Jv-1.44.18.6_FK" name="IngnxHcfarvuEdit" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="id" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="std_cpt_code" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="4" name="hrvu" nullable="true" remarks="" size="10" type="decimal" typeCode="3" />
+  <primaryKey column="id" sequenceNumberInPK="1" />
+  <index name="PK__IngnxHcf__3213E83F3D976FCA" unique="true">
+    <column ascending="true" name="id" />
+  </index>
+  <index name="hcfarvu_Search1" unique="false">
+    <column ascending="true" name="std_cpt_code" />
+  </index>
+</table>

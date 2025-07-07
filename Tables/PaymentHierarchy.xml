@@ -1,0 +1,55 @@
+<table catalog="Jv-1.44.18.6_FK" name="PaymentHierarchy" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="SequenceNo" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="BlkOfBusID" nullable="false" remarks="" size="5" type="varchar" typeCode="12">
+    <parent catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__PaymentHi__BlkOf__3CFFC3CD" implied="false" onDeleteCascade="false" schema="dbo" table="BlockOfBusiness" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="ClientID" nullable="false" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="CertificateNumber" nullable="false" remarks="" size="29" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="LocationName" nullable="false" remarks="" size="12" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="Product" nullable="true" remarks="" size="2" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="BrokerID" nullable="true" remarks="" size="11" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="UsedFor" nullable="false" remarks="" size="1" type="char" typeCode="1" />
+  <primaryKey column="BlkOfBusID" sequenceNumberInPK="1" />
+  <primaryKey column="ClientID" sequenceNumberInPK="2" />
+  <primaryKey column="LocationName" sequenceNumberInPK="3" />
+  <primaryKey column="SequenceNo" sequenceNumberInPK="4" />
+  <primaryKey column="CertificateNumber" sequenceNumberInPK="5" />
+  <primaryKey column="UsedFor" sequenceNumberInPK="6" />
+  <index name="PK__PaymentH__049D9A2366E1B6AD" unique="true">
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="LocationName" />
+    <column ascending="true" name="SequenceNo" />
+    <column ascending="true" name="CertificateNumber" />
+    <column ascending="true" name="UsedFor" />
+  </index>
+  <index name="PaymentHirarchy_Search2" unique="false">
+    <column ascending="true" name="SequenceNo" />
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="LocationName" />
+    <column ascending="true" name="CertificateNumber" />
+    <column ascending="true" name="UsedFor" />
+  </index>
+  <index name="PaymentHirarchy_Search3" unique="false">
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="LocationName" />
+    <column ascending="true" name="Product" />
+    <column ascending="true" name="BrokerID" />
+    <column ascending="true" name="CertificateNumber" />
+    <column ascending="true" name="UsedFor" />
+  </index>
+  <index name="PaymentsHirarchy_Search1" unique="false">
+    <column ascending="true" name="SequenceNo" />
+    <column ascending="true" name="Product" />
+    <column ascending="true" name="BrokerID" />
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="LocationName" />
+    <column ascending="true" name="CertificateNumber" />
+    <column ascending="true" name="UsedFor" />
+  </index>
+</table>

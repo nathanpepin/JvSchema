@@ -1,0 +1,53 @@
+<table catalog="Jv-1.44.18.6_FK" name="CMPAElectionCoverage" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="CoveredIndividual" nullable="true" remarks="" size="100" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="IndividualID" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="SocialSecurityNumber" nullable="true" remarks="" size="9" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="CertificateNumber" nullable="true" remarks="" size="29" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="BlkOfBusID" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="ClientID" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="DepNumber" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="RelationshipToEmployee" nullable="true" remarks="" size="2" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="RequestID" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="PlanName" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="PlanType" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="13" name="EffDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="14" name="Covered" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="15" name="EmployeeID" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="16" name="AlternateID1" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="17" name="AlternateID2" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <primaryKey column="IndividualID" sequenceNumberInPK="1" />
+  <index name="PK__CMPAElec__2DA106F606FB7A81" unique="true">
+    <column ascending="true" name="IndividualID" />
+  </index>
+  <index name="CMPAElectionCoverage_CT" unique="false">
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="IndividualID" />
+  </index>
+  <index name="CMPAElectionCoverage_idx1" unique="false">
+    <column ascending="true" name="RequestID" />
+    <column ascending="true" name="PlanName" />
+    <column ascending="true" name="PlanType" />
+    <column ascending="true" name="EffDate" />
+    <column ascending="true" name="IndividualID" />
+  </index>
+  <index name="CMPAElectionCoverage_Search2" unique="false">
+    <column ascending="true" name="RequestID" />
+    <column ascending="true" name="SocialSecurityNumber" />
+    <column ascending="true" name="CertificateNumber" />
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="PlanName" />
+    <column ascending="true" name="PlanType" />
+    <column ascending="true" name="EffDate" />
+    <column ascending="true" name="RelationshipToEmployee" />
+    <column ascending="true" name="Covered" />
+    <column ascending="true" name="CoveredIndividual" />
+    <column ascending="true" name="IndividualID" />
+  </index>
+  <index name="CMPAElectionCoverage_Search3" unique="false">
+    <column ascending="true" name="EmployeeID" />
+  </index>
+</table>

@@ -1,0 +1,44 @@
+<table catalog="Jv-1.44.18.6_FK" name="MedcoAccumsResponse" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="MedcoResponseSeqID" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="TxnId" nullable="true" remarks="" size="26" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="Message" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="2005" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="IsSuccess" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="InboundPatientId" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="SubscriberId" nullable="true" remarks="" size="29" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="ErrorCode" nullable="true" remarks="" size="2" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="ErrorDesc" nullable="true" remarks="" size="200" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="InboundClaimID" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="11" name="InboundDeductibleAmt" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="12" name="InboundOOPAmt" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="13" name="InboundDateOfService" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="14" name="SendResponse" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="15" name="Product" nullable="true" remarks="" size="2" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="16" name="ProcessType" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="17" name="BlkOfBusID" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="18" name="ClientID" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="19" name="PatientLastName" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="20" name="PatientFirstName" nullable="true" remarks="" size="35" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="21" name="PatientGender" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <primaryKey column="MedcoResponseSeqID" sequenceNumberInPK="1" />
+  <index name="PK__MedcoAcc__7210ED12A785B86C" unique="true">
+    <column ascending="true" name="MedcoResponseSeqID" />
+  </index>
+  <index name="MedcoAccumsResponse_CT" unique="false">
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="MedcoResponseSeqID" />
+  </index>
+  <index name="MedcoAccumsResponse_search1" unique="false">
+    <column ascending="true" name="SendResponse" />
+    <column ascending="true" name="Product" />
+    <column ascending="true" name="MedcoResponseSeqID" />
+  </index>
+  <index name="MedcoAccumsResponse_search2" unique="false">
+    <column ascending="true" name="TxnId" />
+  </index>
+  <index name="MedcoAccumsResponse_search4" unique="false">
+    <column ascending="true" name="InboundPatientId" />
+  </index>
+</table>

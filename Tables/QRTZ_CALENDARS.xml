@@ -1,0 +1,11 @@
+<table catalog="Jv-1.44.18.6_FK" name="QRTZ_CALENDARS" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="CALENDAR_NAME" nullable="false" remarks="" size="80" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="CALENDAR" nullable="false" remarks="" size="2147483647" type="image" typeCode="2004" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="SCHED_NAME" nullable="false" remarks="" size="120" type="varchar" typeCode="12" />
+  <primaryKey column="SCHED_NAME" sequenceNumberInPK="1" />
+  <primaryKey column="CALENDAR_NAME" sequenceNumberInPK="2" />
+  <index name="PK_QRTZ_CALENDARS" unique="true">
+    <column ascending="true" name="SCHED_NAME" />
+    <column ascending="true" name="CALENDAR_NAME" />
+  </index>
+</table>

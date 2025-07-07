@@ -1,0 +1,81 @@
+<table catalog="Jv-1.44.18.6_FK" name="BulkCorrespParamSet" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="PopulationCriteriaID" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="BulkParameterName" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="BlockofBusinessFrom" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="BlockofBusinessThru" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="ClientFrom" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="ClientThru" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="LocationFrom" nullable="true" remarks="" size="12" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="LocationThru" nullable="true" remarks="" size="12" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="PopulationType" nullable="true" remarks="" size="100" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="CorrespondenceID" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="CorrespondenceDescription" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="13" name="NoOfCountMatchingPopulation" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="14" name="IsScheduled" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="15" name="SortOrder_1" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="16" name="SortOrder_2" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="17" name="SortOrder_3" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="18" name="SortOrder_4" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="19" name="SortOrder_5" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="20" name="SortOrder_6" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="21" name="WithinState" nullable="true" remarks="" size="2" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="22" name="ZipCodeFrom" nullable="true" remarks="" size="13" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="23" name="ZipCodeThru" nullable="true" remarks="" size="13" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="24" name="Status" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="25" name="Product" nullable="true" remarks="" size="2" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="26" name="BenefitPlanForProd" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="27" name="CoverageType" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="28" name="EffectiveFromDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="29" name="EffectiveThruDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="30" name="TerminationFromDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="31" name="TerminationThruDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="32" name="DobFromDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="33" name="DobThruDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="34" name="EmploymentBeginFromDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="35" name="EmploymentBeginThruDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="36" name="Sex" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="37" name="RelationshipToEmployee" nullable="true" remarks="" size="2" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="38" name="NetworkFrom" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="39" name="NetworkThru" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="40" name="PopClientFrom" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="41" name="PopClientThru" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="42" name="BLOBFrom" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="43" name="BLOBThru" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="44" name="BrokerFrom" nullable="true" remarks="" size="11" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="45" name="BrokerThru" nullable="true" remarks="" size="11" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="46" name="ClientLocationFrom" nullable="true" remarks="" size="12" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="47" name="ClientLocationThru" nullable="true" remarks="" size="12" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="48" name="ContactName" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="49" name="TaxID" nullable="true" remarks="" size="9" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="50" name="IgnoreTermClients" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <primaryKey column="PopulationCriteriaID" sequenceNumberInPK="1" />
+  <index name="PK__BulkCorr__889DB65468205BE2" unique="true">
+    <column ascending="true" name="PopulationCriteriaID" />
+  </index>
+  <index name="BulkCorrespParamSet_idx2" unique="true">
+    <column ascending="true" name="BulkParameterName" />
+  </index>
+  <index name="BulkCorrespParamSet_Search1" unique="false">
+    <column ascending="true" name="BulkParameterName" />
+    <column ascending="true" name="BlockofBusinessFrom" />
+    <column ascending="true" name="ClientFrom" />
+    <column ascending="true" name="LocationFrom" />
+    <column ascending="true" name="CorrespondenceID" />
+    <column ascending="true" name="CorrespondenceDescription" />
+    <column ascending="true" name="PopulationType" />
+  </index>
+  <index name="BulkCorrespParamSet_Search2" unique="false">
+    <column ascending="true" name="BlockofBusinessFrom" />
+    <column ascending="true" name="BlockofBusinessThru" />
+    <column ascending="true" name="ClientFrom" />
+    <column ascending="true" name="ClientThru" />
+    <column ascending="true" name="LocationFrom" />
+    <column ascending="true" name="LocationThru" />
+    <column ascending="true" name="PopClientFrom" />
+    <column ascending="true" name="PopClientThru" />
+    <column ascending="true" name="BLOBFrom" />
+    <column ascending="true" name="BLOBThru" />
+  </index>
+</table>

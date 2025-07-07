@@ -1,0 +1,62 @@
+<table catalog="Jv-1.44.18.6_FK" name="EDIEntity835" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="EntityID" nullable="false" remarks="" size="15" type="varchar" typeCode="12">
+    <parent catalog="Jv-1.44.18.6_FK" column="EntityID" foreignKey="FK__EDIEntity__Entit__77CB83E0" implied="false" onDeleteCascade="false" schema="dbo" table="EDIEntitySetup" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="FTPSeqNo" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="OutFileTermElem" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="OutFileTermSubElem" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="OutFileTermSeg" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="SenderQualifier" nullable="true" remarks="" size="2" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="SenderCodeIDISA06" nullable="true" remarks="" size="15" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="SenderCodeGS02" nullable="true" remarks="" size="15" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="ReceiverQualiISA07" nullable="true" remarks="" size="2" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="ReceiverIDISA08" nullable="true" remarks="" size="15" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="ReceiverIDGS03" nullable="true" remarks="" size="15" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="13" name="EDIVersion" nullable="true" remarks="" size="50" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="14" name="RestrictSSN" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="15" name="BatchSize" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="16" name="OutBound_Vendor_id" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="17" name="BatchCheck" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="18" name="AnthemBlueCross" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="19" name="JAA" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="20" name="RepetitionTerminator" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="21" name="PayerTechName" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="22" name="ContactType" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="23" name="ContactNumEmail" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="24" name="AltIDOption" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="25" name="PayerName" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="26" name="PayerAddress" nullable="true" remarks="" size="55" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="27" name="PayerCity" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="28" name="PayerState" nullable="true" remarks="" size="2" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="29" name="PayerZipCode" nullable="true" remarks="" size="13" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="30" name="PayerID" nullable="true" remarks="" size="11" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="31" name="OriginPayerIDBPR10" nullable="true" remarks="" size="11" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="32" name="OriginPayerIDTRN03" nullable="true" remarks="" size="11" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="33" name="MatchOrig837ServLines" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="34" name="ITS835" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="35" name="NetworkType" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="36" name="AllCAPSData" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="37" name="BCBSIL" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="38" name="AutoFTPSelect" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="39" name="EDIFTPFrequency" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="40" name="Inbound_Vendor_id" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="41" name="In999FTP_VendorID" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="42" name="Generate999File" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="43" name="GenerateTA1" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="44" name="TA1TransMethod" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="45" name="TA104CodeA" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="46" name="TA104CodeE" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="47" name="TA104CodeR" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="48" name="TA1_997_999_HeadInfo" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="49" name="UHC" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="50" name="JAAOhioSecStartingPts" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="51" name="RevOfPrevPayment" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <primaryKey column="EntityID" sequenceNumberInPK="1" />
+  <primaryKey column="FTPSeqNo" sequenceNumberInPK="2" />
+  <index name="PK__EDIEntit__98F3D4A21567FDD8" unique="true">
+    <column ascending="true" name="EntityID" />
+    <column ascending="true" name="FTPSeqNo" />
+  </index>
+</table>

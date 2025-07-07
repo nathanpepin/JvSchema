@@ -1,0 +1,30 @@
+<table catalog="Jv-1.44.18.6_FK" name="Category3Stat" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="Id" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="NumberofOccurrences" nullable="true" remarks="" size="9" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="4" name="Mean" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="Mode" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="ModeTie" nullable="true" remarks="" size="1" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="3" id="7" name="Percentile50" nullable="true" remarks="" size="9" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="3" id="8" name="Percentile60" nullable="true" remarks="" size="9" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="3" id="9" name="Percentile70" nullable="true" remarks="" size="9" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="3" id="10" name="Percentile75" nullable="true" remarks="" size="9" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="3" id="11" name="Percentile80" nullable="true" remarks="" size="9" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="3" id="12" name="Percentile85" nullable="true" remarks="" size="9" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="3" id="13" name="Percentile90" nullable="true" remarks="" size="9" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="3" id="14" name="Percentile95" nullable="true" remarks="" size="9" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="4" id="15" name="AnesthesiaConversionFac" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="16" name="State" nullable="true" remarks="" size="2" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="17" name="Effectivedate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="18" name="ISCVersion" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <primaryKey column="Id" sequenceNumberInPK="1" />
+  <index name="PK__Category__3214EC077D1D5047" unique="true">
+    <column ascending="true" name="Id" />
+  </index>
+  <index name="Category3Stat_search2" unique="false">
+    <column ascending="true" name="Effectivedate" />
+    <column ascending="true" name="AnesthesiaConversionFac" />
+    <column ascending="true" name="State" />
+  </index>
+</table>

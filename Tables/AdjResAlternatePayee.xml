@@ -1,0 +1,29 @@
+<table catalog="Jv-1.44.18.6_FK" name="AdjResAlternatePayee" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="Claimnumber" nullable="false" remarks="" size="19" type="varchar" typeCode="12">
+    <parent catalog="Jv-1.44.18.6_FK" column="Claimnumber" foreignKey="FK__AdjResAlt__Claim__48BB8F3C" implied="false" onDeleteCascade="false" schema="dbo" table="AdjudicationResult" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="CdhpType" nullable="false" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="AltPayeeType" nullable="false" remarks="" size="10" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="AltPayeeID" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="6" name="AltPayeeNetPaymentAmt" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="IRSFlag" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="8" name="AltPayeeGrossPaymentAmt" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="9" name="AltPayeeAdjustAmt" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="CreditBanking" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="AltPayeeAdjustmntRsnCode" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="IgnorePayeeForAdjustment" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="13" name="LatePymtCalIntAmt" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="14" name="LatePymtRsnCode" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <primaryKey column="Claimnumber" sequenceNumberInPK="1" />
+  <primaryKey column="CdhpType" sequenceNumberInPK="2" />
+  <primaryKey column="AltPayeeType" sequenceNumberInPK="3" />
+  <primaryKey column="AltPayeeID" sequenceNumberInPK="4" />
+  <index name="PK__AdjResAl__C3E0CDAE52923DB6" unique="true">
+    <column ascending="true" name="Claimnumber" />
+    <column ascending="true" name="CdhpType" />
+    <column ascending="true" name="AltPayeeType" />
+    <column ascending="true" name="AltPayeeID" />
+  </index>
+</table>

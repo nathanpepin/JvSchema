@@ -1,0 +1,19 @@
+<table catalog="Jv-1.44.18.6_FK" name="CorrespTemplatesInfo" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="CorrespTemplateID" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="CorrespondenceID" nullable="false" remarks="" size="3" type="varchar" typeCode="12">
+    <parent catalog="Jv-1.44.18.6_FK" column="CorrespondenceID" foreignKey="FK__CorrespTe__Corre__5E40BC07" implied="false" onDeleteCascade="false" schema="dbo" table="CorrespDefinition" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="CorresTempType" nullable="false" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="Language" nullable="false" remarks="" size="7" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="TemplateFileName" nullable="true" remarks="" size="256" type="varchar" typeCode="12" />
+  <primaryKey column="CorrespondenceID" sequenceNumberInPK="1" />
+  <primaryKey column="CorresTempType" sequenceNumberInPK="2" />
+  <primaryKey column="Language" sequenceNumberInPK="3" />
+  <index name="PK__CorrespT__E44CCBD4E8A50EE4" unique="true">
+    <column ascending="true" name="CorrespondenceID" />
+    <column ascending="true" name="CorresTempType" />
+    <column ascending="true" name="Language" />
+  </index>
+</table>

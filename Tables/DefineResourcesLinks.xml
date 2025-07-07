@@ -1,0 +1,19 @@
+<table catalog="Jv-1.44.18.6_FK" name="DefineResourcesLinks" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="ResourceID" nullable="false" remarks="" size="4" type="int" typeCode="4">
+    <child catalog="Jv-1.44.18.6_FK" column="ResourceID" foreignKey="FK__CMPALinkP__Resou__09602436" implied="false" onDeleteCascade="false" schema="dbo" table="CMPALinkParameter" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="Description" nullable="true" remarks="" size="150" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="URL" nullable="true" remarks="" size="2100" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="UserID" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="IncludeOrExclude" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="LinkDisclaimer" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="2005" />
+  <primaryKey column="ResourceID" sequenceNumberInPK="1" />
+  <index name="PK__DefineRe__4ED1814F4DBD07B1" unique="true">
+    <column ascending="true" name="ResourceID" />
+  </index>
+  <index name="DefineResourcesLinks_Search1" unique="false">
+    <column ascending="true" name="UserID" />
+  </index>
+</table>

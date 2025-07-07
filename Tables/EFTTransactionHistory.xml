@@ -1,0 +1,73 @@
+<table catalog="Jv-1.44.18.6_FK" name="EFTTransactionHistory" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="FileCreationDate" nullable="false" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="TraceNumber" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="BlkOfBusID" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="ClientID" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="LocationName" nullable="true" remarks="" size="12" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="CertificateNumber" nullable="true" remarks="" size="29" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="BankIdentifier" nullable="true" remarks="" size="11" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="BankTaxID" nullable="true" remarks="" size="9" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="BankTransitRoutingNum" nullable="true" remarks="" size="100" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="BankTransitRoutingNumChkDigit" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="encr_CheckAccountNumber" nullable="true" remarks="" size="50" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="13" name="AccountType" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="14" name="CashBatchNumber" nullable="true" remarks="" size="10" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="15" name="BatchLineNumber" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="16" name="EFTAmount" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="17" name="TransactionCode" nullable="true" remarks="" size="8" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="18" name="FileName" nullable="true" remarks="" size="100" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="19" name="ReturnDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="20" name="ReturnTransactionCode" nullable="true" remarks="" size="8" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="21" name="ReturnReasonCode" nullable="true" remarks="" size="8" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="22" name="ChangeData" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="23" name="PaymentMethod" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="24" name="AdministratorIdentifier" nullable="true" remarks="" size="11" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="25" name="AdministratorTaxID" nullable="true" remarks="" size="9" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="26" name="CarrierID" nullable="true" remarks="" size="11" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="27" name="CarrierTaxID" nullable="true" remarks="" size="9" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="28" name="AccountID" nullable="true" remarks="" size="50" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="29" name="PayTo" nullable="true" remarks="" size="10" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="30" name="PayeeID" nullable="true" remarks="" size="11" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="31" name="ModuleName" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="32" name="PaymentBatchId" nullable="true" remarks="" size="40" type="varchar" typeCode="12" />
+  <primaryKey column="FileCreationDate" sequenceNumberInPK="1" />
+  <primaryKey column="TraceNumber" sequenceNumberInPK="2" />
+  <index name="PK__EFTTrans__CFB3D585AC2949FA" unique="true">
+    <column ascending="true" name="FileCreationDate" />
+    <column ascending="true" name="TraceNumber" />
+  </index>
+  <index name="EFTTransactionHistory_1099" unique="false">
+    <column ascending="true" name="BankTaxID" />
+    <column ascending="true" name="FileCreationDate" />
+    <column ascending="true" name="TraceNumber" />
+  </index>
+  <index name="EFTTransactionHistory_CT" unique="false">
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="FileCreationDate" />
+    <column ascending="true" name="TraceNumber" />
+  </index>
+  <index name="EFTTransactionHistory_Search1" unique="false">
+    <column ascending="true" name="FileCreationDate" />
+    <column ascending="true" name="FileName" />
+    <column ascending="true" name="BankIdentifier" />
+    <column ascending="true" name="AdministratorIdentifier" />
+    <column ascending="true" name="CarrierID" />
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="LocationName" />
+    <column ascending="true" name="CertificateNumber" />
+    <column ascending="true" name="CashBatchNumber" />
+    <column ascending="true" name="PaymentMethod" />
+    <column ascending="true" name="ReturnDate" />
+    <column ascending="true" name="ReturnTransactionCode" />
+    <column ascending="true" name="ReturnReasonCode" />
+    <column ascending="true" name="ModuleName" />
+    <column ascending="true" name="TraceNumber" />
+  </index>
+  <index name="EFTTransactionHistory_Search2" unique="false">
+    <column ascending="true" name="PaymentBatchId" />
+  </index>
+</table>

@@ -1,0 +1,30 @@
+<table catalog="Jv-1.44.18.6_FK" name="DepMaintenanceEducnInfo" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="EmployeeID" nullable="false" remarks="" size="4" type="int" typeCode="4">
+    <parent catalog="Jv-1.44.18.6_FK" column="EmployeeID" foreignKey="FK__DepMaintenanceEd__3CAABE12" implied="false" onDeleteCascade="false" schema="dbo" table="Dependent" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="DepSequenceNumber" nullable="false" remarks="" size="4" type="int" typeCode="4">
+    <parent catalog="Jv-1.44.18.6_FK" column="DepSequenceNumber" foreignKey="FK__DepMaintenanceEd__3CAABE12" implied="false" onDeleteCascade="false" schema="dbo" table="Dependent" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="SchoolName" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="SemesterHours" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="HomePhoneOne" nullable="true" remarks="" size="15" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="HomeExtOne" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="HomePhoneTwo" nullable="true" remarks="" size="15" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="HomeExtTwo" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="WorkPhoneOne" nullable="true" remarks="" size="15" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="WorkExtOne" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="WorkPhoneTwo" nullable="true" remarks="" size="15" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="13" name="WorkExtTwo" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="14" name="MobilePhoneOne" nullable="true" remarks="" size="15" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="15" name="MobilePhoneTwo" nullable="true" remarks="" size="15" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="16" name="FaxOne" nullable="true" remarks="" size="15" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="17" name="FaxTwo" nullable="true" remarks="" size="15" type="varchar" typeCode="12" />
+  <primaryKey column="EmployeeID" sequenceNumberInPK="1" />
+  <primaryKey column="DepSequenceNumber" sequenceNumberInPK="2" />
+  <index name="PK__DepMaint__8494904A467B4B96" unique="true">
+    <column ascending="true" name="EmployeeID" />
+    <column ascending="true" name="DepSequenceNumber" />
+  </index>
+</table>

@@ -1,0 +1,40 @@
+<table catalog="Jv-1.44.18.6_FK" name="AuditTrail" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="Claimnumber" nullable="false" remarks="" size="19" type="varchar" typeCode="12">
+    <parent catalog="Jv-1.44.18.6_FK" column="Claimnumber" foreignKey="FK__AuditTrail__07ACE5EE" implied="false" onDeleteCascade="false" schema="dbo" table="AdjResServLine" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="Linenumber" nullable="false" remarks="" size="15" type="varchar" typeCode="12">
+    <parent catalog="Jv-1.44.18.6_FK" column="DummyLinenumber" foreignKey="FK__AuditTrail__07ACE5EE" implied="false" onDeleteCascade="false" schema="dbo" table="AdjResServLine" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="SequenceOrder" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="ChangedFieldName" nullable="true" remarks="" size="2000" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="FieldBefore" nullable="true" remarks="" size="512" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="FieldAfter" nullable="true" remarks="" size="512" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="IsDescription" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="Notes" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="IsCDHPClaim" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="ConvertedDateAndTime" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="ConvertedUserID" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="13" name="AuditTrailRecordType" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <primaryKey column="Claimnumber" sequenceNumberInPK="1" />
+  <primaryKey column="Linenumber" sequenceNumberInPK="2" />
+  <primaryKey column="SequenceOrder" sequenceNumberInPK="3" />
+  <index name="PK__AuditTra__0C7BDA7CCBDAD97E" unique="true">
+    <column ascending="true" name="Claimnumber" />
+    <column ascending="true" name="Linenumber" />
+    <column ascending="true" name="SequenceOrder" />
+  </index>
+  <index name="AuditTrail_search1" unique="false">
+    <column ascending="true" name="Claimnumber" />
+    <column ascending="true" name="SequenceOrder" />
+  </index>
+  <index name="AuditTrail_search2" unique="false">
+    <column ascending="true" name="ChgTS" />
+    <column ascending="true" name="Claimnumber" />
+    <column ascending="true" name="Linenumber" />
+    <column ascending="true" name="SequenceOrder" />
+    <column ascending="true" name="IsCDHPClaim" />
+    <column ascending="true" name="AuditTrailRecordType" />
+  </index>
+</table>

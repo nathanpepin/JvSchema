@@ -1,0 +1,34 @@
+<table catalog="Jv-1.44.18.6_FK" name="BillingMethod" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="BlkOfBusID" nullable="false" remarks="" size="5" type="varchar" typeCode="12">
+    <parent catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__BillingMe__BlkOf__2A01FDF2" implied="false" onDeleteCascade="false" schema="dbo" table="BlockOfBusiness" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="ClientID" nullable="false" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="LocationName" nullable="false" remarks="" size="12" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="EmployeeID" nullable="false" remarks="" size="29" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="EffectiveDate" nullable="false" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="BillingMethod" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="EBilling" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="EmailPrimaryID" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <primaryKey column="BlkOfBusID" sequenceNumberInPK="1" />
+  <primaryKey column="ClientID" sequenceNumberInPK="2" />
+  <primaryKey column="LocationName" sequenceNumberInPK="3" />
+  <primaryKey column="EmployeeID" sequenceNumberInPK="4" />
+  <primaryKey column="EffectiveDate" sequenceNumberInPK="5" />
+  <index name="PK__BillingM__2429DAB715D82797" unique="true">
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="LocationName" />
+    <column ascending="true" name="EmployeeID" />
+    <column ascending="true" name="EffectiveDate" />
+  </index>
+  <index name="BillingMethod_Search1" unique="false">
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="LocationName" />
+    <column ascending="true" name="EffectiveDate" />
+    <column ascending="true" name="EmployeeID" />
+    <column ascending="true" name="EBilling" />
+  </index>
+</table>

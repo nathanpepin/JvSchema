@@ -1,0 +1,35 @@
+<table catalog="Jv-1.44.18.6_FK" name="HRASpendingAccountRules" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="MasterID" nullable="false" remarks="" size="4" type="int" typeCode="4">
+    <parent catalog="Jv-1.44.18.6_FK" column="MasterID" foreignKey="FK__HRASpendi__Maste__57E8C433" implied="false" onDeleteCascade="false" schema="dbo" table="PlanBuildingMaster" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="SpendingAccName" nullable="true" remarks="" size="25" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="AccHeirarchy" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="PaymentTo" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="6" name="ForSingleCoverage" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="7" name="ForFamilyCoverage" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="ContributionReason" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="FilingPeriodIncurredFromDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="FilingPeriodIncurredThruDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="FilingPeriodReceivedFromDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="FilingPeriodReceivedThruDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="13" name="TimelyFilingRule" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="14" name="DenyReasonFailingTimelyFiling" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="15" name="PendReasonFailingTimelyFiling" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="16" name="PendIfCOBFlagIsSet" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="17" name="PendCode" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="18" name="DenyReasonDebitCardAlreadyPaid" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="19" name="DenyReasonInsufficientFunds" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="20" name="RolloverBasedOn" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="3" id="21" name="RolloverPercent" nullable="true" remarks="" size="8" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="22" name="RolloverAmount" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="23" name="RolloverType" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="24" name="MaxHRAAccountBalance" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="25" name="AllowAutoAdjudication" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="26" name="CanCurrentYearDollarsPayClaims" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <primaryKey column="MasterID" sequenceNumberInPK="1" />
+  <index name="PK__HRASpend__F6B782C4ED9B57B0" unique="true">
+    <column ascending="true" name="MasterID" />
+  </index>
+</table>

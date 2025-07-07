@@ -1,0 +1,20 @@
+<table catalog="Jv-1.44.18.6_FK" name="ClientTransferParamSet" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="ParamSetName" nullable="false" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="TransferFrmBlob" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="TransferToBlob" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="TransferFrmClient" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="TransferToClient" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <primaryKey column="ParamSetName" sequenceNumberInPK="1" />
+  <index name="PK__ClientTr__B947AFA9B8901F78" unique="true">
+    <column ascending="true" name="ParamSetName" />
+  </index>
+  <index name="ClientTransferParamSet_Search" unique="false">
+    <column ascending="true" name="ParamSetName" />
+    <column ascending="true" name="TransferFrmBlob" />
+    <column ascending="true" name="TransferToBlob" />
+    <column ascending="true" name="TransferFrmClient" />
+    <column ascending="true" name="TransferToClient" />
+  </index>
+</table>

@@ -1,0 +1,24 @@
+<table catalog="Jv-1.44.18.6_FK" name="CMPAEnrollSetup" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="OrganizationID" nullable="false" remarks="" size="4" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="ChgAppDisclaimer" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="2005" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="InsWaiverDisclaimer" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="2005" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="PreInsureDisclaimer" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="2005" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="ClientAppDisclaimer" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="2005" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="SuppProdDisclaimer" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="2005" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="UseJvSuppProd" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="OpenEnrEmailReq" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="NewHireEnrEmailReq" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="LifeChgEnrEmailReq" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="OpenEnrEmailApp" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="13" name="NewHireEnrEmailApp" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="14" name="LifeChgEnrEmailApp" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="15" name="OpenEnrEmailOriReq" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="16" name="NewHireEnrEmailOriReq" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="17" name="LifeChgEnrEmailOriReq" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <primaryKey column="OrganizationID" sequenceNumberInPK="1" />
+  <index name="PK__CMPAEnro__CADB0B72C2CFF6CA" unique="true">
+    <column ascending="true" name="OrganizationID" />
+  </index>
+</table>

@@ -1,0 +1,89 @@
+<table catalog="Jv-1.44.18.6_FK" name="BenefitScheduleDetails" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="BenefitScheduleID" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="IsHRAExists" nullable="false" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="encr_CheckingAccountNumber" nullable="true" remarks="" size="50" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="3" id="5" name="CoInsurancePercent" nullable="true" remarks="" size="8" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="EOBMessage" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="MaxIndvLifetimeBenefit" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="8" name="MaxIndvLifetimeBenefitAmount" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="MaxIndvLifetimeBenefitDenyRC" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="MaxFamLifetimeBenefit" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="11" name="MaxFamLifetimeBenefitAmount" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="MaxFamLifetimeBenefitDenyRC" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="13" name="MaxIndvAnnualBenefit" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="14" name="MaxIndvAnnualBenefitAmount" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="15" name="MaxIndvAnnualBenefitDenyRC" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="16" name="MaxFamAnnualBenefit" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="17" name="MaxFamAnnualBenefitAmount" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="18" name="MaxFamAnnBenDenyRC" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="19" name="DeductibleAnniversaryDt" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="20" name="AnniversaryDt" nullable="true" remarks="" size="4" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="21" name="CarryOverDeductible" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="22" name="DedCarryOverMonths" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="23" name="DedAmtEachIndvMustMeet" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="24" name="DedIndividualAmount" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="25" name="DedAmtFamilyMustMeet" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="26" name="DedFamilyAmount" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="27" name="LifetimeIndvDed" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="28" name="LifetimeIndvDedAmount" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="29" name="LifetimeFamDed" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="30" name="LifetimeFamDedAmount" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="31" name="NoOfFamMembToMeetDed" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="32" name="HowFamDedConsidMet" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="33" name="CombDedWithMM" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="34" name="CombDedWithDental" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="35" name="CombDedWithVision" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="36" name="CombDedWithRX" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="37" name="CarryOverOutOfPkt" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="38" name="OutOfPktCarryOverMonths" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="39" name="NoOfFamMembToMeetOutOfPkt" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="40" name="HowFamOutOfPktConsidMet" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="41" name="CombOOPWithMM" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="42" name="CombOOPWithDental" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="43" name="CombOOPWithVision" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="44" name="CombOOPWithRX" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="45" name="MasterID" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="46" name="NegotiatorType" nullable="true" remarks="" size="7" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="47" name="RuleSetName" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="48" name="DefineAltOOP" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="49" name="AltOOPCarryOvr" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="50" name="AltCarryOOPMonths" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="51" name="AltOOPNumFamMemToMeet" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="52" name="AltOOPHowFamMet" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="53" name="AltCombOOPWithMM" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="54" name="AltCombOOPWithDental" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="55" name="AltCombOOPWithVision" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="56" name="AltCombOOPWithRX" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="57" name="RowOrder" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="58" name="BasedOnSalary" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="59" name="AltBasedOnSalary" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="60" name="PaymentAmountExcpAccum" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="61" name="PaymentAmountAddtnlBenExAccum" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="62" name="ApplyStdOOPAfterAltOOP" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="63" name="NetworkTier" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="64" name="ApplyToCostShareClaims" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="65" name="NoPayCheckingAccNumber" nullable="true" remarks="" size="50" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="66" name="WaiveDeductibleIfRefPresent" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <primaryKey column="MasterID" sequenceNumberInPK="1" />
+  <primaryKey column="BenefitScheduleID" sequenceNumberInPK="2" />
+  <primaryKey column="IsHRAExists" sequenceNumberInPK="3" />
+  <index name="PK__BenefitS__EA0AC55FDD0DF912" unique="true">
+    <column ascending="true" name="MasterID" />
+    <column ascending="true" name="BenefitScheduleID" />
+    <column ascending="true" name="IsHRAExists" />
+  </index>
+  <index name="BenefitScheduleDetails_Search1" unique="false">
+    <column ascending="true" name="BenefitScheduleID" />
+    <column ascending="true" name="IsHRAExists" />
+  </index>
+  <index name="BenefitScheduleDetails_Search2" unique="false">
+    <column ascending="true" name="MasterID" />
+    <column ascending="true" name="NetworkTier" />
+    <column ascending="true" name="BenefitScheduleID" />
+  </index>
+  <index name="IEBenefitScheduleDetails_id" unique="false">
+    <column ascending="true" name="BenefitScheduleID" />
+  </index>
+</table>

@@ -1,0 +1,34 @@
+<table catalog="Jv-1.44.18.6_FK" name="Payment" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="EntryDate" nullable="false" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="BatchNumber" nullable="false" remarks="" size="10" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="4" name="BatchControlTotal" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="5" name="BatchRunningTotal" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="PaymentStatus" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="BlkOfBusID" nullable="false" remarks="" size="5" type="varchar" typeCode="12">
+    <parent catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__Payment__BlkOfBu__41C478EA" implied="false" onDeleteCascade="false" schema="dbo" table="BlockOfBusiness" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="Error" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="Via820" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <primaryKey column="EntryDate" sequenceNumberInPK="1" />
+  <primaryKey column="BatchNumber" sequenceNumberInPK="2" />
+  <primaryKey column="BlkOfBusID" sequenceNumberInPK="3" />
+  <index name="PK__Payment__868783E4ED4AA3AA" unique="true">
+    <column ascending="true" name="EntryDate" />
+    <column ascending="true" name="BatchNumber" />
+    <column ascending="true" name="BlkOfBusID" />
+  </index>
+  <index name="Payment_Search2" unique="false">
+    <column ascending="true" name="EntryDate" />
+    <column ascending="true" name="BatchNumber" />
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="PaymentStatus" />
+  </index>
+  <index name="Payment_Search3" unique="false">
+    <column ascending="true" name="EntryDate" />
+    <column ascending="true" name="BatchNumber" />
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="Error" />
+  </index>
+</table>

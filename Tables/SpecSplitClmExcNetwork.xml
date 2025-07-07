@@ -1,0 +1,21 @@
+<table catalog="Jv-1.44.18.6_FK" name="SpecSplitClmExcNetwork" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="StopLossContractName" nullable="false" remarks="" size="10" type="varchar" typeCode="12">
+    <parent catalog="Jv-1.44.18.6_FK" column="StopLossContractName" foreignKey="FK__SpecSplitClmExcN__4A24B4C1" implied="false" onDeleteCascade="false" schema="dbo" table="SpecificStopLossContract" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="StopLossContractID" nullable="false" remarks="" size="10" type="varchar" typeCode="12">
+    <parent catalog="Jv-1.44.18.6_FK" column="StopLossContractID" foreignKey="FK__SpecSplitClmExcN__4A24B4C1" implied="false" onDeleteCascade="false" schema="dbo" table="SpecificStopLossContract" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="NetworkCode" nullable="false" remarks="" size="5" type="varchar" typeCode="12">
+    <parent catalog="Jv-1.44.18.6_FK" column="NetworkID" foreignKey="FK__SpecSplit__Netwo__4B18D8FA" implied="false" onDeleteCascade="false" schema="dbo" table="Network" />
+  </column>
+  <primaryKey column="StopLossContractName" sequenceNumberInPK="1" />
+  <primaryKey column="StopLossContractID" sequenceNumberInPK="2" />
+  <primaryKey column="NetworkCode" sequenceNumberInPK="3" />
+  <index name="PK__SpecSpli__1E50AB76FAEF4F11" unique="true">
+    <column ascending="true" name="StopLossContractName" />
+    <column ascending="true" name="StopLossContractID" />
+    <column ascending="true" name="NetworkCode" />
+  </index>
+</table>

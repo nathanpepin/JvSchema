@@ -1,0 +1,17 @@
+<table catalog="Jv-1.44.18.6_FK" name="IDCFlatFileExtractLayout" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="FormatName" nullable="false" remarks="" size="50" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="LayoutID" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="Position" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="Length" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="KeyWord" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="KeyWordText" nullable="true" remarks="" size="128" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="NoOfNetworks" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <primaryKey column="FormatName" sequenceNumberInPK="1" />
+  <primaryKey column="LayoutID" sequenceNumberInPK="2" />
+  <index name="PK__IDCFlatF__8C194F4ABC3955C4" unique="true">
+    <column ascending="true" name="FormatName" />
+    <column ascending="true" name="LayoutID" />
+  </index>
+</table>

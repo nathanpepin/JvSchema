@@ -1,0 +1,17 @@
+<table catalog="Jv-1.44.18.6_FK" name="ClaimPymtPostBatchAcc" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="ParamSetName" nullable="false" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="ExecutionOrder" nullable="false" remarks="" size="12" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="AccountID" nullable="true" remarks="" size="50" type="varchar" typeCode="12" />
+  <primaryKey column="ParamSetName" sequenceNumberInPK="1" />
+  <primaryKey column="ExecutionOrder" sequenceNumberInPK="2" />
+  <index name="PK__ClaimPym__8FCFB79CDAE39740" unique="true">
+    <column ascending="true" name="ParamSetName" />
+    <column ascending="true" name="ExecutionOrder" />
+  </index>
+  <index name="ClaimPymtPostBatchAcc_Search" unique="false">
+    <column ascending="true" name="ParamSetName" />
+    <column ascending="true" name="AccountID" />
+  </index>
+</table>

@@ -1,0 +1,68 @@
+<table catalog="Jv-1.44.18.6_FK" name="SingleBillingRate" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="Product" nullable="false" remarks="" size="2" type="varchar" typeCode="12">
+    <child catalog="Jv-1.44.18.6_FK" column="Product" foreignKey="FK__SingleRateAgeAmo__39EE4CF8" implied="false" onDeleteCascade="false" schema="dbo" table="SingleRateAgeAmount" />
+    <parent catalog="Jv-1.44.18.6_FK" column="Product" foreignKey="FK__SingleBillingRat__38FA28BF" implied="false" onDeleteCascade="false" schema="dbo" table="MaintainBillingRates" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="BillPlan" nullable="false" remarks="" size="10" type="varchar" typeCode="12">
+    <child catalog="Jv-1.44.18.6_FK" column="BillPlan" foreignKey="FK__SingleRateAgeAmo__39EE4CF8" implied="false" onDeleteCascade="false" schema="dbo" table="SingleRateAgeAmount" />
+    <parent catalog="Jv-1.44.18.6_FK" column="BillPlan" foreignKey="FK__SingleBillingRat__38FA28BF" implied="false" onDeleteCascade="false" schema="dbo" table="MaintainBillingRates" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="Area" nullable="false" remarks="" size="4" type="int" typeCode="4">
+    <child catalog="Jv-1.44.18.6_FK" column="Area" foreignKey="FK__SingleRateAgeAmo__39EE4CF8" implied="false" onDeleteCascade="false" schema="dbo" table="SingleRateAgeAmount" />
+    <parent catalog="Jv-1.44.18.6_FK" column="Area" foreignKey="FK__SingleBillingRat__38FA28BF" implied="false" onDeleteCascade="false" schema="dbo" table="MaintainBillingRates" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="Tier" nullable="false" remarks="" size="2" type="varchar" typeCode="12">
+    <child catalog="Jv-1.44.18.6_FK" column="Tier" foreignKey="FK__SingleRateAgeAmo__39EE4CF8" implied="false" onDeleteCascade="false" schema="dbo" table="SingleRateAgeAmount" />
+    <parent catalog="Jv-1.44.18.6_FK" column="Tier" foreignKey="FK__SingleBillingRat__38FA28BF" implied="false" onDeleteCascade="false" schema="dbo" table="MaintainBillingRates" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="EmployeeStatus" nullable="false" remarks="" size="1" type="char" typeCode="1">
+    <child catalog="Jv-1.44.18.6_FK" column="EmployeeStatus" foreignKey="FK__SingleRateAgeAmo__39EE4CF8" implied="false" onDeleteCascade="false" schema="dbo" table="SingleRateAgeAmount" />
+    <parent catalog="Jv-1.44.18.6_FK" column="EmployeeStatus" foreignKey="FK__SingleBillingRat__38FA28BF" implied="false" onDeleteCascade="false" schema="dbo" table="MaintainBillingRates" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="RateGender" nullable="false" remarks="" size="1" type="char" typeCode="1">
+    <child catalog="Jv-1.44.18.6_FK" column="RateGender" foreignKey="FK__SingleRateAgeAmo__39EE4CF8" implied="false" onDeleteCascade="false" schema="dbo" table="SingleRateAgeAmount" />
+    <parent catalog="Jv-1.44.18.6_FK" column="RateGender" foreignKey="FK__SingleBillingRat__38FA28BF" implied="false" onDeleteCascade="false" schema="dbo" table="MaintainBillingRates" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="RateEffectiveDate" nullable="false" remarks="" size="20" type="date" typeCode="12">
+    <child catalog="Jv-1.44.18.6_FK" column="RateEffectiveDate" foreignKey="FK__SingleRateAgeAmo__39EE4CF8" implied="false" onDeleteCascade="false" schema="dbo" table="SingleRateAgeAmount" />
+    <parent catalog="Jv-1.44.18.6_FK" column="RateEffectiveDate" foreignKey="FK__SingleBillingRat__38FA28BF" implied="false" onDeleteCascade="false" schema="dbo" table="MaintainBillingRates" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="BillMode" nullable="false" remarks="" size="1" type="char" typeCode="1">
+    <child catalog="Jv-1.44.18.6_FK" column="BillMode" foreignKey="FK__SingleRateAgeAmo__39EE4CF8" implied="false" onDeleteCascade="false" schema="dbo" table="SingleRateAgeAmount" />
+    <parent catalog="Jv-1.44.18.6_FK" column="BillMode" foreignKey="FK__SingleBillingRat__38FA28BF" implied="false" onDeleteCascade="false" schema="dbo" table="MaintainBillingRates" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="Description" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="CalculationMethod" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="CarrierCode" nullable="true" remarks="" size="11" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="13" name="PolicyID" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="14" name="MaximumPremium" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="15" name="DivideBy" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="3" id="16" name="UnitValue" nullable="true" remarks="" size="8" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="17" name="AgeCalculation" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="18" name="SplitBy" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="19" name="ApplySamePercent" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="3" id="20" name="ClientPercent" nullable="true" remarks="" size="8" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="21" name="UseSameBroker" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="22" name="BrokerForMember" nullable="true" remarks="" size="11" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="23" name="MaximumPremiumForMember" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <primaryKey column="Product" sequenceNumberInPK="1" />
+  <primaryKey column="BillPlan" sequenceNumberInPK="2" />
+  <primaryKey column="Area" sequenceNumberInPK="3" />
+  <primaryKey column="Tier" sequenceNumberInPK="4" />
+  <primaryKey column="EmployeeStatus" sequenceNumberInPK="5" />
+  <primaryKey column="RateGender" sequenceNumberInPK="6" />
+  <primaryKey column="RateEffectiveDate" sequenceNumberInPK="7" />
+  <primaryKey column="BillMode" sequenceNumberInPK="8" />
+  <index name="PK__SingleBi__B4E75B54A429FF43" unique="true">
+    <column ascending="true" name="Product" />
+    <column ascending="true" name="BillPlan" />
+    <column ascending="true" name="Area" />
+    <column ascending="true" name="Tier" />
+    <column ascending="true" name="EmployeeStatus" />
+    <column ascending="true" name="RateGender" />
+    <column ascending="true" name="RateEffectiveDate" />
+    <column ascending="true" name="BillMode" />
+  </index>
+</table>

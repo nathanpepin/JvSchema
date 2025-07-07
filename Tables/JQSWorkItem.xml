@@ -1,0 +1,38 @@
+<table catalog="Jv-1.44.18.6_FK" name="JQSWorkItem" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="FlowName" nullable="false" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="QueueName" nullable="false" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="ItemID" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="EntityKey" nullable="false" remarks="" size="50" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="PrevSysQueue" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="Status" nullable="false" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="ProcessStatus" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="Keywords" nullable="false" remarks="" size="2147483647" type="varchar" typeCode="2005" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="UserId" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="((0))" digits="0" id="9" name="MoveCount" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="((0))" digits="0" id="10" name="Priority" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="CreateTS" nullable="false" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="AddQueueTS" nullable="false" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="('')" digits="0" id="13" name="ProcessName" nullable="false" remarks="" size="50" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="((0))" digits="0" id="14" name="OrdVal" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="('F')" digits="0" id="15" name="ManualMove" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="((0))" digits="0" id="16" name="EventID" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <primaryKey column="ItemID" sequenceNumberInPK="1" />
+  <index name="PK__JQSWorkI__727E83EB3ED4758C" unique="true">
+    <column ascending="true" name="ItemID" />
+  </index>
+  <index name="JQS_WORKITEM_INDEX1" unique="false">
+    <column ascending="true" name="EntityKey" />
+    <column ascending="true" name="FlowName" />
+  </index>
+  <index name="JQS_WORKITEM_INDEX2" unique="false">
+    <column ascending="true" name="FlowName" />
+    <column ascending="true" name="QueueName" />
+    <column ascending="true" name="ProcessStatus" />
+    <column ascending="true" name="OrdVal" />
+    <column ascending="true" name="ItemID" />
+  </index>
+  <index name="JQS_WORKITEM_INDEX3" unique="false">
+    <column ascending="true" name="UserId" />
+    <column ascending="true" name="Status" />
+  </index>
+</table>

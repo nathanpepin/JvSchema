@@ -1,0 +1,15 @@
+<table catalog="Jv-1.44.18.6_FK" name="CPBatchDtl" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="BatchID" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="ClaimNumber" nullable="false" remarks="" size="19" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="CdhpType" nullable="false" remarks="" size="3" type="varchar" typeCode="12" />
+  <primaryKey column="BatchID" sequenceNumberInPK="1" />
+  <primaryKey column="ClaimNumber" sequenceNumberInPK="2" />
+  <primaryKey column="CdhpType" sequenceNumberInPK="3" />
+  <index name="PK__CPBatchD__2827993C81A4CBE4" unique="true">
+    <column ascending="true" name="BatchID" />
+    <column ascending="true" name="ClaimNumber" />
+    <column ascending="true" name="CdhpType" />
+  </index>
+</table>

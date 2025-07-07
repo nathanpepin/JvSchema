@@ -1,0 +1,72 @@
+<table catalog="Jv-1.44.18.6_FK" name="BABillingFactorDetails" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="BillingFactorID" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="RecordID" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="FactorType" nullable="false" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="EntityStatus" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="AgeFrom" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="AgeThru" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="Gender" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="LifeStyle" nullable="true" remarks="" size="6" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="BenefitPlan" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="StateCode" nullable="true" remarks="" size="2" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="County" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="13" name="City" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="14" name="ZipSec" nullable="true" remarks="" size="13" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="15" name="MiscFactorID" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="16" name="MiscDescription" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="17" name="ApplyToAll" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="18" name="Tier" nullable="true" remarks="" size="2" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="19" name="FactorCalcType" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="20" name="ApplyTo" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="21" name="RateType" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="5" id="22" name="EmployeeOnly" nullable="true" remarks="" size="16" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="5" id="23" name="FamilyAmount" nullable="true" remarks="" size="16" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="5" id="24" name="EmployeePlus1" nullable="true" remarks="" size="16" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="5" id="25" name="EmployeePlus2" nullable="true" remarks="" size="16" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="5" id="26" name="EmployeePlusSpouse" nullable="true" remarks="" size="16" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="5" id="27" name="EmployeePlusChild" nullable="true" remarks="" size="16" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="28" name="ApplyToAllCoverage" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="29" name="ApplyExchangeRules" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="5" id="30" name="Individual" nullable="true" remarks="" size="16" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="5" id="31" name="IndividualEmp" nullable="true" remarks="" size="16" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="5" id="32" name="IndividualSpouse" nullable="true" remarks="" size="16" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="5" id="33" name="IndividualDep" nullable="true" remarks="" size="16" type="decimal" typeCode="3" />
+  <primaryKey column="BillingFactorID" sequenceNumberInPK="1" />
+  <primaryKey column="RecordID" sequenceNumberInPK="2" />
+  <primaryKey column="FactorType" sequenceNumberInPK="3" />
+  <index name="PK__BABillin__153DFB42E0D42505" unique="true">
+    <column ascending="true" name="BillingFactorID" />
+    <column ascending="true" name="RecordID" />
+    <column ascending="true" name="FactorType" />
+  </index>
+  <index name="BABillingFactorDetails_Search1" unique="false">
+    <column ascending="true" name="BillingFactorID" />
+    <column ascending="true" name="RecordID" />
+    <column ascending="true" name="FactorType" />
+    <column ascending="true" name="RateType" />
+  </index>
+  <index name="BABillingFactorDetails_Search2" unique="false">
+    <column ascending="true" name="BillingFactorID" />
+    <column ascending="true" name="MiscFactorID" />
+    <column ascending="true" name="FactorType" />
+  </index>
+  <index name="BABillingFactorDetails_Search3" unique="false">
+    <column ascending="true" name="BillingFactorID" />
+    <column ascending="true" name="RecordID" />
+    <column ascending="true" name="FactorType" />
+    <column ascending="true" name="AgeFrom" />
+    <column ascending="true" name="AgeThru" />
+    <column ascending="true" name="EntityStatus" />
+    <column ascending="true" name="Gender" />
+    <column ascending="true" name="Tier" />
+    <column ascending="true" name="LifeStyle" />
+    <column ascending="true" name="BenefitPlan" />
+    <column ascending="true" name="County" />
+    <column ascending="true" name="City" />
+    <column ascending="true" name="StateCode" />
+    <column ascending="true" name="ZipSec" />
+    <column ascending="true" name="MiscFactorID" />
+  </index>
+</table>

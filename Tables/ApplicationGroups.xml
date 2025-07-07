@@ -1,0 +1,36 @@
+<table catalog="Jv-1.44.18.6_FK" name="ApplicationGroups" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="UserRoleName" nullable="false" remarks="" size="16" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="ModuleName" nullable="false" remarks="" size="16" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="MenuName" nullable="false" remarks="" size="250" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="MenuID" nullable="true" remarks="" size="16" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="AccessMode" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="RqstHandler" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <primaryKey column="UserRoleName" sequenceNumberInPK="1" />
+  <primaryKey column="MenuName" sequenceNumberInPK="2" />
+  <primaryKey column="ModuleName" sequenceNumberInPK="3" />
+  <index name="PK__Applicat__D926289B1277C20D" unique="true">
+    <column ascending="true" name="UserRoleName" />
+    <column ascending="true" name="MenuName" />
+    <column ascending="true" name="ModuleName" />
+  </index>
+  <index name="ApplicationGroups_Search1" unique="false">
+    <column ascending="true" name="UserRoleName" />
+    <column ascending="true" name="RqstHandler" />
+  </index>
+  <index name="ApplicationGroups_Search2" unique="false">
+    <column ascending="true" name="UserRoleName" />
+    <column ascending="true" name="AccessMode" />
+  </index>
+  <index name="ApplicationGroups_Search3" unique="false">
+    <column ascending="true" name="UserRoleName" />
+    <column ascending="true" name="ModuleName" />
+    <column ascending="true" name="AccessMode" />
+  </index>
+  <index name="ApplicationGroups_Search4" unique="false">
+    <column ascending="true" name="UserRoleName" />
+    <column ascending="true" name="MenuName" />
+    <column ascending="true" name="AccessMode" />
+  </index>
+</table>

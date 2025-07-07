@@ -1,0 +1,28 @@
+<table catalog="Jv-1.44.18.6_FK" name="DependentDenAuthCategory" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="AuthorizationNumber" nullable="false" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="AuthorizationCategory" nullable="true" remarks="" size="43" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="SystemID" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="EmployeeID" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="DepSequenceNumber" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <primaryKey column="EmployeeID" sequenceNumberInPK="1" />
+  <primaryKey column="DepSequenceNumber" sequenceNumberInPK="2" />
+  <primaryKey column="AuthorizationNumber" sequenceNumberInPK="3" />
+  <primaryKey column="SystemID" sequenceNumberInPK="4" />
+  <index name="PK__Dependen__6CFDD01007E15006" unique="true">
+    <column ascending="true" name="EmployeeID" />
+    <column ascending="true" name="DepSequenceNumber" />
+    <column ascending="true" name="AuthorizationNumber" />
+    <column ascending="true" name="SystemID" />
+  </index>
+  <index name="DependentDenAuthCategory_Src" unique="true">
+    <column ascending="true" name="AuthorizationNumber" />
+    <column ascending="true" name="AuthorizationCategory" />
+  </index>
+  <index name="DependentDenAuthCategory_Src1" unique="true">
+    <column ascending="true" name="EmployeeID" />
+    <column ascending="true" name="AuthorizationNumber" />
+    <column ascending="true" name="AuthorizationCategory" />
+  </index>
+</table>

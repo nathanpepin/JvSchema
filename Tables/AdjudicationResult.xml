@@ -1,0 +1,1034 @@
+<table catalog="Jv-1.44.18.6_FK" name="AdjudicationResult" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="BlkOfBusID" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="WorkItemID" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="ClientID" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="Locations" nullable="true" remarks="" size="12" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="Claimnumber" nullable="false" remarks="" size="19" type="varchar" typeCode="12">
+    <child catalog="Jv-1.44.18.6_FK" column="Claimnumber" foreignKey="FK__AdjOverri__Claim__45DF2291" implied="false" onDeleteCascade="false" schema="dbo" table="AdjOverridesFlags" />
+    <child catalog="Jv-1.44.18.6_FK" column="Claimnumber" foreignKey="FK__AdjPricin__Claim__46D346CA" implied="false" onDeleteCascade="false" schema="dbo" table="AdjPricingResServLine" />
+    <child catalog="Jv-1.44.18.6_FK" column="Claimnumber" foreignKey="FK__AdjResAlt__Claim__48BB8F3C" implied="false" onDeleteCascade="false" schema="dbo" table="AdjResAlternatePayee" />
+    <child catalog="Jv-1.44.18.6_FK" column="Claimnumber" foreignKey="FK__AdjResAut__Claim__4AA3D7AE" implied="false" onDeleteCascade="false" schema="dbo" table="AdjResAuthorization" />
+    <child catalog="Jv-1.44.18.6_FK" column="Claimnumber" foreignKey="FK__AdjResDup__Claim__4E746892" implied="false" onDeleteCascade="false" schema="dbo" table="AdjResDupClaimInfo" />
+    <child catalog="Jv-1.44.18.6_FK" column="Claimnumber" foreignKey="FK__AdjResSer__Claim__56158A5A" implied="false" onDeleteCascade="false" schema="dbo" table="AdjResServLine" />
+    <child catalog="Jv-1.44.18.6_FK" column="Claimnumber" foreignKey="FK__CdhpAdjRe__Claim__497AA94B" implied="false" onDeleteCascade="false" schema="dbo" table="CdhpAdjResServLine" />
+    <child catalog="Jv-1.44.18.6_FK" column="Claimnumber" foreignKey="FK__CESMckess__Claim__4C5715F6" implied="false" onDeleteCascade="false" schema="dbo" table="CESMckessonAuditResult" />
+    <child catalog="Jv-1.44.18.6_FK" column="Claimnumber" foreignKey="FK__ClaimAudi__Claim__54EC5BF7" implied="false" onDeleteCascade="false" schema="dbo" table="ClaimAudit" />
+    <child catalog="Jv-1.44.18.6_FK" column="Claimnumber" foreignKey="FK__ClaimChec__Claim__55E08030" implied="false" onDeleteCascade="false" schema="dbo" table="ClaimCheck" />
+    <child catalog="Jv-1.44.18.6_FK" column="Claimnumber" foreignKey="FK__ClaimStor__Claim__615232DC" implied="false" onDeleteCascade="false" schema="dbo" table="ClaimStory" />
+    <child catalog="Jv-1.44.18.6_FK" column="Claimnumber" foreignKey="FK__ClaimStor__Claim__605E0EA3" implied="false" onDeleteCascade="false" schema="dbo" table="ClaimStorySummary" />
+    <child catalog="Jv-1.44.18.6_FK" column="Claimnumber" foreignKey="FK__DisClaimA__Claim__50B1B6BF" implied="false" onDeleteCascade="false" schema="dbo" table="DisClaimAddDed" />
+    <child catalog="Jv-1.44.18.6_FK" column="Claimnumber" foreignKey="FK__DisClaimD__Claim__51A5DAF8" implied="false" onDeleteCascade="false" schema="dbo" table="DisClaimDet" />
+    <child catalog="Jv-1.44.18.6_FK" column="Claimnumber" foreignKey="FK__DisClaimE__Claim__5299FF31" implied="false" onDeleteCascade="false" schema="dbo" table="DisClaimExt" />
+    <child catalog="Jv-1.44.18.6_FK" column="Claimnumber" foreignKey="FK__NcpdpPalC__Claim__088BFB8E" implied="false" onDeleteCascade="false" schema="dbo" table="NcpdpPalClaim" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="CdhpType" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="EmployeeID" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="PatientID" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="Patientrelationship" nullable="true" remarks="" size="2" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="Patientdob" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="EmpDepartment" nullable="true" remarks="" size="12" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="13" name="EligibilityDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="14" name="Claimstatus" nullable="true" remarks="" size="8" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="15" name="AltProviderID" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="16" name="AltNetworkID" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="17" name="AltClientID" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="18" name="Datereceived" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="19" name="PaymentDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="20" name="Dateincurred" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="21" name="PlanYear" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="22" name="DedYear" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="23" name="CreatedBy" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="24" name="CreatedDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="25" name="ChangedBy" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="26" name="ChangedDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="27" name="ProcessedDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="28" name="CPGcode" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="29" name="Referalprovider" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="30" name="Serviceprovider" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="31" name="Providertaxid" nullable="true" remarks="" size="9" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="32" name="enc_ProviderAccNumber" nullable="true" remarks="" size="152" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="33" name="NetworkID" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="34" name="PriNetworkID" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="35" name="BenefitScheduleID" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="36" name="CheckingAccount" nullable="true" remarks="" size="50" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="37" name="ProvAdjustAmt" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="38" name="PatAdjustAmt" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="39" name="PriorCOBSavings" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="40" name="PriorCOBAllowedNotPaid" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="41" name="ProvCOBAdjustments" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="42" name="PatCOBAdjustments" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="43" name="Product" nullable="true" remarks="" size="2" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="44" name="Benefitplan" nullable="true" remarks="" size="15" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="45" name="Benefitplandate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="46" name="ClaimSource" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="47" name="EOBMessage" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="48" name="ClaimRemarks" nullable="true" remarks="" size="512" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="49" name="HoldClaim" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="50" name="ToothChartInfo" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="51" name="AdjustmentRsnCode" nullable="true" remarks="" size="4" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="52" name="AdjustmentClaim" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="53" name="ConvertedClaim" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="54" name="UseForRebuild" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="55" name="CovertedDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="56" name="Converted1099" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="57" name="Formtype" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="58" name="ParentClmNumber" nullable="true" remarks="" size="19" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="59" name="ParentConnType" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="60" name="ChildClmNumber" nullable="true" remarks="" size="19" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="61" name="ChildConnType" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="62" name="PPONetworkID" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="63" name="PrecertObtained" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="64" name="MailRoutingCode" nullable="true" remarks="" size="2" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="65" name="TaxType" nullable="true" remarks="" size="2" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="66" name="CreditBanking" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="67" name="AltProvPayID" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="68" name="FraudAbuse" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="69" name="PreExCategory" nullable="true" remarks="" size="43" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="70" name="AccumEvent" nullable="true" remarks="" size="8" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="71" name="ReferralObtained" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="72" name="RefBenefitSchedule" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="73" name="TotalVisits" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="74" name="AccumEventYear" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="75" name="AllowedVisits" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="76" name="OONNegotiated" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="77" name="StopLossPaid" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="78" name="PaymentBatchNum" nullable="true" remarks="" size="40" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="79" name="TotCharge" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="80" name="TotDisallow" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="81" name="TotCopay" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="82" name="TotOUCR" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="83" name="TotProvDisc" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="84" name="TotDeduct" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="85" name="TotPenaltyAmt" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="86" name="TotCoins" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="87" name="TotOOP" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="88" name="TotPatResp" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="89" name="GrossProvPayment" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="90" name="GrossPatPayment" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="91" name="GrossPayment" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="92" name="TotPaid" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="93" name="TotProvPaid" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="94" name="TotPatPaid" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="95" name="TotWithHold" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="96" name="TotAdjustmentAmt" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="97" name="TotCOBAdjustmentAmt" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="98" name="AddCOBInfo" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="99" name="COBType" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="100" name="CreReserveAllowNotPaid" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="101" name="CreReserveAllowAmt" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="102" name="CreReserveSaveAmount" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="103" name="CreReserveCOBCredit" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="104" name="OtherInsPaid" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="105" name="COBToPayAccum" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="106" name="NetIndDedMet" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="107" name="NetFamDedMet" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="108" name="NetIndDedMax" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="109" name="NetFamDedMax" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="110" name="StdIndDedMet" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="111" name="StdFamDedMet" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="112" name="StdIndDedMax" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="113" name="StdFamDedMax" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="114" name="NetIndOOPMet" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="115" name="NetFamOOPMet" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="116" name="NetIndOOPMax" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="117" name="NetFamOOPMax" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="118" name="StdIndOOPMet" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="119" name="StdFamOOPMet" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="120" name="StdIndOOPMax" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="121" name="StdFamOOPMax" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="122" name="BenefitPlanName" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="123" name="BillPlan" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="124" name="ClaimHCISent" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="125" name="ContinuationClaim" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="126" name="EmployeeCOBFlag" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="127" name="EmployeeStatus" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="128" name="PatientStatus" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="129" name="ClientState" nullable="true" remarks="" size="2" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="130" name="ClientType" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="131" name="HoldFromPayment" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="132" name="HoldForStopLoss" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="133" name="ImageType" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="134" name="IncurredAfterTerm" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="135" name="IncurredBeforeEff" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="136" name="OtherInsCOBPrim" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="137" name="OverProcrLimit" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="138" name="PatAgeAtIncurDate" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="139" name="PatIsDep" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="140" name="PaymentTo" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="141" name="PricingMethod" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="142" name="PricingMethodName" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="143" name="Providerstate" nullable="true" remarks="" size="2" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="144" name="ProviderSpeciality" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="145" name="ProviderNPID" nullable="true" remarks="" size="12" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="146" name="PatientCertNum" nullable="true" remarks="" size="29" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="147" name="Empevents" nullable="true" remarks="" size="8" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="148" name="Allowable" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="149" name="NormalBenefit" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="150" name="OverrideException" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="151" name="InNetOOAPen" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="152" name="Paymentreleaseok" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="153" name="ExpediteClaim" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="154" name="Patientlastname" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="155" name="Patientfirstname" nullable="true" remarks="" size="35" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="156" name="Providerlastname" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="157" name="Providerfirstname" nullable="true" remarks="" size="35" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="158" name="Edibatchnumber" nullable="true" remarks="" size="36" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="159" name="PrimaryICD" nullable="true" remarks="" size="8" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="160" name="Primaryprocedure" nullable="true" remarks="" size="13" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="161" name="EVBIndicator" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="162" name="PurseType" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="163" name="ClaimPymtStatus" nullable="true" remarks="" size="10" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="164" name="ClientAdvPaid" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="165" name="TotIneligible" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="166" name="HoldReleaseComments" nullable="true" remarks="" size="512" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="167" name="TotalPoolpayment" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="168" name="TotalTaxAmt" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="169" name="TotalSurchargeAmt" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="170" name="TotalCapitatedAmt" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="171" name="COBForClaimLevel" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="172" name="BenSchInNetOOAPen" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="173" name="IsEventReq" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="174" name="PatHRAAdjustAmt" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="175" name="PatFSAAdjustAmt" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="176" name="PatLFSAAdjustAmt" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="177" name="ProvHRAAdjustAmt" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="178" name="ProvFSAAdjustAmt" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="179" name="ProvLFSAAdjustAmt" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="180" name="GrossProvHRAPayment" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="181" name="GrossPatHRAPayment" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="182" name="GrossProvFSAPayment" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="183" name="GrossPatFSAPayment" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="184" name="GrossProvLFSAPayment" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="185" name="GrossPatLFSAPayment" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="186" name="TotPatHRAPaid" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="187" name="TotPatFSAPaid" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="188" name="TotProvHRAPaid" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="189" name="TotProvFSAPaid" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="190" name="TotPatLFSAPaid" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="191" name="TotProvLFSAPaid" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="192" name="RuleSetID" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="193" name="PreExCondID" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="194" name="ProviderDegree" nullable="true" remarks="" size="10" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="195" name="CPGCodeDescription" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="196" name="StopLossContract" nullable="true" remarks="" size="10" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="197" name="StopLossContractID" nullable="true" remarks="" size="10" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="198" name="PatientSSN" nullable="true" remarks="" size="9" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="199" name="BenefitplanEnddate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="200" name="PreAuthorization" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="201" name="Otherinsyesno" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="202" name="InpatOutpat" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="203" name="AdjType" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="204" name="CdhpHierarchy" nullable="true" remarks="" size="12" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="205" name="CurrentHierarchy" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="206" name="HoldReason" nullable="true" remarks="" size="10" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="207" name="OrigProduct" nullable="true" remarks="" size="2" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="208" name="TotCoveredCharge" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="209" name="RFAuthorizationNumber" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="210" name="PCAuthorizationNumber" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="211" name="AuthorizationType" nullable="true" remarks="" size="6" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="212" name="IsRFReqd" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="213" name="IsPCReqd" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="214" name="ServLinesGrouped" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="215" name="TxStatus" nullable="true" remarks="" size="25" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="216" name="CPGExceptionID" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="217" name="QuestionSeqID" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="218" name="Delinquent" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="219" name="Daysdelinquent" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="220" name="DiscOrOUCR" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="221" name="NegotiatedAmount" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="222" name="Claimsequence" nullable="true" remarks="" size="10" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="223" name="Claimsubsequence" nullable="true" remarks="" size="2" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="224" name="Batchdayofyear" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="225" name="Batchsequence" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="226" name="Providerofficename" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="227" name="DaysoftheWeek" nullable="true" remarks="" size="10" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="228" name="Patientstate" nullable="true" remarks="" size="2" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="229" name="NetworkValInManualPricing" nullable="true" remarks="" size="512" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="230" name="NetworkValInExtPriExclusionCode" nullable="true" remarks="" size="512" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="231" name="ManualClaimPrevState" nullable="true" remarks="" size="512" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="232" name="Priorauthnumber" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="233" name="SecondaryID" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="234" name="CreReserveALNPSaving" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="235" name="CreReserveCreditAmount" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="236" name="ClaimInternalStatus" nullable="true" remarks="" size="8" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="237" name="ManualVisitDays" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="238" name="AlternateID1" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="239" name="AlternateID2" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="240" name="PenIndDedMet" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="241" name="PenFamDedMet" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="242" name="PenIndDedMax" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="243" name="PenFamDedMax" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="244" name="PenIndOOPMet" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="245" name="PenFamOOPMet" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="246" name="PenIndOOPMax" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="247" name="PenFamOOPMax" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="248" name="SuppressCopay" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="249" name="AuthorizationNumber" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="250" name="AuthorizationFound" nullable="true" remarks="" size="6" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="251" name="TotRepricedAmt" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="252" name="EdiNetworkTransFlag" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="253" name="AltProvPaymentAmt" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="254" name="FacilityID" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="255" name="PhysicianID" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="256" name="ImportType" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="257" name="UpdateAccums" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="258" name="PerformAdjustments" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="259" name="PayByDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="260" name="EDI_RPH_PRICEREJECTCD" nullable="true" remarks="" size="2" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="261" name="RefFacilityID" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="262" name="RefPhysicianID" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="263" name="CESRuleSetName" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="264" name="Admitdate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="265" name="PricingBatchNum" nullable="true" remarks="" size="40" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="266" name="TotTaxAdjustedAmt" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="267" name="PatAdjustmntDollarRsnCode" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="268" name="ProvAdjustmntDollarRsnCode" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="269" name="COBRuleSetName" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="270" name="COBPredecessorClaimNumber" nullable="true" remarks="" size="19" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="271" name="CreateCOBClaim" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="272" name="Negotiator" nullable="true" remarks="" size="7" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="273" name="NegStatus" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="274" name="HCI" nullable="true" remarks="" size="10" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="275" name="NegotiatorRuleName" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="276" name="RBDays" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="277" name="VendorName" nullable="true" remarks="" size="7" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="278" name="IsBSCClaimSent" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="279" name="BSCClmSentDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="280" name="ReturnCardInOutFlag" nullable="true" remarks="" size="7" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="281" name="PercentOfSavingsApplied" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="282" name="ClmPercentOfSavings" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="283" name="PrepaidAmount" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="284" name="DebitCardTransactionID" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="285" name="ContWithNoMatchUp" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="286" name="EdiBatchReprocessNumber" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="287" name="FormularyStatus" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="288" name="ClaimPymtPid" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="289" name="SplitParentClmNumber" nullable="true" remarks="" size="19" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="290" name="SplitChildClmNumber" nullable="true" remarks="" size="19" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="291" name="ChildClaimConversionID" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="292" name="ParentClaimConversionID" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="293" name="SplitChildClaimConversionID" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="294" name="SplitParentClaimConversionID" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="295" name="ApplySpecStopLoss" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="296" name="CredBankChildClmNumber" nullable="true" remarks="" size="19" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="297" name="B2BUserID" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="298" name="ClaimOrigin" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="299" name="ReceivedDateFromNegotiator" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="300" name="SentDateToNegotiator" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="301" name="TotAllowed" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="302" name="Is835Generated" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="303" name="ClaimAuditedBy" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="304" name="TotRemExpenses" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="305" name="Icdversion" nullable="true" remarks="" size="2" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="306" name="PostedDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="307" name="TotPatRespTaxAmt" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="308" name="TotTpaTaxAmt" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="309" name="HCRACategoryType" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="310" name="ReinsuranceFlag" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="311" name="StopLossSubmitAmt" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="312" name="ReinsCarrierRecievedAmt" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="313" name="ReInsPlanPaid" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="314" name="ReInsCarrierPaid" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="315" name="ContractMaxMet" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="316" name="ReInsTriggerDiag" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="317" name="ReInsShowInRpt" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="318" name="ReInsAggrSpecAmt" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="319" name="AggregateContractName" nullable="true" remarks="" size="10" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="320" name="ReInsAggrLinkedSpec" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="321" name="ReInsAggrCovAmt" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="322" name="ReInsAggrNotCovAmt" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="323" name="SpecNonCovAmt" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="324" name="TotGEDiscAmt" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="325" name="TotGEIneligAmt" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="326" name="TotProvHCRAPaymentAmt" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="327" name="ITSClaim" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="328" name="SCCFNumber" nullable="true" remarks="" size="19" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="329" name="RefSCCFNumber" nullable="true" remarks="" size="19" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="330" name="FundedAmt" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="331" name="PostAdjEditsVendor" nullable="true" remarks="" size="7" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="332" name="PostAdjEditsStatus" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="333" name="SentToEditsDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="334" name="ReInsSplitParentClmNumber" nullable="true" remarks="" size="19" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="335" name="ReInsSplitChildClmNumber" nullable="true" remarks="" size="19" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="336" name="PostAdjPricingVendor" nullable="true" remarks="" size="7" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="337" name="PostAdjPricingStatus" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="338" name="CleanClaimDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="339" name="ITSFeeBatchNum" nullable="true" remarks="" size="40" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="340" name="ITSFeeAdvPaid" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="341" name="ITSFeeStopLossPaid" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="342" name="BGClaimOnManualAction" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="343" name="PreAdjPricingMethod" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="344" name="BundlePymtClm" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="345" name="BundlePymtDummyClm" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="346" name="SurchargeClaim" nullable="true" remarks="" size="19" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="347" name="TestCaseID" nullable="true" remarks="" size="100" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="348" name="ExternalPricing" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="349" name="ExcludeFrom835Generation" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="350" name="GMESurchargeClaim" nullable="true" remarks="" size="19" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="351" name="PRBasedOnCharge" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="352" name="NoOfCopays" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="353" name="PlaceHolder1" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="354" name="RetainPostAdjEditPend" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="355" name="IgnorePatForAdjustment" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="356" name="IgnoreProvForAdjustment" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="357" name="TotRefundAmt" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="358" name="RefundCheckNumber" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="359" name="GMEFromDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="360" name="GMEThruDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="361" name="GmeFamilyAmt" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="362" name="GMEIndvidualAmt" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="363" name="GmeFamilyCount" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="364" name="GmeIndividualCount" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="365" name="InPatientCPName" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="366" name="AdjudicatedBy" nullable="true" remarks="" size="10" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="367" name="UMRExported" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="368" name="ProvCheqNumber" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="369" name="UMRPaymentDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="370" name="PlanYearStartDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="371" name="FollowingPlanYearStartDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="372" name="OrigEdientity" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="373" name="Edi835batchnumber" nullable="true" remarks="" size="36" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="374" name="PPOOutboundStatus" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="375" name="POOutboundStatus" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="376" name="MLROutboundStatus" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="377" name="MLREligible" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="378" name="TotMLRAllowedAmt" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="379" name="TotMLRSavingAmt" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="380" name="TotPPOAllowedAmt" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="381" name="MatchedMLRRulSet" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="382" name="PONumber" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="383" name="POApplicable" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="384" name="ClaimPaidBy" nullable="true" remarks="" size="15" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="385" name="POStatus" nullable="true" remarks="" size="10" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="386" name="TotPPOSavingAmt" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="387" name="MLRAppliedOnClaim" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="388" name="OverridePricingMethod" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="389" name="POType" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="390" name="EDIEntityDiscRsnCode" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="391" name="AdjustedBy" nullable="true" remarks="" size="15" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="392" name="CHCPreAdjEditApplied" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="393" name="ACEClaim" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="394" name="UHCAlternateID" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="395" name="OptOutOfProv835" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="396" name="TotQualifiedAmt" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="397" name="QualifyingContractName" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="398" name="OutForQualifyingAmount" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="399" name="NSAMemRespAllowedAmt" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="400" name="SurpriseBillClaimOverridden" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="401" name="AlwdAndQualAmtsOverridden" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="402" name="PymtDirPend" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="403" name="ExternalPricingFor" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="404" name="SurpriseBillClaim" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="405" name="AddlPaymentDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="406" name="NSAConsentRcvd" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="407" name="CheckingAccountModRsnCode" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="408" name="PaymentIndicator" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="409" name="ClaimTAT" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="410" name="NumOfDaysLate" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="411" name="ProvLatePymtCalIntAmt" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="412" name="PatLatePymtCalIntAmt" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="413" name="RefundLatPayAmt" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="414" name="ProvAdjustmntInterestRsnCode" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="415" name="PatAdjustmntInterestRsnCode" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="416" name="ClaimSubmission" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="417" name="RefIncentiveApplied" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="418" name="TotReferralPenaltyAmt" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="419" name="MIPSRuleName" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="420" name="TotMIPSAdjustmentAmt" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="421" name="MIPSApplied" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="422" name="SequestrationApplied" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="423" name="IsTransportClaim" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="424" name="TransportLogicRuleName" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="425" name="PCTClaim" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="426" name="SuppCheckingAccAdjustRsnCode" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="427" name="MLRCheckingAccAdjustRsnCode" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="428" name="ProviderTaxonomyCode" nullable="true" remarks="" size="10" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="429" name="SpendingCategory" nullable="true" remarks="" size="2" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="430" name="PostAdjEditGroupSplitLine" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="431" name="PlaceHolder2" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="432" name="CallGroupId" nullable="true" remarks="" size="10" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="433" name="AverageLengthofStay" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="434" name="DischargeFraction" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="435" name="AuditStatus" nullable="true" remarks="" size="25" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="436" name="RetainPricingInfo" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="437" name="NetworkTransEOBMessage" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="438" name="RetainPricingForSameNetwork" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="439" name="UniqueNumFor835" nullable="true" remarks="" size="19" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="440" name="ProcessedBy" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="441" name="ExternalPricingFrom" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <primaryKey column="Claimnumber" sequenceNumberInPK="1" />
+  <index name="PK__Adjudica__E65EF5C127A876C5" unique="true">
+    <column ascending="true" name="Claimnumber" />
+  </index>
+  <index name="AdjudicationResult_chcresend" unique="false">
+    <column ascending="true" name="SentToEditsDate" />
+    <column ascending="true" name="Negotiator" />
+    <column ascending="true" name="NegStatus" />
+    <column ascending="true" name="Claimstatus" />
+    <column ascending="true" name="Claimnumber" />
+  </index>
+  <index name="AdjudicationResult_ClaimAudit" unique="false">
+    <column ascending="true" name="Claimnumber" />
+    <column ascending="true" name="ChangedBy" />
+    <column ascending="true" name="ChangedDate" />
+    <column ascending="true" name="ProcessedDate" />
+    <column ascending="true" name="PaymentDate" />
+  </index>
+  <index name="AdjudicationResult_DepCare" unique="false">
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="Locations" />
+    <column ascending="true" name="Product" />
+    <column ascending="true" name="Claimstatus" />
+    <column ascending="true" name="CdhpType" />
+    <column ascending="true" name="PaymentDate" />
+    <column ascending="true" name="Claimnumber" />
+  </index>
+  <index name="AdjudicationResult_Disability" unique="false">
+    <column ascending="true" name="Product" />
+    <column ascending="true" name="EmployeeID" />
+    <column ascending="true" name="Claimnumber" />
+  </index>
+  <index name="AdjudicationResult_EDI837PaidSearch" unique="false">
+    <column ascending="true" name="Claimnumber" />
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="Claimstatus" />
+    <column ascending="true" name="PaymentDate" />
+    <column ascending="true" name="Product" />
+    <column ascending="true" name="Formtype" />
+    <column ascending="true" name="BenefitPlanName" />
+    <column ascending="true" name="PostedDate" />
+  </index>
+  <index name="AdjudicationResult_EDIBSBCSearch" unique="false">
+    <column ascending="true" name="Claimnumber" />
+    <column ascending="true" name="PaymentDate" />
+    <column ascending="true" name="Claimstatus" />
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="IsBSCClaimSent" />
+    <column ascending="true" name="BSCClmSentDate" />
+    <column ascending="true" name="VendorName" />
+    <column ascending="true" name="Formtype" />
+    <column ascending="true" name="CreatedBy" />
+    <column ascending="true" name="EOBMessage" />
+  </index>
+  <index name="AdjudicationResult_EDIPMCSAndPsiMedicalSearch" unique="false">
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="Locations" />
+    <column ascending="true" name="Claimstatus" />
+    <column ascending="true" name="PaymentDate" />
+    <column ascending="true" name="Product" />
+    <column ascending="true" name="NegStatus" />
+    <column ascending="true" name="Negotiator" />
+  </index>
+  <index name="AdjudicationResult_geneob" unique="false">
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="Locations" />
+    <column ascending="true" name="Claimstatus" />
+    <column ascending="true" name="PaymentBatchNum" />
+    <column ascending="true" name="Claimnumber" />
+    <column ascending="true" name="PaymentDate" />
+    <column ascending="true" name="Product" />
+  </index>
+  <index name="AdjudicationResult_gme" unique="false">
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="Locations" />
+    <column ascending="true" name="Product" />
+    <column ascending="true" name="GMEFromDate" />
+    <column ascending="true" name="GMEThruDate" />
+    <column ascending="true" name="Claimnumber" />
+  </index>
+  <index name="AdjudicationResult_HCI" unique="false">
+    <column ascending="true" name="Claimnumber" />
+    <column ascending="true" name="ChangedDate" />
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+  </index>
+  <index name="AdjudicationResult_idx2" unique="false">
+    <column ascending="true" name="SecondaryID" />
+  </index>
+  <index name="AdjudicationResult_idx3" unique="false">
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="AdjudicatedBy" />
+    <column ascending="true" name="Claimstatus" />
+    <column ascending="true" name="PaymentDate" />
+    <column ascending="true" name="Claimnumber" />
+  </index>
+  <index name="AdjudicationResult_idx4" unique="false">
+    <column ascending="true" name="UHCAlternateID" />
+  </index>
+  <index name="AdjudicationResult_its" unique="false">
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="Locations" />
+    <column ascending="true" name="Claimstatus" />
+    <column ascending="true" name="Datereceived" />
+    <column ascending="true" name="ITSFeeBatchNum" />
+    <column ascending="true" name="CheckingAccount" />
+    <column ascending="true" name="TotPaid" />
+    <column ascending="true" name="Claimnumber" />
+    <column ascending="true" name="Dateincurred" />
+    <column ascending="true" name="Product" />
+    <column ascending="true" name="Providertaxid" />
+    <column ascending="true" name="Serviceprovider" />
+    <column ascending="true" name="CreatedDate" />
+    <column ascending="true" name="ChangedBy" />
+    <column ascending="true" name="ChangedDate" />
+  </index>
+  <index name="AdjudicationResult_itsfeebatch" unique="false">
+    <column ascending="true" name="ITSFeeBatchNum" />
+    <column ascending="true" name="ReinsuranceFlag" />
+    <column ascending="true" name="Claimnumber" />
+  </index>
+  <index name="AdjudicationResult_jqssrch" unique="false">
+    <column ascending="true" name="CreatedDate" />
+    <column ascending="true" name="Datereceived" />
+    <column ascending="true" name="CleanClaimDate" />
+    <column ascending="true" name="Claimnumber" />
+  </index>
+  <index name="AdjudicationResult_Medco" unique="false">
+    <column ascending="true" name="PatientID" />
+    <column ascending="true" name="PlanYear" />
+    <column ascending="true" name="Product" />
+    <column ascending="true" name="Claimnumber" />
+    <column ascending="true" name="ChangedDate" />
+  </index>
+  <index name="AdjudicationResult_ObraExport" unique="false">
+    <column ascending="true" name="Claimnumber" />
+    <column ascending="true" name="Claimstatus" />
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="Edibatchnumber" />
+    <column ascending="true" name="ChangedBy" />
+    <column ascending="true" name="Dateincurred" />
+    <column ascending="true" name="Datereceived" />
+    <column ascending="true" name="PaymentDate" />
+    <column ascending="true" name="PrimaryICD" />
+    <column ascending="true" name="Serviceprovider" />
+    <column ascending="true" name="PhysicianID" />
+    <column ascending="true" name="FacilityID" />
+    <column ascending="true" name="HoldReason" />
+    <column ascending="true" name="OrigEdientity" />
+  </index>
+  <index name="AdjudicationResult_Openx" unique="false">
+    <column ascending="true" name="PatientID" />
+    <column ascending="true" name="PaymentDate" />
+    <column ascending="true" name="Claimnumber" />
+    <column ascending="true" name="Formtype" />
+  </index>
+  <index name="AdjudicationResult_PBMReversal" unique="false">
+    <column ascending="true" name="AlternateID1" />
+    <column ascending="true" name="ClaimOrigin" />
+    <column ascending="true" name="Product" />
+    <column ascending="true" name="EmployeeID" />
+    <column ascending="true" name="PatientID" />
+    <column ascending="true" name="AlternateID2" />
+  </index>
+  <index name="AdjudicationResult_perf" unique="false">
+    <column ascending="true" name="CheckingAccount" />
+    <column ascending="true" name="PaymentBatchNum" />
+    <column ascending="true" name="Claimstatus" />
+  </index>
+  <index name="AdjudicationResult_phxresend" unique="false">
+    <column ascending="true" name="SentDateToNegotiator" />
+    <column ascending="true" name="Negotiator" />
+    <column ascending="true" name="NegStatus" />
+    <column ascending="true" name="Claimstatus" />
+    <column ascending="true" name="Claimnumber" />
+  </index>
+  <index name="AdjudicationResult_PoS" unique="false">
+    <column ascending="true" name="PricingMethod" />
+    <column ascending="true" name="Claimstatus" />
+    <column ascending="true" name="PercentOfSavingsApplied" />
+    <column ascending="true" name="PostAdjPricingStatus" />
+    <column ascending="true" name="Claimnumber" />
+  </index>
+  <index name="AdjudicationResult_repsrc" unique="false">
+    <column ascending="true" name="Datereceived" />
+    <column ascending="true" name="Claimstatus" />
+    <column ascending="true" name="Claimnumber" />
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+  </index>
+  <index name="AdjudicationResult_RollOvrSrch" unique="false">
+    <column ascending="true" name="Benefitplan" />
+    <column ascending="true" name="EmployeeID" />
+    <column ascending="true" name="PatientID" />
+    <column ascending="true" name="DedYear" />
+    <column ascending="true" name="Product" />
+    <column ascending="true" name="Claimnumber" />
+  </index>
+  <index name="AdjudicationResult_s1" unique="true">
+    <column ascending="true" name="Edibatchnumber" />
+    <column ascending="true" name="EmployeeID" />
+    <column ascending="true" name="PatientID" />
+    <column ascending="true" name="Serviceprovider" />
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="Dateincurred" />
+    <column ascending="true" name="Datereceived" />
+    <column ascending="true" name="PaymentDate" />
+    <column ascending="true" name="PrimaryICD" />
+    <column ascending="true" name="Claimstatus" />
+    <column ascending="true" name="CPGcode" />
+    <column ascending="true" name="ChangedBy" />
+    <column ascending="true" name="Claimnumber" />
+    <column ascending="true" name="HoldFromPayment" />
+    <column ascending="true" name="AuditStatus" />
+  </index>
+  <index name="AdjudicationResult_s2" unique="true">
+    <column ascending="true" name="EmployeeID" />
+    <column ascending="true" name="PatientID" />
+    <column ascending="true" name="PhysicianID" />
+    <column ascending="true" name="Serviceprovider" />
+    <column ascending="true" name="Dateincurred" />
+    <column ascending="true" name="Datereceived" />
+    <column ascending="true" name="PaymentDate" />
+    <column ascending="true" name="PrimaryICD" />
+    <column ascending="true" name="Claimstatus" />
+    <column ascending="true" name="CPGcode" />
+    <column ascending="true" name="CreatedBy" />
+    <column ascending="true" name="ChangedBy" />
+    <column ascending="true" name="Product" />
+    <column ascending="true" name="FacilityID" />
+    <column ascending="true" name="Claimnumber" />
+    <column ascending="true" name="HoldFromPayment" />
+  </index>
+  <index name="AdjudicationResult_s3" unique="true">
+    <column ascending="true" name="PhysicianID" />
+    <column ascending="true" name="Serviceprovider" />
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="Dateincurred" />
+    <column ascending="true" name="Datereceived" />
+    <column ascending="true" name="PaymentDate" />
+    <column ascending="true" name="PrimaryICD" />
+    <column ascending="true" name="Claimstatus" />
+    <column ascending="true" name="CPGcode" />
+    <column ascending="true" name="CreatedBy" />
+    <column ascending="true" name="ChangedBy" />
+    <column ascending="true" name="Product" />
+    <column ascending="true" name="Claimnumber" />
+    <column ascending="true" name="HoldFromPayment" />
+    <column ascending="true" name="CreatedDate" />
+  </index>
+  <index name="AdjudicationResult_s4" unique="true">
+    <column ascending="true" name="Claimnumber" />
+    <column ascending="true" name="FacilityID" />
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="Dateincurred" />
+    <column ascending="true" name="Datereceived" />
+    <column ascending="true" name="PaymentDate" />
+    <column ascending="true" name="PrimaryICD" />
+    <column ascending="true" name="Claimstatus" />
+    <column ascending="true" name="CPGcode" />
+    <column ascending="true" name="CreatedBy" />
+    <column ascending="true" name="ChangedBy" />
+    <column ascending="true" name="Product" />
+    <column ascending="true" name="EmployeeID" />
+    <column ascending="true" name="PatientID" />
+    <column ascending="true" name="HoldFromPayment" />
+  </index>
+  <index name="AdjudicationResult_s5" unique="false">
+    <column ascending="true" name="PaymentBatchNum" />
+    <column ascending="true" name="Datereceived" />
+    <column ascending="true" name="Claimnumber" />
+  </index>
+  <index name="AdjudicationResult_s6" unique="false">
+    <column ascending="true" name="PaymentBatchNum" />
+    <column ascending="true" name="ReinsuranceFlag" />
+    <column ascending="true" name="Claimnumber" />
+  </index>
+  <index name="AdjudicationResult_s7" unique="true">
+    <column ascending="true" name="EmployeeID" />
+    <column ascending="true" name="PatientID" />
+    <column ascending="true" name="Claimnumber" />
+    <column ascending="true" name="PhysicianID" />
+    <column ascending="true" name="Serviceprovider" />
+    <column ascending="true" name="Dateincurred" />
+    <column ascending="true" name="Datereceived" />
+    <column ascending="true" name="PaymentDate" />
+    <column ascending="true" name="PrimaryICD" />
+    <column ascending="true" name="Claimstatus" />
+    <column ascending="true" name="CPGcode" />
+    <column ascending="true" name="CreatedBy" />
+    <column ascending="true" name="ChangedBy" />
+    <column ascending="true" name="Product" />
+    <column ascending="true" name="FacilityID" />
+    <column ascending="true" name="HoldFromPayment" />
+  </index>
+  <index name="AdjudicationResult_sccf" unique="false">
+    <column ascending="true" name="SCCFNumber" />
+  </index>
+  <index name="AdjudicationResult_search1" unique="false">
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="Locations" />
+    <column ascending="true" name="Claimstatus" />
+    <column ascending="true" name="Datereceived" />
+    <column ascending="true" name="PaymentBatchNum" />
+    <column ascending="true" name="CheckingAccount" />
+    <column ascending="true" name="TotPaid" />
+    <column ascending="true" name="Claimnumber" />
+    <column ascending="true" name="Dateincurred" />
+    <column ascending="true" name="Product" />
+    <column ascending="true" name="Providertaxid" />
+    <column ascending="true" name="Serviceprovider" />
+    <column ascending="true" name="CreatedDate" />
+    <column ascending="true" name="ChangedBy" />
+    <column ascending="true" name="ChangedDate" />
+  </index>
+  <index name="AdjudicationResult_search10" unique="false">
+    <column ascending="true" name="PatientID" />
+    <column ascending="true" name="Claimstatus" />
+    <column ascending="true" name="Dateincurred" />
+    <column ascending="true" name="PaymentDate" />
+    <column ascending="true" name="Claimnumber" />
+  </index>
+  <index name="AdjudicationResult_search13" unique="false">
+    <column ascending="true" name="PatientSSN" />
+  </index>
+  <index name="AdjudicationResult_search14" unique="false">
+    <column ascending="true" name="Serviceprovider" />
+    <column ascending="true" name="NetworkID" />
+    <column ascending="true" name="Claimstatus" />
+  </index>
+  <index name="AdjudicationResult_search16" unique="false">
+    <column ascending="true" name="PatientID" />
+    <column ascending="true" name="Claimnumber" />
+    <column ascending="true" name="AccumEvent" />
+  </index>
+  <index name="AdjudicationResult_search17" unique="false">
+    <column ascending="true" name="Locations" />
+    <column ascending="true" name="EmployeeID" />
+    <column ascending="true" name="DedYear" />
+  </index>
+  <index name="AdjudicationResult_search18" unique="false">
+    <column ascending="true" name="PatientID" />
+    <column ascending="true" name="Product" />
+    <column ascending="true" name="Dateincurred" />
+  </index>
+  <index name="AdjudicationResult_search19" unique="false">
+    <column ascending="true" name="PrimaryICD" />
+  </index>
+  <index name="AdjudicationResult_search2" unique="false">
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="Claimstatus" />
+    <column ascending="true" name="Locations" />
+    <column ascending="true" name="PaymentDate" />
+    <column ascending="true" name="Dateincurred" />
+    <column ascending="true" name="TaxType" />
+    <column ascending="true" name="Claimnumber" />
+  </index>
+  <index name="AdjudicationResult_search20" unique="false">
+    <column ascending="true" name="ChangedBy" />
+  </index>
+  <index name="AdjudicationResult_search21" unique="false">
+    <column ascending="true" name="CreatedBy" />
+  </index>
+  <index name="AdjudicationResult_search24" unique="false">
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="Locations" />
+    <column ascending="true" name="Dateincurred" />
+    <column ascending="true" name="PaymentDate" />
+    <column ascending="true" name="CheckingAccount" />
+    <column ascending="true" name="Claimnumber" />
+  </index>
+  <index name="AdjudicationResult_search25" unique="false">
+    <column ascending="true" name="PatientID" />
+    <column ascending="true" name="Dateincurred" />
+    <column ascending="true" name="Datereceived" />
+    <column ascending="true" name="Edibatchnumber" />
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="PrimaryICD" />
+    <column ascending="true" name="CPGcode" />
+    <column ascending="true" name="CreatedBy" />
+    <column ascending="true" name="ChangedBy" />
+    <column ascending="true" name="Claimstatus" />
+    <column ascending="true" name="Product" />
+    <column ascending="true" name="ClaimSource" />
+    <column ascending="true" name="SecondaryID" />
+    <column ascending="true" name="Claimnumber" />
+  </index>
+  <index name="AdjudicationResult_search37" unique="false">
+    <column ascending="true" name="Datereceived" />
+    <column ascending="true" name="BenefitPlanName" />
+    <column ascending="true" name="NetworkID" />
+    <column ascending="true" name="Claimnumber" />
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="Claimstatus" />
+    <column ascending="true" name="Dateincurred" />
+    <column ascending="true" name="Locations" />
+    <column ascending="true" name="EmpDepartment" />
+    <column ascending="true" name="PaymentDate" />
+    <column ascending="true" name="CheckingAccount" />
+  </index>
+  <index name="AdjudicationResult_search38" unique="false">
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="Locations" />
+    <column ascending="true" name="Claimstatus" />
+    <column ascending="true" name="PricingBatchNum" />
+    <column ascending="true" name="Claimnumber" />
+    <column ascending="true" name="Datereceived" />
+    <column ascending="true" name="Dateincurred" />
+    <column ascending="true" name="Product" />
+    <column ascending="true" name="Providertaxid" />
+    <column ascending="true" name="Serviceprovider" />
+    <column ascending="true" name="CreatedDate" />
+    <column ascending="true" name="ChangedBy" />
+    <column ascending="true" name="ChangedDate" />
+    <column ascending="true" name="ProviderNPID" />
+  </index>
+  <index name="AdjudicationResult_search39" unique="false">
+    <column ascending="true" name="Serviceprovider" />
+    <column ascending="true" name="Providertaxid" />
+    <column ascending="true" name="FacilityID" />
+    <column ascending="true" name="Claimnumber" />
+    <column ascending="true" name="PatientID" />
+  </index>
+  <index name="AdjudicationResult_search4" unique="false">
+    <column ascending="true" name="Claimnumber" />
+    <column ascending="true" name="Patientlastname" />
+    <column ascending="true" name="Patientfirstname" />
+    <column ascending="true" name="Providerlastname" />
+    <column ascending="true" name="Providerfirstname" />
+    <column ascending="true" name="Edibatchnumber" />
+    <column ascending="true" name="PrimaryICD" />
+    <column ascending="true" name="PatientCertNum" />
+    <column ascending="true" name="PatientID" />
+    <column ascending="true" name="Providertaxid" />
+    <column ascending="true" name="ChangedBy" />
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="Dateincurred" />
+    <column ascending="true" name="Datereceived" />
+    <column ascending="true" name="PaymentDate" />
+  </index>
+  <index name="AdjudicationResult_search40" unique="false">
+    <column ascending="true" name="SecondaryID" />
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+  </index>
+  <index name="AdjudicationResult_search41" unique="false">
+    <column ascending="true" name="Edibatchnumber" />
+    <column ascending="true" name="Claimnumber" />
+  </index>
+  <index name="AdjudicationResult_search42" unique="false">
+    <column ascending="true" name="Edi835batchnumber" />
+    <column ascending="true" name="Claimnumber" />
+  </index>
+  <index name="AdjudicationResult_search5" unique="false">
+    <column ascending="true" name="Patientfirstname" />
+    <column ascending="true" name="Patientlastname" />
+    <column ascending="true" name="PatientCertNum" />
+    <column ascending="true" name="Providerfirstname" />
+    <column ascending="true" name="Providerlastname" />
+    <column ascending="true" name="ProviderNPID" />
+    <column ascending="true" name="ChangedBy" />
+    <column ascending="true" name="PrimaryICD" />
+  </index>
+  <index name="AdjudicationResult_search7" unique="false">
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="EmployeeID" />
+    <column ascending="true" name="PatientID" />
+    <column ascending="true" name="PatIsDep" />
+  </index>
+  <index name="AdjudicationResult_search9" unique="false">
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="Product" />
+    <column ascending="true" name="ChangedDate" />
+    <column ascending="true" name="Claimstatus" />
+    <column ascending="true" name="EVBIndicator" />
+  </index>
+  <index name="AdjudicationResult_searchclaim" unique="false">
+    <column ascending="true" name="Edibatchnumber" />
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="Claimnumber" />
+  </index>
+  <index name="AdjudicationResult_StpLoss" unique="false">
+    <column ascending="true" name="StopLossContract" />
+    <column ascending="true" name="StopLossContractID" />
+    <column ascending="true" name="Claimstatus" />
+    <column ascending="true" name="PaymentDate" />
+    <column ascending="true" name="Dateincurred" />
+    <column ascending="true" name="CreatedDate" />
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="Locations" />
+    <column ascending="true" name="EmpDepartment" />
+    <column ascending="true" name="EmployeeID" />
+    <column ascending="true" name="PatientID" />
+  </index>
+  <index name="AdjudicationResult_uniqnum" unique="false">
+    <column ascending="true" name="UniqueNumFor835" />
+  </index>
+  <index name="CrmAdjudicationResult_s1" unique="true">
+    <column ascending="true" name="Claimnumber" />
+    <column ascending="true" name="Edibatchnumber" />
+    <column ascending="true" name="EmployeeID" />
+    <column ascending="true" name="PatientID" />
+    <column ascending="true" name="Serviceprovider" />
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="Dateincurred" />
+    <column ascending="true" name="Datereceived" />
+    <column ascending="true" name="PaymentDate" />
+    <column ascending="true" name="PrimaryICD" />
+    <column ascending="true" name="Claimstatus" />
+    <column ascending="true" name="CPGcode" />
+    <column ascending="true" name="ChangedBy" />
+    <column ascending="true" name="HoldFromPayment" />
+  </index>
+  <index name="CrmAdjudicationResult_s2" unique="true">
+    <column ascending="true" name="Claimnumber" />
+    <column ascending="true" name="EmployeeID" />
+    <column ascending="true" name="PatientID" />
+    <column ascending="true" name="PhysicianID" />
+    <column ascending="true" name="Serviceprovider" />
+    <column ascending="true" name="Dateincurred" />
+    <column ascending="true" name="Datereceived" />
+    <column ascending="true" name="PaymentDate" />
+    <column ascending="true" name="PrimaryICD" />
+    <column ascending="true" name="Claimstatus" />
+    <column ascending="true" name="CPGcode" />
+    <column ascending="true" name="CreatedBy" />
+    <column ascending="true" name="ChangedBy" />
+    <column ascending="true" name="Product" />
+    <column ascending="true" name="FacilityID" />
+    <column ascending="true" name="HoldFromPayment" />
+  </index>
+  <index name="CrmAdjudicationResult_s3" unique="true">
+    <column ascending="true" name="Claimnumber" />
+    <column ascending="true" name="PhysicianID" />
+    <column ascending="true" name="Serviceprovider" />
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="Dateincurred" />
+    <column ascending="true" name="Datereceived" />
+    <column ascending="true" name="PaymentDate" />
+    <column ascending="true" name="PrimaryICD" />
+    <column ascending="true" name="Claimstatus" />
+    <column ascending="true" name="CPGcode" />
+    <column ascending="true" name="CreatedBy" />
+    <column ascending="true" name="ChangedBy" />
+    <column ascending="true" name="Product" />
+    <column ascending="true" name="HoldFromPayment" />
+    <column ascending="true" name="PCTClaim" />
+  </index>
+</table>

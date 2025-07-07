@@ -1,0 +1,30 @@
+<table catalog="Jv-1.44.18.6_FK" name="AdjResDupClaimInfo" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="Claimnumber" nullable="true" remarks="" size="19" type="varchar" typeCode="12">
+    <parent catalog="Jv-1.44.18.6_FK" column="Claimnumber" foreignKey="FK__AdjResDup__Claim__4E746892" implied="false" onDeleteCascade="false" schema="dbo" table="AdjudicationResult" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="Linenumber" nullable="true" remarks="" size="15" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="AdjPendOrDeny" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="ClaimDeny" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="UniqSeq" nullable="false" remarks="" size="4" type="int" typeCode="4">
+    <child catalog="Jv-1.44.18.6_FK" column="UniqSeq" foreignKey="FK__AdjResDup__UniqS__4F688CCB" implied="false" onDeleteCascade="false" schema="dbo" table="AdjResDupSLInfo" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="Product" nullable="true" remarks="" size="2" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="DummyLinenumber" nullable="true" remarks="" size="15" type="varchar" typeCode="12" />
+  <primaryKey column="UniqSeq" sequenceNumberInPK="1" />
+  <index name="PK__AdjResDu__2B249F8E52586560" unique="true">
+    <column ascending="true" name="UniqSeq" />
+  </index>
+  <index name="AdjResDupClaimInfo_search1" unique="false">
+    <column ascending="true" name="Claimnumber" />
+    <column ascending="true" name="UniqSeq" />
+    <column ascending="true" name="Product" />
+  </index>
+  <index name="AdjResDupClaimInfo_search2" unique="true">
+    <column ascending="true" name="Claimnumber" />
+    <column ascending="true" name="Linenumber" />
+    <column ascending="true" name="DummyLinenumber" />
+    <column ascending="true" name="Product" />
+  </index>
+</table>

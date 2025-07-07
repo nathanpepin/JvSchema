@@ -1,0 +1,27 @@
+<table catalog="Jv-1.44.18.6_FK" name="TFBSpendingAccount" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="MasterID" nullable="false" remarks="" size="4" type="int" typeCode="4">
+    <parent catalog="Jv-1.44.18.6_FK" column="MasterID" foreignKey="FK__TFBSpendi__Maste__6F563970" implied="false" onDeleteCascade="false" schema="dbo" table="PlanBuildingMaster" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="AccType" nullable="false" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="CheckAccount" nullable="true" remarks="" size="50" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="5" name="MinContributionAmount" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="6" name="MaxContributionAmount" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="ContributionReason" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="FPIncurredFromDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="FPIncurredThruDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="FPReceivedFromDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="FPReceivedThruDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="TimelyFilingRule" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="13" name="DeniedReasonForTFR" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="14" name="PendReasonForTFR" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="15" name="DRIEOInsufficientFunds" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="16" name="DeniedReasonforInelig" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <primaryKey column="MasterID" sequenceNumberInPK="1" />
+  <primaryKey column="AccType" sequenceNumberInPK="2" />
+  <index name="PK__TFBSpend__FE205DF40CB4112F" unique="true">
+    <column ascending="true" name="MasterID" />
+    <column ascending="true" name="AccType" />
+  </index>
+</table>

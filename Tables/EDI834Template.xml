@@ -1,0 +1,18 @@
+<table catalog="Jv-1.44.18.6_FK" name="EDI834Template" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="TemplateName" nullable="false" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="Description" nullable="true" remarks="" size="75" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="TemplateType" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="TemplateStatus" nullable="true" remarks="" size="15" type="varchar" typeCode="12" />
+  <primaryKey column="TemplateName" sequenceNumberInPK="1" />
+  <index name="PK__EDI834Te__A6C2DA67804A0D3B" unique="true">
+    <column ascending="true" name="TemplateName" />
+  </index>
+  <index name="EDI834Template_Search" unique="false">
+    <column ascending="true" name="TemplateName" />
+    <column ascending="true" name="Description" />
+    <column ascending="true" name="TemplateType" />
+    <column ascending="true" name="TemplateStatus" />
+  </index>
+</table>

@@ -1,0 +1,25 @@
+<table catalog="Jv-1.44.18.6_FK" name="LatePymtPnltyST" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="LatePymtPnltyRulesetID" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="EffectiveDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="LatePymtState" nullable="true" remarks="" size="2" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="LatePymtStatus" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="AddAdditionalDaysToTAT" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="RuleType" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <primaryKey column="LatePymtPnltyRulesetID" sequenceNumberInPK="1" />
+  <index name="PK__LatePymt__F6B4ED0A7BC09C5A" unique="true">
+    <column ascending="true" name="LatePymtPnltyRulesetID" />
+  </index>
+  <index name="LatePymtPnltyST_Search1" unique="true">
+    <column ascending="true" name="EffectiveDate" />
+    <column ascending="true" name="LatePymtState" />
+    <column ascending="true" name="LatePymtStatus" />
+  </index>
+  <index name="LatePymtPnltyST_Search2" unique="false">
+    <column ascending="true" name="LatePymtState" />
+    <column ascending="true" name="EffectiveDate" />
+    <column ascending="true" name="LatePymtStatus" />
+    <column ascending="true" name="RuleType" />
+  </index>
+</table>

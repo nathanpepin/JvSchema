@@ -1,0 +1,32 @@
+<table catalog="Jv-1.44.18.6_FK" name="CredActivityTrack" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="CredActivitySeqID" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="FacPhysID" nullable="false" remarks="" size="4" type="int" typeCode="4">
+    <parent catalog="Jv-1.44.18.6_FK" column="FacPhysID" foreignKey="FK__CredActivityTrac__63F9955D" implied="false" onDeleteCascade="false" schema="dbo" table="CredentialsInfo" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="CredType" nullable="false" remarks="" size="1" type="char" typeCode="1">
+    <parent catalog="Jv-1.44.18.6_FK" column="CredType" foreignKey="FK__CredActivityTrac__63F9955D" implied="false" onDeleteCascade="false" schema="dbo" table="CredentialsInfo" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="ActionDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="ActivityType" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="UserID" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="Comments" nullable="true" remarks="" size="512" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="EndDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="OfferedContract" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="TerminationReason" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <primaryKey column="FacPhysID" sequenceNumberInPK="1" />
+  <primaryKey column="CredType" sequenceNumberInPK="2" />
+  <primaryKey column="CredActivitySeqID" sequenceNumberInPK="3" />
+  <index name="PK__CredActi__BD894E50FBF17A77" unique="true">
+    <column ascending="true" name="FacPhysID" />
+    <column ascending="true" name="CredType" />
+    <column ascending="true" name="CredActivitySeqID" />
+  </index>
+  <index name="CredActivityTrackSearch_idx2" unique="false">
+    <column ascending="true" name="FacPhysID" />
+    <column ascending="true" name="CredType" />
+    <column ascending="true" name="ActionDate" />
+    <column ascending="true" name="ChgTS" />
+  </index>
+</table>

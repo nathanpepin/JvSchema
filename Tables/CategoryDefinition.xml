@@ -1,0 +1,80 @@
+<table catalog="Jv-1.44.18.6_FK" name="CategoryDefinition" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="CategoryID" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="CategoryName" nullable="true" remarks="" size="43" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="EffectiveDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="TerminationDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="RecognizedOnUB_92Form" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="RecognizedOnHCFAForm" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="RequireOtherCategory" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="Active" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="IsUsed" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="IsBillType" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="IsRevenueCode" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="13" name="IsProcedureCode_UB92" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="14" name="IsHCPCSCode" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="15" name="IsProcModifier_UB92" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="16" name="IsDiagnosisCode_UB92" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="17" name="IsDiagnosisAllCode_UB92" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="18" name="IsDRGCode" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="19" name="IsASCCode" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="20" name="IsAdmissionType" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="21" name="IsAdmissionSource" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="22" name="IsConditionCode" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="23" name="IsOccurrenceCode" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="24" name="IsValueCode" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="25" name="IsProviderSplCode_UB92" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="26" name="IsProvDegreeCode_UB92" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="27" name="IsPlaceOfService" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="28" name="IsTypeSOfService" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="29" name="IsProcedureCode_HCFA" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="30" name="IsProcModifier_HCFA" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="31" name="IsDiagnosisCode_HCFA" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="32" name="IsDiagnosisAllCode_HCFA" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="33" name="IsProviderSplCode_HCFA" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="34" name="IsProvDegreeCode_HCFA" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="35" name="IsEMGFlag_HCFA" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="36" name="IncludeExcludeAndOr" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="37" name="IsAnyDiagnosisCode_HCFA" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="38" name="IsAnyProcedureCode" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="39" name="RecognizedOnNCPDPPAL" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="40" name="IsProviderTaxID_UB92" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="41" name="IsProviderSysID_UB92" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="42" name="IsProviderTaxID_HCFA" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="43" name="IsProviderSysID_HCFA" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="44" name="ApplyToEstimateClaim" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="45" name="IsTaxonomyCode_UB92" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="46" name="IsTaxonomyCode_HCFA" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <primaryKey column="CategoryID" sequenceNumberInPK="1" />
+  <index name="PK__Category__19093A2B28522829" unique="true">
+    <column ascending="true" name="CategoryID" />
+  </index>
+  <index name="CategoryDefinition_Search1" unique="false">
+    <column ascending="true" name="CategoryName" />
+    <column ascending="true" name="EffectiveDate" />
+    <column ascending="true" name="TerminationDate" />
+    <column ascending="true" name="Active" />
+    <column ascending="true" name="ApplyToEstimateClaim" />
+  </index>
+  <index name="CategoryDefinition_Search5" unique="false">
+    <column ascending="true" name="CategoryID" />
+    <column ascending="true" name="Active" />
+  </index>
+  <index name="CategoryDefinition_Search6" unique="false">
+    <column ascending="true" name="CategoryName" />
+    <column ascending="true" name="EffectiveDate" />
+    <column ascending="true" name="Active" />
+  </index>
+  <index name="CategoryDefinition_Search7" unique="false">
+    <column ascending="true" name="CategoryName" />
+    <column ascending="true" name="EffectiveDate" />
+    <column ascending="true" name="IsEMGFlag_HCFA" />
+    <column ascending="true" name="Active" />
+    <column ascending="true" name="ApplyToEstimateClaim" />
+  </index>
+  <index name="CategoryDefinition_Unique" unique="true">
+    <column ascending="true" name="CategoryName" />
+    <column ascending="true" name="EffectiveDate" />
+  </index>
+</table>

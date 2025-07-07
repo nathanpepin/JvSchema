@@ -1,0 +1,56 @@
+<table catalog="Jv-1.44.18.6_FK" name="EmpShortTermDisability" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="EmployeeID" nullable="false" remarks="" size="4" type="int" typeCode="4">
+    <parent catalog="Jv-1.44.18.6_FK" column="EmployeeID" foreignKey="FK__EmpShortT__Emplo__0E79DF0E" implied="false" onDeleteCascade="false" schema="dbo" table="Employee" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="EffectiveDate" nullable="false" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="BenefitPlan" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="CoverageLevel" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="BillPlan" nullable="true" remarks="" size="10" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="Tier" nullable="true" remarks="" size="2" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="Volume" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="CalculateAdjustments" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="AdjustAsOfDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="ManualAdjustment" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="PendClaims" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="13" name="PendReason" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="14" name="BillMode" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="15" name="FirstBillDay" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="16" name="SecondBillDay" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="17" name="RateGuaranteeFromDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="18" name="RateGuaranteeThruDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="19" name="PaidThruDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="20" name="SellingBroker" nullable="true" remarks="" size="11" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="21" name="ExpectedBillingFromDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="22" name="ExpectedBillingThruDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="23" name="ProrateRefund" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="24" name="OriginalVolume" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="25" name="AutoUpdBillPlnOrTier" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <primaryKey column="EmployeeID" sequenceNumberInPK="1" />
+  <primaryKey column="EffectiveDate" sequenceNumberInPK="2" />
+  <index name="PK__EmpShort__1BA488A132B1FEEF" unique="true">
+    <column ascending="true" name="EmployeeID" />
+    <column ascending="true" name="EffectiveDate" />
+  </index>
+  <index name="EmployeeShortTermDis_Search1" unique="false">
+    <column ascending="true" name="EmployeeID" />
+    <column ascending="true" name="EffectiveDate" />
+    <column ascending="true" name="CoverageLevel" />
+  </index>
+  <index name="EmployeeShortTermDis_Search2" unique="false">
+    <column ascending="true" name="EmployeeID" />
+    <column ascending="true" name="EffectiveDate" />
+    <column ascending="true" name="BenefitPlan" />
+    <column ascending="true" name="CoverageLevel" />
+  </index>
+  <index name="EmployeeShortTermDis_Search4" unique="false">
+    <column ascending="true" name="EmployeeID" />
+    <column ascending="true" name="BillPlan" />
+  </index>
+  <index name="SearchCoveragesByTier_S" unique="false">
+    <column ascending="true" name="EmployeeID" />
+    <column ascending="true" name="EffectiveDate" />
+    <column ascending="true" name="Tier" />
+  </index>
+</table>

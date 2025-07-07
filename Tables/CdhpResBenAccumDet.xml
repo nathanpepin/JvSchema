@@ -1,0 +1,34 @@
+<table catalog="Jv-1.44.18.6_FK" name="CdhpResBenAccumDet" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="Claimnumber" nullable="false" remarks="" size="19" type="varchar" typeCode="12">
+    <parent catalog="Jv-1.44.18.6_FK" column="Claimnumber" foreignKey="FK__CdhpResBenAccumD__4B62F1BD" implied="false" onDeleteCascade="false" schema="dbo" table="CdhpAdjResult" />
+    <parent catalog="Jv-1.44.18.6_FK" column="Claimnumber" foreignKey="FK__CdhpResBenAccumD__4A6ECD84" implied="false" onDeleteCascade="false" schema="dbo" table="AdjResServLine" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="Linenumber" nullable="false" remarks="" size="15" type="varchar" typeCode="12">
+    <parent catalog="Jv-1.44.18.6_FK" column="DummyLinenumber" foreignKey="FK__CdhpResBenAccumD__4A6ECD84" implied="false" onDeleteCascade="false" schema="dbo" table="AdjResServLine" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="CdhpType" nullable="false" remarks="" size="3" type="varchar" typeCode="12">
+    <parent catalog="Jv-1.44.18.6_FK" column="CdhpType" foreignKey="FK__CdhpResBenAccumD__4B62F1BD" implied="false" onDeleteCascade="false" schema="dbo" table="CdhpAdjResult" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="2" id="5" name="RolloverBalance" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="6" name="ContributionBalance" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="7" name="TotalAccountBalance" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="8" name="TotalPaid" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="9" name="NextYearHRARolloverBalance" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="10" name="NextYearContributionBalance" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="11" name="NextYearTotalAccountBalance" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="12" name="NextYearTotalPaid" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="13" name="PrevYearHRARolloverBalance" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="14" name="PrevYearContributionBalance" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="15" name="PrevYearTotalAccountBalance" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="16" name="PrevYearTotalPaid" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <primaryKey column="Claimnumber" sequenceNumberInPK="1" />
+  <primaryKey column="Linenumber" sequenceNumberInPK="2" />
+  <primaryKey column="CdhpType" sequenceNumberInPK="3" />
+  <index name="PK__CdhpResB__3F4B469A01A16A48" unique="true">
+    <column ascending="true" name="Claimnumber" />
+    <column ascending="true" name="Linenumber" />
+    <column ascending="true" name="CdhpType" />
+  </index>
+</table>

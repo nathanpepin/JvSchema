@@ -1,0 +1,142 @@
+<table catalog="Jv-1.44.18.6_FK" name="AggSpecBillingRate" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="Product" nullable="false" remarks="" size="2" type="varchar" typeCode="12">
+    <parent catalog="Jv-1.44.18.6_FK" column="Product" foreignKey="FK__AggSpecBillingRa__000BC426" implied="false" onDeleteCascade="false" schema="dbo" table="MaintainBillingRates" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="BillPlan" nullable="false" remarks="" size="10" type="varchar" typeCode="12">
+    <parent catalog="Jv-1.44.18.6_FK" column="BillPlan" foreignKey="FK__AggSpecBillingRa__000BC426" implied="false" onDeleteCascade="false" schema="dbo" table="MaintainBillingRates" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="Area" nullable="false" remarks="" size="4" type="int" typeCode="4">
+    <parent catalog="Jv-1.44.18.6_FK" column="Area" foreignKey="FK__AggSpecBillingRa__000BC426" implied="false" onDeleteCascade="false" schema="dbo" table="MaintainBillingRates" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="Tier" nullable="false" remarks="" size="2" type="varchar" typeCode="12">
+    <parent catalog="Jv-1.44.18.6_FK" column="Tier" foreignKey="FK__AggSpecBillingRa__000BC426" implied="false" onDeleteCascade="false" schema="dbo" table="MaintainBillingRates" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="EmployeeStatus" nullable="false" remarks="" size="1" type="char" typeCode="1">
+    <parent catalog="Jv-1.44.18.6_FK" column="EmployeeStatus" foreignKey="FK__AggSpecBillingRa__000BC426" implied="false" onDeleteCascade="false" schema="dbo" table="MaintainBillingRates" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="RateGender" nullable="false" remarks="" size="1" type="char" typeCode="1">
+    <parent catalog="Jv-1.44.18.6_FK" column="RateGender" foreignKey="FK__AggSpecBillingRa__000BC426" implied="false" onDeleteCascade="false" schema="dbo" table="MaintainBillingRates" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="RateEffectiveDate" nullable="false" remarks="" size="20" type="date" typeCode="12">
+    <parent catalog="Jv-1.44.18.6_FK" column="RateEffectiveDate" foreignKey="FK__AggSpecBillingRa__000BC426" implied="false" onDeleteCascade="false" schema="dbo" table="MaintainBillingRates" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="BillMode" nullable="false" remarks="" size="1" type="char" typeCode="1">
+    <parent catalog="Jv-1.44.18.6_FK" column="BillMode" foreignKey="FK__AggSpecBillingRa__000BC426" implied="false" onDeleteCascade="false" schema="dbo" table="MaintainBillingRates" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="Description" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="CalculationMethod" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="12" name="SpecificDeductible" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="5" id="13" name="AggregateAmountForEmployee" nullable="true" remarks="" size="16" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="5" id="14" name="AggregateAmountForFamily" nullable="true" remarks="" size="16" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="5" id="15" name="AggregateAmountFor1Dependent" nullable="true" remarks="" size="16" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="5" id="16" name="AggregateAmountFor2PlusDep" nullable="true" remarks="" size="16" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="5" id="17" name="AggregateAmountForSpouse" nullable="true" remarks="" size="16" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="5" id="18" name="AggregateAmountForChildren" nullable="true" remarks="" size="16" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="19" name="BrokerForAggregateAmounts" nullable="true" remarks="" size="11" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="5" id="20" name="SpecificAmountForEmployee" nullable="true" remarks="" size="16" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="5" id="21" name="SpecificAmountForFamily" nullable="true" remarks="" size="16" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="5" id="22" name="SpecificAmountFor1Dependent" nullable="true" remarks="" size="16" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="5" id="23" name="SpecificAmountFor2PlusDep" nullable="true" remarks="" size="16" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="5" id="24" name="SpecificAmountForSpouse" nullable="true" remarks="" size="16" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="5" id="25" name="SpecificAmountForChildren" nullable="true" remarks="" size="16" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="26" name="BrokerForSpecificAmounts" nullable="true" remarks="" size="11" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="5" id="27" name="LossFundAmountForEmployee" nullable="true" remarks="" size="16" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="5" id="28" name="LossFundAmountForFamily" nullable="true" remarks="" size="16" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="5" id="29" name="LossFundAmountFor1Dependent" nullable="true" remarks="" size="16" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="5" id="30" name="LossFundAmountFor2PlusDep" nullable="true" remarks="" size="16" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="5" id="31" name="LossFundAmountForSpouse" nullable="true" remarks="" size="16" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="5" id="32" name="LossFundAmountForChildren" nullable="true" remarks="" size="16" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="33" name="BrokerForLossFundAmounts" nullable="true" remarks="" size="11" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="34" name="DivideBy" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="35" name="SplitBy" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="36" name="ApplySamePercent" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="3" id="37" name="ClientPercent" nullable="true" remarks="" size="8" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="3" id="38" name="MemberPercent" nullable="true" remarks="" size="8" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="5" id="39" name="AggEmpClientAmount" nullable="true" remarks="" size="16" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="3" id="40" name="AggEmpClientPercent" nullable="true" remarks="" size="8" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="5" id="41" name="AggFamClientAmount" nullable="true" remarks="" size="16" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="3" id="42" name="AggFamClientPercent" nullable="true" remarks="" size="8" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="5" id="43" name="AggSpouseClientAmount" nullable="true" remarks="" size="16" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="3" id="44" name="AggSpouseClientPercent" nullable="true" remarks="" size="8" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="5" id="45" name="AggDepClientAmount" nullable="true" remarks="" size="16" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="3" id="46" name="AggDepClientPercent" nullable="true" remarks="" size="8" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="5" id="47" name="AggTwoDepClientAmount" nullable="true" remarks="" size="16" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="3" id="48" name="AggTwoDepClientPercent" nullable="true" remarks="" size="8" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="5" id="49" name="AggChildClientAmount" nullable="true" remarks="" size="16" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="3" id="50" name="AggChildClientPercent" nullable="true" remarks="" size="8" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="5" id="51" name="SpcEmpClientAmount" nullable="true" remarks="" size="16" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="3" id="52" name="SpcClientPercent" nullable="true" remarks="" size="8" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="5" id="53" name="SpcFamClientAmount" nullable="true" remarks="" size="16" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="3" id="54" name="SpcFamClientPercent" nullable="true" remarks="" size="8" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="5" id="55" name="SpcSpouseClientAmount" nullable="true" remarks="" size="16" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="3" id="56" name="SpcSpouseClientPercent" nullable="true" remarks="" size="8" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="5" id="57" name="SpcDepClientAmount" nullable="true" remarks="" size="16" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="3" id="58" name="SpcDepClientPercent" nullable="true" remarks="" size="8" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="5" id="59" name="SpcTwoDepClientAmount" nullable="true" remarks="" size="16" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="3" id="60" name="SpcTwoDepClientPercent" nullable="true" remarks="" size="8" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="5" id="61" name="SpcChildClientAmount" nullable="true" remarks="" size="16" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="3" id="62" name="SpcChildClientPercent" nullable="true" remarks="" size="8" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="5" id="63" name="LossEmpClientAmount" nullable="true" remarks="" size="16" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="3" id="64" name="LossEmpClientPercent" nullable="true" remarks="" size="8" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="5" id="65" name="LossFamClientAmount" nullable="true" remarks="" size="16" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="3" id="66" name="LossFamClientPercent" nullable="true" remarks="" size="8" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="5" id="67" name="LossSpouseClientAmount" nullable="true" remarks="" size="16" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="3" id="68" name="LossSpouseClientPercent" nullable="true" remarks="" size="8" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="5" id="69" name="LossDepClientAmount" nullable="true" remarks="" size="16" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="3" id="70" name="LossDepClientPercent" nullable="true" remarks="" size="8" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="5" id="71" name="LossTwoDepClientAmount" nullable="true" remarks="" size="16" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="3" id="72" name="LossTwoDepClientPercent" nullable="true" remarks="" size="8" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="5" id="73" name="LossChildClientAmount" nullable="true" remarks="" size="16" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="3" id="74" name="LossChildClientPercent" nullable="true" remarks="" size="8" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="75" name="MemberBrokerForAggregate" nullable="true" remarks="" size="11" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="76" name="MemberBrokerForSpecific" nullable="true" remarks="" size="11" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="77" name="MemberBrokerForLoss" nullable="true" remarks="" size="11" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="78" name="ExpandedRateTable" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="5" id="79" name="AggregateAmountFor3Dep" nullable="true" remarks="" size="16" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="5" id="80" name="Aggregate3DepClientAmount" nullable="true" remarks="" size="16" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="3" id="81" name="Aggregate3DepClientPercent" nullable="true" remarks="" size="8" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="5" id="82" name="AggregateAmountFor4Dep" nullable="true" remarks="" size="16" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="5" id="83" name="Aggregate4DepClientAmount" nullable="true" remarks="" size="16" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="3" id="84" name="Aggregate4DepClientPercent" nullable="true" remarks="" size="8" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="5" id="85" name="AggregateAmountFor5PlusDep" nullable="true" remarks="" size="16" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="5" id="86" name="Aggregate5PlusDepClientAmount" nullable="true" remarks="" size="16" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="3" id="87" name="Aggregate5PlusDepClientPercent" nullable="true" remarks="" size="8" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="5" id="88" name="SpecificAmountFor3Dep" nullable="true" remarks="" size="16" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="5" id="89" name="Specific3DepClientAmount" nullable="true" remarks="" size="16" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="3" id="90" name="Specific3DepClientPercent" nullable="true" remarks="" size="8" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="5" id="91" name="SpecificAmountFor4Dep" nullable="true" remarks="" size="16" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="5" id="92" name="Specific4DepClientAmount" nullable="true" remarks="" size="16" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="3" id="93" name="Specific4DepClientPercent" nullable="true" remarks="" size="8" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="5" id="94" name="SpecificAmountFor5PlusDep" nullable="true" remarks="" size="16" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="5" id="95" name="Specific5PlusDepClientAmount" nullable="true" remarks="" size="16" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="3" id="96" name="Specific5PlusDepClientPercent" nullable="true" remarks="" size="8" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="5" id="97" name="LossFundAmountFor3Dep" nullable="true" remarks="" size="16" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="5" id="98" name="LossFund3DepClientAmount" nullable="true" remarks="" size="16" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="3" id="99" name="LossFund3DepClientPercent" nullable="true" remarks="" size="8" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="5" id="100" name="LossFundAmountFor4Dep" nullable="true" remarks="" size="16" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="5" id="101" name="LossFund4DepClientAmount" nullable="true" remarks="" size="16" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="3" id="102" name="LossFund4DepClientPercent" nullable="true" remarks="" size="8" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="5" id="103" name="LossFundAmountFor5PlusDep" nullable="true" remarks="" size="16" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="5" id="104" name="LossFund5PlusDepClientAmount" nullable="true" remarks="" size="16" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="3" id="105" name="LossFund5PlusDepClientPercent" nullable="true" remarks="" size="8" type="decimal" typeCode="3" />
+  <primaryKey column="Product" sequenceNumberInPK="1" />
+  <primaryKey column="BillPlan" sequenceNumberInPK="2" />
+  <primaryKey column="Area" sequenceNumberInPK="3" />
+  <primaryKey column="Tier" sequenceNumberInPK="4" />
+  <primaryKey column="EmployeeStatus" sequenceNumberInPK="5" />
+  <primaryKey column="RateGender" sequenceNumberInPK="6" />
+  <primaryKey column="RateEffectiveDate" sequenceNumberInPK="7" />
+  <primaryKey column="BillMode" sequenceNumberInPK="8" />
+  <index name="PK__AggSpecB__B4E75B545AB13F59" unique="true">
+    <column ascending="true" name="Product" />
+    <column ascending="true" name="BillPlan" />
+    <column ascending="true" name="Area" />
+    <column ascending="true" name="Tier" />
+    <column ascending="true" name="EmployeeStatus" />
+    <column ascending="true" name="RateGender" />
+    <column ascending="true" name="RateEffectiveDate" />
+    <column ascending="true" name="BillMode" />
+  </index>
+</table>

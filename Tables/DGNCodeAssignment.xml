@@ -1,0 +1,33 @@
+<table catalog="Jv-1.44.18.6_FK" name="DGNCodeAssignment" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="DGNRuleSeqNo" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="ServiceCategory" nullable="true" remarks="" size="8000" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="PendReason" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="DGNCodes" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="PendIfAmountExceeds" nullable="true" remarks="" size="10" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="NotesFlag" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="SelectCodeAssignmentType" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="RuleSetID" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="ExeOrder" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="InternalID" nullable="true" remarks="" size="12" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="Action" nullable="true" remarks="" size="200" type="varchar" typeCode="12" />
+  <primaryKey column="DGNRuleSeqNo" sequenceNumberInPK="1" />
+  <primaryKey column="RuleSetID" sequenceNumberInPK="2" />
+  <index name="PK__DGNCodeA__DA795EEB59AD5C97" unique="true">
+    <column ascending="true" name="DGNRuleSeqNo" />
+    <column ascending="true" name="RuleSetID" />
+  </index>
+  <index name="DGNCodeAssignment_Search1" unique="false">
+    <column ascending="true" name="RuleSetID" />
+    <column ascending="true" name="ExeOrder" />
+    <column ascending="true" name="DGNRuleSeqNo" />
+    <column ascending="true" name="DGNCodes" />
+    <column ascending="true" name="PendIfAmountExceeds" />
+    <column ascending="true" name="PendReason" />
+    <column ascending="true" name="NotesFlag" />
+  </index>
+  <index name="DGNCodeAssignment_Search3" unique="true">
+    <column ascending="true" name="InternalID" />
+  </index>
+</table>

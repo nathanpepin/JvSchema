@@ -1,0 +1,206 @@
+<table catalog="Jv-1.44.18.6_FK" name="Client" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="BlkOfBusID" nullable="false" remarks="" size="5" type="varchar" typeCode="12">
+    <child catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__ClientAddress__633A7B4E" implied="false" onDeleteCascade="false" schema="dbo" table="ClientAddress" />
+    <child catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__ClientCoverage__642E9F87" implied="false" onDeleteCascade="false" schema="dbo" table="ClientCoverage" />
+    <child catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__ClientDepartment__670B0C32" implied="false" onDeleteCascade="false" schema="dbo" table="ClientDepartment" />
+    <child catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__ClientDepartment__6522C3C0" implied="false" onDeleteCascade="false" schema="dbo" table="ClientDepartmentAddress" />
+    <child catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__ClientDepartment__6616E7F9" implied="false" onDeleteCascade="false" schema="dbo" table="ClientDepartmentPhoneNum" />
+    <child catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__ClientDepStatus__67FF306B" implied="false" onDeleteCascade="false" schema="dbo" table="ClientDepStatus" />
+    <child catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__ClientEmpStatus__68F354A4" implied="false" onDeleteCascade="false" schema="dbo" table="ClientEmpStatus" />
+    <child catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__ClientLocation__6DB809C1" implied="false" onDeleteCascade="false" schema="dbo" table="ClientLocation" />
+    <child catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__UserIncExcClient__78DFA3AA" implied="false" onDeleteCascade="false" schema="dbo" table="UserIncExcClient" />
+    <parent catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__Client__BlkOfBus__7B1204DF" implied="false" onDeleteCascade="false" schema="dbo" table="BlockOfBusiness" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="ClientID" nullable="false" remarks="" size="5" type="varchar" typeCode="12">
+    <child catalog="Jv-1.44.18.6_FK" column="ClientID" foreignKey="FK__ClientAddress__633A7B4E" implied="false" onDeleteCascade="false" schema="dbo" table="ClientAddress" />
+    <child catalog="Jv-1.44.18.6_FK" column="ClientID" foreignKey="FK__ClientCoverage__642E9F87" implied="false" onDeleteCascade="false" schema="dbo" table="ClientCoverage" />
+    <child catalog="Jv-1.44.18.6_FK" column="ClientID" foreignKey="FK__ClientDepartment__670B0C32" implied="false" onDeleteCascade="false" schema="dbo" table="ClientDepartment" />
+    <child catalog="Jv-1.44.18.6_FK" column="ClientID" foreignKey="FK__ClientDepartment__6522C3C0" implied="false" onDeleteCascade="false" schema="dbo" table="ClientDepartmentAddress" />
+    <child catalog="Jv-1.44.18.6_FK" column="ClientID" foreignKey="FK__ClientDepartment__6616E7F9" implied="false" onDeleteCascade="false" schema="dbo" table="ClientDepartmentPhoneNum" />
+    <child catalog="Jv-1.44.18.6_FK" column="ClientID" foreignKey="FK__ClientDepStatus__67FF306B" implied="false" onDeleteCascade="false" schema="dbo" table="ClientDepStatus" />
+    <child catalog="Jv-1.44.18.6_FK" column="ClientID" foreignKey="FK__ClientEmpStatus__68F354A4" implied="false" onDeleteCascade="false" schema="dbo" table="ClientEmpStatus" />
+    <child catalog="Jv-1.44.18.6_FK" column="ClientID" foreignKey="FK__ClientLocation__6DB809C1" implied="false" onDeleteCascade="false" schema="dbo" table="ClientLocation" />
+    <child catalog="Jv-1.44.18.6_FK" column="ClientID" foreignKey="FK__UserIncExcClient__78DFA3AA" implied="false" onDeleteCascade="false" schema="dbo" table="UserIncExcClient" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="AlternateID" nullable="true" remarks="" size="15" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="ClientName" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="EffectiveDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="ClientLanguage" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="FederalTaxID" nullable="true" remarks="" size="9" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="StateTaxID" nullable="true" remarks="" size="9" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="ContactName" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="ServiceRep" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="Email" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="13" name="WebsiteAddress" nullable="true" remarks="" size="2100" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="14" name="LastRenewalDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="15" name="BillingAndAdministration" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="16" name="ClaimsAdjudication" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="17" name="ClaimsNegotiation" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="18" name="ConsumerDriven" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="19" name="UtilizationReview" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="20" name="ClientMemberPortalAccess" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="21" name="OnlineEnrollment" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="22" name="CoverageByLocation" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="23" name="StopLossContract" nullable="true" remarks="" size="10" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="24" name="ClaimsRunInDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="25" name="ApplyPreAdjudicatedClaimsEdits" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="26" name="AutoupdateEmpCoverageLevel" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="27" name="OutboundGroupID" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="28" name="DepartmentSortOrder" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="29" name="LocationSortOrder" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="30" name="Client_UF1" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="31" name="Client_UF2" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="32" name="Client_UF3" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="33" name="Client_UF4" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="34" name="Client_UF5" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="35" name="Client_UF6" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="36" name="Comments" nullable="true" remarks="" size="512" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="37" name="EligibleLives" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="38" name="Area" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="39" name="ClaimsAdjudicationPendReason" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="40" name="HoldChecks" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="41" name="EOBFormat" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="42" name="VendorId" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="43" name="HoldReason" nullable="true" remarks="" size="10" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="44" name="EOBRouting" nullable="true" remarks="" size="2" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="45" name="EditPreAControlRule" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="46" name="PayProviderOnly" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="47" name="SICCode" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="48" name="LogosForChecks" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="49" name="LogosForEOBs" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="50" name="OBRAProcessing" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="51" name="BatClaimProvChks" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="52" name="BatClaimPatChks" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="53" name="OBRAModuleAccess" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="54" name="UsePMCS" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="55" name="HCFAThreshold" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="56" name="UBThreshold" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="3" id="57" name="AdminFeePercent" nullable="true" remarks="" size="8" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="58" name="ActivatePaperlessEOB" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="59" name="SuppressPaperEOB" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="60" name="MailPaperEOBDisc" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="2005" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="61" name="SendEmailEOB" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="62" name="MailSubjectLine" nullable="true" remarks="" size="512" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="63" name="MailBody" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="2005" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="64" name="InclAllDependents" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="65" name="ValidateCoverageLevel" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="66" name="IncludeExcludeEmpDepStatus" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="67" name="DisablityEOBFormat" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="68" name="MESAEmployeePreferences" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="69" name="InclEmpEmailPaperlessOption" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="70" name="ApplyPostAdjudicatedClaimsEdits" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="71" name="EditPostAControlRule" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="72" name="ClientTransferIsInProgress" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="73" name="OverrideSetup" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="74" name="MaxMergeCount" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="75" name="DisplayOption" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="76" name="Client_UF7" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="77" name="Client_UF8" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="78" name="Client_UF9" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="79" name="Client_UF10" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="80" name="Client_UF11" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="81" name="Client_UF12" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="82" name="Client_UF13" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="83" name="Client_UF14" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="84" name="Client_UF15" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="85" name="Client_UF16" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="86" name="Client_UF17" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="87" name="Client_UF18" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="88" name="Client_UF19" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="89" name="Client_UF20" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="90" name="CheckEOBFulfillment" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="91" name="PlanSponsorName" nullable="true" remarks="" size="99" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="92" name="PlanSponsorEIN" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="93" name="IssuerName" nullable="true" remarks="" size="99" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="94" name="IssuerEIN" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="95" name="TPAName" nullable="true" remarks="" size="99" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="96" name="TPAEIN" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="97" name="PBMName" nullable="true" remarks="" size="99" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="98" name="PBMEIN" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="99" name="CarrierName" nullable="true" remarks="" size="99" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="100" name="CarrierEIN" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="101" name="AffiliateName" nullable="true" remarks="" size="99" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="102" name="AffiliateEIN" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="103" name="MarketSegment" nullable="true" remarks="" size="99" type="varchar" typeCode="12" />
+  <primaryKey column="BlkOfBusID" sequenceNumberInPK="1" />
+  <primaryKey column="ClientID" sequenceNumberInPK="2" />
+  <index name="PK__Client__2AD126449AF9B07D" unique="true">
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+  </index>
+  <index name="Client_AggrContrReportSearch" unique="false">
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="StopLossContract" />
+  </index>
+  <index name="Client_CmpaSearch1" unique="false">
+    <column ascending="true" name="ClientName" />
+    <column ascending="true" name="WebsiteAddress" />
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="AlternateID" />
+    <column ascending="true" name="FederalTaxID" />
+    <column ascending="true" name="StateTaxID" />
+    <column ascending="true" name="ClientMemberPortalAccess" />
+  </index>
+  <index name="Client_CmpaSearch2" unique="false">
+    <column ascending="true" name="WebsiteAddress" />
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="AlternateID" />
+    <column ascending="true" name="FederalTaxID" />
+    <column ascending="true" name="StateTaxID" />
+    <column ascending="true" name="ClientMemberPortalAccess" />
+  </index>
+  <index name="Client_CmpaSearch3" unique="false">
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="AlternateID" />
+    <column ascending="true" name="FederalTaxID" />
+    <column ascending="true" name="StateTaxID" />
+    <column ascending="true" name="ClientMemberPortalAccess" />
+  </index>
+  <index name="Client_CmpaSearch6" unique="false">
+    <column ascending="true" name="FederalTaxID" />
+    <column ascending="true" name="StateTaxID" />
+    <column ascending="true" name="ClientMemberPortalAccess" />
+  </index>
+  <index name="Client_CmpaSearch7" unique="false">
+    <column ascending="true" name="StateTaxID" />
+    <column ascending="true" name="ClientMemberPortalAccess" />
+  </index>
+  <index name="Client_Search10" unique="false">
+    <column ascending="true" name="OutboundGroupID" />
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+  </index>
+  <index name="Client_Search11" unique="false">
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="ClientName" />
+    <column ascending="true" name="WebsiteAddress" />
+    <column ascending="true" name="AlternateID" />
+    <column ascending="true" name="FederalTaxID" />
+    <column ascending="true" name="StateTaxID" />
+  </index>
+  <index name="Client_Search12" unique="false">
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="IncludeExcludeEmpDepStatus" />
+  </index>
+  <index name="Client_Search5" unique="false">
+    <column ascending="true" name="AlternateID" />
+    <column ascending="true" name="FederalTaxID" />
+    <column ascending="true" name="StateTaxID" />
+  </index>
+  <index name="Client_Search9" unique="false">
+    <column ascending="true" name="ClientID" />
+  </index>
+  <index name="CMPAClientAccess_idx10" unique="false">
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="ClientMemberPortalAccess" />
+  </index>
+</table>

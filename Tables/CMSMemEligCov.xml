@@ -1,0 +1,96 @@
+<table catalog="Jv-1.44.18.6_FK" name="CMSMemEligCov" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="EmployeeID" nullable="false" remarks="" size="4" type="int" typeCode="4">
+    <parent catalog="Jv-1.44.18.6_FK" column="EmployeeID" foreignKey="FK__CMSMemEli__Emplo__1D671CE3" implied="false" onDeleteCascade="false" schema="dbo" table="Employee" />
+    <parent catalog="Jv-1.44.18.6_FK" column="EmployeeID" foreignKey="FK__CMSMemEligCov__1E5B411C" implied="false" onDeleteCascade="false" schema="dbo" table="Dependent" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="DepSequenceNumber" nullable="false" remarks="" size="4" type="int" typeCode="4">
+    <parent catalog="Jv-1.44.18.6_FK" column="DepSequenceNumber" foreignKey="FK__CMSMemEligCov__1E5B411C" implied="false" onDeleteCascade="false" schema="dbo" table="Dependent" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="CMSCovgEffDate" nullable="false" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="CMSCovgThruDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="ActualEffDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="TransactionType" nullable="false" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="DCN" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="Filename" nullable="true" remarks="" size="50" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="CMSAccepted" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="CMSTimeOfGeneration" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="CMSTimeOfAcceptance" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="13" name="OverrideCode" nullable="true" remarks="" size="4" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="14" name="MSPRespStatus" nullable="false" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="15" name="HICNumber" nullable="true" remarks="" size="12" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="16" name="BeneficiarySurname" nullable="true" remarks="" size="6" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="17" name="BeneficiaryFirstInitial" nullable="true" remarks="" size="1" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="18" name="BeneficiaryDateofBirth" nullable="true" remarks="" size="8" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="19" name="BeneficiarySexCode" nullable="true" remarks="" size="1" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="20" name="CoverageType" nullable="true" remarks="" size="1" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="21" name="BeneficiarySSN" nullable="true" remarks="" size="9" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="22" name="MSPEffectiveDate" nullable="true" remarks="" size="8" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="23" name="MSPTerminationDate" nullable="true" remarks="" size="8" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="24" name="RelationshipCode" nullable="true" remarks="" size="2" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="25" name="PolicyHolderFirstName" nullable="true" remarks="" size="9" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="26" name="PolicyHolderLastName" nullable="true" remarks="" size="16" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="27" name="PolicyHolderSSN" nullable="true" remarks="" size="9" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="28" name="EmployerTIN" nullable="true" remarks="" size="9" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="29" name="EmployerSize" nullable="true" remarks="" size="1" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="30" name="GroupPolicyNumber" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="31" name="IndividualPolicyNumber" nullable="true" remarks="" size="17" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="32" name="EmployeeCoverageElection" nullable="true" remarks="" size="1" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="33" name="EmployeeStatus" nullable="true" remarks="" size="1" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="34" name="InsurerTIN" nullable="true" remarks="" size="9" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="35" name="NationalHealthPlan" nullable="true" remarks="" size="10" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="36" name="RxInsuredIDNumber" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="37" name="RxGroupNumber" nullable="true" remarks="" size="15" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="38" name="RxPCN" nullable="true" remarks="" size="10" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="39" name="RxBIN" nullable="true" remarks="" size="6" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="40" name="RxTollFreeNumber" nullable="true" remarks="" size="18" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="41" name="PersonCode" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="42" name="SEE" nullable="true" remarks="" size="12" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="43" name="CMSTimeOfResponse" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="44" name="ErrorCode1" nullable="true" remarks="" size="4" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="45" name="ErrorCode2" nullable="true" remarks="" size="4" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="46" name="ErrorCode3" nullable="true" remarks="" size="4" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="47" name="ErrorCode4" nullable="true" remarks="" size="4" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="48" name="ErrorCode5" nullable="true" remarks="" size="4" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="49" name="ErrorCode6" nullable="true" remarks="" size="4" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="50" name="ErrorCode7" nullable="true" remarks="" size="4" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="51" name="ErrorCode8" nullable="true" remarks="" size="4" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="52" name="RxErrorCode1" nullable="true" remarks="" size="4" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="53" name="RxErrorCode2" nullable="true" remarks="" size="4" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="54" name="RxErrorCode3" nullable="true" remarks="" size="4" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="55" name="RxErrorCode4" nullable="true" remarks="" size="4" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="56" name="MSPDispositionCode" nullable="true" remarks="" size="2" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="57" name="RxSDispositionCode" nullable="true" remarks="" size="2" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="58" name="IsConverisionRecord" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="59" name="MergedIndicator" nullable="true" remarks="" size="6" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="60" name="PlaceHolder1" nullable="true" remarks="" size="6" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="61" name="PlaceHolder2" nullable="true" remarks="" size="6" type="varchar" typeCode="12" />
+  <primaryKey column="EmployeeID" sequenceNumberInPK="1" />
+  <primaryKey column="DepSequenceNumber" sequenceNumberInPK="2" />
+  <primaryKey column="CMSCovgEffDate" sequenceNumberInPK="3" />
+  <primaryKey column="TransactionType" sequenceNumberInPK="4" />
+  <primaryKey column="MSPRespStatus" sequenceNumberInPK="5" />
+  <index name="PK__CMSMemEl__A5176533DCB855D8" unique="true">
+    <column ascending="true" name="EmployeeID" />
+    <column ascending="true" name="DepSequenceNumber" />
+    <column ascending="true" name="CMSCovgEffDate" />
+    <column ascending="true" name="TransactionType" />
+    <column ascending="true" name="MSPRespStatus" />
+  </index>
+  <index name="CMSMemEligCov_Search1" unique="false">
+    <column ascending="true" name="MSPRespStatus" />
+    <column ascending="true" name="EmployeeID" />
+    <column ascending="true" name="DepSequenceNumber" />
+    <column ascending="true" name="CMSCovgEffDate" />
+    <column ascending="true" name="TransactionType" />
+    <column ascending="true" name="ChgTS" />
+  </index>
+  <index name="CMSMemEligCov_Search2" unique="false">
+    <column ascending="true" name="MergedIndicator" />
+    <column ascending="true" name="EmployeeID" />
+    <column ascending="true" name="DepSequenceNumber" />
+    <column ascending="true" name="CMSCovgEffDate" />
+    <column ascending="true" name="TransactionType" />
+  </index>
+</table>

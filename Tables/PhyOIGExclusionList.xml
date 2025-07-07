@@ -1,0 +1,22 @@
+<table catalog="Jv-1.44.18.6_FK" name="PhyOIGExclusionList" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="RecordID" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="PhysicianID" nullable="false" remarks="" size="4" type="int" typeCode="4">
+    <parent catalog="Jv-1.44.18.6_FK" column="PhysicianID" foreignKey="FK__PhyOIGExc__Physi__63256CB5" implied="false" onDeleteCascade="false" schema="dbo" table="Physician" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="EffectiveDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="OIGState" nullable="true" remarks="" size="2" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="Status" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <primaryKey column="PhysicianID" sequenceNumberInPK="1" />
+  <primaryKey column="RecordID" sequenceNumberInPK="2" />
+  <index name="PK__PhyOIGEx__50481AFF22EB6C99" unique="true">
+    <column ascending="true" name="PhysicianID" />
+    <column ascending="true" name="RecordID" />
+  </index>
+  <index name="PhyOIGExclusionList_idx2" unique="true">
+    <column ascending="true" name="PhysicianID" />
+    <column ascending="true" name="OIGState" />
+    <column ascending="true" name="EffectiveDate" />
+  </index>
+</table>

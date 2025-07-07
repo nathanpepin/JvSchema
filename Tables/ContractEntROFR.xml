@@ -1,0 +1,21 @@
+<table catalog="Jv-1.44.18.6_FK" name="ContractEntROFR" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="ContractingSeqID" nullable="false" remarks="" size="4" type="int" typeCode="4">
+    <parent catalog="Jv-1.44.18.6_FK" column="ContractingSeqID" foreignKey="FK__ContractE__Contr__50E6C0E9" implied="false" onDeleteCascade="false" schema="dbo" table="ContractingEntity" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="ROFRType" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="ExclusivityType" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="EffectiveDate" nullable="false" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="TerminationDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="TerminationReason" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="ROFRContSeqID" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <primaryKey column="ContractingSeqID" sequenceNumberInPK="1" />
+  <primaryKey column="ROFRContSeqID" sequenceNumberInPK="2" />
+  <primaryKey column="EffectiveDate" sequenceNumberInPK="3" />
+  <index name="PK__Contract__80F93DF3E9080AA3" unique="true">
+    <column ascending="true" name="ContractingSeqID" />
+    <column ascending="true" name="ROFRContSeqID" />
+    <column ascending="true" name="EffectiveDate" />
+  </index>
+</table>

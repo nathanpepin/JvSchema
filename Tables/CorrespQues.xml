@@ -1,0 +1,15 @@
+<table catalog="Jv-1.44.18.6_FK" name="CorrespQues" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="CorrespondenceID" nullable="false" remarks="" size="3" type="varchar" typeCode="12">
+    <parent catalog="Jv-1.44.18.6_FK" column="CorrespondenceID" foreignKey="FK__CorrespQu__Corre__5D4C97CE" implied="false" onDeleteCascade="false" schema="dbo" table="CorrespDefinition" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="QuestionID" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="Question" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="2005" />
+  <primaryKey column="CorrespondenceID" sequenceNumberInPK="1" />
+  <primaryKey column="QuestionID" sequenceNumberInPK="2" />
+  <index name="PK__CorrespQ__A042C0DAB78CC733" unique="true">
+    <column ascending="true" name="CorrespondenceID" />
+    <column ascending="true" name="QuestionID" />
+  </index>
+</table>

@@ -1,0 +1,76 @@
+<table catalog="Jv-1.44.18.6_FK" name="MiscellaneousFees" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="BlkOfBusID" nullable="true" remarks="" size="5" type="varchar" typeCode="12">
+    <parent catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__Miscellan__BlkOf__7A3DDC37" implied="false" onDeleteCascade="false" schema="dbo" table="BlockOfBusiness" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="ClientID" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="LocationName" nullable="true" remarks="" size="12" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="CertificateNumber" nullable="true" remarks="" size="29" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="FeeDescription" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="FeeType" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="8" name="FeeAmount" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="BrokerCode" nullable="true" remarks="" size="11" type="varchar" typeCode="12">
+    <parent catalog="Jv-1.44.18.6_FK" column="Code" foreignKey="FK__Miscellan__Broke__7E0E6D1B" implied="false" onDeleteCascade="false" schema="dbo" table="BrokerDemographic" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="lastbill" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="SplitFees" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="12" name="ClientFeeAmount" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="13" name="ClientBrokerCode" nullable="true" remarks="" size="11" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="14" name="EmployeeFeeAmount" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="15" name="EmployeeBrokerCode" nullable="true" remarks="" size="11" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="16" name="MiscFeeID" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="17" name="EntryDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="18" name="BatchNumber" nullable="true" remarks="" size="10" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="19" name="BillDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="20" name="SplitEmpEntryDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="21" name="SplitEmpBatchNumber" nullable="true" remarks="" size="10" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="22" name="SplitEmpBillDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="23" name="ReportEmployeeID" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="24" name="FeeMonthDate" nullable="true" remarks="" size="4" type="varchar" typeCode="12" />
+  <primaryKey column="MiscFeeID" sequenceNumberInPK="1" />
+  <index name="PK__Miscella__39AAE53FB1B1DC44" unique="true">
+    <column ascending="true" name="MiscFeeID" />
+  </index>
+  <index name="MiscellaneousFees_CT" unique="false">
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="MiscFeeID" />
+  </index>
+  <index name="MiscellaneousFees_Search1" unique="false">
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="LocationName" />
+    <column ascending="true" name="CertificateNumber" />
+    <column ascending="true" name="FeeType" />
+    <column ascending="true" name="lastbill" />
+  </index>
+  <index name="MiscellaneousFees_Search3" unique="false">
+    <column ascending="true" name="EntryDate" />
+    <column ascending="true" name="BatchNumber" />
+    <column ascending="true" name="FeeType" />
+  </index>
+  <index name="MiscellaneousFees_Search4" unique="false">
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="LocationName" />
+    <column ascending="true" name="CertificateNumber" />
+    <column ascending="true" name="FeeType" />
+    <column ascending="true" name="BillDate" />
+    <column ascending="true" name="SplitEmpBillDate" />
+  </index>
+  <index name="MiscellaneousFees_Search5" unique="false">
+    <column ascending="true" name="SplitEmpEntryDate" />
+    <column ascending="true" name="SplitEmpBatchNumber" />
+    <column ascending="true" name="FeeType" />
+  </index>
+  <index name="MiscellaneousFees_Search6" unique="false">
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="LocationName" />
+    <column ascending="true" name="CertificateNumber" />
+    <column ascending="true" name="FeeType" />
+    <column ascending="true" name="FeeDescription" />
+    <column ascending="true" name="SplitFees" />
+  </index>
+</table>

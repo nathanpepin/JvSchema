@@ -1,0 +1,17 @@
+<table catalog="Jv-1.44.18.6_FK" name="EDI837FileSeqnumber" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="CurrentYear" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="CurrentDay" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="FileSequence" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="FileName" nullable="true" remarks="" size="70" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="UserID" nullable="true" remarks="" size="15" type="varchar" typeCode="12" />
+  <primaryKey column="CurrentYear" sequenceNumberInPK="1" />
+  <primaryKey column="CurrentDay" sequenceNumberInPK="2" />
+  <primaryKey column="FileSequence" sequenceNumberInPK="3" />
+  <index name="PK__EDI837Fi__8EC409EE6ADD0A44" unique="true">
+    <column ascending="true" name="CurrentYear" />
+    <column ascending="true" name="CurrentDay" />
+    <column ascending="true" name="FileSequence" />
+  </index>
+</table>

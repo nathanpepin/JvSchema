@@ -1,0 +1,26 @@
+<table catalog="Jv-1.44.18.6_FK" name="QRTZ_JOB_DETAILS" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="JOB_NAME" nullable="false" remarks="" size="80" type="varchar" typeCode="12">
+    <child catalog="Jv-1.44.18.6_FK" column="JOB_NAME" foreignKey="FK_QRTZ_TRIGGERS_QRTZ_JOB_DETAILS" implied="false" onDeleteCascade="false" schema="dbo" table="QRTZ_TRIGGERS" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="JOB_GROUP" nullable="false" remarks="" size="80" type="varchar" typeCode="12">
+    <child catalog="Jv-1.44.18.6_FK" column="JOB_GROUP" foreignKey="FK_QRTZ_TRIGGERS_QRTZ_JOB_DETAILS" implied="false" onDeleteCascade="false" schema="dbo" table="QRTZ_TRIGGERS" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="DESCRIPTION" nullable="true" remarks="" size="120" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="JOB_CLASS_NAME" nullable="false" remarks="" size="128" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="IS_DURABLE" nullable="false" remarks="" size="1" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="REQUESTS_RECOVERY" nullable="false" remarks="" size="1" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="JOB_DATA" nullable="true" remarks="" size="2147483647" type="image" typeCode="2004" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="IS_NONCONCURRENT" nullable="false" remarks="" size="1" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="IS_UPDATE_DATA" nullable="false" remarks="" size="1" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="SCHED_NAME" nullable="false" remarks="" size="120" type="varchar" typeCode="12">
+    <child catalog="Jv-1.44.18.6_FK" column="SCHED_NAME" foreignKey="FK_QRTZ_TRIGGERS_QRTZ_JOB_DETAILS" implied="false" onDeleteCascade="false" schema="dbo" table="QRTZ_TRIGGERS" />
+  </column>
+  <primaryKey column="SCHED_NAME" sequenceNumberInPK="1" />
+  <primaryKey column="JOB_NAME" sequenceNumberInPK="2" />
+  <primaryKey column="JOB_GROUP" sequenceNumberInPK="3" />
+  <index name="PK_QRTZ_JOB_DETAILS" unique="true">
+    <column ascending="true" name="SCHED_NAME" />
+    <column ascending="true" name="JOB_NAME" />
+    <column ascending="true" name="JOB_GROUP" />
+  </index>
+</table>

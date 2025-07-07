@@ -1,0 +1,12 @@
+<table catalog="Jv-1.44.18.6_FK" name="QRTZ_SCHEDULER_STATE" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="INSTANCE_NAME" nullable="false" remarks="" size="80" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="LAST_CHECKIN_TIME" nullable="false" remarks="" size="8" type="bigint" typeCode="-5" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="CHECKIN_INTERVAL" nullable="false" remarks="" size="8" type="bigint" typeCode="-5" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="SCHED_NAME" nullable="false" remarks="" size="120" type="varchar" typeCode="12" />
+  <primaryKey column="SCHED_NAME" sequenceNumberInPK="1" />
+  <primaryKey column="INSTANCE_NAME" sequenceNumberInPK="2" />
+  <index name="PK_QRTZ_SCHEDULER_STATE" unique="true">
+    <column ascending="true" name="SCHED_NAME" />
+    <column ascending="true" name="INSTANCE_NAME" />
+  </index>
+</table>

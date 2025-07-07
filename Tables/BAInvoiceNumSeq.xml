@@ -1,0 +1,10 @@
+<table catalog="Jv-1.44.18.6_FK" name="BAInvoiceNumSeq" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="InvoiceType" nullable="false" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="InvoiceSeqId" nullable="true" remarks="" size="8" type="bigint" typeCode="-5" />
+  <primaryKey column="InvoiceType" sequenceNumberInPK="1" />
+  <index name="PK__BAInvoic__CF7ED2A77EA0B823" unique="true">
+    <column ascending="true" name="InvoiceType" />
+  </index>
+</table>

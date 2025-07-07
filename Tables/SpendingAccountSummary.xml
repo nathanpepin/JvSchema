@@ -1,0 +1,39 @@
+<table catalog="Jv-1.44.18.6_FK" name="SpendingAccountSummary" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="SpenAccSummaryID" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="EmployeeID" nullable="true" remarks="" size="4" type="int" typeCode="4">
+    <parent catalog="Jv-1.44.18.6_FK" column="EmployeeID" foreignKey="FK__SpendingA__Emplo__52B9FAC2" implied="false" onDeleteCascade="false" schema="dbo" table="Employee" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="AccountType" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="5" name="RolloverAmount" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="PayrollContribnDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="7" name="ContributionAmount" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="IncurredDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="Claimnumber" nullable="true" remarks="" size="19" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="CheckNumber" nullable="true" remarks="" size="12" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="11" name="PaymentAmount" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="PaidDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="13" name="ContributionReason" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="14" name="SpendingAccountYear" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="15" name="AddORSub" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="16" name="AccountBalance" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="17" name="CreatedDtTime" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <primaryKey column="SpenAccSummaryID" sequenceNumberInPK="1" />
+  <index name="PK__Spending__4AEA54F74BD3E5EF" unique="true">
+    <column ascending="true" name="SpenAccSummaryID" />
+  </index>
+  <index name="SpendingAccountSummary_ClmNo" unique="false">
+    <column ascending="true" name="Claimnumber" />
+    <column ascending="true" name="AccountType" />
+    <column ascending="true" name="CreatedDtTime" />
+    <column ascending="true" name="SpenAccSummaryID" />
+  </index>
+  <index name="SpendingAccountSummary_search" unique="false">
+    <column ascending="true" name="EmployeeID" />
+    <column ascending="true" name="SpendingAccountYear" />
+    <column ascending="true" name="AccountType" />
+    <column ascending="true" name="CreatedDtTime" />
+    <column ascending="true" name="SpenAccSummaryID" />
+  </index>
+</table>

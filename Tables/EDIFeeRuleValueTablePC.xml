@@ -1,0 +1,21 @@
+<table catalog="Jv-1.44.18.6_FK" name="EDIFeeRuleValueTablePC" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="ValueTableID" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="ProcedureCodeFrom" nullable="false" remarks="" size="13" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="ProcedureCodeTo" nullable="true" remarks="" size="13" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="5" name="GlobalAmount" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="6" name="Technical" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="7" name="Professional" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="8" name="RelativeDollarAmount" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="BaseUnit" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="10" name="DollarPerUnit" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="HourCap" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="12" name="NewMinutesIfCapped" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <primaryKey column="ValueTableID" sequenceNumberInPK="1" />
+  <primaryKey column="ProcedureCodeFrom" sequenceNumberInPK="2" />
+  <index name="PK__EDIFeeRu__489598E7A835B966" unique="true">
+    <column ascending="true" name="ValueTableID" />
+    <column ascending="true" name="ProcedureCodeFrom" />
+  </index>
+</table>

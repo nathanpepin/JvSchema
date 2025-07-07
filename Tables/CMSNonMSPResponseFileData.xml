@@ -1,0 +1,95 @@
+<table catalog="Jv-1.44.18.6_FK" name="CMSNonMSPResponseFileData" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="NonMSPResponseFileNumber" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="NonMSPResponseFileType" nullable="false" remarks="" size="1" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="DCN" nullable="false" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="EmployeeID" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="DependentID" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="EligibilityEffDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="ReporterID" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="SSN" nullable="true" remarks="" size="9" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="HICNumber" nullable="true" remarks="" size="12" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="CoveredIndividualsSurname" nullable="true" remarks="" size="6" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="BeneficiaryFirstInitial" nullable="true" remarks="" size="1" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="13" name="BeneficiaryMiddleInitial" nullable="true" remarks="" size="1" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="14" name="BeneficiaryDateofBirth" nullable="true" remarks="" size="8" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="15" name="BeneficiarySexCode" nullable="true" remarks="" size="1" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="16" name="GroupHealthPlanNumber" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="17" name="IndividualPolicyNumber" nullable="true" remarks="" size="17" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="18" name="EffectiveDate" nullable="true" remarks="" size="8" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="19" name="TerminationDate" nullable="true" remarks="" size="8" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="20" name="NationalHealthPlanID" nullable="true" remarks="" size="10" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="21" name="RxInsuredIDNumber" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="22" name="RxGroupNumber" nullable="true" remarks="" size="15" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="23" name="RxPCN" nullable="true" remarks="" size="10" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="24" name="RxBinNumber" nullable="true" remarks="" size="6" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="25" name="RxTollFreeNumber" nullable="true" remarks="" size="18" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="26" name="PersonCode" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="27" name="RelationshipCode" nullable="true" remarks="" size="2" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="28" name="RREAssignedDCN" nullable="true" remarks="" size="15" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="29" name="COBCDCN" nullable="true" remarks="" size="15" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="30" name="OriginalActionType" nullable="true" remarks="" size="1" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="31" name="ActionType" nullable="true" remarks="" size="1" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="32" name="TransactionType" nullable="true" remarks="" size="1" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="33" name="CoverageType" nullable="true" remarks="" size="1" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="34" name="ReasonForMedicareEntitlement" nullable="true" remarks="" size="1" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="35" name="SDispositionCode" nullable="true" remarks="" size="2" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="36" name="SDispositionDate" nullable="true" remarks="" size="8" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="37" name="MedicarePartAEffectiveDate" nullable="true" remarks="" size="8" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="38" name="MedicarePartATerminationDate" nullable="true" remarks="" size="8" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="39" name="MedicarePartBEffectiveDate" nullable="true" remarks="" size="8" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="40" name="MedicarePartBTerminationDate" nullable="true" remarks="" size="8" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="41" name="PartDEligibilityStartDate" nullable="true" remarks="" size="8" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="42" name="PartDEligibilityStopDate" nullable="true" remarks="" size="8" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="43" name="MedicareBeneficiaryDateOfDeath" nullable="true" remarks="" size="8" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="44" name="MedicarePartCPlanContractorNum" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="45" name="MedicarePartCPlanEnrollDate" nullable="true" remarks="" size="8" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="46" name="MedicarPartCPlanTermDate" nullable="true" remarks="" size="8" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="47" name="MedicarePartDPlanContractorNum" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="48" name="MedicarePartDPlanEnrollDate" nullable="true" remarks="" size="8" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="49" name="MedicarePartDPlanTermDate" nullable="true" remarks="" size="8" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="50" name="ErrorCode1" nullable="true" remarks="" size="4" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="51" name="ErrorCode2" nullable="true" remarks="" size="4" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="52" name="ErrorCode3" nullable="true" remarks="" size="4" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="53" name="ErrorCode4" nullable="true" remarks="" size="4" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="54" name="DNDispositionCode" nullable="true" remarks="" size="2" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="55" name="DNDispositionDate" nullable="true" remarks="" size="8" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="56" name="RDSStartDate" nullable="true" remarks="" size="8" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="57" name="RDSEndDate" nullable="true" remarks="" size="8" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="58" name="RDSSplitIndicator" nullable="true" remarks="" size="1" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="59" name="RDSReasonCode" nullable="true" remarks="" size="2" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="60" name="RDSDeterminationIndicator" nullable="true" remarks="" size="1" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="61" name="ESRDCovgPeriodEffectiveDate" nullable="true" remarks="" size="8" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="62" name="ESRDCovgPeriodTermDate" nullable="true" remarks="" size="8" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="63" name="FirstDialysisDate" nullable="true" remarks="" size="8" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="64" name="ESRDSelfTrainingDate" nullable="true" remarks="" size="8" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="65" name="TransplantDateMostRecent" nullable="true" remarks="" size="8" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="66" name="TransplantFailureDateMostRecent" nullable="true" remarks="" size="8" type="varchar" typeCode="12" />
+  <primaryKey column="NonMSPResponseFileNumber" sequenceNumberInPK="1" />
+  <primaryKey column="NonMSPResponseFileType" sequenceNumberInPK="2" />
+  <primaryKey column="ReporterID" sequenceNumberInPK="3" />
+  <primaryKey column="DCN" sequenceNumberInPK="4" />
+  <index name="PK__CMSNonMS__ED32FE47960A483F" unique="true">
+    <column ascending="true" name="NonMSPResponseFileNumber" />
+    <column ascending="true" name="NonMSPResponseFileType" />
+    <column ascending="true" name="ReporterID" />
+    <column ascending="true" name="DCN" />
+  </index>
+  <index name="CMSNonMSPResponseFileData_idx2" unique="false">
+    <column ascending="true" name="NonMSPResponseFileType" />
+    <column ascending="true" name="EmployeeID" />
+    <column ascending="true" name="DependentID" />
+    <column ascending="true" name="EligibilityEffDate" />
+    <column ascending="true" name="ReporterID" />
+    <column ascending="true" name="NonMSPResponseFileNumber" />
+  </index>
+  <index name="CMSNonMSPResponseFileData_MemberMerge" unique="false">
+    <column ascending="true" name="EmployeeID" />
+    <column ascending="true" name="DependentID" />
+    <column ascending="true" name="NonMSPResponseFileNumber" />
+    <column ascending="true" name="NonMSPResponseFileType" />
+    <column ascending="true" name="ReporterID" />
+    <column ascending="true" name="DCN" />
+  </index>
+</table>

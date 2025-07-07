@@ -1,0 +1,19 @@
+<table catalog="Jv-1.44.18.6_FK" name="BatchJobCheckPoint" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="JobId" nullable="false" remarks="" size="8" type="bigint" typeCode="-5" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="GenericCheckPoint" nullable="true" remarks="" size="50" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="EDILogSummaryId" nullable="true" remarks="" size="50" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="JobStatus" nullable="true" remarks="" size="50" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="RescheduleCount" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="GenericCheckPoint1" nullable="true" remarks="" size="50" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="GenericCheckPoint2" nullable="true" remarks="" size="50" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="GenericCheckPoint3" nullable="true" remarks="" size="50" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="GenericCheckPoint4" nullable="true" remarks="" size="50" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="GenericCheckPoint5" nullable="true" remarks="" size="50" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="GenericCheckPoint6" nullable="true" remarks="" size="50" type="varchar" typeCode="12" />
+  <primaryKey column="JobId" sequenceNumberInPK="1" />
+  <index name="PK__BatchJob__056690C214E20577" unique="true">
+    <column ascending="true" name="JobId" />
+  </index>
+</table>

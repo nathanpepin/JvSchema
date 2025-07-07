@@ -1,0 +1,28 @@
+<table catalog="Jv-1.44.18.6_FK" name="ClaimNotes" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="NotesId" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="ClaimType" nullable="true" remarks="" size="2" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="CreatedDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="CreatedTime" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="UserID" nullable="true" remarks="" size="32" type="varchar" typeCode="12">
+    <parent catalog="Jv-1.44.18.6_FK" column="UserID" foreignKey="FK__ClaimNote__UserI__57C8C8A2" implied="false" onDeleteCascade="false" schema="dbo" table="JvUser" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="Claimnumber" nullable="true" remarks="" size="19" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="Note" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="2005" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="UpdatedDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="UpdatedTime" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <primaryKey column="NotesId" sequenceNumberInPK="1" />
+  <index name="PK__ClaimNot__35AB5BAAED5FF4BA" unique="true">
+    <column ascending="true" name="NotesId" />
+  </index>
+  <index name="ClaimNotes_Search" unique="false">
+    <column ascending="true" name="Claimnumber" />
+    <column ascending="true" name="NotesId" />
+  </index>
+  <index name="ClaimNotes_Search2" unique="false">
+    <column ascending="true" name="Claimnumber" />
+    <column ascending="true" name="ChgTS" />
+    <column ascending="true" name="NotesId" />
+  </index>
+</table>

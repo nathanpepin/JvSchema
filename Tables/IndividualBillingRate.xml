@@ -1,0 +1,40 @@
+<table catalog="Jv-1.44.18.6_FK" name="IndividualBillingRate" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="Product" nullable="false" remarks="" size="2" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="BillPlan" nullable="false" remarks="" size="10" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="RateEffectiveDate" nullable="false" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="BillMode" nullable="false" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="Area" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="Tier" nullable="false" remarks="" size="2" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="EmployeeStatus" nullable="false" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="RateGender" nullable="false" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="Description" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="CarrierCode" nullable="true" remarks="" size="11" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="AgeCalculation" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="13" name="ApplyExchangeRules" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="14" name="MaxDepFamily" nullable="true" remarks="" size="8" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="15" name="SplitBy" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="16" name="ApplySamePercent" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="3" id="17" name="ClientPercent" nullable="true" remarks="" size="8" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="3" id="18" name="MemberPercent" nullable="true" remarks="" size="8" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="19" name="BrokerForMember" nullable="true" remarks="" size="11" type="varchar" typeCode="12" />
+  <primaryKey column="Product" sequenceNumberInPK="1" />
+  <primaryKey column="BillPlan" sequenceNumberInPK="2" />
+  <primaryKey column="RateEffectiveDate" sequenceNumberInPK="3" />
+  <primaryKey column="BillMode" sequenceNumberInPK="4" />
+  <primaryKey column="Area" sequenceNumberInPK="5" />
+  <primaryKey column="Tier" sequenceNumberInPK="6" />
+  <primaryKey column="EmployeeStatus" sequenceNumberInPK="7" />
+  <primaryKey column="RateGender" sequenceNumberInPK="8" />
+  <index name="PK__Individu__7F4AF59CA5EA5AAC" unique="true">
+    <column ascending="true" name="Product" />
+    <column ascending="true" name="BillPlan" />
+    <column ascending="true" name="RateEffectiveDate" />
+    <column ascending="true" name="BillMode" />
+    <column ascending="true" name="Area" />
+    <column ascending="true" name="Tier" />
+    <column ascending="true" name="EmployeeStatus" />
+    <column ascending="true" name="RateGender" />
+  </index>
+</table>

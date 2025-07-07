@@ -1,0 +1,66 @@
+<table catalog="Jv-1.44.18.6_FK" name="ContractPricingMethods" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="ContractID" nullable="true" remarks="" size="4" type="int" typeCode="4">
+    <parent catalog="Jv-1.44.18.6_FK" column="ContractID" foreignKey="FK__ContractP__Contr__54B751CD" implied="false" onDeleteCascade="false" schema="dbo" table="ContractMaintenance" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="ModuleType" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="RuleID" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="PricingMethodSeqID" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="PricingMethod" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="7" name="PricMthdDollarsPerDiem" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="8" name="PricMthdDollarsPerUnit" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="9" name="PricMthdFlatDollarAmt" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="3" id="10" name="PricMthdDiscOfCharges" nullable="true" remarks="" size="8" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="PricMthdFeeRule" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="PricMthdFeeRuleOptions" nullable="true" remarks="" size="2" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="13" name="PricMthdValueTable" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="14" name="PricMthdDiscFeeRule" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="15" name="PricMthdDenyReasonCode" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="16" name="PricMthdExceptionReason" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="3" id="17" name="PricMthdDiscFeeSchedules" nullable="true" remarks="" size="8" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="3" id="18" name="RBRVS" nullable="true" remarks="" size="8" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="19" name="PricMthdFeeRuleOptionsHiaa" nullable="true" remarks="" size="2" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="20" name="PricMthdFeeRuleOptionsMdr" nullable="true" remarks="" size="2" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="21" name="PricMthdFeeRuleOptionsMedicode" nullable="true" remarks="" size="2" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="22" name="VendorSchedule" nullable="true" remarks="" size="10" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="3" id="23" name="PercentDiscount" nullable="true" remarks="" size="8" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="24" name="PricMthdVendorAdp" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="25" name="PricMthdVendorHiaa" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="26" name="PricMthdVendorMdr" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="3" id="27" name="RBRVSPercentage" nullable="true" remarks="" size="8" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="28" name="DRGDays" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="29" name="VarDRGDays" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="30" name="PMDRGDays" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="31" name="PricMthdDollarsPerVisit" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="32" name="PreAdjudicationPrcMethod" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="33" name="DRGTable" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="34" name="VarPerDiemCategDfns" nullable="true" remarks="" size="43" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="35" name="VarPerDiemDollarAmt" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="36" name="FHNSASubPricingMethod" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="37" name="FHNSAPricingAmt" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="38" name="NetFileLocation" nullable="true" remarks="" size="2100" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="3" id="39" name="AdditionalDiscount" nullable="true" remarks="" size="8" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="40" name="PlaceHolder1" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="41" name="PlaceHolder2" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="42" name="PlaceHolder3" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="43" name="PlaceHolder4" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="44" name="PlaceHolder5" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="45" name="PlaceHolder6" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="46" name="PlaceHolder7" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <primaryKey column="RuleID" sequenceNumberInPK="1" />
+  <primaryKey column="PricingMethodSeqID" sequenceNumberInPK="2" />
+  <index name="PK__Contract__789856A0B1EF31ED" unique="true">
+    <column ascending="true" name="RuleID" />
+    <column ascending="true" name="PricingMethodSeqID" />
+  </index>
+  <index name="ContractPricingMethods_Search1" unique="false">
+    <column ascending="true" name="ContractID" />
+    <column ascending="true" name="ModuleType" />
+    <column ascending="true" name="RuleID" />
+  </index>
+  <index name="ContractPricingMethods_Search2" unique="false">
+    <column ascending="true" name="ContractID" />
+    <column ascending="true" name="PricingMethod" />
+  </index>
+</table>

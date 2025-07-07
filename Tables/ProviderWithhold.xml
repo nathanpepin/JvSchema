@@ -1,0 +1,37 @@
+<table catalog="Jv-1.44.18.6_FK" name="ProviderWithhold" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="WithholdTableID" nullable="false" remarks="" size="4" type="int" typeCode="4">
+    <child catalog="Jv-1.44.18.6_FK" column="WithholdTableID" foreignKey="FK__ProviderW__Withh__188D592D" implied="false" onDeleteCascade="false" schema="dbo" table="ProviderWithholdRange" />
+    <child catalog="Jv-1.44.18.6_FK" column="WithholdTableID" foreignKey="FK__ProviderW__Withh__179934F4" implied="false" onDeleteCascade="false" schema="dbo" table="ProviderWithholdRangeExclude" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="WithholdTableName" nullable="true" remarks="" size="35" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="Description" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="EffectiveDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="TerminationDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="ServiceOptions" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="PercentFlatRateOption" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="3" id="9" name="Percentage" nullable="true" remarks="" size="8" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="10" name="FlatRate" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="IsUsed" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="ApplyWithholdOnPricing" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <primaryKey column="WithholdTableID" sequenceNumberInPK="1" />
+  <index name="PK__Provider__B2E5616671D3B80A" unique="true">
+    <column ascending="true" name="WithholdTableID" />
+  </index>
+  <index name="ProviderWithhold_Search1" unique="false">
+    <column ascending="true" name="WithholdTableName" />
+    <column ascending="true" name="EffectiveDate" />
+    <column ascending="true" name="TerminationDate" />
+    <column ascending="true" name="Description" />
+  </index>
+  <index name="ProviderWithhold_Search4" unique="false">
+    <column ascending="true" name="WithholdTableName" />
+    <column ascending="true" name="EffectiveDate" />
+    <column ascending="true" name="Description" />
+  </index>
+  <index name="ProviderWithhold_Unique" unique="true">
+    <column ascending="true" name="WithholdTableName" />
+    <column ascending="true" name="EffectiveDate" />
+  </index>
+</table>

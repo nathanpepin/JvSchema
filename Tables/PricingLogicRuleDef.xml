@@ -1,0 +1,32 @@
+<table catalog="Jv-1.44.18.6_FK" name="PricingLogicRuleDef" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="RuleDefinitionID" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="RuleSetID" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="ClaimRuleType" nullable="true" remarks="" size="2" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="FilterID" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="PickupRequired" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="NoPointOfPickup" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="DenyReasonCode" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <primaryKey column="RuleSetID" sequenceNumberInPK="1" />
+  <primaryKey column="RuleDefinitionID" sequenceNumberInPK="2" />
+  <index name="PK__PricingL__B92C7F275E2221E8" unique="true">
+    <column ascending="true" name="RuleSetID" />
+    <column ascending="true" name="RuleDefinitionID" />
+  </index>
+  <index name="PricingLogicRuleDef_idx2" unique="false">
+    <column ascending="true" name="ClaimRuleType" />
+    <column ascending="true" name="FilterID" />
+  </index>
+  <index name="PricingLogicRuleDef_Search1" unique="false">
+    <column ascending="true" name="RuleSetID" />
+    <column ascending="true" name="RuleDefinitionID" />
+    <column ascending="true" name="ClaimRuleType" />
+    <column ascending="true" name="FilterID" />
+  </index>
+  <index name="PricingLogicRuleDef_Search2" unique="false">
+    <column ascending="true" name="RuleSetID" />
+    <column ascending="true" name="ClaimRuleType" />
+    <column ascending="true" name="FilterID" />
+  </index>
+</table>

@@ -1,0 +1,44 @@
+<table catalog="Jv-1.44.18.6_FK" name="EdiAccumulatorErrorLogs" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="TransactionId" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="ProcessID" nullable="true" remarks="" size="4" type="int" typeCode="4">
+    <parent catalog="Jv-1.44.18.6_FK" column="ProcessID" foreignKey="FK__EdiAccumulatorEr__5FF3FA4F" implied="false" onDeleteCascade="false" schema="dbo" table="EDILogDetail" />
+    <parent catalog="Jv-1.44.18.6_FK" column="ProcessID" foreignKey="FK__EdiAccumu__Proce__60E81E88" implied="false" onDeleteCascade="false" schema="dbo" table="EDILogSummary" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="RecordID" nullable="true" remarks="" size="4" type="int" typeCode="4">
+    <parent catalog="Jv-1.44.18.6_FK" column="RecordID" foreignKey="FK__EdiAccumulatorEr__5FF3FA4F" implied="false" onDeleteCascade="false" schema="dbo" table="EDILogDetail" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="EDIEntity" nullable="true" remarks="" size="15" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="ParameterSetName" nullable="true" remarks="" size="500" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="BlkOfBusID" nullable="true" remarks="" size="5" type="varchar" typeCode="12">
+    <parent catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__EdiAccumu__BlkOf__61DC42C1" implied="false" onDeleteCascade="false" schema="dbo" table="BlockOfBusiness" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="ClientID" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="Location" nullable="true" remarks="" size="12" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="CertificateNumber" nullable="true" remarks="" size="29" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="EmployeeID" nullable="true" remarks="" size="12" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="Product" nullable="true" remarks="" size="2" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="13" name="Year" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="14" name="Events" nullable="true" remarks="" size="15" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="15" name="Errors" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="2005" />
+  <primaryKey column="TransactionId" sequenceNumberInPK="1" />
+  <index name="PK__EdiAccum__55433A6B0FCEC413" unique="true">
+    <column ascending="true" name="TransactionId" />
+  </index>
+  <index name="EdiAccumulatorErrorLogs_CT" unique="false">
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="TransactionId" />
+  </index>
+  <index name="EdiAccumulatorErrorLogs_idx2" unique="false">
+    <column ascending="true" name="ProcessID" />
+  </index>
+  <index name="EdiAccumulatorErrorLogs_idx3" unique="false">
+    <column ascending="true" name="RecordID" />
+  </index>
+  <index name="EdiAccumulatorErrorLogs_MemberMerge" unique="false">
+    <column ascending="true" name="EmployeeID" />
+    <column ascending="true" name="TransactionId" />
+  </index>
+</table>

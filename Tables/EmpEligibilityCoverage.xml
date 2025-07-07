@@ -1,0 +1,123 @@
+<table catalog="Jv-1.44.18.6_FK" name="EmpEligibilityCoverage" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="EmployeeID" nullable="false" remarks="" size="4" type="int" typeCode="4">
+    <child catalog="Jv-1.44.18.6_FK" column="EmployeeID" foreignKey="FK__COBRARecord__28D8CF8F" implied="false" onDeleteCascade="false" schema="dbo" table="COBRARecord" />
+    <child catalog="Jv-1.44.18.6_FK" column="EmployeeID" foreignKey="FK__DeletedEmployeeE__037240B6" implied="false" onDeleteCascade="false" schema="dbo" table="DeletedEmployeeEligibility" />
+    <child catalog="Jv-1.44.18.6_FK" column="EmployeeID" foreignKey="FK__EmpBillingFactor__581DCE5D" implied="false" onDeleteCascade="false" schema="dbo" table="EmpBillingFactors" />
+    <child catalog="Jv-1.44.18.6_FK" column="EmployeeID" foreignKey="FK__EmployeeDentalPr__6C24C70A" implied="false" onDeleteCascade="false" schema="dbo" table="EmployeeDentalProvider" />
+    <child catalog="Jv-1.44.18.6_FK" column="EmployeeID" foreignKey="FK__EmployeeMedicalC__6FF557EE" implied="false" onDeleteCascade="false" schema="dbo" table="EmployeeMedicalCoverage" />
+    <child catalog="Jv-1.44.18.6_FK" column="EmployeeID" foreignKey="FK__EmployeeMedicalP__70E97C27" implied="false" onDeleteCascade="false" schema="dbo" table="EmployeeMedicalProvider" />
+    <child catalog="Jv-1.44.18.6_FK" column="EmployeeID" foreignKey="FK__EmployeeVisionPr__76A2557D" implied="false" onDeleteCascade="false" schema="dbo" table="EmployeeVisionProvider" />
+    <child catalog="Jv-1.44.18.6_FK" column="EmployeeID" foreignKey="FK__EmpPrescriptionP__08C105B8" implied="false" onDeleteCascade="false" schema="dbo" table="EmpPrescriptionProvider" />
+    <child catalog="Jv-1.44.18.6_FK" column="EmployeeID" foreignKey="FK__EmpStopLossAmoun__10622780" implied="false" onDeleteCascade="false" schema="dbo" table="EmpStopLossAmount" />
+    <parent catalog="Jv-1.44.18.6_FK" column="EmployeeID" foreignKey="FK__EmpEligib__Emplo__5AFA3B08" implied="false" onDeleteCascade="false" schema="dbo" table="Employee" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="EffectiveDate" nullable="false" remarks="" size="20" type="date" typeCode="12">
+    <child catalog="Jv-1.44.18.6_FK" column="EffectiveDate" foreignKey="FK__COBRARecord__28D8CF8F" implied="false" onDeleteCascade="false" schema="dbo" table="COBRARecord" />
+    <child catalog="Jv-1.44.18.6_FK" column="EffectiveDate" foreignKey="FK__DeletedEmployeeE__037240B6" implied="false" onDeleteCascade="false" schema="dbo" table="DeletedEmployeeEligibility" />
+    <child catalog="Jv-1.44.18.6_FK" column="EffectiveDate" foreignKey="FK__EmpBillingFactor__581DCE5D" implied="false" onDeleteCascade="false" schema="dbo" table="EmpBillingFactors" />
+    <child catalog="Jv-1.44.18.6_FK" column="EffectiveDate" foreignKey="FK__EmployeeDentalPr__6C24C70A" implied="false" onDeleteCascade="false" schema="dbo" table="EmployeeDentalProvider" />
+    <child catalog="Jv-1.44.18.6_FK" column="EffectiveDate" foreignKey="FK__EmployeeMedicalC__6FF557EE" implied="false" onDeleteCascade="false" schema="dbo" table="EmployeeMedicalCoverage" />
+    <child catalog="Jv-1.44.18.6_FK" column="EffectiveDate" foreignKey="FK__EmployeeMedicalP__70E97C27" implied="false" onDeleteCascade="false" schema="dbo" table="EmployeeMedicalProvider" />
+    <child catalog="Jv-1.44.18.6_FK" column="EffectiveDate" foreignKey="FK__EmployeeVisionPr__76A2557D" implied="false" onDeleteCascade="false" schema="dbo" table="EmployeeVisionProvider" />
+    <child catalog="Jv-1.44.18.6_FK" column="EffectiveDate" foreignKey="FK__EmpPrescriptionP__08C105B8" implied="false" onDeleteCascade="false" schema="dbo" table="EmpPrescriptionProvider" />
+    <child catalog="Jv-1.44.18.6_FK" column="EffectiveDate" foreignKey="FK__EmpStopLossAmoun__10622780" implied="false" onDeleteCascade="false" schema="dbo" table="EmpStopLossAmount" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="TerminationDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="TerminationReason" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="Status" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="COBRAReason" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="Medicare" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="LaseredStopLoss" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="10" name="StopLossAmount" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="Locations" nullable="true" remarks="" size="12" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="Department" nullable="true" remarks="" size="12" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="13" name="EmploymentStatus" nullable="true" remarks="" size="2" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="14" name="EmploymentBeginDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="15" name="EmploymentEndDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="16" name="FrequencyOfPay" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="17" name="Salary" nullable="true" remarks="" size="12" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="18" name="WorkHoursCount" nullable="true" remarks="" size="8" type="bigint" typeCode="-5" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="19" name="DisabilityStatus" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="20" name="DisabilityBeginDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="21" name="DisabilityEndDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="22" name="BillIndividual" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="23" name="CreateDebitCard" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="24" name="ExtractedDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="25" name="RequestReason" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="26" name="ReinstatementReason" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="27" name="ViewMyInfo" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="28" name="DontDisplayAlerts" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="29" name="CMSAccepted" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="30" name="GracePeriod" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="31" name="CMSTimeOfGeneration" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="32" name="CMSTimeOfAcceptance" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="33" name="OverrideCode" nullable="true" remarks="" size="4" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="34" name="Conversion" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="35" name="IndRenewalDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="36" name="Lifestyle" nullable="true" remarks="" size="6" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="37" name="AppStopLossContPerMax" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="38" name="StopLossContractMaxCap" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="39" name="StopLossContract" nullable="true" remarks="" size="10" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="40" name="MLREligible" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="41" name="MLREligibilityType" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <primaryKey column="EmployeeID" sequenceNumberInPK="1" />
+  <primaryKey column="EffectiveDate" sequenceNumberInPK="2" />
+  <index name="PK__EmpEligi__1BA488A1F43D40A2" unique="true">
+    <column ascending="true" name="EmployeeID" />
+    <column ascending="true" name="EffectiveDate" />
+  </index>
+  <index name="EDIEmployeeEligCov_Search11" unique="false">
+    <column ascending="true" name="EmployeeID" />
+    <column ascending="true" name="EffectiveDate" />
+    <column ascending="true" name="Locations" />
+    <column ascending="true" name="Status" />
+  </index>
+  <index name="EDIUptoDate_Search1" unique="false">
+    <column ascending="true" name="ChgTS" />
+    <column ascending="true" name="EmployeeID" />
+  </index>
+  <index name="EmpElgCoverage_EnrollSearch" unique="false">
+    <column ascending="true" name="EmployeeID" />
+    <column ascending="true" name="Locations" />
+    <column ascending="true" name="Department" />
+  </index>
+  <index name="EmpElgCoverage_StopLoss" unique="false">
+    <column ascending="true" name="StopLossContract" />
+    <column ascending="true" name="Locations" />
+    <column ascending="true" name="Department" />
+    <column ascending="true" name="EffectiveDate" />
+  </index>
+  <index name="EmployeeElgCoverage_Search3" unique="false">
+    <column ascending="true" name="Locations" />
+    <column ascending="true" name="Department" />
+  </index>
+  <index name="EmployeeElgCoverage_Search5" unique="false">
+    <column ascending="true" name="Locations" />
+    <column ascending="true" name="EmployeeID" />
+  </index>
+  <index name="EmployeeEligCoverage_Search6" unique="false">
+    <column ascending="true" name="EmployeeID" />
+    <column ascending="true" name="EffectiveDate" />
+    <column ascending="true" name="Status" />
+  </index>
+  <index name="EmployeeEligCoverage_Search7" unique="false">
+    <column ascending="true" name="EmployeeID" />
+    <column ascending="true" name="Locations" />
+    <column ascending="true" name="EffectiveDate" />
+    <column ascending="true" name="TerminationDate" />
+  </index>
+  <index name="EmployeeEligCoverage_Search8" unique="false">
+    <column ascending="true" name="EmployeeID" />
+    <column ascending="true" name="EffectiveDate" />
+    <column ascending="true" name="TerminationDate" />
+  </index>
+  <index name="EmployeeEligCoverage_Search9" unique="false">
+    <column ascending="true" name="EmployeeID" />
+    <column ascending="true" name="Status" />
+    <column ascending="true" name="EffectiveDate" />
+    <column ascending="true" name="TerminationDate" />
+    <column ascending="true" name="EmploymentBeginDate" />
+  </index>
+</table>

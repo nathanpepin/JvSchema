@@ -1,0 +1,35 @@
+<table catalog="Jv-1.44.18.6_FK" name="PrivilegesIncludeExclude" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="UserID" nullable="false" remarks="" size="32" type="varchar" typeCode="12">
+    <parent catalog="Jv-1.44.18.6_FK" column="UserID" foreignKey="FK__Privilege__UserI__0D1BA681" implied="false" onDeleteCascade="false" schema="dbo" table="JvUser" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="Include" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="Exclude" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="BlkOfBusID" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="ClientID" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="LocationName" nullable="true" remarks="" size="12" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="DefaultBLoB" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="PrivilegesIEID" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <primaryKey column="UserID" sequenceNumberInPK="1" />
+  <primaryKey column="PrivilegesIEID" sequenceNumberInPK="2" />
+  <index name="PK__Privileg__4E2F5D690CD3165F" unique="true">
+    <column ascending="true" name="UserID" />
+    <column ascending="true" name="PrivilegesIEID" />
+  </index>
+  <index name="PrivilegesIncExc_Search" unique="false">
+    <column ascending="true" name="UserID" />
+    <column ascending="true" name="BlkOfBusID" />
+  </index>
+  <index name="PrivilegesIncExc_Search2" unique="false">
+    <column ascending="true" name="UserID" />
+    <column ascending="true" name="Include" />
+    <column ascending="true" name="Exclude" />
+  </index>
+  <index name="PrivilegesIncludeExclude_CT" unique="false">
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="UserID" />
+    <column ascending="true" name="PrivilegesIEID" />
+  </index>
+</table>

@@ -1,0 +1,33 @@
+<table catalog="Jv-1.44.18.6_FK" name="FacilityContract" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="FacilityID" nullable="false" remarks="" size="4" type="int" typeCode="4">
+    <parent catalog="Jv-1.44.18.6_FK" column="FacilityID" foreignKey="FK__FacilityC__Facil__3593AC2F" implied="false" onDeleteCascade="false" schema="dbo" table="Facility" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="ContractingSeqID" nullable="false" remarks="" size="4" type="int" typeCode="4">
+    <parent catalog="Jv-1.44.18.6_FK" column="ContractingSeqID" foreignKey="FK__FacilityC__Contr__3687D068" implied="false" onDeleteCascade="false" schema="dbo" table="ContractingEntity" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="ROFRType" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="ExclusivityType" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="EffectiveDate" nullable="false" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="TerminationDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="TerminationReason" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <primaryKey column="FacilityID" sequenceNumberInPK="1" />
+  <primaryKey column="ContractingSeqID" sequenceNumberInPK="2" />
+  <primaryKey column="EffectiveDate" sequenceNumberInPK="3" />
+  <index name="PK__Facility__D867FD81860EDD72" unique="true">
+    <column ascending="true" name="FacilityID" />
+    <column ascending="true" name="ContractingSeqID" />
+    <column ascending="true" name="EffectiveDate" />
+  </index>
+  <index name="FacilityContract_search2" unique="false">
+    <column ascending="true" name="FacilityID" />
+    <column ascending="true" name="ContractingSeqID" />
+    <column ascending="true" name="TerminationDate" />
+  </index>
+  <index name="FacilityContract_search3" unique="false">
+    <column ascending="true" name="FacilityID" />
+    <column ascending="true" name="ContractingSeqID" />
+    <column ascending="true" name="TerminationReason" />
+  </index>
+</table>

@@ -1,0 +1,21 @@
+<table catalog="Jv-1.44.18.6_FK" name="RbrvsMedCswkTbl1" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="Id" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="Carriernumber" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="Localitynumber" nullable="true" remarks="" size="2" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="Beginzipcode" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="Endzipcode" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="Rvsid" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="Effectivedate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="ISCVersion" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <primaryKey column="Id" sequenceNumberInPK="1" />
+  <index name="PK__RbrvsMed__3214EC0728DD8712" unique="true">
+    <column ascending="true" name="Id" />
+  </index>
+  <index name="RbrvsMedCswkTbl1_search2" unique="false">
+    <column ascending="true" name="Effectivedate" />
+    <column ascending="true" name="Beginzipcode" />
+    <column ascending="true" name="Endzipcode" />
+  </index>
+</table>

@@ -1,0 +1,19 @@
+<table catalog="Jv-1.44.18.6_FK" name="CMPAPassOrUserFldRest" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="OrganizationID" nullable="false" remarks="" size="4" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="LoginResetLinkText" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="ForgetUsrLinkText" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="RequireEmailValidation" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="PasswordResetReqstSubject" nullable="true" remarks="" size="80" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="PasswordResetReqstEmailMsg" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="2005" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="SendPassResetConfirmMail" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="PasswordResetConfrmSubject" nullable="true" remarks="" size="80" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="PasswordResetConfrmEmailMsg" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="2005" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="UserResetConfirmSubject" nullable="true" remarks="" size="80" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="UserResetConfirmEmailMsg" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="2005" />
+  <primaryKey column="OrganizationID" sequenceNumberInPK="1" />
+  <index name="PK__CMPAPass__CADB0B72DDB9648E" unique="true">
+    <column ascending="true" name="OrganizationID" />
+  </index>
+</table>

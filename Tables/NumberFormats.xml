@@ -1,0 +1,14 @@
+<table catalog="Jv-1.44.18.6_FK" name="NumberFormats" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="NumberFormatCode" nullable="false" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="NumberFormat" nullable="true" remarks="" size="50" type="varchar" typeCode="12" />
+  <primaryKey column="NumberFormatCode" sequenceNumberInPK="1" />
+  <index name="PK__NumberFo__BF12336973B534EC" unique="true">
+    <column ascending="true" name="NumberFormatCode" />
+  </index>
+  <index name="NumberFormat_search1" unique="false">
+    <column ascending="true" name="NumberFormat" />
+    <column ascending="true" name="NumberFormatCode" />
+  </index>
+</table>

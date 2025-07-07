@@ -1,0 +1,150 @@
+<table catalog="Jv-1.44.18.6_FK" name="DailyCheckJournal" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="AccountID" nullable="true" remarks="" size="50" type="varchar" typeCode="12">
+    <parent catalog="Jv-1.44.18.6_FK" column="AccountID" foreignKey="FK__DailyChec__Accou__7247B4B4" implied="false" onDeleteCascade="false" schema="dbo" table="CheckAccountInformation" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="CheckNumber" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="BlkOfBusID" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="ClientID" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="PayTo" nullable="true" remarks="" size="10" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="PayeeID" nullable="true" remarks="" size="11" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="PayToAlternateAddress" nullable="true" remarks="" size="55" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="CheckIssueDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="10" name="PayeeAmount" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="EmployeeID" nullable="true" remarks="" size="29" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="DependentSequenceNumber" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="13" name="PaymentType" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="14" name="PostedFlag" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="15" name="Department" nullable="true" remarks="" size="12" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="16" name="BatchCheck" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="17" name="ReissueCheckNumber" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="18" name="PaymentAdjusted" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="19" name="Status" nullable="true" remarks="" size="40" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="20" name="VoidDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="21" name="ClearDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="22" name="UnClearDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="23" name="ReissueDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="24" name="ChkAssociatedBatchId" nullable="true" remarks="" size="40" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="25" name="ModuleName" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="26" name="ReconciliationStatus" nullable="true" remarks="" size="40" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="27" name="AdmrfndProcessed" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="28" name="VoidBy" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="29" name="ClearBy" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="30" name="UnClearBy" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="31" name="ReissueBy" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="32" name="ChangedBy" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="33" name="ChangedDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="34" name="CheckNumberW0" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="35" name="CheckNumberWE" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="36" name="PayExtractFlag" nullable="true" remarks="" size="1" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="37" name="PayeeName" nullable="true" remarks="" size="95" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="38" name="PayExtractTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="39" name="PayExtractResendTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="40" name="StaleDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="41" name="StaleBy" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="42" name="OrigCheckNumber" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="43" name="CheckPostedDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="44" name="PaymentVendor" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="45" name="PaymentMethod" nullable="true" remarks="" size="6" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="46" name="CheckID" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="47" name="IsFFHFlow" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="48" name="ZelisPPRegInboundDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <primaryKey column="CheckID" sequenceNumberInPK="1" />
+  <index name="PK__DailyChe__86815706F212B5FC" unique="true">
+    <column ascending="true" name="CheckID" />
+  </index>
+  <index name="DailyCheckJournal_CT" unique="false">
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="AccountID" />
+    <column ascending="true" name="CheckNumber" />
+    <column ascending="true" name="CheckIssueDate" />
+  </index>
+  <index name="DailyCheckJournal_idx1" unique="false">
+    <column ascending="true" name="AccountID" />
+    <column ascending="true" name="CheckNumber" />
+    <column ascending="true" name="CheckIssueDate" />
+  </index>
+  <index name="DailyCheckJournal_Search1" unique="false">
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="AccountID" />
+    <column ascending="true" name="CheckNumber" />
+  </index>
+  <index name="DailyCheckJournal_Search10" unique="false">
+    <column ascending="true" name="CheckIssueDate" />
+    <column ascending="true" name="PayExtractFlag" />
+  </index>
+  <index name="DailyCheckJournal_Search11" unique="false">
+    <column ascending="true" name="Status" />
+    <column ascending="true" name="CheckIssueDate" />
+    <column ascending="true" name="VoidDate" />
+    <column ascending="true" name="ReissueDate" />
+    <column ascending="true" name="StaleDate" />
+  </index>
+  <index name="DailyCheckJournal_Search13" unique="false">
+    <column ascending="true" name="AccountID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="CheckNumber" />
+    <column ascending="true" name="CheckIssueDate" />
+    <column ascending="true" name="Status" />
+    <column ascending="true" name="CheckPostedDate" />
+  </index>
+  <index name="DailyCheckJournal_Search14" unique="false">
+    <column ascending="true" name="ChkAssociatedBatchId" />
+    <column ascending="true" name="AccountID" />
+    <column ascending="true" name="CheckNumberWE" />
+  </index>
+  <index name="DailyCheckJournal_Search15" unique="false">
+    <column ascending="true" name="PayTo" />
+    <column ascending="true" name="PayeeID" />
+    <column ascending="true" name="CheckIssueDate" />
+    <column ascending="true" name="AccountID" />
+    <column ascending="true" name="CheckNumber" />
+  </index>
+  <index name="DailyCheckJournal_Search16" unique="false">
+    <column ascending="true" name="ChkAssociatedBatchId" />
+    <column ascending="true" name="OrigCheckNumber" />
+  </index>
+  <index name="DailyCheckJournal_Search2" unique="false">
+    <column ascending="true" name="AccountID" />
+    <column ascending="true" name="OrigCheckNumber" />
+  </index>
+  <index name="DailyCheckJournal_Search5" unique="false">
+    <column ascending="true" name="ChkAssociatedBatchId" />
+    <column ascending="true" name="AccountID" />
+    <column ascending="true" name="CheckNumber" />
+    <column ascending="true" name="CheckIssueDate" />
+  </index>
+  <index name="DailyCheckJournal_Search6" unique="false">
+    <column ascending="true" name="CheckNumber" />
+    <column ascending="true" name="AccountID" />
+    <column ascending="true" name="CheckIssueDate" />
+    <column ascending="true" name="Status" />
+    <column ascending="true" name="ReconciliationStatus" />
+    <column ascending="true" name="ModuleName" />
+    <column ascending="true" name="PayeeAmount" />
+  </index>
+  <index name="DailyCheckJournal_Search7" unique="false">
+    <column ascending="true" name="CheckNumberWE" />
+    <column ascending="true" name="CheckNumberW0" />
+    <column ascending="true" name="AccountID" />
+    <column ascending="true" name="CheckIssueDate" />
+    <column ascending="true" name="Status" />
+    <column ascending="true" name="ReconciliationStatus" />
+    <column ascending="true" name="ModuleName" />
+  </index>
+  <index name="DailyCheckJournal_Search8" unique="false">
+    <column ascending="true" name="CheckNumber" />
+    <column ascending="true" name="PayeeAmount" />
+  </index>
+  <index name="DailyCheckJournal_Search9" unique="false">
+    <column ascending="true" name="CheckNumberW0" />
+    <column ascending="true" name="AccountID" />
+    <column ascending="true" name="ClearDate" />
+    <column ascending="true" name="UnClearDate" />
+    <column ascending="true" name="Status" />
+    <column ascending="true" name="ReconciliationStatus" />
+    <column ascending="true" name="ModuleName" />
+  </index>
+</table>

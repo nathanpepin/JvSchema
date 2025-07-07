@@ -1,0 +1,20 @@
+<table catalog="Jv-1.44.18.6_FK" name="EmpPreExiConProduct" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="EmployeeID" nullable="false" remarks="" size="4" type="int" typeCode="4">
+    <child catalog="Jv-1.44.18.6_FK" column="EmployeeID" foreignKey="FK__EmpPreExiConDiag__03082C62" implied="false" onDeleteCascade="false" schema="dbo" table="EmpPreExiConDiagCode" />
+    <parent catalog="Jv-1.44.18.6_FK" column="EmployeeID" foreignKey="FK__EmpPreExi__Emplo__04F074D4" implied="false" onDeleteCascade="false" schema="dbo" table="EmpPreExistingConditions" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="ProductName" nullable="false" remarks="" size="1" type="char" typeCode="1">
+    <child catalog="Jv-1.44.18.6_FK" column="ProductName" foreignKey="FK__EmpPreExiConDiag__03082C62" implied="false" onDeleteCascade="false" schema="dbo" table="EmpPreExiConDiagCode" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="PreexistingConditions" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="InvestigationCompletedDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="6" name="TotalBenefitsPaid" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <primaryKey column="EmployeeID" sequenceNumberInPK="1" />
+  <primaryKey column="ProductName" sequenceNumberInPK="2" />
+  <index name="PK__EmpPreEx__D705E68969EFB09D" unique="true">
+    <column ascending="true" name="EmployeeID" />
+    <column ascending="true" name="ProductName" />
+  </index>
+</table>

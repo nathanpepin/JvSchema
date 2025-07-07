@@ -1,0 +1,16 @@
+<table catalog="Jv-1.44.18.6_FK" name="JVClipBoard" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="InsertionOrder" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="RecordGrpId" nullable="true" remarks="" size="75" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="LoginUser" nullable="true" remarks="" size="75" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="RecordDetails" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="2005" />
+  <primaryKey column="InsertionOrder" sequenceNumberInPK="1" />
+  <index name="PK__JVClipBo__FF4B013FE07190D6" unique="true">
+    <column ascending="true" name="InsertionOrder" />
+  </index>
+  <index name="JVClipBoard_s1" unique="false">
+    <column ascending="true" name="LoginUser" />
+    <column ascending="true" name="RecordGrpId" />
+  </index>
+</table>

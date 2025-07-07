@@ -1,0 +1,47 @@
+<table catalog="Jv-1.44.18.6_FK" name="ClientPriCoveBenefitPlan" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="BlkOfBusID" nullable="false" remarks="" size="5" type="varchar" typeCode="12">
+    <parent catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__ClientPriCoveBen__727CBEDE" implied="false" onDeleteCascade="false" schema="dbo" table="ClientCoverage" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="ClientID" nullable="false" remarks="" size="5" type="varchar" typeCode="12">
+    <parent catalog="Jv-1.44.18.6_FK" column="ClientID" foreignKey="FK__ClientPriCoveBen__727CBEDE" implied="false" onDeleteCascade="false" schema="dbo" table="ClientCoverage" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="LocationName" nullable="false" remarks="" size="12" type="varchar" typeCode="12">
+    <parent catalog="Jv-1.44.18.6_FK" column="LocationName" foreignKey="FK__ClientPriCoveBen__727CBEDE" implied="false" onDeleteCascade="false" schema="dbo" table="ClientCoverage" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="EffectiveDate" nullable="false" remarks="" size="20" type="date" typeCode="12">
+    <parent catalog="Jv-1.44.18.6_FK" column="EffectiveDate" foreignKey="FK__ClientPriCoveBen__727CBEDE" implied="false" onDeleteCascade="false" schema="dbo" table="ClientCoverage" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="PrimaryCoverageID" nullable="false" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="BenefitPlanID" nullable="false" remarks="" size="30" type="varchar" typeCode="12" />
+  <primaryKey column="BlkOfBusID" sequenceNumberInPK="1" />
+  <primaryKey column="ClientID" sequenceNumberInPK="2" />
+  <primaryKey column="LocationName" sequenceNumberInPK="3" />
+  <primaryKey column="EffectiveDate" sequenceNumberInPK="4" />
+  <primaryKey column="PrimaryCoverageID" sequenceNumberInPK="5" />
+  <primaryKey column="BenefitPlanID" sequenceNumberInPK="6" />
+  <index name="PK__ClientPr__94760A05B1E654F6" unique="true">
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="LocationName" />
+    <column ascending="true" name="EffectiveDate" />
+    <column ascending="true" name="PrimaryCoverageID" />
+    <column ascending="true" name="BenefitPlanID" />
+  </index>
+  <index name="ClientPriCovBenPlan_Search1" unique="false">
+    <column ascending="true" name="EffectiveDate" />
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="LocationName" />
+    <column ascending="true" name="PrimaryCoverageID" />
+  </index>
+  <index name="ClientPriCovBenPlan_Search2" unique="false">
+    <column ascending="true" name="PrimaryCoverageID" />
+    <column ascending="true" name="BenefitPlanID" />
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="LocationName" />
+    <column ascending="true" name="EffectiveDate" />
+  </index>
+</table>

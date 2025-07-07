@@ -1,0 +1,21 @@
+<table catalog="Jv-1.44.18.6_FK" name="DisAdditionalDeduction" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="AddDeductID" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="Claimnumber" nullable="false" remarks="" size="19" type="varchar" typeCode="12">
+    <parent catalog="Jv-1.44.18.6_FK" column="Claimnumber" foreignKey="FK__DisAdditi__Claim__4FBD9286" implied="false" onDeleteCascade="false" schema="dbo" table="DisabilityMaintenance" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="ReasonCode" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="5" name="Amount" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="DeductionType" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <primaryKey column="Claimnumber" sequenceNumberInPK="1" />
+  <primaryKey column="AddDeductID" sequenceNumberInPK="2" />
+  <index name="PK__DisAddit__CE533C88A7CDE16A" unique="true">
+    <column ascending="true" name="Claimnumber" />
+    <column ascending="true" name="AddDeductID" />
+  </index>
+  <index name="DisAdditionalDeduction_Search1" unique="false">
+    <column ascending="true" name="Claimnumber" />
+    <column ascending="true" name="DeductionType" />
+  </index>
+</table>

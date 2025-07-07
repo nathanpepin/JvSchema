@@ -1,0 +1,25 @@
+<table catalog="Jv-1.44.18.6_FK" name="PricingC1DRGTable" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="RuleID" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="ContractID" nullable="true" remarks="" size="4" type="int" typeCode="4">
+    <parent catalog="Jv-1.44.18.6_FK" column="ContractID" foreignKey="FK__PricingC1__Contr__6E971F61" implied="false" onDeleteCascade="false" schema="dbo" table="ContractMaintenance" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="ModuleType" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="C1DRGTable" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="PricingC1DRGID" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <primaryKey column="PricingC1DRGID" sequenceNumberInPK="1" />
+  <primaryKey column="RuleID" sequenceNumberInPK="2" />
+  <index name="PK__PricingC__FC766EC706F56573" unique="true">
+    <column ascending="true" name="PricingC1DRGID" />
+    <column ascending="true" name="RuleID" />
+  </index>
+  <index name="PricingC1DRGTable_Search1" unique="false">
+    <column ascending="true" name="PricingC1DRGID" />
+    <column ascending="true" name="RuleID" />
+    <column ascending="true" name="C1DRGTable" />
+  </index>
+  <index name="PricingC1DRGTable_Search2" unique="false">
+    <column ascending="true" name="ContractID" />
+  </index>
+</table>

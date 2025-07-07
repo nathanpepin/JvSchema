@@ -1,0 +1,20 @@
+<table catalog="Jv-1.44.18.6_FK" name="EDIEnrollReportCategory" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="ReportCategoryRecordID" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="EnrollmentRecordID" nullable="true" remarks="" size="8" type="bigint" typeCode="-5" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="N101EntityIdentCode" nullable="true" remarks="" size="100" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="N101EntityIdentCodeDesc" nullable="true" remarks="" size="100" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="N102MemberRepCatName" nullable="true" remarks="" size="100" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="RefIdentQualifier" nullable="true" remarks="" size="100" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="RefIdentQualifierDesc" nullable="true" remarks="" size="100" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="MemberRepCatRefID" nullable="true" remarks="" size="100" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="ReportingCategoryDate" nullable="true" remarks="" size="100" type="varchar" typeCode="12" />
+  <primaryKey column="ReportCategoryRecordID" sequenceNumberInPK="1" />
+  <index name="PK__EDIEnrol__D3C3AFF6CF56DAD9" unique="true">
+    <column ascending="true" name="ReportCategoryRecordID" />
+  </index>
+  <index name="EDIEnrollReportCategory_idx2" unique="false">
+    <column ascending="true" name="EnrollmentRecordID" />
+  </index>
+</table>

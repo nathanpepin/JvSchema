@@ -1,0 +1,149 @@
+<table catalog="Jv-1.44.18.6_FK" name="ReInsTrackerTxn" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="RecordId" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="Claimnumber" nullable="true" remarks="" size="19" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="SubmissionID" nullable="true" remarks="" size="19" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="TxnNum" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="TxnType" nullable="true" remarks="" size="10" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="TxnDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="8" name="TxnAmt" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="AppealRsnCode" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="AdjustRsnCode" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="TxnStatus" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="ReimbursedDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="13" name="ReimbursedAmt" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="14" name="DeniedAmt" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="15" name="DeniedRsnCode" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="16" name="RespRecdID" nullable="true" remarks="" size="19" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="17" name="Comments" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="2005" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="18" name="ParentRecordId" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="19" name="ChildRecordId" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="20" name="FundingType" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="21" name="StopLossContract" nullable="true" remarks="" size="10" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="22" name="StopLossContractID" nullable="true" remarks="" size="10" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="23" name="BlkOfBusID" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="24" name="ClientID" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="25" name="LocationName" nullable="true" remarks="" size="12" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="26" name="EmployeeID" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="27" name="PatientID" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="28" name="BatchID" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="29" name="CleanClaimDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="30" name="ProcessedDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="31" name="PaymentDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="32" name="ReAllocFrom" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="33" name="ReimRec" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="34" name="CdhpType" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <primaryKey column="RecordId" sequenceNumberInPK="1" />
+  <index name="PK__ReInsTra__FBDF78E9DE777D8C" unique="true">
+    <column ascending="true" name="RecordId" />
+  </index>
+  <index name="ReInsTrackerTxn_client" unique="false">
+    <column ascending="true" name="StopLossContract" />
+    <column ascending="true" name="StopLossContractID" />
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="LocationName" />
+    <column ascending="true" name="Claimnumber" />
+    <column ascending="true" name="TxnStatus" />
+    <column ascending="true" name="TxnType" />
+    <column ascending="true" name="TxnDate" />
+    <column ascending="true" name="ReimRec" />
+    <column ascending="true" name="SubmissionID" />
+    <column ascending="true" name="BatchID" />
+    <column ascending="true" name="PaymentDate" />
+    <column ascending="true" name="ReimbursedDate" />
+    <column ascending="true" name="DeniedRsnCode" />
+    <column ascending="true" name="FundingType" />
+  </index>
+  <index name="ReInsTrackerTxn_cont" unique="false">
+    <column ascending="true" name="StopLossContract" />
+    <column ascending="true" name="StopLossContractID" />
+    <column ascending="true" name="Claimnumber" />
+    <column ascending="true" name="TxnStatus" />
+    <column ascending="true" name="TxnType" />
+    <column ascending="true" name="TxnDate" />
+    <column ascending="true" name="ReimRec" />
+    <column ascending="true" name="SubmissionID" />
+    <column ascending="true" name="BatchID" />
+    <column ascending="true" name="PaymentDate" />
+    <column ascending="true" name="ReimbursedDate" />
+    <column ascending="true" name="DeniedRsnCode" />
+    <column ascending="true" name="FundingType" />
+    <column ascending="true" name="RecordId" />
+  </index>
+  <index name="ReInsTrackerTxn_emp" unique="false">
+    <column ascending="true" name="StopLossContract" />
+    <column ascending="true" name="StopLossContractID" />
+    <column ascending="true" name="EmployeeID" />
+    <column ascending="true" name="PatientID" />
+    <column ascending="true" name="Claimnumber" />
+    <column ascending="true" name="TxnStatus" />
+    <column ascending="true" name="TxnType" />
+    <column ascending="true" name="TxnDate" />
+    <column ascending="true" name="ReimRec" />
+    <column ascending="true" name="SubmissionID" />
+    <column ascending="true" name="BatchID" />
+    <column ascending="true" name="PaymentDate" />
+    <column ascending="true" name="ReimbursedDate" />
+    <column ascending="true" name="DeniedRsnCode" />
+    <column ascending="true" name="FundingType" />
+    <column ascending="true" name="RecordId" />
+  </index>
+  <index name="ReInsTrackerTxn_s2" unique="false">
+    <column ascending="true" name="Claimnumber" />
+    <column ascending="true" name="BatchID" />
+    <column ascending="true" name="TxnType" />
+    <column ascending="true" name="TxnStatus" />
+    <column ascending="true" name="CdhpType" />
+    <column ascending="true" name="RecordId" />
+  </index>
+  <index name="ReInsTrackerTxn_s3" unique="false">
+    <column ascending="true" name="BatchID" />
+    <column ascending="true" name="TxnStatus" />
+    <column ascending="true" name="RecordId" />
+  </index>
+  <index name="ReInsTrackerTxn_s5" unique="false">
+    <column ascending="true" name="StopLossContract" />
+    <column ascending="true" name="StopLossContractID" />
+    <column ascending="true" name="SubmissionID" />
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="LocationName" />
+    <column ascending="true" name="EmployeeID" />
+    <column ascending="true" name="PatientID" />
+    <column ascending="true" name="TxnStatus" />
+    <column ascending="true" name="Claimnumber" />
+    <column ascending="true" name="CleanClaimDate" />
+    <column ascending="true" name="ProcessedDate" />
+    <column ascending="true" name="PaymentDate" />
+    <column ascending="true" name="TxnType" />
+    <column ascending="true" name="TxnDate" />
+    <column ascending="true" name="ReimbursedDate" />
+  </index>
+  <index name="ReInsTrackerTxn_search1" unique="false">
+    <column ascending="true" name="Claimnumber" />
+    <column ascending="true" name="TxnNum" />
+    <column ascending="true" name="RecordId" />
+  </index>
+  <index name="ReInsTrackerTxn_search2" unique="false">
+    <column ascending="true" name="SubmissionID" />
+    <column ascending="true" name="RecordId" />
+  </index>
+  <index name="ReInsTrackerTxn_search5" unique="false">
+    <column ascending="true" name="Claimnumber" />
+    <column ascending="true" name="TxnType" />
+  </index>
+  <index name="ReInsTrackerTxn_submsn" unique="false">
+    <column ascending="true" name="StopLossContract" />
+    <column ascending="true" name="StopLossContractID" />
+    <column ascending="true" name="SubmissionID" />
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="LocationName" />
+    <column ascending="true" name="EmployeeID" />
+    <column ascending="true" name="PatientID" />
+    <column ascending="true" name="ReimRec" />
+    <column ascending="true" name="RecordId" />
+  </index>
+</table>

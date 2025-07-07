@@ -1,0 +1,85 @@
+<table catalog="Jv-1.44.18.6_FK" name="ManualCheckRequester" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="BlkOfBusID" nullable="false" remarks="" size="5" type="varchar" typeCode="12">
+    <child catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__ManualChkRqstDet__6FC04DC4" implied="false" onDeleteCascade="false" schema="dbo" table="ManualChkRqstDetailAmt" />
+    <parent catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__ManualChe__BlkOf__6AFB98A7" implied="false" onDeleteCascade="false" schema="dbo" table="BlockOfBusiness" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="CertificateNumber" nullable="false" remarks="" size="29" type="varchar" typeCode="12">
+    <child catalog="Jv-1.44.18.6_FK" column="CertificateNumber" foreignKey="FK__ManualChkRqstDet__6FC04DC4" implied="false" onDeleteCascade="false" schema="dbo" table="ManualChkRqstDetailAmt" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="LocationName" nullable="false" remarks="" size="12" type="varchar" typeCode="12">
+    <child catalog="Jv-1.44.18.6_FK" column="LocationName" foreignKey="FK__ManualChkRqstDet__6FC04DC4" implied="false" onDeleteCascade="false" schema="dbo" table="ManualChkRqstDetailAmt" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="ClientID" nullable="false" remarks="" size="5" type="varchar" typeCode="12">
+    <child catalog="Jv-1.44.18.6_FK" column="ClientID" foreignKey="FK__ManualChkRqstDet__6FC04DC4" implied="false" onDeleteCascade="false" schema="dbo" table="ManualChkRqstDetailAmt" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="AccountID" nullable="false" remarks="" size="50" type="varchar" typeCode="12">
+    <child catalog="Jv-1.44.18.6_FK" column="AccountID" foreignKey="FK__ManualChkRqstDet__6FC04DC4" implied="false" onDeleteCascade="false" schema="dbo" table="ManualChkRqstDetailAmt" />
+    <parent catalog="Jv-1.44.18.6_FK" column="AccountID" foreignKey="FK__ManualChe__Accou__6ECC298B" implied="false" onDeleteCascade="false" schema="dbo" table="CheckAccountInformation" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="CheckRequestDate" nullable="false" remarks="" size="20" type="date" typeCode="12">
+    <child catalog="Jv-1.44.18.6_FK" column="CheckRequestDate" foreignKey="FK__ManualChkRqstDet__6FC04DC4" implied="false" onDeleteCascade="false" schema="dbo" table="ManualChkRqstDetailAmt" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="CheckType" nullable="false" remarks="" size="1" type="char" typeCode="1">
+    <child catalog="Jv-1.44.18.6_FK" column="CheckType" foreignKey="FK__ManualChkRqstDet__6FC04DC4" implied="false" onDeleteCascade="false" schema="dbo" table="ManualChkRqstDetailAmt" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="BrokerID" nullable="true" remarks="" size="11" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="CheckPurpose" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="CheckStatus" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="CheckNumber" nullable="true" remarks="" size="12" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="13" name="PaymentDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="14" name="CheckTotal" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="15" name="BatchKey" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="16" name="SequanceNumber" nullable="false" remarks="" size="4" type="int" typeCode="4">
+    <child catalog="Jv-1.44.18.6_FK" column="SequanceNumber" foreignKey="FK__ManualChkRqstDet__6FC04DC4" implied="false" onDeleteCascade="false" schema="dbo" table="ManualChkRqstDetailAmt" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="17" name="PaymentMethod" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="18" name="EffectiveDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="19" name="RefundPaymentDetails" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <primaryKey column="BlkOfBusID" sequenceNumberInPK="1" />
+  <primaryKey column="ClientID" sequenceNumberInPK="2" />
+  <primaryKey column="LocationName" sequenceNumberInPK="3" />
+  <primaryKey column="CertificateNumber" sequenceNumberInPK="4" />
+  <primaryKey column="AccountID" sequenceNumberInPK="5" />
+  <primaryKey column="CheckRequestDate" sequenceNumberInPK="6" />
+  <primaryKey column="CheckType" sequenceNumberInPK="7" />
+  <primaryKey column="SequanceNumber" sequenceNumberInPK="8" />
+  <index name="PK__ManualCh__89AB96CB6C2362B1" unique="true">
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="LocationName" />
+    <column ascending="true" name="CertificateNumber" />
+    <column ascending="true" name="AccountID" />
+    <column ascending="true" name="CheckRequestDate" />
+    <column ascending="true" name="CheckType" />
+    <column ascending="true" name="SequanceNumber" />
+  </index>
+  <index name="ManualCheckRequester_Search2" unique="false">
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="LocationName" />
+    <column ascending="true" name="BrokerID" />
+    <column ascending="true" name="CheckRequestDate" />
+    <column ascending="true" name="AccountID" />
+  </index>
+  <index name="ManualCheckRequester_Search3" unique="false">
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="LocationName" />
+    <column ascending="true" name="BrokerID" />
+    <column ascending="true" name="CheckRequestDate" />
+    <column ascending="true" name="AccountID" />
+  </index>
+  <index name="ManualCheckRequester_Search4" unique="false">
+    <column ascending="true" name="SequanceNumber" />
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="LocationName" />
+    <column ascending="true" name="BrokerID" />
+    <column ascending="true" name="PaymentDate" />
+    <column ascending="true" name="AccountID" />
+  </index>
+  <index name="ManualCheckRequester_Search5" unique="false">
+    <column ascending="true" name="SequanceNumber" />
+  </index>
+</table>

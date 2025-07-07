@@ -1,0 +1,21 @@
+<table catalog="Jv-1.44.18.6_FK" name="COBRATransIn" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="CobraTransID" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="EntityID" nullable="false" remarks="" size="15" type="varchar" typeCode="12">
+    <parent catalog="Jv-1.44.18.6_FK" column="EntityID" foreignKey="FK__COBRATran__Entit__2BB53C3A" implied="false" onDeleteCascade="false" schema="dbo" table="EDIEntitySetup" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="CobraQualEvent" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="CobraReasons" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <primaryKey column="EntityID" sequenceNumberInPK="1" />
+  <primaryKey column="CobraTransID" sequenceNumberInPK="2" />
+  <index name="PK__COBRATra__0629A781A78DFF4E" unique="true">
+    <column ascending="true" name="EntityID" />
+    <column ascending="true" name="CobraTransID" />
+  </index>
+  <index name="COBRATransIn_Search" unique="false">
+    <column ascending="true" name="EntityID" />
+    <column ascending="true" name="CobraQualEvent" />
+    <column ascending="true" name="CobraReasons" />
+  </index>
+</table>

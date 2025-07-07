@@ -1,0 +1,46 @@
+<table catalog="Jv-1.44.18.6_FK" name="SysImagesAndLogos" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="ImageIDSeq" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="ImageType" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="ImagePath" nullable="true" remarks="" size="255" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="FileName" nullable="true" remarks="" size="255" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="UploadDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="Description" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="BlkOfBusID" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="ClientID" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="ImageNumber" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <primaryKey column="ImageIDSeq" sequenceNumberInPK="1" />
+  <index name="PK__SysImage__F06850F9B9125FFB" unique="true">
+    <column ascending="true" name="ImageIDSeq" />
+  </index>
+  <index name="SysImagesAndLogos_CT" unique="false">
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="ImageIDSeq" />
+  </index>
+  <index name="SysImagesAndLogos_search2" unique="false">
+    <column ascending="true" name="ImageNumber" />
+    <column ascending="true" name="ImageType" />
+    <column ascending="true" name="FileName" />
+    <column ascending="true" name="UploadDate" />
+    <column ascending="true" name="Description" />
+  </index>
+  <index name="SysImagesAndLogos_search3" unique="false">
+    <column ascending="true" name="FileName" />
+    <column ascending="true" name="ImageType" />
+    <column ascending="true" name="UploadDate" />
+    <column ascending="true" name="Description" />
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="ImagePath" />
+  </index>
+  <index name="SysImagesAndLogos_search4" unique="false">
+    <column ascending="true" name="ImageIDSeq" />
+    <column ascending="true" name="ImageType" />
+  </index>
+  <index name="SysImagesAndLogos_search5" unique="false">
+    <column ascending="true" name="ImageType" />
+    <column ascending="true" name="Description" />
+  </index>
+</table>

@@ -1,0 +1,18 @@
+<table catalog="Jv-1.44.18.6_FK" name="DisFICAMediWithhold" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="EffectiveDate" nullable="false" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="3" name="MaxAmountFICAApplies" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="3" id="4" name="FICAPercent" nullable="true" remarks="" size="8" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="3" id="5" name="MedicarePercent" nullable="true" remarks="" size="8" type="decimal" typeCode="3" />
+  <primaryKey column="EffectiveDate" sequenceNumberInPK="1" />
+  <index name="PK__DisFICAM__174C7507A223B637" unique="true">
+    <column ascending="true" name="EffectiveDate" />
+  </index>
+  <index name="DisFICAMediWithhold_Search1" unique="false">
+    <column ascending="true" name="EffectiveDate" />
+    <column ascending="true" name="MaxAmountFICAApplies" />
+    <column ascending="true" name="FICAPercent" />
+    <column ascending="true" name="MedicarePercent" />
+  </index>
+</table>

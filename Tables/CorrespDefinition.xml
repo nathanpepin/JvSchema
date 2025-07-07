@@ -1,0 +1,51 @@
+<table catalog="Jv-1.44.18.6_FK" name="CorrespDefinition" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="CorrespondenceID" nullable="false" remarks="" size="3" type="varchar" typeCode="12">
+    <child catalog="Jv-1.44.18.6_FK" column="CorrespondenceID" foreignKey="FK__CorrespDe__Corre__5B644F5C" implied="false" onDeleteCascade="false" schema="dbo" table="CorrespDefinitionInfo" />
+    <child catalog="Jv-1.44.18.6_FK" column="CorrespondenceID" foreignKey="FK__CorrespQu__Corre__5D4C97CE" implied="false" onDeleteCascade="false" schema="dbo" table="CorrespQues" />
+    <child catalog="Jv-1.44.18.6_FK" column="CorrespondenceID" foreignKey="FK__CorrespTe__Corre__5E40BC07" implied="false" onDeleteCascade="false" schema="dbo" table="CorrespTemplatesInfo" />
+    <child catalog="Jv-1.44.18.6_FK" column="CorrespondenceID" foreignKey="FK__CorrespTm__Corre__5F34E040" implied="false" onDeleteCascade="false" schema="dbo" table="CorrespTmptDesign" />
+    <child catalog="Jv-1.44.18.6_FK" column="CorrespondenceID" foreignKey="FK__LetterReq__Corre__5E95C1C2" implied="false" onDeleteCascade="false" schema="dbo" table="LetterRequest" />
+    <child catalog="Jv-1.44.18.6_FK" column="LetterSenttoProvider" foreignKey="FK__SpecificS__Lette__465423DD" implied="false" onDeleteCascade="false" schema="dbo" table="SpecificStopLossContract" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="Description" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="FormType" nullable="true" remarks="" size="15" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="VendorID" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="PrimaryRecipient" nullable="true" remarks="" size="99" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="CCRecipients" nullable="true" remarks="" size="99" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="Questions" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="FollowUps" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="FirstFUCorrespID" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="FrstFUCorrespDesc" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="FrstFUDaysAftrInit" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="13" name="SecFUCorrespID" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="14" name="SecFUCorrespDesc" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="15" name="SecFUDaysAftrInit" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="16" name="ThrdFUCorrespID" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="17" name="ThrdFUCorrespDesc" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="18" name="ThrdFUDaysAftrInit" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="19" name="AssignNewTmpt" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="20" name="CorrespTmptID" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <primaryKey column="CorrespondenceID" sequenceNumberInPK="1" />
+  <index name="PK__CorrespD__709EC622459F652D" unique="true">
+    <column ascending="true" name="CorrespondenceID" />
+  </index>
+  <index name="CorrespDefinition_Search1" unique="false">
+    <column ascending="true" name="CorrespondenceID" />
+    <column ascending="true" name="Description" />
+    <column ascending="true" name="Questions" />
+    <column ascending="true" name="FollowUps" />
+    <column ascending="true" name="AssignNewTmpt" />
+  </index>
+  <index name="CorrespDefinition_Search2" unique="false">
+    <column ascending="true" name="CorrespondenceID" />
+    <column ascending="true" name="Description" />
+    <column ascending="true" name="AssignNewTmpt" />
+  </index>
+  <index name="CorrespDefinition_Search3" unique="false">
+    <column ascending="true" name="CorrespondenceID" />
+    <column ascending="true" name="PrimaryRecipient" />
+    <column ascending="true" name="CCRecipients" />
+  </index>
+</table>

@@ -1,0 +1,14 @@
+<table catalog="Jv-1.44.18.6_FK" name="SecondaryProduct" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="ProductID" nullable="false" remarks="" size="2" type="varchar" typeCode="12">
+    <child catalog="Jv-1.44.18.6_FK" column="ProductID" foreignKey="FK__CMPAEnrRu__Produ__086BFFFD" implied="false" onDeleteCascade="false" schema="dbo" table="CMPAEnrRuleBrkSupProd" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="ProductName" nullable="true" remarks="" size="10" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="ProductDescription" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="HIPAAInsuranceLineCode" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <primaryKey column="ProductID" sequenceNumberInPK="1" />
+  <index name="PK__Secondar__B40CC6ED2156BCC9" unique="true">
+    <column ascending="true" name="ProductID" />
+  </index>
+</table>

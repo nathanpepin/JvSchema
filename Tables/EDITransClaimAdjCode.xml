@@ -1,0 +1,27 @@
+<table catalog="Jv-1.44.18.6_FK" name="EDITransClaimAdjCode" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="EntityID" nullable="false" remarks="" size="15" type="varchar" typeCode="12">
+    <parent catalog="Jv-1.44.18.6_FK" column="EntityID" foreignKey="FK__EDITransC__Entit__2D337058" implied="false" onDeleteCascade="false" schema="dbo" table="EDIEntitySetup" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="ClaimAdjGroupCode" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="ClaimAdjReasonCode" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="ClaimServicelineOverride" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="DeniedReasonCode" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="TransClaimAdjSeq" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="ApplyClaimsEdits" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <primaryKey column="EntityID" sequenceNumberInPK="1" />
+  <primaryKey column="TransClaimAdjSeq" sequenceNumberInPK="2" />
+  <index name="PK__EDITrans__4C00589AB844F56F" unique="true">
+    <column ascending="true" name="EntityID" />
+    <column ascending="true" name="TransClaimAdjSeq" />
+  </index>
+  <index name="EDITransClaimAdjCode_Search" unique="false">
+    <column ascending="true" name="ApplyClaimsEdits" />
+    <column ascending="true" name="EntityID" />
+    <column ascending="true" name="ClaimAdjGroupCode" />
+    <column ascending="true" name="ClaimAdjReasonCode" />
+    <column ascending="true" name="ClaimServicelineOverride" />
+    <column ascending="true" name="DeniedReasonCode" />
+  </index>
+</table>

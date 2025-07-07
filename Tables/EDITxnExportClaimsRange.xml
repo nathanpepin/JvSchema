@@ -1,0 +1,22 @@
+<table catalog="Jv-1.44.18.6_FK" name="EDITxnExportClaimsRange" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="ParameterSetName" nullable="false" remarks="" size="30" type="varchar" typeCode="12">
+    <parent catalog="Jv-1.44.18.6_FK" column="ParameterSetName" foreignKey="FK__EDITxnExp__Param__4416D5B0" implied="false" onDeleteCascade="false" schema="dbo" table="EDITxnExportClaims" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="EDITxnExportClaimsRangeID" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="BlkOfBusIDFrom" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="BlkOfBusIDTo" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="ClientIDFrom" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="ClientIDTo" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="LocationNameFrom" nullable="true" remarks="" size="12" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="LocationNameTo" nullable="true" remarks="" size="12" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="DepartmentNameFrom" nullable="true" remarks="" size="12" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="DepartmentNameTo" nullable="true" remarks="" size="12" type="varchar" typeCode="12" />
+  <primaryKey column="ParameterSetName" sequenceNumberInPK="1" />
+  <primaryKey column="EDITxnExportClaimsRangeID" sequenceNumberInPK="2" />
+  <index name="PK__EDITxnEx__562BAB3BF0077726" unique="true">
+    <column ascending="true" name="ParameterSetName" />
+    <column ascending="true" name="EDITxnExportClaimsRangeID" />
+  </index>
+</table>

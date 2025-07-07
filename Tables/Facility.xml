@@ -1,0 +1,178 @@
+<table catalog="Jv-1.44.18.6_FK" name="Facility" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="FacilityID" nullable="false" remarks="" size="4" type="int" typeCode="4">
+    <child catalog="Jv-1.44.18.6_FK" column="FacPhysID" foreignKey="FK__Credentia__FacPh__66D60208" implied="false" onDeleteCascade="false" schema="dbo" table="CredentialsInfo" />
+    <child catalog="Jv-1.44.18.6_FK" column="FacilityID" foreignKey="FK__FacilityA__Facil__349F87F6" implied="false" onDeleteCascade="false" schema="dbo" table="FacilityAddress" />
+    <child catalog="Jv-1.44.18.6_FK" column="FacilityID" foreignKey="FK__FacilityC__Facil__3593AC2F" implied="false" onDeleteCascade="false" schema="dbo" table="FacilityContract" />
+    <child catalog="Jv-1.44.18.6_FK" column="FacilityID" foreignKey="FK__FacilityE__Facil__377BF4A1" implied="false" onDeleteCascade="false" schema="dbo" table="FacilityEFTInfo" />
+    <child catalog="Jv-1.44.18.6_FK" column="FacilityID" foreignKey="FK__FacilityP__Facil__3C40A9BE" implied="false" onDeleteCascade="false" schema="dbo" table="FacilityPhysicianAffl" />
+    <child catalog="Jv-1.44.18.6_FK" column="FacilityID" foreignKey="FK__FacOIGExc__Facil__40113AA2" implied="false" onDeleteCascade="false" schema="dbo" table="FacOIGExclusionList" />
+    <child catalog="Jv-1.44.18.6_FK" column="FacilityConnectorID" foreignKey="FK__NetworkAf__Facil__0A744400" implied="false" onDeleteCascade="false" schema="dbo" table="NetworkAffiliations" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="TaxID" nullable="true" remarks="" size="9" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="TaxIDType" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="Status" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="HoldReason" nullable="true" remarks="" size="10" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="Delegated" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="FacilityName" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="FacilityType" nullable="true" remarks="" size="4" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="PracticeType" nullable="true" remarks="" size="4" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="CurrUsed" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="ContactName" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="13" name="Email" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="14" name="HomePhoneOne" nullable="true" remarks="" size="15" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="15" name="HomeExtOne" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="16" name="HomePhoneTwo" nullable="true" remarks="" size="15" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="17" name="HomeExtTwo" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="18" name="WorkPhoneOne" nullable="true" remarks="" size="15" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="19" name="WorkExtOne" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="20" name="WorkPhoneTwo" nullable="true" remarks="" size="15" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="21" name="WorkExtTwo" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="22" name="MobilePhoneOne" nullable="true" remarks="" size="15" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="23" name="MobilePhoneTwo" nullable="true" remarks="" size="15" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="24" name="FaxOne" nullable="true" remarks="" size="15" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="25" name="FaxTwo" nullable="true" remarks="" size="15" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="26" name="BillingAddrID" nullable="true" remarks="" size="4" type="int" typeCode="4">
+    <parent catalog="Jv-1.44.18.6_FK" column="BillingAddrID" foreignKey="FK__Facility__Billin__3F1D1669" implied="false" onDeleteCascade="false" schema="dbo" table="BillingAddrInfo" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="27" name="PromptPayDiscount" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="3" id="28" name="PromptPayPercent" nullable="true" remarks="" size="8" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="29" name="PromptPayAmt" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="30" name="DiscountWithin" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="31" name="ProvOverpaymentRec" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="32" name="NetworkNegotiation" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="33" name="RestrictNetwork" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="34" name="Trans835EOB" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="35" name="UseBillAddr835" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="36" name="Entity835" nullable="true" remarks="" size="15" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="37" name="Entity835Settings" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="38" name="FTPFile" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="39" name="Attempts" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="40" name="HowFarApart" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="41" name="FTPType" nullable="true" remarks="" size="25" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="42" name="CompressFiles" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="43" name="EncryptionKey" nullable="true" remarks="" size="4000" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="44" name="FTPAddress" nullable="true" remarks="" size="45" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="45" name="FacilityLogin" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="46" name="enc_FacilityPassword" nullable="true" remarks="" size="280" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="47" name="FTPPort" nullable="true" remarks="" size="15" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="48" name="RemoteSitePath" nullable="true" remarks="" size="500" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="49" name="AutoFTPFiles" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="50" name="ActionForAutoFTP" nullable="true" remarks="" size="50" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="51" name="SupEOBHardcopy" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="52" name="FacilityAlias" nullable="true" remarks="" size="40" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="53" name="Acronym" nullable="true" remarks="" size="10" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="54" name="AlternateID1" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="55" name="AlternateID2" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="56" name="MedicareID" nullable="true" remarks="" size="12" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="57" name="MedicaidID" nullable="true" remarks="" size="12" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="58" name="SubmitterID" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="59" name="StateID" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="60" name="TaxonomyCode" nullable="true" remarks="" size="10" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="61" name="NationalProviderID" nullable="true" remarks="" size="12" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="62" name="AHANumber" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="63" name="AMANumber" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="64" name="JCAHONumber" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="65" name="UserDefinedField1" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="66" name="UserDefinedField2" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="67" name="UserDefinedField3" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="68" name="UserDefinedField4" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="69" name="UserDefinedField5" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="70" name="UserDefinedField6" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="71" name="Comments" nullable="true" remarks="" size="512" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="72" name="Conversionid" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="73" name="ContractTier" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="74" name="FacilityRecordType" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="75" name="PendReason" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="76" name="ModifiedDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="77" name="FacilityCertNumber" nullable="true" remarks="" size="12" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="78" name="MailPaperEOB" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="79" name="ReceiveEmail" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="80" name="SuppressInMESA" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="81" name="PrimarySpecs" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="82" name="PriSpecEffDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="83" name="PriSpecTermDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="84" name="VerifiedBy" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="85" name="VerDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="86" name="VerMethod" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="87" name="UsePMCS" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="88" name="BLIKey" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="89" name="BLIKeyDate" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="90" name="NCPDPNumber" nullable="true" remarks="" size="7" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="91" name="EPayPaymentCode" nullable="true" remarks="" size="7" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="92" name="LastDirectUpdateDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="93" name="WebsiteAddress" nullable="true" remarks="" size="2100" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="94" name="LastDirectUpdateUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="95" name="CreatedTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="96" name="CreatedUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="97" name="ServiceDeliveryModel" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="98" name="ServiceDeliveryModelOther" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <primaryKey column="FacilityID" sequenceNumberInPK="1" />
+  <index name="PK__Facility__5FB08B94C9CC44B1" unique="true">
+    <column ascending="true" name="FacilityID" />
+  </index>
+  <index name="EdiProviderMatching_F_NPINnTaxID" unique="false">
+    <column ascending="true" name="NationalProviderID" />
+    <column ascending="true" name="TaxID" />
+  </index>
+  <index name="EdiProviderMatching_F_TaxIDnNPIN" unique="false">
+    <column ascending="true" name="TaxID" />
+    <column ascending="true" name="NationalProviderID" />
+  </index>
+  <index name="Facility_BLIKey" unique="false">
+    <column ascending="true" name="BLIKey" />
+    <column ascending="true" name="BLIKeyDate" />
+  </index>
+  <index name="Facility_CertNumber" unique="true">
+    <column ascending="true" name="FacilityCertNumber" />
+  </index>
+  <index name="Facility_Conv" unique="false">
+    <column ascending="true" name="Conversionid" />
+  </index>
+  <index name="Facility_NCPDPNumber" unique="false">
+    <column ascending="true" name="NCPDPNumber" />
+    <column ascending="true" name="Status" />
+  </index>
+  <index name="Facility_Search1" unique="false">
+    <column ascending="true" name="FacilityName" />
+    <column ascending="true" name="FacilityType" />
+    <column ascending="true" name="TaxID" />
+    <column ascending="true" name="NationalProviderID" />
+    <column ascending="true" name="AlternateID1" />
+    <column ascending="true" name="AlternateID2" />
+    <column ascending="true" name="FacilityID" />
+    <column ascending="true" name="FacilityCertNumber" />
+    <column ascending="true" name="Acronym" />
+    <column ascending="true" name="Status" />
+    <column ascending="true" name="PrimarySpecs" />
+    <column ascending="true" name="NCPDPNumber" />
+    <column ascending="true" name="SuppressInMESA" />
+  </index>
+  <index name="Facility_Search2" unique="false">
+    <column ascending="true" name="BillingAddrID" />
+  </index>
+  <index name="Facility_Search5" unique="false">
+    <column ascending="true" name="FacilityID" />
+    <column ascending="true" name="ModifiedDate" />
+  </index>
+  <index name="Facility_Search6" unique="false">
+    <column ascending="true" name="FacilityName" />
+    <column ascending="true" name="FacilityID" />
+    <column ascending="true" name="Status" />
+    <column ascending="true" name="TaxID" />
+    <column ascending="true" name="FacilityCertNumber" />
+    <column ascending="true" name="SuppressInMESA" />
+  </index>
+  <index name="Facility_Search7" unique="false">
+    <column ascending="true" name="FacilityID" />
+    <column ascending="true" name="TaxID" />
+    <column ascending="true" name="NationalProviderID" />
+    <column ascending="true" name="Status" />
+    <column ascending="true" name="FacilityName" />
+    <column ascending="true" name="FacilityType" />
+    <column ascending="true" name="FacilityCertNumber" />
+    <column ascending="true" name="HoldReason" />
+    <column ascending="true" name="PendReason" />
+  </index>
+</table>

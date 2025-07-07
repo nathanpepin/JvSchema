@@ -1,0 +1,29 @@
+<table catalog="Jv-1.44.18.6_FK" name="MemberGapCertNum" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="CertName" nullable="false" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="CertLength" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="SequenceNo" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="Current_val" nullable="true" remarks="" size="8" type="bigint" typeCode="-5" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="Max_val" nullable="true" remarks="" size="8" type="bigint" typeCode="-5" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="IncrementNumberBy" nullable="true" remarks="" size="8" type="bigint" typeCode="-5" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="IsSequenceConsumed" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="IntialSequences" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <primaryKey column="CertName" sequenceNumberInPK="1" />
+  <primaryKey column="CertLength" sequenceNumberInPK="2" />
+  <primaryKey column="SequenceNo" sequenceNumberInPK="3" />
+  <index name="PK__MemberGa__2E3942085BAA8DE8" unique="true">
+    <column ascending="true" name="CertName" />
+    <column ascending="true" name="CertLength" />
+    <column ascending="true" name="SequenceNo" />
+  </index>
+  <index name="MemberGapCertNum_Search1" unique="false">
+    <column ascending="true" name="CertName" />
+    <column ascending="true" name="CertLength" />
+    <column ascending="true" name="SequenceNo" />
+    <column ascending="true" name="Current_val" />
+    <column ascending="true" name="Max_val" />
+    <column ascending="true" name="IsSequenceConsumed" />
+    <column ascending="true" name="IntialSequences" />
+  </index>
+</table>

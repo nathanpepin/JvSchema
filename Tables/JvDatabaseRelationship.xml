@@ -1,0 +1,27 @@
+<table catalog="Jv-1.44.18.6_FK" name="JvDatabaseRelationship" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="primary_table_name" nullable="false" remarks="" size="50" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="primary_table_id" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="foreign_table_name" nullable="true" remarks="" size="50" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="column_name" nullable="true" remarks="" size="40" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="column_id" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <primaryKey column="primary_table_name" sequenceNumberInPK="1" />
+  <primaryKey column="primary_table_id" sequenceNumberInPK="2" />
+  <index name="PK__JvDataba__E688C73970F9ABC2" unique="true">
+    <column ascending="true" name="primary_table_name" />
+    <column ascending="true" name="primary_table_id" />
+  </index>
+  <index name="JvDatabaseRelationship_Search" unique="false">
+    <column ascending="true" name="primary_table_name" />
+    <column ascending="true" name="primary_table_id" />
+    <column ascending="true" name="foreign_table_name" />
+    <column ascending="true" name="column_name" />
+    <column ascending="true" name="column_id" />
+  </index>
+  <index name="JvDatabaseRelationship_Search1" unique="false">
+    <column ascending="true" name="primary_table_name" />
+    <column ascending="true" name="column_name" />
+    <column ascending="true" name="foreign_table_name" />
+  </index>
+</table>

@@ -1,0 +1,26 @@
+<table catalog="Jv-1.44.18.6_FK" name="LoginMonitoring" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="Status" nullable="true" remarks="" size="75" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="LoginID" nullable="false" remarks="" size="4" type="int" typeCode="4">
+    <child catalog="Jv-1.44.18.6_FK" column="LoginID" foreignKey="FK__CMPAActiv__Login__7DEE718A" implied="false" onDeleteCascade="false" schema="dbo" table="CMPAActivityTracker" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="App_Type" nullable="true" remarks="" size="75" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="IP_Address" nullable="true" remarks="" size="75" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="BrowserType" nullable="true" remarks="" size="75" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="BrowserVersion" nullable="true" remarks="" size="75" type="varchar" typeCode="12" />
+  <primaryKey column="LoginID" sequenceNumberInPK="1" />
+  <index name="PK__LoginMon__4DDA2838F9D6B6A4" unique="true">
+    <column ascending="true" name="LoginID" />
+  </index>
+  <index name="LoginMonitoring_Search" unique="false">
+    <column ascending="true" name="Status" />
+    <column ascending="true" name="App_Type" />
+    <column ascending="true" name="IP_Address" />
+  </index>
+  <index name="LoginMonitoring_Search1" unique="false">
+    <column ascending="true" name="ChgUser" />
+    <column ascending="true" name="Status" />
+    <column ascending="true" name="App_Type" />
+  </index>
+</table>

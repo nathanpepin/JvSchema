@@ -1,0 +1,34 @@
+<table catalog="Jv-1.44.18.6_FK" name="EDIBillingAddress" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="BillingAddrID" nullable="false" remarks="" size="4" type="int" typeCode="4">
+    <parent catalog="Jv-1.44.18.6_FK" column="BillingAddrID" foreignKey="FK__EDIBillin__Billi__63C48B33" implied="false" onDeleteCascade="false" schema="dbo" table="EDIBillingAddrInfo" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="EffectiveDate" nullable="false" remarks="" size="100" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="Address1" nullable="true" remarks="" size="100" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="Address2" nullable="true" remarks="" size="100" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="Address3" nullable="true" remarks="" size="100" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="PostalCode" nullable="true" remarks="" size="100" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="City" nullable="true" remarks="" size="100" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="County" nullable="true" remarks="" size="100" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="States" nullable="true" remarks="" size="100" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="Country" nullable="true" remarks="" size="100" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="OverrideAddress" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <primaryKey column="BillingAddrID" sequenceNumberInPK="1" />
+  <primaryKey column="EffectiveDate" sequenceNumberInPK="2" />
+  <index name="PK__EDIBilli__66459735FB05989F" unique="true">
+    <column ascending="true" name="BillingAddrID" />
+    <column ascending="true" name="EffectiveDate" />
+  </index>
+  <index name="EDIBillingAddress_Search1" unique="false">
+    <column ascending="true" name="BillingAddrID" />
+    <column ascending="true" name="EffectiveDate" />
+    <column ascending="true" name="Address1" />
+    <column ascending="true" name="Address2" />
+    <column ascending="true" name="Address3" />
+    <column ascending="true" name="PostalCode" />
+    <column ascending="true" name="City" />
+    <column ascending="true" name="County" />
+    <column ascending="true" name="States" />
+  </index>
+</table>

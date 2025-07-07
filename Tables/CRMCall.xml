@@ -1,0 +1,242 @@
+<table catalog="Jv-1.44.18.6_FK" name="CRMCall" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="CallID" nullable="false" remarks="" size="10" type="varchar" typeCode="12">
+    <child catalog="Jv-1.44.18.6_FK" column="CallID" foreignKey="FK__CrmCallLi__CallI__6AA692EC" implied="false" onDeleteCascade="false" schema="dbo" table="CrmCallLinks" />
+    <child catalog="Jv-1.44.18.6_FK" column="CallID" foreignKey="FK__CRMKeywor__CallI__6F6B4809" implied="false" onDeleteCascade="false" schema="dbo" table="CRMKeyword" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="JqsWorkitemID" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="DateOpened" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="OpenedBy" nullable="true" remarks="" size="99" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="AssignedTo" nullable="true" remarks="" size="99" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="AssignedDate" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="CurrentStatus" nullable="true" remarks="" size="25" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="CallStatusBeforeTaskTransfer" nullable="true" remarks="" size="25" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="CallStatusBeforeCallHold" nullable="true" remarks="" size="25" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="TransferToQ" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="TransferToNote" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="2005" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="13" name="CallClosureNote" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="2005" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="14" name="CallReOpenNote" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="2005" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="15" name="CreatedBy" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="16" name="CurrentStatusDate" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="17" name="LastModified" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="18" name="Customer" nullable="true" remarks="" size="65" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="19" name="CustomerType" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="20" name="CustomerID" nullable="true" remarks="" size="29" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="21" name="Caller" nullable="true" remarks="" size="95" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="22" name="CallerType" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="23" name="PhoneNo" nullable="true" remarks="" size="15" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="24" name="Extn" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="25" name="Reason" nullable="true" remarks="" size="100" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="26" name="CallTypeGroup" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="27" name="CallType" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="28" name="Priority" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="29" name="HoldReleaseStatus" nullable="true" remarks="" size="25" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="30" name="CallQueue" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="31" name="FollowupDate" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="32" name="FollowupReason" nullable="true" remarks="" size="100" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="33" name="BlkOfBusID" nullable="true" remarks="" size="5" type="varchar" typeCode="12">
+    <parent catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__CRMCall__BlkOfBu__6D82FF97" implied="false" onDeleteCascade="false" schema="dbo" table="BlockOfBusiness" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="34" name="ClientID" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="35" name="CRMLocation" nullable="true" remarks="" size="12" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="36" name="UseKeyWordsStatus" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="37" name="UseCallTypeGroupStatus" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="38" name="UseCallerTypeFieldStatus" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="39" name="UseFollowupDateStatus" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="40" name="DateOpenedDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="41" name="IsIncomplete" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="42" name="OtherCallFld" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="43" name="CallCreatedDate" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="44" name="LastModifiedDate" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="45" name="Keyword1" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="46" name="Keyword2" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="47" name="ConversionID" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="48" name="ReceivedVia" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="49" name="ResponseVia" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="50" name="FollowUpDays" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="51" name="ReminderSent" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="52" name="ReceivedDate" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="53" name="CallLinkSeqId" nullable="true" remarks="" size="8" type="bigint" typeCode="-5" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="54" name="ReceivedTime" nullable="true" remarks="" size="10" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="55" name="EmployeeID" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="56" name="DepSeqNo" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="57" name="JqsDateOpened" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="58" name="JqsAssignedDate" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="59" name="ReopenedDate" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <primaryKey column="CallID" sequenceNumberInPK="1" />
+  <index name="PK__CRMCall__5180CF8AB8356C87" unique="true">
+    <column ascending="true" name="CallID" />
+  </index>
+  <index name="ConvCRMCall_Search" unique="false">
+    <column ascending="true" name="ConversionID" />
+  </index>
+  <index name="CRMCall_CT" unique="false">
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="CallID" />
+  </index>
+  <index name="CRMCall_idx2" unique="false">
+    <column ascending="true" name="CallID" />
+    <column ascending="true" name="Customer" />
+    <column ascending="true" name="CurrentStatus" />
+    <column ascending="true" name="CustomerID" />
+    <column ascending="true" name="OpenedBy" />
+    <column ascending="true" name="CallTypeGroup" />
+    <column ascending="true" name="CustomerType" />
+    <column ascending="true" name="CallType" />
+    <column ascending="true" name="AssignedTo" />
+    <column ascending="true" name="DateOpened" />
+    <column ascending="true" name="LastModified" />
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="CreatedBy" />
+  </index>
+  <index name="CRMCall_search" unique="false">
+    <column ascending="true" name="CallID" />
+    <column ascending="true" name="Customer" />
+    <column ascending="true" name="CurrentStatus" />
+    <column ascending="true" name="CustomerID" />
+    <column ascending="true" name="OpenedBy" />
+    <column ascending="true" name="CallTypeGroup" />
+    <column ascending="true" name="CallType" />
+    <column ascending="true" name="AssignedTo" />
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="CRMLocation" />
+    <column ascending="true" name="Priority" />
+    <column ascending="true" name="CreatedBy" />
+  </index>
+  <index name="CRMCall_search2" unique="false">
+    <column ascending="true" name="CallID" />
+    <column ascending="true" name="FollowupDate" />
+  </index>
+  <index name="CRMCall_search3" unique="false">
+    <column ascending="true" name="CallID" />
+    <column ascending="true" name="CustomerID" />
+    <column ascending="true" name="CustomerType" />
+    <column ascending="true" name="Customer" />
+    <column ascending="true" name="OtherCallFld" />
+  </index>
+  <index name="CRMCall_search4" unique="false">
+    <column ascending="true" name="ReceivedDate" />
+    <column ascending="true" name="DateOpened" />
+    <column ascending="true" name="AssignedDate" />
+    <column ascending="true" name="ReopenedDate" />
+    <column ascending="true" name="CallID" />
+  </index>
+  <index name="CRMCall_searchCalls" unique="false">
+    <column ascending="true" name="CallID" />
+    <column ascending="true" name="Customer" />
+    <column ascending="true" name="CurrentStatus" />
+    <column ascending="true" name="CustomerID" />
+    <column ascending="true" name="OpenedBy" />
+    <column ascending="true" name="CallTypeGroup" />
+    <column ascending="true" name="CustomerType" />
+    <column ascending="true" name="CallType" />
+    <column ascending="true" name="AssignedTo" />
+    <column ascending="true" name="CallCreatedDate" />
+    <column ascending="true" name="LastModifiedDate" />
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="CreatedBy" />
+    <column ascending="true" name="OtherCallFld" />
+    <column ascending="true" name="EmployeeID" />
+  </index>
+  <index name="CRMCall_searchOnAssTo" unique="false">
+    <column ascending="true" name="AssignedTo" />
+    <column ascending="true" name="CallID" />
+    <column ascending="true" name="Customer" />
+    <column ascending="true" name="CurrentStatus" />
+    <column ascending="true" name="CustomerID" />
+    <column ascending="true" name="OpenedBy" />
+    <column ascending="true" name="CallTypeGroup" />
+    <column ascending="true" name="CustomerType" />
+    <column ascending="true" name="CallType" />
+    <column ascending="true" name="CallCreatedDate" />
+    <column ascending="true" name="LastModifiedDate" />
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="CreatedBy" />
+    <column ascending="true" name="OtherCallFld" />
+    <column ascending="true" name="EmployeeID" />
+  </index>
+  <index name="CRMCall_searchOnCallDate" unique="false">
+    <column ascending="true" name="CallCreatedDate" />
+    <column ascending="true" name="CallID" />
+    <column ascending="true" name="Customer" />
+    <column ascending="true" name="CurrentStatus" />
+    <column ascending="true" name="CustomerID" />
+    <column ascending="true" name="OpenedBy" />
+    <column ascending="true" name="CallTypeGroup" />
+    <column ascending="true" name="CustomerType" />
+    <column ascending="true" name="CallType" />
+    <column ascending="true" name="AssignedTo" />
+    <column ascending="true" name="LastModifiedDate" />
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="CreatedBy" />
+    <column ascending="true" name="OtherCallFld" />
+    <column ascending="true" name="EmployeeID" />
+  </index>
+  <index name="CRMCall_searchOnCustName" unique="false">
+    <column ascending="true" name="Customer" />
+    <column ascending="true" name="CallID" />
+    <column ascending="true" name="CurrentStatus" />
+    <column ascending="true" name="CustomerID" />
+    <column ascending="true" name="OpenedBy" />
+    <column ascending="true" name="CallTypeGroup" />
+    <column ascending="true" name="CustomerType" />
+    <column ascending="true" name="CallType" />
+    <column ascending="true" name="AssignedTo" />
+    <column ascending="true" name="CallCreatedDate" />
+    <column ascending="true" name="LastModifiedDate" />
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="CreatedBy" />
+    <column ascending="true" name="OtherCallFld" />
+  </index>
+  <index name="CRMCall_searchOnFDate" unique="false">
+    <column ascending="true" name="CallID" />
+    <column ascending="true" name="CustomerID" />
+    <column ascending="true" name="CurrentStatus" />
+    <column ascending="true" name="FollowupDate" />
+    <column ascending="true" name="ReminderSent" />
+  </index>
+  <index name="CRMCall_searchOnModDate" unique="false">
+    <column ascending="true" name="LastModifiedDate" />
+    <column ascending="true" name="CallID" />
+    <column ascending="true" name="Customer" />
+    <column ascending="true" name="CurrentStatus" />
+    <column ascending="true" name="CustomerID" />
+    <column ascending="true" name="OpenedBy" />
+    <column ascending="true" name="CallTypeGroup" />
+    <column ascending="true" name="CustomerType" />
+    <column ascending="true" name="CallType" />
+    <column ascending="true" name="AssignedTo" />
+    <column ascending="true" name="CallCreatedDate" />
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="CreatedBy" />
+    <column ascending="true" name="OtherCallFld" />
+    <column ascending="true" name="EmployeeID" />
+  </index>
+  <index name="CRMCall_searchOnStatus" unique="false">
+    <column ascending="true" name="CurrentStatus" />
+    <column ascending="true" name="CallID" />
+    <column ascending="true" name="Customer" />
+    <column ascending="true" name="CustomerID" />
+    <column ascending="true" name="OpenedBy" />
+    <column ascending="true" name="CallTypeGroup" />
+    <column ascending="true" name="CustomerType" />
+    <column ascending="true" name="CallType" />
+    <column ascending="true" name="AssignedTo" />
+    <column ascending="true" name="CallCreatedDate" />
+    <column ascending="true" name="LastModifiedDate" />
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="CreatedBy" />
+    <column ascending="true" name="OtherCallFld" />
+    <column ascending="true" name="EmployeeID" />
+  </index>
+</table>

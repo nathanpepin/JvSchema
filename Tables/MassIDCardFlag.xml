@@ -1,0 +1,45 @@
+<table catalog="Jv-1.44.18.6_FK" name="MassIDCardFlag" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="FlagName" nullable="false" remarks="" size="60" type="varchar" typeCode="12">
+    <child catalog="Jv-1.44.18.6_FK" column="FlagName" foreignKey="FK__MassIdCar__FlagN__70B471FD" implied="false" onDeleteCascade="false" schema="dbo" table="MassIdCardStatCodeDep" />
+    <child catalog="Jv-1.44.18.6_FK" column="FlagName" foreignKey="FK__MassIdCar__FlagN__71A89636" implied="false" onDeleteCascade="false" schema="dbo" table="MassIdCardStatCodeEmp" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="BlkOfBusIDFrom" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="BlkOfBusIDThrough" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="ClientIDFrom" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="ClientIDThrough" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="LocationNameFrom" nullable="true" remarks="" size="12" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="LocationNameThrough" nullable="true" remarks="" size="12" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="DepartmentNameFrom" nullable="true" remarks="" size="12" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="DepartmentNameThrough" nullable="true" remarks="" size="12" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="EffectiveDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="Status" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="13" name="MedicalBenefitPlan" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="14" name="DentalBenefitPlan" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="15" name="VisionBenefitPlan" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="16" name="PrescriptionBenefitPlan" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="17" name="PlanNStatusDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="18" name="SetFlag" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="19" name="SetFlagDep" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="20" name="MRule" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="21" name="DRule" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="22" name="PRule" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="23" name="VRule" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="24" name="MIDCardResetFlag" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <primaryKey column="FlagName" sequenceNumberInPK="1" />
+  <index name="PK__MassIDCa__91EBA4C56A8D534A" unique="true">
+    <column ascending="true" name="FlagName" />
+  </index>
+  <index name="MassIDCardFlag_Search1" unique="false">
+    <column ascending="true" name="FlagName" />
+    <column ascending="true" name="BlkOfBusIDFrom" />
+    <column ascending="true" name="BlkOfBusIDThrough" />
+    <column ascending="true" name="ClientIDFrom" />
+    <column ascending="true" name="ClientIDThrough" />
+    <column ascending="true" name="LocationNameFrom" />
+    <column ascending="true" name="LocationNameThrough" />
+    <column ascending="true" name="DepartmentNameFrom" />
+    <column ascending="true" name="DepartmentNameThrough" />
+  </index>
+</table>

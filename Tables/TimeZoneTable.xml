@@ -1,0 +1,11 @@
+<table catalog="Jv-1.44.18.6_FK" name="TimeZoneTable" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="Internal_Field_Name" nullable="false" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="User_Display" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="Offset_Value" nullable="true" remarks="" size="10" type="varchar" typeCode="12" />
+  <primaryKey column="Internal_Field_Name" sequenceNumberInPK="1" />
+  <index name="PK__TimeZone__5B22086BDA23FC08" unique="true">
+    <column ascending="true" name="Internal_Field_Name" />
+  </index>
+</table>

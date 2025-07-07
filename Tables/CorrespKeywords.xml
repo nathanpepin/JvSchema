@@ -1,0 +1,26 @@
+<table catalog="Jv-1.44.18.6_FK" name="CorrespKeywords" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="KeywordID" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="EntityID" nullable="false" remarks="" size="4" type="int" typeCode="4">
+    <parent catalog="Jv-1.44.18.6_FK" column="EntityID" foreignKey="FK__CorrespKe__Entit__5C587395" implied="false" onDeleteCascade="false" schema="dbo" table="CorrespondenceEntity" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="KeywordToDisplay" nullable="true" remarks="" size="64" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="KeywordTag" nullable="true" remarks="" size="64" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="GrowableFlag" nullable="true" remarks="" size="2" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="KeySortOrder" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <primaryKey column="KeywordID" sequenceNumberInPK="1" />
+  <primaryKey column="EntityID" sequenceNumberInPK="2" />
+  <index name="PK__CorrespK__FE09A73ECCE52AE1" unique="true">
+    <column ascending="true" name="KeywordID" />
+    <column ascending="true" name="EntityID" />
+  </index>
+  <index name="CorrespKeywords_Search1" unique="false">
+    <column ascending="true" name="EntityID" />
+    <column ascending="true" name="KeySortOrder" />
+  </index>
+  <index name="CorrespKeywords_Search2" unique="false">
+    <column ascending="true" name="EntityID" />
+    <column ascending="true" name="KeywordToDisplay" />
+  </index>
+</table>

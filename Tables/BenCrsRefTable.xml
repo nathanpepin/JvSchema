@@ -1,0 +1,32 @@
+<table catalog="Jv-1.44.18.6_FK" name="BenCrsRefTable" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="RuleSetID" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="BCRRuleSeqNo" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="ExeOrder" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="ProcedureCode" nullable="true" remarks="" size="8000" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="Modifier" nullable="true" remarks="" size="8000" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="PlaceOfService" nullable="true" remarks="" size="8000" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="RevenueCode" nullable="true" remarks="" size="8000" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="BenefitCodes" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="NotesFlag" nullable="true" remarks="" size="25" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="PendReason" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="InternalID" nullable="true" remarks="" size="12" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="13" name="Action" nullable="true" remarks="" size="200" type="varchar" typeCode="12" />
+  <primaryKey column="RuleSetID" sequenceNumberInPK="1" />
+  <primaryKey column="BCRRuleSeqNo" sequenceNumberInPK="2" />
+  <index name="PK__BenCrsRe__7E82F753C90F2F82" unique="true">
+    <column ascending="true" name="RuleSetID" />
+    <column ascending="true" name="BCRRuleSeqNo" />
+  </index>
+  <index name="BenefitCrossRefTable_Search2" unique="false">
+    <column ascending="true" name="RuleSetID" />
+    <column ascending="true" name="ExeOrder" />
+    <column ascending="true" name="BCRRuleSeqNo" />
+    <column ascending="true" name="BenefitCodes" />
+    <column ascending="true" name="PendReason" />
+  </index>
+  <index name="BenefitCrossRefTable_Search3" unique="true">
+    <column ascending="true" name="InternalID" />
+  </index>
+</table>

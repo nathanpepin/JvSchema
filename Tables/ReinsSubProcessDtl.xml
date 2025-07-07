@@ -1,0 +1,20 @@
+<table catalog="Jv-1.44.18.6_FK" name="ReinsSubProcessDtl" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="SubmissionID" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="BatchID" nullable="true" remarks="" size="40" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="ReinsSubFileName" nullable="true" remarks="" size="256" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="MemberSieFileName" nullable="true" remarks="" size="256" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="ClaimsSieFileName" nullable="true" remarks="" size="256" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="NotesSieFileName" nullable="true" remarks="" size="256" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="RSProcessDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <primaryKey column="SubmissionID" sequenceNumberInPK="1" />
+  <index name="PK__ReinsSub__449EE10575534BE2" unique="true">
+    <column ascending="true" name="SubmissionID" />
+  </index>
+  <index name="ReinsSubProcessDtl_search1" unique="false">
+    <column ascending="true" name="SubmissionID" />
+    <column ascending="true" name="RSProcessDate" />
+    <column ascending="true" name="BatchID" />
+  </index>
+</table>

@@ -1,0 +1,17 @@
+<table catalog="Jv-1.44.18.6_FK" name="ClaimPymtFileFmtKeywords" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="KeywordId" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="UseCaseRef" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="DisplayName" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="JavelinaName" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="FldDataType" nullable="true" remarks="" size="10" type="varchar" typeCode="12" />
+  <primaryKey column="KeywordId" sequenceNumberInPK="1" />
+  <index name="PK__ClaimPym__37C13521E58B1AC4" unique="true">
+    <column ascending="true" name="KeywordId" />
+  </index>
+  <index name="ClaimPymtFileFmtKeywords_Search1" unique="false">
+    <column ascending="true" name="UseCaseRef" />
+    <column ascending="true" name="DisplayName" />
+  </index>
+</table>

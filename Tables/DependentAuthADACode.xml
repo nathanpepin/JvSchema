@@ -1,0 +1,21 @@
+<table catalog="Jv-1.44.18.6_FK" name="DependentAuthADACode" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="AuthorizationNumber" nullable="false" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="FromADACode" nullable="false" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="ThroughADACode" nullable="false" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="EmployeeID" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="DepSequenceNumber" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <primaryKey column="EmployeeID" sequenceNumberInPK="1" />
+  <primaryKey column="DepSequenceNumber" sequenceNumberInPK="2" />
+  <primaryKey column="AuthorizationNumber" sequenceNumberInPK="3" />
+  <primaryKey column="FromADACode" sequenceNumberInPK="4" />
+  <primaryKey column="ThroughADACode" sequenceNumberInPK="5" />
+  <index name="PK__Dependen__E60CABFE799A8EAA" unique="true">
+    <column ascending="true" name="EmployeeID" />
+    <column ascending="true" name="DepSequenceNumber" />
+    <column ascending="true" name="AuthorizationNumber" />
+    <column ascending="true" name="FromADACode" />
+    <column ascending="true" name="ThroughADACode" />
+  </index>
+</table>

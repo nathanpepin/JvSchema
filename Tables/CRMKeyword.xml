@@ -1,0 +1,23 @@
+<table catalog="Jv-1.44.18.6_FK" name="CRMKeyword" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="CallID" nullable="false" remarks="" size="10" type="varchar" typeCode="12">
+    <parent catalog="Jv-1.44.18.6_FK" column="CallID" foreignKey="FK__CRMKeywor__CallI__6F6B4809" implied="false" onDeleteCascade="false" schema="dbo" table="CRMCall" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="Keyword1" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="Keyword2" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="IntSeqID" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="Keyword1Desc" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="Keyword2Desc" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <primaryKey column="CallID" sequenceNumberInPK="1" />
+  <primaryKey column="IntSeqID" sequenceNumberInPK="2" />
+  <index name="PK__CRMKeywo__3B3EDF84C5B11CBB" unique="true">
+    <column ascending="true" name="CallID" />
+    <column ascending="true" name="IntSeqID" />
+  </index>
+  <index name="CRMKeyword_idx2" unique="false">
+    <column ascending="true" name="CallID" />
+    <column ascending="true" name="Keyword1" />
+    <column ascending="true" name="Keyword2" />
+  </index>
+</table>

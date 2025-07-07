@@ -1,0 +1,14 @@
+<table catalog="Jv-1.44.18.6_FK" name="PalmettoProcedureCodes" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="ProcedureCode" nullable="false" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="CodeDescription" nullable="true" remarks="" size="255" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="EffectiveDate" nullable="false" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="TerminationDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <primaryKey column="ProcedureCode" sequenceNumberInPK="1" />
+  <primaryKey column="EffectiveDate" sequenceNumberInPK="2" />
+  <index name="PK__Palmetto__6E669E4D1189803B" unique="true">
+    <column ascending="true" name="ProcedureCode" />
+    <column ascending="true" name="EffectiveDate" />
+  </index>
+</table>

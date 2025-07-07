@@ -1,0 +1,171 @@
+<table catalog="Jv-1.44.18.6_FK" name="ScanImageCrossRef" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="DCNSeq" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="OrigFileName" nullable="true" remarks="" size="255" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="DCN" nullable="true" remarks="" size="50" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="BlkOfBusID" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="ClientID" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="DocBatchNo" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="ImageType" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="EntityType" nullable="true" remarks="" size="15" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="ReceivedDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="DocCapSrcDir" nullable="true" remarks="" size="128" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="CapDirID" nullable="true" remarks="" size="15" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="13" name="PermStorageLoc" nullable="true" remarks="" size="128" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="14" name="BPOID" nullable="true" remarks="" size="6" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="15" name="EntityKey" nullable="true" remarks="" size="80" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="16" name="Description" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="17" name="DocBatchSeq" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="18" name="AdditionalFlag" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="19" name="Archived" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="20" name="ArchiveDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="21" name="WorkItemID" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="22" name="ImageStatus" nullable="true" remarks="" size="8" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="23" name="EntityKeyDescription" nullable="true" remarks="" size="80" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="24" name="LocationName" nullable="true" remarks="" size="12" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="25" name="ProviderID" nullable="true" remarks="" size="10" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="26" name="EmployeeID" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="27" name="Claimnumber" nullable="true" remarks="" size="19" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="28" name="CheckNumber" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="29" name="AccountID" nullable="true" remarks="" size="50" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="30" name="DependentID" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="31" name="BrokerID" nullable="true" remarks="" size="11" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="32" name="AutoIndex" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="33" name="EDIImageName" nullable="true" remarks="" size="255" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="34" name="EDIBatchNO" nullable="true" remarks="" size="100" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="35" name="EDIClaimImage" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="36" name="BillCycleDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="37" name="FlagForAddAction" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="38" name="AdditionalAction" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="39" name="ManualTransFerTo" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="40" name="TransferNote" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="2005" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="41" name="MarkasComplete" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="42" name="CompletionNotes" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="2005" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="43" name="RemoteImgDCN" nullable="true" remarks="" size="128" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="44" name="NonClaimImageFlag" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="45" name="CreationDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="46" name="LastViewedOnDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="47" name="ProductsBilled" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="48" name="CreatedByUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="49" name="CreatedOnTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="50" name="UploadFlag" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="51" name="CorrRequestNumber" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="52" name="ReceivedTime" nullable="true" remarks="" size="10" type="varchar" typeCode="12" />
+  <primaryKey column="DCNSeq" sequenceNumberInPK="1" />
+  <index name="PK__ScanImag__3836B4F108C5B749" unique="true">
+    <column ascending="true" name="DCNSeq" />
+  </index>
+  <index name="ScanImageCrossRef_ByClaim" unique="false">
+    <column ascending="true" name="Claimnumber" />
+    <column ascending="true" name="ImageType" />
+    <column ascending="true" name="ProviderID" />
+    <column ascending="true" name="EmployeeID" />
+    <column ascending="true" name="DependentID" />
+    <column ascending="true" name="EntityType" />
+    <column ascending="true" name="EntityKey" />
+    <column ascending="true" name="DCN" />
+  </index>
+  <index name="ScanImageCrossRef_ByEntity" unique="false">
+    <column ascending="true" name="EntityType" />
+    <column ascending="true" name="EntityKey" />
+    <column ascending="true" name="ImageType" />
+    <column ascending="true" name="Claimnumber" />
+    <column ascending="true" name="ProviderID" />
+    <column ascending="true" name="EmployeeID" />
+    <column ascending="true" name="DependentID" />
+    <column ascending="true" name="DCN" />
+  </index>
+  <index name="ScanImageCrossRef_CorrRqstNum" unique="false">
+    <column ascending="true" name="CorrRequestNumber" />
+    <column ascending="true" name="DCN" />
+  </index>
+  <index name="ScanImageCrossRef_CT" unique="false">
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="DCNSeq" />
+  </index>
+  <index name="ScanImageCrossRef_idx2" unique="true">
+    <column ascending="true" name="DCN" />
+  </index>
+  <index name="ScanImageCrossRef_MemberMerge" unique="false">
+    <column ascending="true" name="EmployeeID" />
+    <column ascending="true" name="DependentID" />
+    <column ascending="true" name="DCNSeq" />
+  </index>
+  <index name="ScanImageCrossRef_Search10" unique="false">
+    <column ascending="true" name="ImageType" />
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="LocationName" />
+    <column ascending="true" name="EmployeeID" />
+    <column ascending="true" name="EntityType" />
+    <column ascending="true" name="BillCycleDate" />
+  </index>
+  <index name="ScanImageCrossRef_Search11" unique="false">
+    <column ascending="true" name="CreatedByUser" />
+    <column ascending="true" name="CreatedOnTS" />
+    <column ascending="true" name="ImageType" />
+    <column ascending="true" name="EntityType" />
+    <column ascending="true" name="EntityKey" />
+    <column ascending="true" name="DCN" />
+  </index>
+  <index name="ScanImageCrossRef_Search12" unique="false">
+    <column ascending="true" name="ImageType" />
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="LocationName" />
+    <column ascending="true" name="EmployeeID" />
+    <column ascending="true" name="EntityType" />
+    <column ascending="true" name="DCNSeq" />
+  </index>
+  <index name="ScanImageCrossRef_Search4" unique="false">
+    <column ascending="true" name="DCN" />
+    <column ascending="true" name="ImageType" />
+    <column ascending="true" name="ReceivedDate" />
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="LocationName" />
+    <column ascending="true" name="ProviderID" />
+    <column ascending="true" name="EmployeeID" />
+    <column ascending="true" name="AccountID" />
+    <column ascending="true" name="Claimnumber" />
+    <column ascending="true" name="DependentID" />
+    <column ascending="true" name="BrokerID" />
+    <column ascending="true" name="BillCycleDate" />
+  </index>
+  <index name="ScanImageCrossRef_Search5" unique="false">
+    <column ascending="true" name="OrigFileName" />
+    <column ascending="true" name="AutoIndex" />
+    <column ascending="true" name="EDIClaimImage" />
+  </index>
+  <index name="ScanImageCrossRef_Search6" unique="false">
+    <column ascending="true" name="DCNSeq" />
+    <column ascending="true" name="ImageType" />
+    <column ascending="true" name="AccountID" />
+    <column ascending="true" name="Claimnumber" />
+    <column ascending="true" name="CheckNumber" />
+  </index>
+  <index name="ScanImageCrossRef_Search7" unique="false">
+    <column ascending="true" name="DCN" />
+    <column ascending="true" name="ImageType" />
+    <column ascending="true" name="EntityType" />
+    <column ascending="true" name="ReceivedDate" />
+    <column ascending="true" name="ImageStatus" />
+    <column ascending="true" name="EntityKey" />
+    <column ascending="true" name="OrigFileName" />
+  </index>
+  <index name="ScanImageCrossRef_Search8" unique="false">
+    <column ascending="true" name="DocBatchNo" />
+    <column ascending="true" name="ImageType" />
+    <column ascending="true" name="DCN" />
+    <column ascending="true" name="ReceivedDate" />
+  </index>
+  <index name="ScanImageCrossRef_Search9" unique="false">
+    <column ascending="true" name="ImageType" />
+    <column ascending="true" name="EntityKey" />
+    <column ascending="true" name="Claimnumber" />
+    <column ascending="true" name="AccountID" />
+    <column ascending="true" name="CheckNumber" />
+  </index>
+</table>

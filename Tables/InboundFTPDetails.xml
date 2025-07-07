@@ -1,0 +1,14 @@
+<table catalog="Jv-1.44.18.6_FK" name="InboundFTPDetails" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="ModuleName" nullable="false" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="JobName" nullable="false" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="ApplicationPath" nullable="true" remarks="" size="200" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="ClassName" nullable="true" remarks="" size="256" type="varchar" typeCode="12" />
+  <primaryKey column="ModuleName" sequenceNumberInPK="1" />
+  <primaryKey column="JobName" sequenceNumberInPK="2" />
+  <index name="PK__InboundF__B5D36F6B9BEBA4F9" unique="true">
+    <column ascending="true" name="ModuleName" />
+    <column ascending="true" name="JobName" />
+  </index>
+</table>

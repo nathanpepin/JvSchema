@@ -1,0 +1,25 @@
+<table catalog="Jv-1.44.18.6_FK" name="ClientDepStatus" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="InternalID" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="BlkOfBusID" nullable="false" remarks="" size="5" type="varchar" typeCode="12">
+    <parent catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__ClientDepStatus__67FF306B" implied="false" onDeleteCascade="false" schema="dbo" table="Client" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="ClientID" nullable="false" remarks="" size="5" type="varchar" typeCode="12">
+    <parent catalog="Jv-1.44.18.6_FK" column="ClientID" foreignKey="FK__ClientDepStatus__67FF306B" implied="false" onDeleteCascade="false" schema="dbo" table="Client" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="Status" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <primaryKey column="BlkOfBusID" sequenceNumberInPK="1" />
+  <primaryKey column="ClientID" sequenceNumberInPK="2" />
+  <primaryKey column="InternalID" sequenceNumberInPK="3" />
+  <index name="PK__ClientDe__9587D8D1A7330F7A" unique="true">
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="InternalID" />
+  </index>
+  <index name="ClientDepStatus_idx2" unique="false">
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="Status" />
+  </index>
+</table>

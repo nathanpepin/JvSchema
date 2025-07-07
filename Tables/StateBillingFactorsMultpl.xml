@@ -1,0 +1,54 @@
+<table catalog="Jv-1.44.18.6_FK" name="StateBillingFactorsMultpl" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="FactorState" nullable="false" remarks="" size="2" type="varchar" typeCode="12">
+    <parent catalog="Jv-1.44.18.6_FK" column="FactorState" foreignKey="FK__StateBillingFact__61FC3E52" implied="false" onDeleteCascade="false" schema="dbo" table="StateBillingFactor" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="Product" nullable="false" remarks="" size="2" type="varchar" typeCode="12">
+    <parent catalog="Jv-1.44.18.6_FK" column="Product" foreignKey="FK__StateBillingFact__61FC3E52" implied="false" onDeleteCascade="false" schema="dbo" table="StateBillingFactor" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="Tier" nullable="false" remarks="" size="2" type="varchar" typeCode="12">
+    <parent catalog="Jv-1.44.18.6_FK" column="Tier" foreignKey="FK__StateBillingFact__61FC3E52" implied="false" onDeleteCascade="false" schema="dbo" table="StateBillingFactor" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="EmployeeStatus" nullable="false" remarks="" size="1" type="char" typeCode="1">
+    <parent catalog="Jv-1.44.18.6_FK" column="EmployeeStatus" foreignKey="FK__StateBillingFact__61FC3E52" implied="false" onDeleteCascade="false" schema="dbo" table="StateBillingFactor" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="Gender" nullable="false" remarks="" size="1" type="char" typeCode="1">
+    <parent catalog="Jv-1.44.18.6_FK" column="Gender" foreignKey="FK__StateBillingFact__61FC3E52" implied="false" onDeleteCascade="false" schema="dbo" table="StateBillingFactor" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="FactorID" nullable="false" remarks="" size="12" type="varchar" typeCode="12">
+    <parent catalog="Jv-1.44.18.6_FK" column="FactorID" foreignKey="FK__StateBillingFact__61FC3E52" implied="false" onDeleteCascade="false" schema="dbo" table="StateBillingFactor" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="EffectiveDate" nullable="false" remarks="" size="20" type="date" typeCode="12">
+    <parent catalog="Jv-1.44.18.6_FK" column="EffectiveDate" foreignKey="FK__StateBillingFact__61FC3E52" implied="false" onDeleteCascade="false" schema="dbo" table="StateBillingFactor" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="FromAge" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="ThruAge" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="3" id="11" name="EmployeeOnlyFactor" nullable="true" remarks="" size="10" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="3" id="12" name="FamilyFactor" nullable="true" remarks="" size="10" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="3" id="13" name="EmployeeOneFactor" nullable="true" remarks="" size="10" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="3" id="14" name="EmployeeTwoFactor" nullable="true" remarks="" size="10" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="3" id="15" name="EmployeeSpouseFactor" nullable="true" remarks="" size="10" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="3" id="16" name="EmployeeChildFactor" nullable="true" remarks="" size="10" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="17" name="AgeUsed" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <primaryKey column="FactorState" sequenceNumberInPK="1" />
+  <primaryKey column="Product" sequenceNumberInPK="2" />
+  <primaryKey column="Tier" sequenceNumberInPK="3" />
+  <primaryKey column="EmployeeStatus" sequenceNumberInPK="4" />
+  <primaryKey column="Gender" sequenceNumberInPK="5" />
+  <primaryKey column="FactorID" sequenceNumberInPK="6" />
+  <primaryKey column="EffectiveDate" sequenceNumberInPK="7" />
+  <primaryKey column="FromAge" sequenceNumberInPK="8" />
+  <primaryKey column="ThruAge" sequenceNumberInPK="9" />
+  <index name="PK__StateBil__C5D5E70B4DC32233" unique="true">
+    <column ascending="true" name="FactorState" />
+    <column ascending="true" name="Product" />
+    <column ascending="true" name="Tier" />
+    <column ascending="true" name="EmployeeStatus" />
+    <column ascending="true" name="Gender" />
+    <column ascending="true" name="FactorID" />
+    <column ascending="true" name="EffectiveDate" />
+    <column ascending="true" name="FromAge" />
+    <column ascending="true" name="ThruAge" />
+  </index>
+</table>

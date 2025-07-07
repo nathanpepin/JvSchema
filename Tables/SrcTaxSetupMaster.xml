@@ -1,0 +1,76 @@
+<table catalog="Jv-1.44.18.6_FK" name="SrcTaxSetupMaster" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="TaxSetupID" nullable="false" remarks="" size="4" type="int" typeCode="4">
+    <child catalog="Jv-1.44.18.6_FK" column="TaxSetupID" foreignKey="FK__SrcatgryP__TaxSe__5596676D" implied="false" onDeleteCascade="false" schema="dbo" table="SrcatgryPenaltyDef" />
+    <child catalog="Jv-1.44.18.6_FK" column="TaxSetupID" foreignKey="FK__SrcCatAlt__TaxSe__568A8BA6" implied="false" onDeleteCascade="false" schema="dbo" table="SrcCatAlternateDef" />
+    <child catalog="Jv-1.44.18.6_FK" column="TaxSetupID" foreignKey="FK__SrcCatgry__TaxSe__577EAFDF" implied="false" onDeleteCascade="false" schema="dbo" table="SrcCatgryDefn" />
+    <child catalog="Jv-1.44.18.6_FK" column="TaxSetupID" foreignKey="FK__SrcEligSt__TaxSe__5872D418" implied="false" onDeleteCascade="false" schema="dbo" table="SrcEligStatusCode" />
+    <child catalog="Jv-1.44.18.6_FK" column="TaxSetupID" foreignKey="FK__SrcExmptA__TaxSe__5966F851" implied="false" onDeleteCascade="false" schema="dbo" table="SrcExmptAltBenefitPlans" />
+    <child catalog="Jv-1.44.18.6_FK" column="TaxSetupID" foreignKey="FK__SrcExmptA__TaxSe__5A5B1C8A" implied="false" onDeleteCascade="false" schema="dbo" table="SrcExmptAltClients" />
+    <child catalog="Jv-1.44.18.6_FK" column="TaxSetupID" foreignKey="FK__SrcExmptB__TaxSe__5B4F40C3" implied="false" onDeleteCascade="false" schema="dbo" table="SrcExmptBenefitPlans" />
+    <child catalog="Jv-1.44.18.6_FK" column="TaxSetupID" foreignKey="FK__SrcExmptC__TaxSe__5C4364FC" implied="false" onDeleteCascade="false" schema="dbo" table="SrcExmptClients" />
+    <child catalog="Jv-1.44.18.6_FK" column="TaxSetupID" foreignKey="FK__SrcExmptG__TaxSe__5D378935" implied="false" onDeleteCascade="false" schema="dbo" table="SrcExmptGMEBenefitPlans" />
+    <child catalog="Jv-1.44.18.6_FK" column="TaxSetupID" foreignKey="FK__SrcExmptP__TaxSe__5E2BAD6E" implied="false" onDeleteCascade="false" schema="dbo" table="SrcExmptPenBenefitPlans" />
+    <child catalog="Jv-1.44.18.6_FK" column="TaxSetupID" foreignKey="FK__SrcExmptP__TaxSe__5F1FD1A7" implied="false" onDeleteCascade="false" schema="dbo" table="SrcExmptPenClients" />
+    <child catalog="Jv-1.44.18.6_FK" column="TaxSetupID" foreignKey="FK__SrcNMYExm__TaxSe__6013F5E0" implied="false" onDeleteCascade="false" schema="dbo" table="SrcNMYExmptBenefitPlans" />
+    <child catalog="Jv-1.44.18.6_FK" column="TaxSetupID" foreignKey="FK__SrcNMYExm__TaxSe__61081A19" implied="false" onDeleteCascade="false" schema="dbo" table="SrcNMYExmptClients" />
+    <child catalog="Jv-1.44.18.6_FK" column="TaxSetupID" foreignKey="FK__Surcharge__TaxSe__6C79CCC5" implied="false" onDeleteCascade="false" schema="dbo" table="SurchargeTaxNYCatDef" />
+    <child catalog="Jv-1.44.18.6_FK" column="TaxSetupID" foreignKey="FK__Surcharge__TaxSe__6D6DF0FE" implied="false" onDeleteCascade="false" schema="dbo" table="SurchargeTaxOtherCatDef" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="States" nullable="true" remarks="" size="2" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="EffectiveDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="Description" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="CheckingAccountID" nullable="true" remarks="" size="50" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="BenefitCode" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="CPGCode" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="TerminationDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="3" id="10" name="TaxPercent" nullable="true" remarks="" size="7" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="3" id="11" name="PenaltyPercentage" nullable="true" remarks="" size="7" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="SubscriberPayablePendCode" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="13" name="Status" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="14" name="NAdministrativeType" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="15" name="MAdministrativeType" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="16" name="YAdministrativeType" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="3" id="17" name="NHCRAPercentage" nullable="true" remarks="" size="7" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="3" id="18" name="MHCRAPercentage" nullable="true" remarks="" size="7" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="3" id="19" name="YHCRAPercentage" nullable="true" remarks="" size="7" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="20" name="MedicarePartA" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="21" name="MedicarePartB" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="22" name="MedicarePartBoth" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="23" name="NoMedicare" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="24" name="MedicareUnknown" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="25" name="GREMedicarePartA" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="26" name="GREMedicarePartB" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="27" name="GREMedicarePartBoth" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="28" name="GRENoMedicare" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="29" name="GREMedicareUnknown" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="30" name="ProviderID" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="31" name="PagPopup1" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="2005" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="32" name="PagPopup2" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="2005" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="33" name="PagPopup3" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="2005" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="34" name="PagPopup4" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="2005" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="35" name="PagPopup5" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="2005" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="36" name="PagPopup6" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="2005" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="37" name="PagPopup7" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="2005" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="38" name="PatInState" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="39" name="PatAgeLimit" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="40" name="AgeCoveredTo" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="41" name="PatientBenefitCode" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="42" name="TaxCalculationMethod" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <primaryKey column="TaxSetupID" sequenceNumberInPK="1" />
+  <index name="PK__SrcTaxSe__FDC46B267E193BAA" unique="true">
+    <column ascending="true" name="TaxSetupID" />
+  </index>
+  <index name="SrcTaxSetupMaster_idx2" unique="true">
+    <column ascending="true" name="States" />
+    <column ascending="true" name="EffectiveDate" />
+  </index>
+  <index name="SrcTaxSetupMaster_Search1" unique="false">
+    <column ascending="true" name="States" />
+    <column ascending="true" name="Status" />
+    <column ascending="true" name="EffectiveDate" />
+    <column ascending="true" name="TerminationDate" />
+    <column ascending="true" name="Description" />
+  </index>
+</table>

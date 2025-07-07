@@ -1,0 +1,26 @@
+<table catalog="Jv-1.44.18.6_FK" name="VolumeControlRecord" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="VolCntrlRecrdID" nullable="false" remarks="" size="4" type="int" typeCode="4">
+    <child catalog="Jv-1.44.18.6_FK" column="VolCntrlRecrdID" foreignKey="FK__VolCtrlUp__VolCn__79D3C7E3" implied="false" onDeleteCascade="false" schema="dbo" table="VolCtrlUpdateParam" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="EffectiveDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="EffectiveThroughDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="TableType" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="ParameterSetName" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="FromBlkOfBusID" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="ThruBlkOfBusID" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="FromClientID" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="ThruClientID" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="FromLocationName" nullable="true" remarks="" size="12" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="ThruLocationName" nullable="true" remarks="" size="12" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="13" name="TimeOfLastRun" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="14" name="ReduceExtVolFlatAmt" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <primaryKey column="VolCntrlRecrdID" sequenceNumberInPK="1" />
+  <index name="PK__VolumeCo__C0085E650220E14A" unique="true">
+    <column ascending="true" name="VolCntrlRecrdID" />
+  </index>
+  <index name="VolumeControlRecord_Search1" unique="false">
+    <column ascending="true" name="ParameterSetName" />
+  </index>
+</table>

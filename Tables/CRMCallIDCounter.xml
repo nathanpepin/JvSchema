@@ -1,0 +1,10 @@
+<table catalog="Jv-1.44.18.6_FK" name="CRMCallIDCounter" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="CallIDName" nullable="false" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="CallIDSequence" nullable="true" remarks="" size="12" type="decimal" typeCode="3" />
+  <primaryKey column="CallIDName" sequenceNumberInPK="1" />
+  <index name="PK__CRMCallI__58B8B74203CC47A1" unique="true">
+    <column ascending="true" name="CallIDName" />
+  </index>
+</table>

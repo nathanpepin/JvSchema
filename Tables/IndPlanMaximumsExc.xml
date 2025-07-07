@@ -1,0 +1,36 @@
+<table catalog="Jv-1.44.18.6_FK" name="IndPlanMaximumsExc" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="EmployeeID" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="EffectiveDate" nullable="false" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="ProductType" nullable="false" remarks="" size="2" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="BenefitScheduleType" nullable="false" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="IndPlanMaxExcSeqID" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="ExcepBasedOn" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="CodeOrCategory" nullable="true" remarks="" size="43" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="9" name="IndiPerAnnualPmtLmt" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="10" name="FmlyPerAnnualPmtLmt" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="IndiPerAnnualVisLmt" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="FmlyPerAnnualVisLmt" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <primaryKey column="EmployeeID" sequenceNumberInPK="1" />
+  <primaryKey column="EffectiveDate" sequenceNumberInPK="2" />
+  <primaryKey column="ProductType" sequenceNumberInPK="3" />
+  <primaryKey column="IndPlanMaxExcSeqID" sequenceNumberInPK="4" />
+  <primaryKey column="BenefitScheduleType" sequenceNumberInPK="5" />
+  <index name="PK__IndPlanM__6EA734A2B2F0A96E" unique="true">
+    <column ascending="true" name="EmployeeID" />
+    <column ascending="true" name="EffectiveDate" />
+    <column ascending="true" name="ProductType" />
+    <column ascending="true" name="IndPlanMaxExcSeqID" />
+    <column ascending="true" name="BenefitScheduleType" />
+  </index>
+  <index name="IndPlanMaximumsExc_Search1" unique="false">
+    <column ascending="true" name="EmployeeID" />
+    <column ascending="true" name="EffectiveDate" />
+    <column ascending="true" name="ProductType" />
+    <column ascending="true" name="ExcepBasedOn" />
+    <column ascending="true" name="IndPlanMaxExcSeqID" />
+    <column ascending="true" name="BenefitScheduleType" />
+    <column ascending="true" name="CodeOrCategory" />
+  </index>
+</table>

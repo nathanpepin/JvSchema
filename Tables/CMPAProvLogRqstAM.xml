@@ -1,0 +1,19 @@
+<table catalog="Jv-1.44.18.6_FK" name="CMPAProvLogRqstAM" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="ProvRqstID" nullable="false" remarks="" size="4" type="int" typeCode="4">
+    <parent catalog="Jv-1.44.18.6_FK" column="ProvRqstID" foreignKey="FK__CMPAProvL__ProvR__0A54486F" implied="false" onDeleteCascade="false" schema="dbo" table="CMPAProvLogRqst" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="NationalID" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="AdditionalTaxID" nullable="true" remarks="" size="9" type="varchar" typeCode="12" />
+  <primaryKey column="NationalID" sequenceNumberInPK="1" />
+  <primaryKey column="ProvRqstID" sequenceNumberInPK="2" />
+  <index name="PK__CMPAProv__83CC3B50531794A4" unique="true">
+    <column ascending="true" name="NationalID" />
+    <column ascending="true" name="ProvRqstID" />
+  </index>
+  <index name="CMPAProvLogRqstAM_Search1" unique="false">
+    <column ascending="true" name="ProvRqstID" />
+    <column ascending="true" name="AdditionalTaxID" />
+  </index>
+</table>

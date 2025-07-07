@@ -1,0 +1,55 @@
+<table catalog="Jv-1.44.18.6_FK" name="SingleRateAgeAmount" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="Product" nullable="false" remarks="" size="2" type="varchar" typeCode="12">
+    <parent catalog="Jv-1.44.18.6_FK" column="Product" foreignKey="FK__SingleRateAgeAmo__39EE4CF8" implied="false" onDeleteCascade="false" schema="dbo" table="SingleBillingRate" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="BillPlan" nullable="false" remarks="" size="10" type="varchar" typeCode="12">
+    <parent catalog="Jv-1.44.18.6_FK" column="BillPlan" foreignKey="FK__SingleRateAgeAmo__39EE4CF8" implied="false" onDeleteCascade="false" schema="dbo" table="SingleBillingRate" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="Area" nullable="false" remarks="" size="4" type="int" typeCode="4">
+    <parent catalog="Jv-1.44.18.6_FK" column="Area" foreignKey="FK__SingleRateAgeAmo__39EE4CF8" implied="false" onDeleteCascade="false" schema="dbo" table="SingleBillingRate" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="Tier" nullable="false" remarks="" size="2" type="varchar" typeCode="12">
+    <parent catalog="Jv-1.44.18.6_FK" column="Tier" foreignKey="FK__SingleRateAgeAmo__39EE4CF8" implied="false" onDeleteCascade="false" schema="dbo" table="SingleBillingRate" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="EmployeeStatus" nullable="false" remarks="" size="1" type="char" typeCode="1">
+    <parent catalog="Jv-1.44.18.6_FK" column="EmployeeStatus" foreignKey="FK__SingleRateAgeAmo__39EE4CF8" implied="false" onDeleteCascade="false" schema="dbo" table="SingleBillingRate" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="RateGender" nullable="false" remarks="" size="1" type="char" typeCode="1">
+    <parent catalog="Jv-1.44.18.6_FK" column="RateGender" foreignKey="FK__SingleRateAgeAmo__39EE4CF8" implied="false" onDeleteCascade="false" schema="dbo" table="SingleBillingRate" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="RateEffectiveDate" nullable="false" remarks="" size="20" type="date" typeCode="12">
+    <parent catalog="Jv-1.44.18.6_FK" column="RateEffectiveDate" foreignKey="FK__SingleRateAgeAmo__39EE4CF8" implied="false" onDeleteCascade="false" schema="dbo" table="SingleBillingRate" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="BillMode" nullable="false" remarks="" size="1" type="char" typeCode="1">
+    <parent catalog="Jv-1.44.18.6_FK" column="BillMode" foreignKey="FK__SingleRateAgeAmo__39EE4CF8" implied="false" onDeleteCascade="false" schema="dbo" table="SingleBillingRate" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="StartingAgeForRange" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="EndingAgeForRange" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="5" id="12" name="AmountBilledForAgeRange" nullable="true" remarks="" size="16" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="5" id="13" name="EmpClientAmount" nullable="true" remarks="" size="16" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="3" id="14" name="EmpClientPercent" nullable="true" remarks="" size="8" type="decimal" typeCode="3" />
+  <primaryKey column="Product" sequenceNumberInPK="1" />
+  <primaryKey column="BillPlan" sequenceNumberInPK="2" />
+  <primaryKey column="Area" sequenceNumberInPK="3" />
+  <primaryKey column="Tier" sequenceNumberInPK="4" />
+  <primaryKey column="EmployeeStatus" sequenceNumberInPK="5" />
+  <primaryKey column="RateGender" sequenceNumberInPK="6" />
+  <primaryKey column="RateEffectiveDate" sequenceNumberInPK="7" />
+  <primaryKey column="BillMode" sequenceNumberInPK="8" />
+  <primaryKey column="StartingAgeForRange" sequenceNumberInPK="9" />
+  <primaryKey column="EndingAgeForRange" sequenceNumberInPK="10" />
+  <index name="PK__SingleRa__E782314D4EAE46A0" unique="true">
+    <column ascending="true" name="Product" />
+    <column ascending="true" name="BillPlan" />
+    <column ascending="true" name="Area" />
+    <column ascending="true" name="Tier" />
+    <column ascending="true" name="EmployeeStatus" />
+    <column ascending="true" name="RateGender" />
+    <column ascending="true" name="RateEffectiveDate" />
+    <column ascending="true" name="BillMode" />
+    <column ascending="true" name="StartingAgeForRange" />
+    <column ascending="true" name="EndingAgeForRange" />
+  </index>
+</table>

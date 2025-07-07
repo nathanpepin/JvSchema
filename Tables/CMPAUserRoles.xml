@@ -1,0 +1,23 @@
+<table catalog="Jv-1.44.18.6_FK" name="CMPAUserRoles" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="CMPAUserRoleName" nullable="false" remarks="" size="16" type="varchar" typeCode="12">
+    <child catalog="Jv-1.44.18.6_FK" column="CMPAUserRoleName" foreignKey="FK__CMPAAssig__CMPAU__00CADE35" implied="false" onDeleteCascade="false" schema="dbo" table="CMPAAssignUserRole" />
+    <child catalog="Jv-1.44.18.6_FK" column="CMPAUserRoleName" foreignKey="FK__CMPAAssig__CMPAU__7FD6B9FC" implied="false" onDeleteCascade="false" schema="dbo" table="CMPAAssignUserRoleToNewUser" />
+    <child catalog="Jv-1.44.18.6_FK" column="UserRoleName" foreignKey="FK__CMPASBTem__UserR__11F56A37" implied="false" onDeleteCascade="false" schema="dbo" table="CMPASBTemplateUserRole" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="CMPAUserRoleDesc" nullable="true" remarks="" size="512" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="CMPAUserRoleDisable" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <primaryKey column="CMPAUserRoleName" sequenceNumberInPK="1" />
+  <index name="PK__CMPAUser__DFA5786704992038" unique="true">
+    <column ascending="true" name="CMPAUserRoleName" />
+  </index>
+  <index name="CMPAUserRoles_Search1" unique="false">
+    <column ascending="true" name="CMPAUserRoleDisable" />
+  </index>
+  <index name="CMPAUserRoles_Search2" unique="false">
+    <column ascending="true" name="CMPAUserRoleName" />
+    <column ascending="true" name="CMPAUserRoleDesc" />
+    <column ascending="true" name="CMPAUserRoleDisable" />
+  </index>
+</table>

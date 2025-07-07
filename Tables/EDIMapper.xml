@@ -1,0 +1,31 @@
+<table catalog="Jv-1.44.18.6_FK" name="EDIMapper" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="ContentID" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="JvVersion" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="PricingEntity" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="EffectiveDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="TransactionType" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="TransactionDirection" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="FileName" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="OriginalFileName" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="JSONContent" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="2005" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="SplitNumber" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="CheckSum" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="2005" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="13" name="FileVersion" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="14" name="ApplyCheckSum" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <primaryKey column="ContentID" sequenceNumberInPK="1" />
+  <index name="PK__EDIMappe__2907A87E7E95B010" unique="true">
+    <column ascending="true" name="ContentID" />
+  </index>
+  <index name="EDIMapper_idx2" unique="true">
+    <column ascending="true" name="PricingEntity" />
+    <column ascending="true" name="EffectiveDate" />
+    <column ascending="true" name="TransactionType" />
+    <column ascending="true" name="TransactionDirection" />
+    <column ascending="true" name="FileName" />
+    <column ascending="true" name="OriginalFileName" />
+    <column ascending="true" name="FileVersion" />
+    <column ascending="true" name="SplitNumber" />
+  </index>
+</table>

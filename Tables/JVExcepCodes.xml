@@ -1,0 +1,33 @@
+<table catalog="Jv-1.44.18.6_FK" name="JVExcepCodes" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="UniqSeq" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="EntityID" nullable="true" remarks="" size="15" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="JVExcepCode" nullable="false" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="FE277ExcepCode" nullable="false" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="Descr" nullable="true" remarks="" size="255" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="CodeTyp" nullable="false" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="ScreenName" nullable="false" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="Stc10ExcepCode277" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="Stc11ExcepCode277" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <primaryKey column="JVExcepCode" sequenceNumberInPK="1" />
+  <primaryKey column="FE277ExcepCode" sequenceNumberInPK="2" />
+  <primaryKey column="UniqSeq" sequenceNumberInPK="3" />
+  <primaryKey column="CodeTyp" sequenceNumberInPK="4" />
+  <primaryKey column="ScreenName" sequenceNumberInPK="5" />
+  <index name="PK__JVExcepC__33048253AB07B43C" unique="true">
+    <column ascending="true" name="JVExcepCode" />
+    <column ascending="true" name="FE277ExcepCode" />
+    <column ascending="true" name="UniqSeq" />
+    <column ascending="true" name="CodeTyp" />
+    <column ascending="true" name="ScreenName" />
+  </index>
+  <index name="JVExcepCodes_search" unique="false">
+    <column ascending="true" name="JVExcepCode" />
+    <column ascending="true" name="FE277ExcepCode" />
+    <column ascending="true" name="EntityID" />
+  </index>
+  <index name="JVExcepCodes_search1" unique="false">
+    <column ascending="true" name="ScreenName" />
+  </index>
+</table>

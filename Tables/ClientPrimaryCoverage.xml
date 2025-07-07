@@ -1,0 +1,61 @@
+<table catalog="Jv-1.44.18.6_FK" name="ClientPrimaryCoverage" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="BlkOfBusID" nullable="false" remarks="" size="5" type="varchar" typeCode="12">
+    <child catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__ClientPrimCovgRu__74650750" implied="false" onDeleteCascade="false" schema="dbo" table="ClientPrimCovgRuleSet" />
+    <parent catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__ClientPrimaryCov__7370E317" implied="false" onDeleteCascade="false" schema="dbo" table="ClientCoverage" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="ClientID" nullable="false" remarks="" size="5" type="varchar" typeCode="12">
+    <child catalog="Jv-1.44.18.6_FK" column="ClientID" foreignKey="FK__ClientPrimCovgRu__74650750" implied="false" onDeleteCascade="false" schema="dbo" table="ClientPrimCovgRuleSet" />
+    <parent catalog="Jv-1.44.18.6_FK" column="ClientID" foreignKey="FK__ClientPrimaryCov__7370E317" implied="false" onDeleteCascade="false" schema="dbo" table="ClientCoverage" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="LocationName" nullable="false" remarks="" size="12" type="varchar" typeCode="12">
+    <child catalog="Jv-1.44.18.6_FK" column="LocationName" foreignKey="FK__ClientPrimCovgRu__74650750" implied="false" onDeleteCascade="false" schema="dbo" table="ClientPrimCovgRuleSet" />
+    <parent catalog="Jv-1.44.18.6_FK" column="LocationName" foreignKey="FK__ClientPrimaryCov__7370E317" implied="false" onDeleteCascade="false" schema="dbo" table="ClientCoverage" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="EffectiveDate" nullable="false" remarks="" size="20" type="date" typeCode="12">
+    <child catalog="Jv-1.44.18.6_FK" column="EffectiveDate" foreignKey="FK__ClientPrimCovgRu__74650750" implied="false" onDeleteCascade="false" schema="dbo" table="ClientPrimCovgRuleSet" />
+    <parent catalog="Jv-1.44.18.6_FK" column="EffectiveDate" foreignKey="FK__ClientPrimaryCov__7370E317" implied="false" onDeleteCascade="false" schema="dbo" table="ClientCoverage" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="PrimaryCoverageID" nullable="false" remarks="" size="1" type="char" typeCode="1">
+    <child catalog="Jv-1.44.18.6_FK" column="PrimaryCoverageID" foreignKey="FK__ClientPrimCovgRu__74650750" implied="false" onDeleteCascade="false" schema="dbo" table="ClientPrimCovgRuleSet" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="ApplyCoverage" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="DeniedReasonCode" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="CheckAccount" nullable="true" remarks="" size="50" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="ClaimsRunOutDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="PayAsMedical" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="BillingMode" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="13" name="FirstBillDay" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="14" name="SecondBillDay" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="15" name="RateFromDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="16" name="RateThruDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="17" name="PaidThruDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="18" name="SellingBroker" nullable="true" remarks="" size="11" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="19" name="FundingBroker" nullable="true" remarks="" size="11" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="20" name="IsCoverageMLRElig" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <primaryKey column="BlkOfBusID" sequenceNumberInPK="1" />
+  <primaryKey column="ClientID" sequenceNumberInPK="2" />
+  <primaryKey column="LocationName" sequenceNumberInPK="3" />
+  <primaryKey column="EffectiveDate" sequenceNumberInPK="4" />
+  <primaryKey column="PrimaryCoverageID" sequenceNumberInPK="5" />
+  <index name="PK__ClientPr__6D828423FBBA33BB" unique="true">
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="LocationName" />
+    <column ascending="true" name="EffectiveDate" />
+    <column ascending="true" name="PrimaryCoverageID" />
+  </index>
+  <index name="ClientPrimaryCoverage_Search3" unique="false">
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="LocationName" />
+    <column ascending="true" name="PrimaryCoverageID" />
+  </index>
+  <index name="ClientPrimaryCoverage_Search4" unique="false">
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="EffectiveDate" />
+    <column ascending="true" name="PrimaryCoverageID" />
+  </index>
+</table>

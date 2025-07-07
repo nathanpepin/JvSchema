@@ -1,0 +1,12 @@
+<table catalog="Jv-1.44.18.6_FK" name="ClaimPymtFileFmtDataType" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="FldDataType" nullable="false" remarks="" size="10" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="FldDataFmt" nullable="false" remarks="" size="10" type="varchar" typeCode="12" />
+  <primaryKey column="FldDataType" sequenceNumberInPK="1" />
+  <primaryKey column="FldDataFmt" sequenceNumberInPK="2" />
+  <index name="PK__ClaimPym__8EB865BE4C3DF418" unique="true">
+    <column ascending="true" name="FldDataType" />
+    <column ascending="true" name="FldDataFmt" />
+  </index>
+</table>

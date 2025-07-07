@@ -1,0 +1,47 @@
+<table catalog="Jv-1.44.18.6_FK" name="ClaimPymtProv1099" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="Prov1099ID" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="Prov1099ParamSetID" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="TaxID" nullable="true" remarks="" size="9" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="BlkOfBusID" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="ClientID" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="TaxIDType" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="AccountID" nullable="true" remarks="" size="50" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="9" name="TotalAmt" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="Print1099" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="AmountWithheldFlag" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="TaxYear" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="13" name="ResponsibleParty1099" nullable="true" remarks="" size="1" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="14" name="HealthPlanEffDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="15" name="Prov1099UniqKey" nullable="true" remarks="" size="42" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="16" name="Locations" nullable="true" remarks="" size="12" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="17" name="InterestAmt" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <primaryKey column="Prov1099ID" sequenceNumberInPK="1" />
+  <index name="PK__ClaimPym__BA6F394471EA17EE" unique="true">
+    <column ascending="true" name="Prov1099ID" />
+  </index>
+  <index name="ClaimPymtProv1099_CT" unique="false">
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="Prov1099ID" />
+  </index>
+  <index name="ClaimPymtProv1099_Search1" unique="false">
+    <column ascending="true" name="Prov1099ParamSetID" />
+  </index>
+  <index name="ClaimPymtProv1099_Search2" unique="false">
+    <column ascending="true" name="TaxID" />
+  </index>
+  <index name="ClaimPymtProv1099_Search3" unique="false">
+    <column ascending="true" name="TaxYear" />
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="Locations" />
+    <column ascending="true" name="ResponsibleParty1099" />
+    <column ascending="true" name="Prov1099ID" />
+  </index>
+  <index name="ClaimPymtProv1099_Search4" unique="false">
+    <column ascending="true" name="Prov1099ID" />
+    <column ascending="true" name="TaxID" />
+  </index>
+</table>

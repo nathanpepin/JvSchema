@@ -1,0 +1,19 @@
+<table catalog="Jv-1.44.18.6_FK" name="RXDCSpendingCategory" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="RecordID" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="SpendingCategory" nullable="false" remarks="" size="2" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="CategoryName" nullable="false" remarks="" size="43" type="varchar" typeCode="12" />
+  <primaryKey column="SpendingCategory" sequenceNumberInPK="1" />
+  <primaryKey column="RecordID" sequenceNumberInPK="2" />
+  <primaryKey column="CategoryName" sequenceNumberInPK="3" />
+  <index name="PK__RXDCSpen__3F49468498431A3B" unique="true">
+    <column ascending="true" name="SpendingCategory" />
+    <column ascending="true" name="RecordID" />
+    <column ascending="true" name="CategoryName" />
+  </index>
+  <index name="RXDCSpendingCategory_search1" unique="false">
+    <column ascending="true" name="SpendingCategory" />
+    <column ascending="true" name="CategoryName" />
+  </index>
+</table>

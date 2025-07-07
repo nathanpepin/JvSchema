@@ -1,0 +1,27 @@
+<table catalog="Jv-1.44.18.6_FK" name="AdjResDupSLInfo" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="UniqSeq" nullable="true" remarks="" size="4" type="int" typeCode="4">
+    <parent catalog="Jv-1.44.18.6_FK" column="UniqSeq" foreignKey="FK__AdjResDup__UniqS__4F688CCB" implied="false" onDeleteCascade="false" schema="dbo" table="AdjResDupClaimInfo" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="DuplicateClaimnumber" nullable="true" remarks="" size="19" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="DuplicateDateincurred" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="DuplicateClaimstatus" nullable="true" remarks="" size="8" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="DuplicateLinenumber" nullable="true" remarks="" size="15" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="UID" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="DuplicateDummyLinenumber" nullable="true" remarks="" size="15" type="varchar" typeCode="12" />
+  <primaryKey column="UID" sequenceNumberInPK="1" />
+  <index name="PK__AdjResDu__C5B1960207B6A3E8" unique="true">
+    <column ascending="true" name="UID" />
+  </index>
+  <index name="AdjResDupSLInfo_search1" unique="false">
+    <column ascending="true" name="UniqSeq" />
+    <column ascending="true" name="DuplicateClaimnumber" />
+    <column ascending="true" name="DuplicateDummyLinenumber" />
+  </index>
+  <index name="AdjResDupSLInfo_search2" unique="false">
+    <column ascending="true" name="DuplicateClaimnumber" />
+    <column ascending="true" name="DuplicateLinenumber" />
+    <column ascending="true" name="DuplicateDummyLinenumber" />
+  </index>
+</table>

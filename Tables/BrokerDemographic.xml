@@ -1,0 +1,107 @@
+<table catalog="Jv-1.44.18.6_FK" name="BrokerDemographic" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="Code" nullable="false" remarks="" size="11" type="varchar" typeCode="12">
+    <child catalog="Jv-1.44.18.6_FK" column="CarrierCode" foreignKey="FK__AddAggSto__Carri__411A6D74" implied="false" onDeleteCascade="false" schema="dbo" table="AddAggStopLossReport" />
+    <child catalog="Jv-1.44.18.6_FK" column="BrokerID" foreignKey="FK__Adjustmen__Broke__5BCE63B0" implied="false" onDeleteCascade="false" schema="dbo" table="AdjustmentDetails" />
+    <child catalog="Jv-1.44.18.6_FK" column="Carrier" foreignKey="FK__AggCntrMa__Carri__6B10A740" implied="false" onDeleteCascade="false" schema="dbo" table="AggCntrMaintenance" />
+    <child catalog="Jv-1.44.18.6_FK" column="CarrierCode" foreignKey="FK__AggrSLAtt__Carri__77767E25" implied="false" onDeleteCascade="false" schema="dbo" table="AggrSLAttachPoint" />
+    <child catalog="Jv-1.44.18.6_FK" column="BrokerCode" foreignKey="FK__BrokerCom__Broke__347F8C65" implied="false" onDeleteCascade="false" schema="dbo" table="BrokerCommission" />
+    <child catalog="Jv-1.44.18.6_FK" column="BrokerID" foreignKey="FK__BrokerPay__Broke__3A3865BB" implied="false" onDeleteCascade="false" schema="dbo" table="BrokerPayables" />
+    <child catalog="Jv-1.44.18.6_FK" column="BrokerCode" foreignKey="FK__Miscellan__Broke__7E0E6D1B" implied="false" onDeleteCascade="false" schema="dbo" table="MiscellaneousFees" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="BrokerName" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="BrokerType" nullable="true" remarks="" size="1" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="Ident" nullable="true" remarks="" size="12" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="Address" nullable="true" remarks="" size="55" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="City" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="BrokerState" nullable="true" remarks="" size="2" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="PostalCode" nullable="true" remarks="" size="13" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="PhoneData" nullable="true" remarks="" size="15" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="PhoneVoice" nullable="true" remarks="" size="15" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="Contact" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="13" name="EmailID" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="14" name="WebSite" nullable="true" remarks="" size="255" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="15" name="TaxIDType" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="16" name="TaxID" nullable="true" remarks="" size="9" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="17" name="PrintChecks" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="18" name="CheckAddress" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="19" name="Print1099" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="20" name="Currency" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="21" name="Remarks" nullable="true" remarks="" size="512" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="22" name="Address2" nullable="true" remarks="" size="55" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="23" name="Address3" nullable="true" remarks="" size="55" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="24" name="Country" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="25" name="County" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="26" name="UserField1" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="27" name="UserField2" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="28" name="UserField3" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="29" name="UserField4" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="30" name="UserField5" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="31" name="UserField6" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="32" name="PhoneExtension" nullable="true" remarks="" size="15" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="33" name="ParentBroker" nullable="true" remarks="" size="11" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="34" name="EffectiveDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="35" name="PayParent" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="36" name="SetMinCheckAmount" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="37" name="PayViaEFT" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="38" name="MinCheckAmount" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="39" name="ConversionId" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="40" name="AddBrokerCode" nullable="true" remarks="" size="11" type="varchar" typeCode="12" />
+  <primaryKey column="Code" sequenceNumberInPK="1" />
+  <index name="PK__BrokerDe__A25C5AA62B226C18" unique="true">
+    <column ascending="true" name="Code" />
+  </index>
+  <index name="BrokerDemographic_Search" unique="false">
+    <column ascending="true" name="Code" />
+    <column ascending="true" name="TaxID" />
+    <column ascending="true" name="CheckAddress" />
+  </index>
+  <index name="BrokerDemographic_Search1" unique="false">
+    <column ascending="true" name="Code" />
+    <column ascending="true" name="TaxID" />
+    <column ascending="true" name="BrokerType" />
+  </index>
+  <index name="BrokerDemographic_Search2" unique="false">
+    <column ascending="true" name="Code" />
+    <column ascending="true" name="BrokerType" />
+  </index>
+  <index name="BrokerDemographic_Search3" unique="false">
+    <column ascending="true" name="Code" />
+    <column ascending="true" name="BrokerState" />
+    <column ascending="true" name="PostalCode" />
+  </index>
+  <index name="BrokerDemographic_Search4" unique="false">
+    <column ascending="true" name="TaxID" />
+    <column ascending="true" name="Code" />
+  </index>
+  <index name="BrokerDemographic_Search5" unique="false">
+    <column ascending="true" name="Code" />
+    <column ascending="true" name="TaxID" />
+    <column ascending="true" name="BrokerName" />
+  </index>
+  <index name="BrokerDemographic_Search6" unique="false">
+    <column ascending="true" name="Code" />
+    <column ascending="true" name="BrokerName" />
+    <column ascending="true" name="BrokerType" />
+  </index>
+  <index name="BrokerDemographic_Search7" unique="false">
+    <column ascending="true" name="TaxID" />
+    <column ascending="true" name="BrokerName" />
+    <column ascending="true" name="BrokerType" />
+  </index>
+  <index name="BrokerDemographic_Search8" unique="false">
+    <column ascending="true" name="Code" />
+    <column ascending="true" name="TaxID" />
+    <column ascending="true" name="Ident" />
+    <column ascending="true" name="BrokerType" />
+    <column ascending="true" name="BrokerName" />
+    <column ascending="true" name="Contact" />
+    <column ascending="true" name="UserField1" />
+    <column ascending="true" name="UserField2" />
+    <column ascending="true" name="UserField3" />
+    <column ascending="true" name="UserField4" />
+    <column ascending="true" name="UserField5" />
+    <column ascending="true" name="UserField6" />
+  </index>
+</table>

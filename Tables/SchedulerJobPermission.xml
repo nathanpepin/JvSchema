@@ -1,0 +1,32 @@
+<table catalog="Jv-1.44.18.6_FK" name="SchedulerJobPermission" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="ModuleName" nullable="false" remarks="" size="16" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="JobName" nullable="false" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="MenuName" nullable="false" remarks="" size="250" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="ActionType" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="EDITransaction" nullable="true" remarks="" size="50" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="TransactionType" nullable="true" remarks="" size="25" type="varchar" typeCode="12" />
+  <primaryKey column="ModuleName" sequenceNumberInPK="1" />
+  <primaryKey column="JobName" sequenceNumberInPK="2" />
+  <primaryKey column="MenuName" sequenceNumberInPK="3" />
+  <index name="PK__Schedule__51674CE89C07C0CC" unique="true">
+    <column ascending="true" name="ModuleName" />
+    <column ascending="true" name="JobName" />
+    <column ascending="true" name="MenuName" />
+  </index>
+  <index name="SchedulerJobPermission_Search" unique="true">
+    <column ascending="true" name="JobName" />
+    <column ascending="true" name="ModuleName" />
+    <column ascending="true" name="MenuName" />
+    <column ascending="true" name="ActionType" />
+  </index>
+  <index name="SchedulerJobPermission_Search2" unique="true">
+    <column ascending="true" name="JobName" />
+    <column ascending="true" name="ModuleName" />
+    <column ascending="true" name="MenuName" />
+    <column ascending="true" name="ActionType" />
+    <column ascending="true" name="EDITransaction" />
+    <column ascending="true" name="TransactionType" />
+  </index>
+</table>

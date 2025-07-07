@@ -1,0 +1,25 @@
+<table catalog="Jv-1.44.18.6_FK" name="AdpAneGeoFctTbl4" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="Id" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="Geographicziparea" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="ConversionfactorID" nullable="true" remarks="" size="2" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="Procedurecodelowerrange" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="Procedurecodeupperrange" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="3" id="7" name="Lowbaseconv" nullable="true" remarks="" size="9" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="3" id="8" name="Highbaseconv" nullable="true" remarks="" size="9" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="3" id="9" name="Lowminuteconv" nullable="true" remarks="" size="9" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="3" id="10" name="Highminuteconv" nullable="true" remarks="" size="9" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="Effectivedate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="ISCVersion" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <primaryKey column="Id" sequenceNumberInPK="1" />
+  <index name="PK__AdpAneGe__3214EC070FB7A110" unique="true">
+    <column ascending="true" name="Id" />
+  </index>
+  <index name="AdpAneGeoFctTbl4_search2" unique="false">
+    <column ascending="true" name="Geographicziparea" />
+    <column ascending="true" name="Effectivedate" />
+    <column ascending="true" name="Procedurecodelowerrange" />
+    <column ascending="true" name="Procedurecodeupperrange" />
+  </index>
+</table>

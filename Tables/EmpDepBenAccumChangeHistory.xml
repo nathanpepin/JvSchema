@@ -1,0 +1,26 @@
+<table catalog="Jv-1.44.18.6_FK" name="EmpDepBenAccumChangeHistory" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="SerialID" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="AccumulatorID" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="isEmployee" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="AccumulatorType" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="ExAccNum" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="AccumulatorName" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="ActionType" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="FieldName" nullable="true" remarks="" size="8000" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="ValueBefore" nullable="true" remarks="" size="8000" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="ValueAfter" nullable="true" remarks="" size="8000" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="Description" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="13" name="PlanYearPeriod" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <primaryKey column="SerialID" sequenceNumberInPK="1" />
+  <index name="PK__EmpDepBe__5E5B3EC4B14D49B8" unique="true">
+    <column ascending="true" name="SerialID" />
+  </index>
+  <index name="EmpDepBenAccumChangeHistory_Search" unique="false">
+    <column ascending="true" name="ChgTS" />
+    <column ascending="true" name="SerialID" />
+    <column ascending="true" name="AccumulatorID" />
+    <column ascending="true" name="isEmployee" />
+  </index>
+</table>

@@ -1,0 +1,43 @@
+<table catalog="Jv-1.44.18.6_FK" name="AccumRebuildParamSet" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="AccumRebuildID" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="ParameterSetName" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="AccumulationOption" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="SelectYear" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="Lifetime" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="BlkOfBusIDFrom" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="BlkOfBusIDTo" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="ClientIDFrom" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="ClientIDTo" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="ClientLocationFrom" nullable="true" remarks="" size="12" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="ClientLocationTo" nullable="true" remarks="" size="12" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="13" name="EmployeeID" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="14" name="EmployeeIDList" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="2005" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="15" name="RebuildBy" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="16" name="FromYear" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="17" name="ToYear" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="18" name="AllYears" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <primaryKey column="AccumRebuildID" sequenceNumberInPK="1" />
+  <index name="PK__AccumReb__BFFB25200D5EB670" unique="true">
+    <column ascending="true" name="AccumRebuildID" />
+  </index>
+  <index name="AccumRebuildParamSet_idx1" unique="true">
+    <column ascending="true" name="ParameterSetName" />
+  </index>
+  <index name="AccumRebuildParamSet_Search1" unique="false">
+    <column ascending="true" name="ParameterSetName" />
+    <column ascending="true" name="AccumulationOption" />
+    <column ascending="true" name="Lifetime" />
+    <column ascending="true" name="BlkOfBusIDFrom" />
+    <column ascending="true" name="BlkOfBusIDTo" />
+    <column ascending="true" name="ClientIDFrom" />
+    <column ascending="true" name="ClientIDTo" />
+    <column ascending="true" name="ClientLocationFrom" />
+    <column ascending="true" name="ClientLocationTo" />
+    <column ascending="true" name="EmployeeID" />
+  </index>
+  <index name="AccumRebuildParamSet_Search3" unique="false">
+    <column ascending="true" name="EmployeeID" />
+  </index>
+</table>

@@ -1,0 +1,26 @@
+<table catalog="Jv-1.44.18.6_FK" name="AdjLogicImports" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="ImportID" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="FilePath" nullable="true" remarks="" size="255" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="RuleSetName" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="RuleSetSection" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="EffectiveDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="Status" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="ContWithErrors" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="OverrideType" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="AdjustDates" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <primaryKey column="ImportID" sequenceNumberInPK="1" />
+  <index name="PK__AdjLogic__8697678ACBD0C45E" unique="true">
+    <column ascending="true" name="ImportID" />
+  </index>
+  <index name="AdjLogicImports_Search1" unique="true">
+    <column ascending="true" name="FilePath" />
+  </index>
+  <index name="AdjLogicImports_Search2" unique="false">
+    <column ascending="true" name="RuleSetName" />
+    <column ascending="true" name="EffectiveDate" />
+    <column ascending="true" name="Status" />
+    <column ascending="true" name="RuleSetSection" />
+  </index>
+</table>

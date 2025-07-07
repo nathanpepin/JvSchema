@@ -1,0 +1,161 @@
+<table catalog="Jv-1.44.18.6_FK" name="LetterRequest" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="CorrRequestNumber" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="CorrespondenceID" nullable="true" remarks="" size="3" type="varchar" typeCode="12">
+    <parent catalog="Jv-1.44.18.6_FK" column="CorrespondenceID" foreignKey="FK__LetterReq__Corre__5E95C1C2" implied="false" onDeleteCascade="false" schema="dbo" table="CorrespDefinition" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="CorrRequestType" nullable="true" remarks="" size="25" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="CorrRequestDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="CorrRequestStatus" nullable="true" remarks="" size="10" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="CorrNumofCopies" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="CorrDateToPrint" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="CorrDateOfPrint" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="CorrDocControlNum" nullable="true" remarks="" size="99" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="CorrUserID" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="CorrParentLetter" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="13" name="BlkOfBusID" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="14" name="ClientID" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="15" name="CorrLocationName" nullable="true" remarks="" size="12" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="16" name="CorrNetwID" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="17" name="CorrClaimNum" nullable="true" remarks="" size="19" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="18" name="CorrPlanName" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="19" name="CorrProductType" nullable="true" remarks="" size="2" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="20" name="CorrBrokerCode" nullable="true" remarks="" size="11" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="21" name="CorrEntityType" nullable="true" remarks="" size="15" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="22" name="CorrEntityKey" nullable="true" remarks="" size="80" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="23" name="CorrCCEntityType" nullable="true" remarks="" size="15" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="24" name="CorrCCEntityKey" nullable="true" remarks="" size="80" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="25" name="CorrCCFlag" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="26" name="CorrFollowUpFlag" nullable="true" remarks="" size="2" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="27" name="CorrLinkToEntityType" nullable="true" remarks="" size="15" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="28" name="CorrLinkToEntityKey" nullable="true" remarks="" size="80" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="29" name="CorrAns1" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="2005" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="30" name="CorrAns2" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="2005" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="31" name="CorrAns3" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="2005" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="32" name="CorrAns4" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="2005" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="33" name="CorrAns5" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="2005" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="34" name="CorrAns6" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="2005" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="35" name="CorrAns7" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="2005" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="36" name="CorrAns8" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="2005" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="37" name="CorrAns9" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="2005" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="38" name="CorrAns10" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="2005" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="39" name="CorrAns11" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="2005" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="40" name="CorrAns12" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="2005" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="41" name="CorrAns13" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="2005" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="42" name="CorrAns14" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="2005" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="43" name="CorrAns15" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="2005" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="44" name="PatientType" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="45" name="EditedTemplateName" nullable="true" remarks="" size="128" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="46" name="ConnectorID" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="47" name="PhysicianID" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="48" name="FacilityID" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="49" name="LtrTypeFor1099" nullable="true" remarks="" size="25" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="50" name="AuthorizationNumber" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="51" name="MesaUserId" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="52" name="CorrCRMCallID" nullable="true" remarks="" size="10" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="53" name="BundleID" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="54" name="OnDemandLetter" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="55" name="PrintDemandLetter" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <primaryKey column="CorrRequestNumber" sequenceNumberInPK="1" />
+  <index name="PK__LetterRe__7157766CD0D988B5" unique="true">
+    <column ascending="true" name="CorrRequestNumber" />
+  </index>
+  <index name="CorrRqstMaint_Search01" unique="false">
+    <column ascending="true" name="CorrRequestDate" />
+    <column ascending="true" name="CorrEntityType" />
+    <column ascending="true" name="CorrespondenceID" />
+    <column ascending="true" name="CorrRequestType" />
+    <column ascending="true" name="CorrRequestStatus" />
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="CorrUserID" />
+    <column ascending="true" name="CorrLocationName" />
+    <column ascending="true" name="CorrFollowUpFlag" />
+    <column ascending="true" name="CorrRequestNumber" />
+    <column ascending="true" name="CorrDateOfPrint" />
+  </index>
+  <index name="LetterRequest_CT" unique="false">
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="CorrRequestNumber" />
+  </index>
+  <index name="LetterRequest_Search1" unique="false">
+    <column ascending="true" name="CorrRequestNumber" />
+    <column ascending="true" name="CorrespondenceID" />
+  </index>
+  <index name="LetterRequest_Search18" unique="false">
+    <column ascending="true" name="CorrRequestStatus" />
+    <column ascending="true" name="CorrespondenceID" />
+    <column ascending="true" name="CorrRequestType" />
+    <column ascending="true" name="CorrRequestNumber" />
+    <column ascending="true" name="CorrCCEntityType" />
+    <column ascending="true" name="CorrRequestDate" />
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="CorrLocationName" />
+    <column ascending="true" name="CorrFollowUpFlag" />
+    <column ascending="true" name="CorrUserID" />
+    <column ascending="true" name="CorrDateOfPrint" />
+  </index>
+  <index name="LetterRequest_Search19" unique="false">
+    <column ascending="true" name="CorrLinkToEntityType" />
+    <column ascending="true" name="CorrLinkToEntityKey" />
+    <column ascending="true" name="CorrDateToPrint" />
+    <column ascending="true" name="CorrRequestStatus" />
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="CorrRequestNumber" />
+    <column ascending="true" name="CorrDocControlNum" />
+  </index>
+  <index name="LetterRequest_Search2" unique="false">
+    <column ascending="true" name="CorrClaimNum" />
+    <column ascending="true" name="CorrRequestStatus" />
+    <column ascending="true" name="CorrRequestNumber" />
+  </index>
+  <index name="LetterRequest_Search3" unique="false">
+    <column ascending="true" name="CorrEntityType" />
+    <column ascending="true" name="CorrEntityKey" />
+    <column ascending="true" name="CorrCCEntityType" />
+    <column ascending="true" name="CorrCCEntityKey" />
+    <column ascending="true" name="CorrRequestStatus" />
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+  </index>
+  <index name="LetterRequest_Search4" unique="false">
+    <column ascending="true" name="CorrLinkToEntityType" />
+    <column ascending="true" name="CorrLinkToEntityKey" />
+    <column ascending="true" name="CorrRequestDate" />
+    <column ascending="true" name="CorrespondenceID" />
+    <column ascending="true" name="CorrRequestStatus" />
+    <column ascending="true" name="CorrFollowUpFlag" />
+  </index>
+  <index name="LetterRequest_Search5" unique="false">
+    <column ascending="true" name="CorrespondenceID" />
+    <column ascending="true" name="CorrRequestStatus" />
+    <column ascending="true" name="CorrRequestDate" />
+    <column ascending="true" name="CorrEntityType" />
+    <column ascending="true" name="CorrEntityKey" />
+    <column ascending="true" name="CorrCCEntityType" />
+    <column ascending="true" name="CorrCCEntityKey" />
+    <column ascending="true" name="CorrFollowUpFlag" />
+    <column ascending="true" name="CorrCRMCallID" />
+  </index>
+  <index name="LetterRequest_Search6" unique="false">
+    <column ascending="true" name="CorrLinkToEntityType" />
+    <column ascending="true" name="CorrLinkToEntityKey" />
+    <column ascending="true" name="CorrDateToPrint" />
+    <column ascending="true" name="CorrRequestStatus" />
+    <column ascending="true" name="CorrRequestNumber" />
+    <column ascending="true" name="AuthorizationNumber" />
+  </index>
+  <index name="LetterRequest_Search7" unique="false">
+    <column ascending="true" name="BundleID" />
+    <column ascending="true" name="CorrRequestNumber" />
+  </index>
+  <index name="LetterRequest_SearchODLR" unique="false">
+    <column ascending="true" name="OnDemandLetter" />
+    <column ascending="true" name="PrintDemandLetter" />
+    <column ascending="true" name="CorrRequestNumber" />
+  </index>
+</table>

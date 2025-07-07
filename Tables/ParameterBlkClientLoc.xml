@@ -1,0 +1,25 @@
+<table catalog="Jv-1.44.18.6_FK" name="ParameterBlkClientLoc" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="ParamSetID" nullable="false" remarks="" size="4" type="int" typeCode="4">
+    <parent catalog="Jv-1.44.18.6_FK" column="ParamSetID" foreignKey="FK__Parameter__Param__233FF1CA" implied="false" onDeleteCascade="false" schema="dbo" table="SurchargeParameterSet" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="BlobClienLocID" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="BlkOfBusID" nullable="true" remarks="" size="5" type="varchar" typeCode="12">
+    <parent catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__Parameter__BlkOf__24341603" implied="false" onDeleteCascade="false" schema="dbo" table="BlockOfBusiness" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="ClientID" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="ClientLocation" nullable="true" remarks="" size="12" type="varchar" typeCode="12" />
+  <primaryKey column="ParamSetID" sequenceNumberInPK="1" />
+  <primaryKey column="BlobClienLocID" sequenceNumberInPK="2" />
+  <index name="PK__Paramete__98FEC090A145E111" unique="true">
+    <column ascending="true" name="ParamSetID" />
+    <column ascending="true" name="BlobClienLocID" />
+  </index>
+  <index name="ParameterBlkClientLoc_CT" unique="false">
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="ParamSetID" />
+    <column ascending="true" name="BlobClienLocID" />
+  </index>
+</table>

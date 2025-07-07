@@ -1,0 +1,114 @@
+<table catalog="Jv-1.44.18.6_FK" name="AggCntrMaintenance" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="BlkOfBusID" nullable="true" remarks="" size="5" type="varchar" typeCode="12">
+    <parent catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__AggCntrMa__BlkOf__6A1C8307" implied="false" onDeleteCascade="false" schema="dbo" table="BlockOfBusiness" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="AggregateContractName" nullable="false" remarks="" size="10" type="varchar" typeCode="12">
+    <child catalog="Jv-1.44.18.6_FK" column="AggregateContractName" foreignKey="FK__AggCntrAttcFacto__636F8578" implied="false" onDeleteCascade="false" schema="dbo" table="AggCntrAttcFactor" />
+    <child catalog="Jv-1.44.18.6_FK" column="AggregateContractName" foreignKey="FK__AggCntrCategoryE__6463A9B1" implied="false" onDeleteCascade="false" schema="dbo" table="AggCntrCategoryExcl" />
+    <child catalog="Jv-1.44.18.6_FK" column="AggregateContractName" foreignKey="FK__AggCntrDepStatCo__6557CDEA" implied="false" onDeleteCascade="false" schema="dbo" table="AggCntrDepStatCode" />
+    <child catalog="Jv-1.44.18.6_FK" column="AggregateContractName" foreignKey="FK__AggCntrEmpStatCo__664BF223" implied="false" onDeleteCascade="false" schema="dbo" table="AggCntrEmpStatCode" />
+    <child catalog="Jv-1.44.18.6_FK" column="AggregateContractName" foreignKey="FK__AggCntrLossFundF__68343A95" implied="false" onDeleteCascade="false" schema="dbo" table="AggCntrLossFundFactor" />
+    <child catalog="Jv-1.44.18.6_FK" column="AggregateContractName" foreignKey="FK__AggCntrLossFundI__69285ECE" implied="false" onDeleteCascade="false" schema="dbo" table="AggCntrLossFundID" />
+    <child catalog="Jv-1.44.18.6_FK" column="AggregateContractName" foreignKey="FK__AggCntrNetworkCo__6DED13EB" implied="false" onDeleteCascade="false" schema="dbo" table="AggCntrNetworkCode" />
+    <child catalog="Jv-1.44.18.6_FK" column="AggregateContractName" foreignKey="FK__AggContractBnfPl__6FD55C5D" implied="false" onDeleteCascade="false" schema="dbo" table="AggContractBnfPlans" />
+    <child catalog="Jv-1.44.18.6_FK" column="AggregateContractName" foreignKey="FK__AggContractClien__70C98096" implied="false" onDeleteCascade="false" schema="dbo" table="AggContractClientLoc" />
+    <child catalog="Jv-1.44.18.6_FK" column="AggregateContractName" foreignKey="FK__AggrStopLossRepo__7A52EAD0" implied="false" onDeleteCascade="false" schema="dbo" table="AggrStopLossReport" />
+    <child catalog="Jv-1.44.18.6_FK" column="AggregateContractName" foreignKey="FK__AggrStpLosRptAcc__7D2F577B" implied="false" onDeleteCascade="false" schema="dbo" table="AggrStpLosRptAccmCalData" />
+    <child catalog="Jv-1.44.18.6_FK" column="AggregateContractName" foreignKey="FK__AggrStpLosRptHea__7E237BB4" implied="false" onDeleteCascade="false" schema="dbo" table="AggrStpLosRptHeaderData" />
+    <child catalog="Jv-1.44.18.6_FK" column="AggregateContractName" foreignKey="FK__AggSLAttCtrList__7F179FED" implied="false" onDeleteCascade="false" schema="dbo" table="AggSLAttCtrList" />
+    <child catalog="Jv-1.44.18.6_FK" column="AggregateContractName" foreignKey="FK__SlctdAggSLCtrLis__3AE27131" implied="false" onDeleteCascade="false" schema="dbo" table="SlctdAggSLCtrList" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="FormatName" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="Description" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="Carrier" nullable="true" remarks="" size="11" type="varchar" typeCode="12">
+    <parent catalog="Jv-1.44.18.6_FK" column="Code" foreignKey="FK__AggCntrMa__Carri__6B10A740" implied="false" onDeleteCascade="false" schema="dbo" table="BrokerDemographic" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="StopLossContractStatus" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="ContractTerm" nullable="true" remarks="" size="7" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="CensusMonths" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="CensusDay" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="AggregateAccomodation" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="AllProducts" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="13" name="Medical" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="14" name="Dental" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="15" name="Prescription" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="16" name="Vision" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="17" name="Disability" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="18" name="ExcludeEncounteredAmt" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="19" name="VendorName" nullable="true" remarks="" size="4" type="int" typeCode="4">
+    <parent catalog="Jv-1.44.18.6_FK" column="Vendor_id" foreignKey="FK__AggCntrMa__Vendo__6C04CB79" implied="false" onDeleteCascade="false" schema="dbo" table="VendorInfo" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="20" name="IncurredFromDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="21" name="IncurredThruDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="22" name="PaidFromDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="23" name="PaidThruDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="24" name="MinAttachmentPointAmt" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="25" name="ApplyContractPeriodMaximum" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="26" name="ContractMaximumCap" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="27" name="ContractType" nullable="true" remarks="" size="4" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="28" name="RunInIncurredDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="29" name="RunInDollarLimitationAmt" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="30" name="ExtensionPaidDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="31" name="AggrContractID" nullable="false" remarks="" size="10" type="varchar" typeCode="12">
+    <child catalog="Jv-1.44.18.6_FK" column="AggrContractID" foreignKey="FK__AggCntrAttcFacto__636F8578" implied="false" onDeleteCascade="false" schema="dbo" table="AggCntrAttcFactor" />
+    <child catalog="Jv-1.44.18.6_FK" column="AggrContractID" foreignKey="FK__AggCntrCategoryE__6463A9B1" implied="false" onDeleteCascade="false" schema="dbo" table="AggCntrCategoryExcl" />
+    <child catalog="Jv-1.44.18.6_FK" column="AggrContractID" foreignKey="FK__AggCntrDepStatCo__6557CDEA" implied="false" onDeleteCascade="false" schema="dbo" table="AggCntrDepStatCode" />
+    <child catalog="Jv-1.44.18.6_FK" column="AggrContractID" foreignKey="FK__AggCntrEmpStatCo__664BF223" implied="false" onDeleteCascade="false" schema="dbo" table="AggCntrEmpStatCode" />
+    <child catalog="Jv-1.44.18.6_FK" column="AggrContractID" foreignKey="FK__AggCntrLossFundF__68343A95" implied="false" onDeleteCascade="false" schema="dbo" table="AggCntrLossFundFactor" />
+    <child catalog="Jv-1.44.18.6_FK" column="AggrContractID" foreignKey="FK__AggCntrLossFundI__69285ECE" implied="false" onDeleteCascade="false" schema="dbo" table="AggCntrLossFundID" />
+    <child catalog="Jv-1.44.18.6_FK" column="AggrContractID" foreignKey="FK__AggCntrNetworkCo__6DED13EB" implied="false" onDeleteCascade="false" schema="dbo" table="AggCntrNetworkCode" />
+    <child catalog="Jv-1.44.18.6_FK" column="AggrContractID" foreignKey="FK__AggContractBnfPl__6FD55C5D" implied="false" onDeleteCascade="false" schema="dbo" table="AggContractBnfPlans" />
+    <child catalog="Jv-1.44.18.6_FK" column="AggrContractID" foreignKey="FK__AggContractClien__70C98096" implied="false" onDeleteCascade="false" schema="dbo" table="AggContractClientLoc" />
+    <child catalog="Jv-1.44.18.6_FK" column="AggrContractID" foreignKey="FK__AggrStopLossRepo__7A52EAD0" implied="false" onDeleteCascade="false" schema="dbo" table="AggrStopLossReport" />
+    <child catalog="Jv-1.44.18.6_FK" column="AggrContractID" foreignKey="FK__AggrStpLosRptAcc__7D2F577B" implied="false" onDeleteCascade="false" schema="dbo" table="AggrStpLosRptAccmCalData" />
+    <child catalog="Jv-1.44.18.6_FK" column="AggrContractID" foreignKey="FK__AggrStpLosRptHea__7E237BB4" implied="false" onDeleteCascade="false" schema="dbo" table="AggrStpLosRptHeaderData" />
+    <child catalog="Jv-1.44.18.6_FK" column="AggrContractID" foreignKey="FK__AggSLAttCtrList__7F179FED" implied="false" onDeleteCascade="false" schema="dbo" table="AggSLAttCtrList" />
+    <child catalog="Jv-1.44.18.6_FK" column="AggrContractID" foreignKey="FK__SlctdAggSLCtrLis__3AE27131" implied="false" onDeleteCascade="false" schema="dbo" table="SlctdAggSLCtrList" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="32" name="AdjClmIncurredDtFlag" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="33" name="CalAttachPoint" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="34" name="FactorType" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="35" name="TotAccomRecd" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="36" name="TotAccomReallocated" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="37" name="CheckingAccount" nullable="true" remarks="" size="50" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="38" name="Surcharge" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <primaryKey column="AggregateContractName" sequenceNumberInPK="1" />
+  <primaryKey column="AggrContractID" sequenceNumberInPK="2" />
+  <index name="PK__AggCntrM__004820861892AF23" unique="true">
+    <column ascending="true" name="AggregateContractName" />
+    <column ascending="true" name="AggrContractID" />
+  </index>
+  <index name="AggCntrMaintenance_Search10" unique="false">
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="AggregateContractName" />
+    <column ascending="true" name="AggrContractID" />
+    <column ascending="true" name="PaidFromDate" />
+    <column ascending="true" name="PaidThruDate" />
+  </index>
+  <index name="AggCntrMaintenance_Search6" unique="false">
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="Carrier" />
+    <column ascending="true" name="AggrContractID" />
+  </index>
+  <index name="AggCntrMaintenance_Search7" unique="false">
+    <column ascending="true" name="AggregateContractName" />
+    <column ascending="true" name="AggrContractID" />
+    <column ascending="true" name="FormatName" />
+    <column ascending="true" name="VendorName" />
+  </index>
+  <index name="AggCntrMaintenance_Search8" unique="false">
+    <column ascending="true" name="AggregateContractName" />
+    <column ascending="true" name="AggrContractID" />
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="StopLossContractStatus" />
+  </index>
+  <index name="AggCntrMaintenance_Search9" unique="false">
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="AggregateContractName" />
+    <column ascending="true" name="AggrContractID" />
+    <column ascending="true" name="IncurredFromDate" />
+    <column ascending="true" name="IncurredThruDate" />
+  </index>
+</table>

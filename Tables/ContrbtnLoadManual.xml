@@ -1,0 +1,47 @@
+<table catalog="Jv-1.44.18.6_FK" name="ContrbtnLoadManual" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="ManualLoadID" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="EmployeeID" nullable="true" remarks="" size="4" type="int" typeCode="4">
+    <parent catalog="Jv-1.44.18.6_FK" column="EmployeeID" foreignKey="FK__ContrbtnL__Emplo__5793BE78" implied="false" onDeleteCascade="false" schema="dbo" table="Employee" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="ContribnLoadType" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="ContribnLoadDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="PayrollPeriod" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="PayrollContribnDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="AccountType" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="SpendingAccountYear" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="10" name="ContributionAmount" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="ContributionReason" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="ContributionEffectiveDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="13" name="IsExtracted" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="14" name="IsAdjust" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="15" name="PlanContributionReason" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <primaryKey column="ManualLoadID" sequenceNumberInPK="1" />
+  <index name="PK__Contrbtn__9F6869E9CAAF3C2C" unique="true">
+    <column ascending="true" name="ManualLoadID" />
+  </index>
+  <index name="ContrbtnLoadManual_Search2" unique="false">
+    <column ascending="true" name="EmployeeID" />
+    <column ascending="true" name="SpendingAccountYear" />
+    <column ascending="true" name="AccountType" />
+    <column ascending="true" name="PayrollContribnDate" />
+    <column ascending="true" name="ContribnLoadType" />
+  </index>
+  <index name="ContrbtnLoadManual_Search3" unique="false">
+    <column ascending="true" name="EmployeeID" />
+    <column ascending="true" name="SpendingAccountYear" />
+    <column ascending="true" name="AccountType" />
+    <column ascending="true" name="ContribnLoadType" />
+    <column ascending="true" name="ContributionEffectiveDate" />
+    <column ascending="true" name="IsAdjust" />
+  </index>
+  <index name="ContrbtnLoadManual_Search4" unique="false">
+    <column ascending="true" name="EmployeeID" />
+    <column ascending="true" name="SpendingAccountYear" />
+    <column ascending="true" name="AccountType" />
+    <column ascending="true" name="ContribnLoadType" />
+    <column ascending="true" name="ContributionEffectiveDate" />
+    <column ascending="true" name="ChgTS" />
+  </index>
+</table>

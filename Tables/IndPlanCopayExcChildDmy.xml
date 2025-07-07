@@ -1,0 +1,12 @@
+<table catalog="Jv-1.44.18.6_FK" name="IndPlanCopayExcChildDmy" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="IndPlanCopayExcSeqID" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="CategoryDefinition" nullable="false" remarks="" size="43" type="varchar" typeCode="12" />
+  <primaryKey column="IndPlanCopayExcSeqID" sequenceNumberInPK="1" />
+  <primaryKey column="CategoryDefinition" sequenceNumberInPK="2" />
+  <index name="PK__IndPlanC__225DE8ABED679C30" unique="true">
+    <column ascending="true" name="IndPlanCopayExcSeqID" />
+    <column ascending="true" name="CategoryDefinition" />
+  </index>
+</table>

@@ -1,0 +1,23 @@
+<table catalog="Jv-1.44.18.6_FK" name="QuickAuditUserLvlVals" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="QuickAuditId" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="ParameterSetName" nullable="false" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="UserID" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="UserRole" nullable="true" remarks="" size="16" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="3" id="6" name="PercentageofClaimstoAudit" nullable="true" remarks="" size="8" type="decimal" typeCode="3" />
+  <primaryKey column="ParameterSetName" sequenceNumberInPK="1" />
+  <primaryKey column="QuickAuditId" sequenceNumberInPK="2" />
+  <index name="PK__QuickAud__C8506E7A7E40CDF8" unique="true">
+    <column ascending="true" name="ParameterSetName" />
+    <column ascending="true" name="QuickAuditId" />
+  </index>
+  <index name="QuickAuditUserLvlVals_Search1" unique="false">
+    <column ascending="true" name="ParameterSetName" />
+    <column ascending="true" name="UserID" />
+  </index>
+  <index name="QuickAuditUserLvlVals_Search2" unique="false">
+    <column ascending="true" name="ParameterSetName" />
+    <column ascending="true" name="UserRole" />
+  </index>
+</table>

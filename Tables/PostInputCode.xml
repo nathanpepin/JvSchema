@@ -1,0 +1,13 @@
+<table catalog="Jv-1.44.18.6_FK" name="PostInputCode" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="FileTypeID" nullable="false" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="StatementBlock" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="2005" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="SubRecord" nullable="false" remarks="" size="50" type="varchar" typeCode="12" />
+  <primaryKey column="FileTypeID" sequenceNumberInPK="1" />
+  <primaryKey column="SubRecord" sequenceNumberInPK="2" />
+  <index name="PK__PostInpu__0AC3AD0E000D5167" unique="true">
+    <column ascending="true" name="FileTypeID" />
+    <column ascending="true" name="SubRecord" />
+  </index>
+</table>

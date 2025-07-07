@@ -1,0 +1,18 @@
+<table catalog="Jv-1.44.18.6_FK" name="MRFProcessLog" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="RecordId" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="JobId" nullable="true" remarks="" size="4" type="int" typeCode="4">
+    <parent catalog="Jv-1.44.18.6_FK" column="JobId" foreignKey="FK__MRFProces__JobId__05AF8EE3" implied="false" onDeleteCascade="false" schema="dbo" table="MRFProcessHdr" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="LogGrp" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="LogDetail" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="2005" />
+  <primaryKey column="RecordId" sequenceNumberInPK="1" />
+  <index name="PK__MRFProce__FBDF78E9C22E6B50" unique="true">
+    <column ascending="true" name="RecordId" />
+  </index>
+  <index name="MRFProcessLog_s1" unique="false">
+    <column ascending="true" name="JobId" />
+    <column ascending="true" name="RecordId" />
+  </index>
+</table>

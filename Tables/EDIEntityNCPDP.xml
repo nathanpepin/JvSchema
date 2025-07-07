@@ -1,0 +1,25 @@
+<table catalog="Jv-1.44.18.6_FK" name="EDIEntityNCPDP" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="EntityID" nullable="false" remarks="" size="15" type="varchar" typeCode="12">
+    <parent catalog="Jv-1.44.18.6_FK" column="EntityID" foreignKey="FK__EDIEntity__Entit__05257EFE" implied="false" onDeleteCascade="false" schema="dbo" table="EDIEntitySetup" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="FTPSeqNo" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="AutoFTPSelect" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="EDIFTPFrequency" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="ImportNCPDP" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="PatientMOLetterNo" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="ProviderMOLetterNo" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="ExceptClaims" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="DefBenefitCode" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="NCPDPProcessType" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="NCPDPProviderID" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="13" name="Inbound_Vendor_id" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="14" name="PayClaimsTo" nullable="true" remarks="" size="10" type="varchar" typeCode="12" />
+  <primaryKey column="EntityID" sequenceNumberInPK="1" />
+  <primaryKey column="FTPSeqNo" sequenceNumberInPK="2" />
+  <index name="PK__EDIEntit__98F3D4A29C7A42E4" unique="true">
+    <column ascending="true" name="EntityID" />
+    <column ascending="true" name="FTPSeqNo" />
+  </index>
+</table>

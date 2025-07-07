@@ -1,0 +1,23 @@
+<table catalog="Jv-1.44.18.6_FK" name="DisabilityAddDeduct" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="DisFileID" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="AddDecID" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="4" name="TaxDedAmt" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="AddDedDesc" nullable="true" remarks="" size="255" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="AddDedPayee" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="IsBefore" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="EmployeeID" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <primaryKey column="EmployeeID" sequenceNumberInPK="1" />
+  <primaryKey column="DisFileID" sequenceNumberInPK="2" />
+  <primaryKey column="AddDecID" sequenceNumberInPK="3" />
+  <index name="PK__Disabili__69244FBD7CC49AD5" unique="true">
+    <column ascending="true" name="EmployeeID" />
+    <column ascending="true" name="DisFileID" />
+    <column ascending="true" name="AddDecID" />
+  </index>
+  <index name="DisabilityAddDeduct_Search1" unique="false">
+    <column ascending="true" name="DisFileID" />
+    <column ascending="true" name="IsBefore" />
+  </index>
+</table>

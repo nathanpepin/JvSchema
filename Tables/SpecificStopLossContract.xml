@@ -1,0 +1,136 @@
+<table catalog="Jv-1.44.18.6_FK" name="SpecificStopLossContract" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="StopLossContractName" nullable="false" remarks="" size="10" type="varchar" typeCode="12">
+    <child catalog="Jv-1.44.18.6_FK" column="StopLossContractName" foreignKey="FK__SpecEncntAmtCat__418F6EC0" implied="false" onDeleteCascade="false" schema="dbo" table="SpecEncntAmtCat" />
+    <child catalog="Jv-1.44.18.6_FK" column="StopLossContractName" foreignKey="FK__SpecNetworkCodes__483C6C4F" implied="false" onDeleteCascade="false" schema="dbo" table="SpecNetworkCodes" />
+    <child catalog="Jv-1.44.18.6_FK" column="StopLossContractName" foreignKey="FK__SpecSplitClmExcN__4A24B4C1" implied="false" onDeleteCascade="false" schema="dbo" table="SpecSplitClmExcNetwork" />
+    <child catalog="Jv-1.44.18.6_FK" column="StopLossContractName" foreignKey="FK__SpecSplitClmExcT__4C0CFD33" implied="false" onDeleteCascade="false" schema="dbo" table="SpecSplitClmExcTaxId" />
+    <child catalog="Jv-1.44.18.6_FK" column="StopLossContractName" foreignKey="FK__SpecStopLossAdvF__4D01216C" implied="false" onDeleteCascade="false" schema="dbo" table="SpecStopLossAdvFundCat" />
+    <child catalog="Jv-1.44.18.6_FK" column="StopLossContractName" foreignKey="FK__SpecStopLossProd__4DF545A5" implied="false" onDeleteCascade="false" schema="dbo" table="SpecStopLossProducts" />
+    <child catalog="Jv-1.44.18.6_FK" column="StopLossContractName" foreignKey="FK__SpecStopLossStat__4EE969DE" implied="false" onDeleteCascade="false" schema="dbo" table="SpecStopLossStatCodeDep" />
+    <child catalog="Jv-1.44.18.6_FK" column="StopLossContractName" foreignKey="FK__SpecStopLossStat__4FDD8E17" implied="false" onDeleteCascade="false" schema="dbo" table="SpecStopLossStatCodeEmp" />
+    <child catalog="Jv-1.44.18.6_FK" column="StopLossContractName" foreignKey="FK__SpecTrigDiagCat__50D1B250" implied="false" onDeleteCascade="false" schema="dbo" table="SpecTrigDiagCat" />
+    <child catalog="Jv-1.44.18.6_FK" column="StopLossContractName" foreignKey="FK__StopLossAccumula__65CCCF36" implied="false" onDeleteCascade="false" schema="dbo" table="StopLossAccumulators" />
+    <child catalog="Jv-1.44.18.6_FK" column="StopLossContractName" foreignKey="FK__StopLossIneligAc__68A93BE1" implied="false" onDeleteCascade="false" schema="dbo" table="StopLossIneligAccum" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="StopLossContractID" nullable="false" remarks="" size="10" type="varchar" typeCode="12">
+    <child catalog="Jv-1.44.18.6_FK" column="StopLossContractID" foreignKey="FK__SpecEncntAmtCat__418F6EC0" implied="false" onDeleteCascade="false" schema="dbo" table="SpecEncntAmtCat" />
+    <child catalog="Jv-1.44.18.6_FK" column="StopLossContractID" foreignKey="FK__SpecNetworkCodes__483C6C4F" implied="false" onDeleteCascade="false" schema="dbo" table="SpecNetworkCodes" />
+    <child catalog="Jv-1.44.18.6_FK" column="StopLossContractID" foreignKey="FK__SpecSplitClmExcN__4A24B4C1" implied="false" onDeleteCascade="false" schema="dbo" table="SpecSplitClmExcNetwork" />
+    <child catalog="Jv-1.44.18.6_FK" column="StopLossContractID" foreignKey="FK__SpecSplitClmExcT__4C0CFD33" implied="false" onDeleteCascade="false" schema="dbo" table="SpecSplitClmExcTaxId" />
+    <child catalog="Jv-1.44.18.6_FK" column="StopLossContractID" foreignKey="FK__SpecStopLossAdvF__4D01216C" implied="false" onDeleteCascade="false" schema="dbo" table="SpecStopLossAdvFundCat" />
+    <child catalog="Jv-1.44.18.6_FK" column="StopLossContractID" foreignKey="FK__SpecStopLossProd__4DF545A5" implied="false" onDeleteCascade="false" schema="dbo" table="SpecStopLossProducts" />
+    <child catalog="Jv-1.44.18.6_FK" column="StopLossContractID" foreignKey="FK__SpecStopLossStat__4EE969DE" implied="false" onDeleteCascade="false" schema="dbo" table="SpecStopLossStatCodeDep" />
+    <child catalog="Jv-1.44.18.6_FK" column="StopLossContractID" foreignKey="FK__SpecStopLossStat__4FDD8E17" implied="false" onDeleteCascade="false" schema="dbo" table="SpecStopLossStatCodeEmp" />
+    <child catalog="Jv-1.44.18.6_FK" column="StopLossContractID" foreignKey="FK__SpecTrigDiagCat__50D1B250" implied="false" onDeleteCascade="false" schema="dbo" table="SpecTrigDiagCat" />
+    <child catalog="Jv-1.44.18.6_FK" column="StopLossContractID" foreignKey="FK__StopLossAccumula__65CCCF36" implied="false" onDeleteCascade="false" schema="dbo" table="StopLossAccumulators" />
+    <child catalog="Jv-1.44.18.6_FK" column="StopLossContractID" foreignKey="FK__StopLossIneligAc__68A93BE1" implied="false" onDeleteCascade="false" schema="dbo" table="StopLossIneligAccum" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="FormatName" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="StopLossContractStatus" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="EffectiveDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="Description" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="CoverageType" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="IncurredFromDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="IncurredThruDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="PaidFromDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="PaidThruDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="13" name="ContractTerm" nullable="true" remarks="" size="7" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="14" name="ContractType" nullable="true" remarks="" size="4" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="15" name="RunInIncurredDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="16" name="RunInDollarLimitationAmt" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="17" name="ExtensionPaidDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="18" name="SpecDeductibleAmt" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="3" id="19" name="WarningPercent" nullable="true" remarks="" size="8" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="20" name="WarningAmt" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="21" name="AggrSpecificApplies" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="22" name="AggrSpecificDeductibleAmt" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="23" name="TriggerDiagCategory" nullable="true" remarks="" size="43" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="24" name="DiagnosisRule" nullable="true" remarks="" size="7" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="25" name="AdvFundingRequired" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="26" name="LetterSenttoProvider" nullable="true" remarks="" size="3" type="varchar" typeCode="12">
+    <parent catalog="Jv-1.44.18.6_FK" column="CorrespondenceID" foreignKey="FK__SpecificS__Lette__465423DD" implied="false" onDeleteCascade="false" schema="dbo" table="CorrespDefinition" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="27" name="AdvFundExemptCat" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="28" name="AggrContractName1" nullable="true" remarks="" size="10" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="29" name="AggrContractName2" nullable="true" remarks="" size="10" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="30" name="AllProducts" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="31" name="Medical" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="32" name="Dental" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="33" name="Prescription" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="34" name="Vision" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="35" name="Disability" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="36" name="ExcludeEncntAmts" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="37" name="PostPaymentsFormatName" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="38" name="PHIForPaymentReport" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="39" name="VendorName" nullable="true" remarks="" size="4" type="int" typeCode="4">
+    <parent catalog="Jv-1.44.18.6_FK" column="Vendor_id" foreignKey="FK__SpecificS__Vendo__446BDB6B" implied="false" onDeleteCascade="false" schema="dbo" table="VendorInfo" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="40" name="PostPaymentsVendorName" nullable="true" remarks="" size="4" type="int" typeCode="4">
+    <parent catalog="Jv-1.44.18.6_FK" column="Vendor_id" foreignKey="FK__SpecificS__PostP__455FFFA4" implied="false" onDeleteCascade="false" schema="dbo" table="VendorInfo" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="2" id="41" name="MaxPaidOutPerYearAmt" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="42" name="Surcharge" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="43" name="ApplyContractPeriodMaximum" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="44" name="PerPersonOrContract" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="45" name="WarnAmtMetAlert" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="46" name="WarnAmtMetAlertMsg" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="2005" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="47" name="WarnAmtExceedAlert" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="48" name="WarnAmtExceedAlertMsg" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="2005" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="49" name="ContrPerMaxMetAlert" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="50" name="ContrPerMaxMetAlertMsg" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="2005" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="51" name="AdjClmIncurredDtFlag" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="52" name="AdvFundMinOpt" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="53" name="AdvFundLimitDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="54" name="MinSpecDedFilingAmt" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="55" name="MinSpecDedFilingPct" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="56" name="PerClmFilingMinAmt" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="57" name="PerPatFilingMinAmt" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="58" name="AdvFundExclMM" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="59" name="AdvFundExclDE" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="60" name="AdvFundExclRX" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="61" name="AdvFundExclVI" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="62" name="AdvFundExclDI" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="63" name="AdvFundExclSC" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="64" name="SplitThresholdClm" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="65" name="SplitClmEobMsg" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="66" name="SplitClmApplyExc" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="67" name="StopLossAlertColor" nullable="true" remarks="" size="10" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="68" name="Carrier" nullable="true" remarks="" size="11" type="varchar" typeCode="12" />
+  <primaryKey column="StopLossContractName" sequenceNumberInPK="1" />
+  <primaryKey column="StopLossContractID" sequenceNumberInPK="2" />
+  <index name="PK__Specific__3338710772D2AE72" unique="true">
+    <column ascending="true" name="StopLossContractName" />
+    <column ascending="true" name="StopLossContractID" />
+  </index>
+  <index name="SpecStopLossContract_Search1" unique="false">
+    <column ascending="true" name="StopLossContractName" />
+    <column ascending="true" name="StopLossContractID" />
+    <column ascending="true" name="EffectiveDate" />
+  </index>
+  <index name="SpecStopLossContract_Search3" unique="false">
+    <column ascending="true" name="StopLossContractName" />
+    <column ascending="true" name="StopLossContractID" />
+    <column ascending="true" name="StopLossContractStatus" />
+  </index>
+  <index name="SpecStopLossContract_Search4" unique="false">
+    <column ascending="true" name="StopLossContractName" />
+    <column ascending="true" name="StopLossContractID" />
+    <column ascending="true" name="FormatName" />
+    <column ascending="true" name="VendorName" />
+  </index>
+  <index name="SpecStopLossContract_Search5" unique="false">
+    <column ascending="true" name="StopLossContractName" />
+    <column ascending="true" name="StopLossContractID" />
+    <column ascending="true" name="PostPaymentsFormatName" />
+    <column ascending="true" name="PostPaymentsVendorName" />
+  </index>
+  <index name="SpecStopLossContract_Search6" unique="false">
+    <column ascending="true" name="TriggerDiagCategory" />
+  </index>
+  <index name="SpecStopLossContract_Search7" unique="false">
+    <column ascending="true" name="StopLossContractName" />
+    <column ascending="true" name="EffectiveDate" />
+  </index>
+</table>

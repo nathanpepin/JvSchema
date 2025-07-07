@@ -1,0 +1,15 @@
+<table catalog="Jv-1.44.18.6_FK" name="SrcExmptPenBenefitPlans" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="PenBnftPlanID" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="TaxSetupID" nullable="false" remarks="" size="4" type="int" typeCode="4">
+    <parent catalog="Jv-1.44.18.6_FK" column="TaxSetupID" foreignKey="FK__SrcExmptP__TaxSe__5E2BAD6E" implied="false" onDeleteCascade="false" schema="dbo" table="SrcTaxSetupMaster" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="BenefitPlan" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <primaryKey column="PenBnftPlanID" sequenceNumberInPK="1" />
+  <primaryKey column="TaxSetupID" sequenceNumberInPK="2" />
+  <index name="PK__SrcExmpt__B57A9BE4D3DA58F0" unique="true">
+    <column ascending="true" name="PenBnftPlanID" />
+    <column ascending="true" name="TaxSetupID" />
+  </index>
+</table>

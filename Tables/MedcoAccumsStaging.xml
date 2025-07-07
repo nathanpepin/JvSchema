@@ -1,0 +1,22 @@
+<table catalog="Jv-1.44.18.6_FK" name="MedcoAccumsStaging" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="MedcoStagingSeqID" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="TxnId" nullable="true" remarks="" size="26" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="PatientId" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="Product" nullable="true" remarks="" size="2" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="PlanYear" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="7" name="DeductibleAmt" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="8" name="OOPAmt" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="DateOfService" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="IsDirty" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <primaryKey column="MedcoStagingSeqID" sequenceNumberInPK="1" />
+  <index name="PK__MedcoAcc__A8601A245FD370D4" unique="true">
+    <column ascending="true" name="MedcoStagingSeqID" />
+  </index>
+  <index name="MedcoAccumsStaging_search1" unique="false">
+    <column ascending="true" name="PatientId" />
+    <column ascending="true" name="Product" />
+    <column ascending="true" name="PlanYear" />
+  </index>
+</table>

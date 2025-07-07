@@ -1,0 +1,14 @@
+<table catalog="Jv-1.44.18.6_FK" name="JvPurge" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="PurgeKey" nullable="false" remarks="" size="50" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="PurgeTableName" nullable="false" remarks="" size="50" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="PurgeSQL" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="2005" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="RecordCount" nullable="true" remarks="" size="8" type="bigint" typeCode="-5" />
+  <primaryKey column="PurgeKey" sequenceNumberInPK="1" />
+  <primaryKey column="PurgeTableName" sequenceNumberInPK="2" />
+  <index name="PK__JvPurge__DAD13AACB62FA813" unique="true">
+    <column ascending="true" name="PurgeKey" />
+    <column ascending="true" name="PurgeTableName" />
+  </index>
+</table>

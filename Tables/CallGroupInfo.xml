@@ -1,0 +1,35 @@
+<table catalog="Jv-1.44.18.6_FK" name="CallGroupInfo" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="CallGroupID" nullable="false" remarks="" size="10" type="varchar" typeCode="12">
+    <parent catalog="Jv-1.44.18.6_FK" column="CallGroupID" foreignKey="FK__CallGroup__CallG__3E08F69F" implied="false" onDeleteCascade="false" schema="dbo" table="CallGroup" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="CallGroupEffID" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="EffectiveDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="TerminationDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="CapitationTable" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="FeeSchedule" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="AddAllForTaxID" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="TaxID" nullable="true" remarks="" size="9" type="varchar" typeCode="12" />
+  <primaryKey column="CallGroupID" sequenceNumberInPK="1" />
+  <primaryKey column="CallGroupEffID" sequenceNumberInPK="2" />
+  <index name="PK__CallGrou__839AB13D105757FA" unique="true">
+    <column ascending="true" name="CallGroupID" />
+    <column ascending="true" name="CallGroupEffID" />
+  </index>
+  <index name="CallGroupInfo_idx2" unique="true">
+    <column ascending="true" name="CallGroupID" />
+    <column ascending="true" name="EffectiveDate" />
+  </index>
+  <index name="CallGroupInfo_Search1" unique="false">
+    <column ascending="true" name="CallGroupID" />
+    <column ascending="true" name="EffectiveDate" />
+    <column ascending="true" name="TerminationDate" />
+    <column ascending="true" name="TaxID" />
+  </index>
+  <index name="CallGroupInfo_Search5" unique="false">
+    <column ascending="true" name="CallGroupID" />
+    <column ascending="true" name="CallGroupEffID" />
+    <column ascending="true" name="EffectiveDate" />
+  </index>
+</table>

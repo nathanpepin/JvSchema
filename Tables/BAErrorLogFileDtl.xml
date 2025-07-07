@@ -1,0 +1,34 @@
+<table catalog="Jv-1.44.18.6_FK" name="BAErrorLogFileDtl" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="Id" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="FileName" nullable="true" remarks="" size="100" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="ProcessType" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="CreationDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="CreationTime" nullable="true" remarks="" size="10" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="BlkOfBusID" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="ClientID" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="LocationName" nullable="true" remarks="" size="12" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="EmployeeID" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="CertificateNumber" nullable="true" remarks="" size="29" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="BillCycleDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <primaryKey column="Id" sequenceNumberInPK="1" />
+  <index name="PK__BAErrorL__3214EC07A87A0BC5" unique="true">
+    <column ascending="true" name="Id" />
+  </index>
+  <index name="BAErrorLogFileDtl_CT" unique="false">
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="Id" />
+  </index>
+  <index name="BAErrorLogFileDtl_Search1" unique="false">
+    <column ascending="true" name="CreationDate" />
+    <column ascending="true" name="ProcessType" />
+    <column ascending="true" name="Id" />
+  </index>
+  <index name="BAErrorLogFileDtl_Search2" unique="false">
+    <column ascending="true" name="CreationDate" />
+    <column ascending="true" name="FileName" />
+    <column ascending="true" name="ProcessType" />
+  </index>
+</table>

@@ -1,0 +1,24 @@
+<table catalog="Jv-1.44.18.6_FK" name="PricingC2VarPerDiem" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="RuleID" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="ContractID" nullable="true" remarks="" size="4" type="int" typeCode="4">
+    <parent catalog="Jv-1.44.18.6_FK" column="ContractID" foreignKey="FK__PricingC2__Contr__744FF8B7" implied="false" onDeleteCascade="false" schema="dbo" table="ContractMaintenance" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="ModuleType" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="C2VarPerDiemCategDfns" nullable="true" remarks="" size="43" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="6" name="C2VarPerDiemDollarAmt" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="PricingC2VarPerDiemID" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <primaryKey column="PricingC2VarPerDiemID" sequenceNumberInPK="1" />
+  <primaryKey column="RuleID" sequenceNumberInPK="2" />
+  <index name="PK__PricingC__A13B9F23306CDAAF" unique="true">
+    <column ascending="true" name="PricingC2VarPerDiemID" />
+    <column ascending="true" name="RuleID" />
+  </index>
+  <index name="PricingC2VarPerDiem_Search1" unique="false">
+    <column ascending="true" name="PricingC2VarPerDiemID" />
+    <column ascending="true" name="RuleID" />
+    <column ascending="true" name="ContractID" />
+    <column ascending="true" name="ModuleType" />
+  </index>
+</table>

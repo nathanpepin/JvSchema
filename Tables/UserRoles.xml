@@ -1,0 +1,29 @@
+<table catalog="Jv-1.44.18.6_FK" name="UserRoles" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="UserRoleName" nullable="false" remarks="" size="16" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="UserRoleDesc" nullable="true" remarks="" size="512" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="UserRoleDisable" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="PendClaims" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="ClaimsPendCode" nullable="true" remarks="" size="10" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="7" name="DollarAmount" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="LandingPagePref" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="LandingPageUrl" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="2005" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="PaymentType" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="AccessPTNEEClaim" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <primaryKey column="UserRoleName" sequenceNumberInPK="1" />
+  <index name="PK__UserRole__518ED90B549C4F5B" unique="true">
+    <column ascending="true" name="UserRoleName" />
+  </index>
+  <index name="UserRoles_Search" unique="false">
+    <column ascending="true" name="UserRoleName" />
+    <column ascending="true" name="UserRoleDesc" />
+  </index>
+  <index name="UserRoles_Search1" unique="false">
+    <column ascending="true" name="UserRoleDisable" />
+  </index>
+  <index name="UserRoles_Search2" unique="false">
+    <column ascending="true" name="UserRoleName" />
+    <column ascending="true" name="UserRoleDisable" />
+  </index>
+</table>

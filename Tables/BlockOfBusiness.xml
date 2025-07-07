@@ -1,0 +1,125 @@
+<table catalog="Jv-1.44.18.6_FK" name="BlockOfBusiness" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="BlkOfBusID" nullable="false" remarks="" size="5" type="varchar" typeCode="12">
+    <child catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__AddAggSto__BlkOf__4026493B" implied="false" onDeleteCascade="false" schema="dbo" table="AddAggStopLossReport" />
+    <child catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__AdmcheckR__BlkOf__5F9EF494" implied="false" onDeleteCascade="false" schema="dbo" table="AdmcheckRfndDetails" />
+    <child catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__AggCntrMa__BlkOf__6A1C8307" implied="false" onDeleteCascade="false" schema="dbo" table="AggCntrMaintenance" />
+    <child catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__Aggregate__BlkOf__73A5ED41" implied="false" onDeleteCascade="false" schema="dbo" table="AggregateSpecificControls" />
+    <child catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__AggrSLAtt__BlkOf__768259EC" implied="false" onDeleteCascade="false" schema="dbo" table="AggrSLAttachPoint" />
+    <child catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__AggrStopL__BlkOf__795EC697" implied="false" onDeleteCascade="false" schema="dbo" table="AggrStopLossReport" />
+    <child catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__AggrStopL__BlkOf__7B470F09" implied="false" onDeleteCascade="false" schema="dbo" table="AggrStopLossRptStatistics" />
+    <child catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__BABilling__BlkOf__08A10A27" implied="false" onDeleteCascade="false" schema="dbo" table="BABillingFactor" />
+    <child catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__BilledEnt__BlkOf__207893B8" implied="false" onDeleteCascade="false" schema="dbo" table="BilledEntityBillingFactor" />
+    <child catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__BillingMe__BlkOf__2A01FDF2" implied="false" onDeleteCascade="false" schema="dbo" table="BillingMethod" />
+    <child catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__BlockOfBu__BlkOf__2DD28ED6" implied="false" onDeleteCascade="false" schema="dbo" table="BlockOfBusinessAddress" />
+    <child catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__BrokerCom__BlkOf__2FBAD748" implied="false" onDeleteCascade="false" schema="dbo" table="BrokerCommission" />
+    <child catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__BrokerPay__BlkOf__3573B09E" implied="false" onDeleteCascade="false" schema="dbo" table="BrokerPayables" />
+    <child catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__ChargeAcc__BlkOf__4D4B3A2F" implied="false" onDeleteCascade="false" schema="dbo" table="ChargeAccount" />
+    <child catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__Client__BlkOfBus__7B1204DF" implied="false" onDeleteCascade="false" schema="dbo" table="Client" />
+    <child catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__ClientPri__BlkOf__764D4FC2" implied="false" onDeleteCascade="false" schema="dbo" table="ClientPrimeProduct" />
+    <child catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__CMPAEnrol__BlkOf__03A74AE0" implied="false" onDeleteCascade="false" schema="dbo" table="CMPAEnrollFldConfig" />
+    <child catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__COBRAAdmi__BlkOf__2043898E" implied="false" onDeleteCascade="false" schema="dbo" table="COBRAAdministration" />
+    <child catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__COBRAReco__BlkOf__25FC62E4" implied="false" onDeleteCascade="false" schema="dbo" table="COBRARecord" />
+    <child catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__Configura__BlkOf__4D163005" implied="false" onDeleteCascade="false" schema="dbo" table="ConfigurationParameter" />
+    <child catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__CRMCall__BlkOfBu__6D82FF97" implied="false" onDeleteCascade="false" schema="dbo" table="CRMCall" />
+    <child catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__CrmCallLi__BlkOf__6B9AB725" implied="false" onDeleteCascade="false" schema="dbo" table="CrmCallLinks" />
+    <child catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__DebitCard__BlkOf__742FFD26" implied="false" onDeleteCascade="false" schema="dbo" table="DebitCardAdminSetup" />
+    <child catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__DebitCard__BlkOf__76184598" implied="false" onDeleteCascade="false" schema="dbo" table="DebitCardExtract" />
+    <child catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__Debitcard__BlkOf__78008E0A" implied="false" onDeleteCascade="false" schema="dbo" table="DebitcardTransaction" />
+    <child catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__Delinquen__BlkOf__046664EF" implied="false" onDeleteCascade="false" schema="dbo" table="DelinquencyReportPDFtemp" />
+    <child catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__Delinquen__BlkOf__0742D19A" implied="false" onDeleteCascade="false" schema="dbo" table="DelinquencyReportResult" />
+    <child catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__EdiAccumu__BlkOf__61DC42C1" implied="false" onDeleteCascade="false" schema="dbo" table="EdiAccumulatorErrorLogs" />
+    <child catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__EDIClient__BlkOf__67951C17" implied="false" onDeleteCascade="false" schema="dbo" table="EDIClientPayment" />
+    <child catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__Electroni__BlkOf__4F88885C" implied="false" onDeleteCascade="false" schema="dbo" table="ElectronicFundsTransfer" />
+    <child catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__Employee__BlkOfB__788A9DEF" implied="false" onDeleteCascade="false" schema="dbo" table="Employee" />
+    <child catalog="Jv-1.44.18.6_FK" column="MergeFromBlob" foreignKey="FK__EmpMergeP__Merge__7B670A9A" implied="false" onDeleteCascade="false" schema="dbo" table="EmpMergeParamSet" />
+    <child catalog="Jv-1.44.18.6_FK" column="MergeIntoBlob" foreignKey="FK__EmpMergeP__Merge__7E437745" implied="false" onDeleteCascade="false" schema="dbo" table="EmpMergeParamSet" />
+    <child catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__EnrollCon__BlkOf__1BD3DA2C" implied="false" onDeleteCascade="false" schema="dbo" table="EnrollConfiguration" />
+    <child catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__EnrollDep__BlkOf__20988F49" implied="false" onDeleteCascade="false" schema="dbo" table="EnrollDepValidConfig" />
+    <child catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__EnrollEmp__BlkOf__2280D7BB" implied="false" onDeleteCascade="false" schema="dbo" table="EnrollEmpValidConfig" />
+    <child catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__EnrollFLM__BlkOf__27458CD8" implied="false" onDeleteCascade="false" schema="dbo" table="EnrollFLMask" />
+    <child catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__EnrollTra__BlkOf__2EE6AEA0" implied="false" onDeleteCascade="false" schema="dbo" table="EnrollTranslationBenefit" />
+    <child catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__EnrollTra__BlkOf__31C31B4B" implied="false" onDeleteCascade="false" schema="dbo" table="EnrollTranslationDept" />
+    <child catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__Forfeitur__BlkOf__4B82ED4E" implied="false" onDeleteCascade="false" schema="dbo" table="Forfeiture" />
+    <child catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__Forfeitur__BlkOf__499AA4DC" implied="false" onDeleteCascade="false" schema="dbo" table="ForfeitureParamSet" />
+    <child catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__Guarantee__BlkOf__513BC6A4" implied="false" onDeleteCascade="false" schema="dbo" table="GuaranteedDiscount" />
+    <child catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__LockboxCr__BlkOf__626652A6" implied="false" onDeleteCascade="false" schema="dbo" table="LockboxCrossReference" />
+    <child catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__MaintainB__BlkOf__672B07C3" implied="false" onDeleteCascade="false" schema="dbo" table="MaintainBillingControls" />
+    <child catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__ManualChe__BlkOf__6AFB98A7" implied="false" onDeleteCascade="false" schema="dbo" table="ManualCheckRequester" />
+    <child catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__MaxRefund__BlkOf__729CBA6F" implied="false" onDeleteCascade="false" schema="dbo" table="MaxRefundAmount" />
+    <child catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__MemberCha__BlkOf__766D4B53" implied="false" onDeleteCascade="false" schema="dbo" table="MemberChanges" />
+    <child catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__Miscellan__BlkOf__7A3DDC37" implied="false" onDeleteCascade="false" schema="dbo" table="MiscellaneousFees" />
+    <child catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__NetworkAf__BlkOf__1121418F" implied="false" onDeleteCascade="false" schema="dbo" table="NetworkAfflExcl" />
+    <child catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__ObraParam__BlkOf__16DA1AE5" implied="false" onDeleteCascade="false" schema="dbo" table="ObraParameterSet" />
+    <child catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__Parameter__BlkOf__24341603" implied="false" onDeleteCascade="false" schema="dbo" table="ParameterBlkClientLoc" />
+    <child catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__PatMainte__BlkOf__318E1121" implied="false" onDeleteCascade="false" schema="dbo" table="PatMaintenance" />
+    <child catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__Payment__BlkOfBu__41C478EA" implied="false" onDeleteCascade="false" schema="dbo" table="Payment" />
+    <child catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__PaymentDe__BlkOf__392F32E9" implied="false" onDeleteCascade="false" schema="dbo" table="PaymentDetails" />
+    <child catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__PaymentHi__BlkOf__3CFFC3CD" implied="false" onDeleteCascade="false" schema="dbo" table="PaymentHierarchy" />
+    <child catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__PremiumBi__BlkOf__6BBAB2B6" implied="false" onDeleteCascade="false" schema="dbo" table="PremiumBillingMethod" />
+    <child catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__RefundUnA__BlkOf__23FF0BD9" implied="false" onDeleteCascade="false" schema="dbo" table="RefundUnAppliedAmount" />
+    <child catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__Rollover__BlkOfB__2D887613" implied="false" onDeleteCascade="false" schema="dbo" table="Rollover" />
+    <child catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__RolloverP__BlkOf__2AAC0968" implied="false" onDeleteCascade="false" schema="dbo" table="RolloverParamSet" />
+    <child catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__Unapplied__BlkOf__7232A61B" implied="false" onDeleteCascade="false" schema="dbo" table="UnappliedAmount" />
+    <child catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__UserIncEx__BlkOf__77EB7F71" implied="false" onDeleteCascade="false" schema="dbo" table="UserIncExcClient" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="BobName" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="ContactName" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="LanguageCd" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="EmailAddr" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="WebAddr" nullable="true" remarks="" size="2100" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="HomePhoneOne" nullable="true" remarks="" size="15" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="HomeExtOne" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="HomePhoneTwo" nullable="true" remarks="" size="15" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="HomeExtTwo" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="WorkPhoneOne" nullable="true" remarks="" size="15" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="13" name="WorkExtOne" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="14" name="WorkPhoneTwo" nullable="true" remarks="" size="15" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="15" name="WorkExtTwo" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="16" name="MobilePhoneOne" nullable="true" remarks="" size="15" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="17" name="MobilePhoneTwo" nullable="true" remarks="" size="15" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="18" name="FaxOne" nullable="true" remarks="" size="15" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="19" name="FaxTwo" nullable="true" remarks="" size="15" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="20" name="BobComment" nullable="true" remarks="" size="512" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="21" name="LogosForChecks" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="22" name="LogosForEOBs" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="23" name="ReporterID" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="24" name="FundingBroker" nullable="true" remarks="" size="11" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="25" name="UseSysSetup" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="26" name="EpayClientID" nullable="true" remarks="" size="4" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="27" name="ZelisAccessKey" nullable="true" remarks="" size="36" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="28" name="Checks" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="29" name="EOB" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="30" name="BrokerCompChecks" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="31" name="IDCards" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="32" name="RedCardCustomerNumber1" nullable="true" remarks="" size="15" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="33" name="RedCardCustomerNumber2" nullable="true" remarks="" size="15" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="34" name="FHUserID" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="35" name="FHPassword" nullable="true" remarks="" size="100" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="36" name="TokenKey" nullable="true" remarks="" size="500" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="37" name="OriginID" nullable="true" remarks="" size="2" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="38" name="TranslationID" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="39" name="RedCardOriginID" nullable="true" remarks="" size="2" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="40" name="RedCardTranslationID" nullable="true" remarks="" size="3" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="41" name="MaxMergeCount" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="42" name="DisplayOption" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="43" name="CRMColor" nullable="true" remarks="" size="25" type="varchar" typeCode="12" />
+  <primaryKey column="BlkOfBusID" sequenceNumberInPK="1" />
+  <index name="PK__BlockOfB__74B6C7E447FB6FA6" unique="true">
+    <column ascending="true" name="BlkOfBusID" />
+  </index>
+  <index name="BlockOfBusiness_Search1" unique="false">
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="BobName" />
+    <column ascending="true" name="WebAddr" />
+  </index>
+  <index name="BlockOfBusiness_Search2" unique="false">
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="WebAddr" />
+  </index>
+  <index name="BlockOfBusiness_Search3" unique="false">
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ReporterID" />
+  </index>
+</table>

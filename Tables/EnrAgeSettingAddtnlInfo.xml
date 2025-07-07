@@ -1,0 +1,20 @@
+<table catalog="Jv-1.44.18.6_FK" name="EnrAgeSettingAddtnlInfo" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="AgeSettingID" nullable="false" remarks="" size="4" type="int" typeCode="4">
+    <parent catalog="Jv-1.44.18.6_FK" column="AgeSettingID" foreignKey="FK__EnrAgeSet__AgeSe__11564BB9" implied="false" onDeleteCascade="false" schema="dbo" table="EnrAgeSettings" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="AgeAddtnlInfoID" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="AddtnlInfo" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="UploadDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <primaryKey column="AgeSettingID" sequenceNumberInPK="1" />
+  <primaryKey column="AgeAddtnlInfoID" sequenceNumberInPK="2" />
+  <index name="PK__EnrAgeSe__810B03A1A449D4B8" unique="true">
+    <column ascending="true" name="AgeSettingID" />
+    <column ascending="true" name="AgeAddtnlInfoID" />
+  </index>
+  <index name="EnrAgeSettingAddtnlInfo_search" unique="false">
+    <column ascending="true" name="AgeSettingID" />
+    <column ascending="true" name="AddtnlInfo" />
+  </index>
+</table>

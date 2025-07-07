@@ -1,0 +1,27 @@
+<table catalog="Jv-1.44.18.6_FK" name="AggrAttachPointHdr" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="AggregateContractName" nullable="false" remarks="" size="10" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="AggrContractID" nullable="false" remarks="" size="10" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="HistFromDate" nullable="false" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="5" name="AttachmentPoint" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="HistThruDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="Product" nullable="false" remarks="" size="2" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="FactorType" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="9" name="MinAttachmentPoint" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="10" name="AmountCalculated" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <primaryKey column="AggregateContractName" sequenceNumberInPK="1" />
+  <primaryKey column="AggrContractID" sequenceNumberInPK="2" />
+  <primaryKey column="HistFromDate" sequenceNumberInPK="3" />
+  <primaryKey column="Product" sequenceNumberInPK="4" />
+  <index name="PK__AggrAtta__D8488FCD7E5CC1CC" unique="true">
+    <column ascending="true" name="AggregateContractName" />
+    <column ascending="true" name="AggrContractID" />
+    <column ascending="true" name="HistFromDate" />
+    <column ascending="true" name="Product" />
+  </index>
+  <index name="AggrAttachPointHdr_fkey" unique="false">
+    <column ascending="true" name="AggregateContractName" />
+    <column ascending="true" name="AggrContractID" />
+  </index>
+</table>

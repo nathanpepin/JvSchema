@@ -1,0 +1,173 @@
+<table catalog="Jv-1.44.18.6_FK" name="PaymentDetails" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="EntryDate" nullable="false" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="BatchNumber" nullable="false" remarks="" size="10" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="BlkOfBusID" nullable="false" remarks="" size="5" type="varchar" typeCode="12">
+    <parent catalog="Jv-1.44.18.6_FK" column="BlkOfBusID" foreignKey="FK__PaymentDe__BlkOf__392F32E9" implied="false" onDeleteCascade="false" schema="dbo" table="BlockOfBusiness" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="ClientID" nullable="false" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="LocationName" nullable="false" remarks="" size="12" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="CertificateNumber" nullable="false" remarks="" size="29" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="CheckNumber" nullable="true" remarks="" size="12" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="9" name="Amount" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="EntryType" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="Note" nullable="true" remarks="" size="512" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="LineNumber" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="13" name="PostedIndicator" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="14" name="OriginalPostingDate" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="15" name="OriginalPostingInfo" nullable="true" remarks="" size="512" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="16" name="LockboxIndicator" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="17" name="AppearedDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="18" name="UnappliedAmtBeforeApplication" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="19" name="UnappliedAmtAfterApplication" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="20" name="AmountRefunded" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="21" name="ManualRefundCheckPosted" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="22" name="BatchKey" nullable="true" remarks="" size="30" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="23" name="UpdateDate" nullable="true" remarks="" size="20" type="date" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="24" name="SuspenseAccountID" nullable="true" remarks="" size="50" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="25" name="FundAccountID" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="26" name="TransactionID" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="27" name="PolicyID" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="28" name="Attempt" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="29" name="Error" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="30" name="CreditCardVendorID" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="31" name="BillingSummaryID" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="32" name="AuthCode" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="33" name="ClientBlockOfBusiness" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="34" name="ApplyPaymentTo" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="35" name="CCValidationPending" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="36" name="CreationDate" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="37" name="RefundReason" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="38" name="SIEPayment" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="39" name="Void" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="40" name="VoidReason" nullable="true" remarks="" size="5" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="41" name="VoidTransactionID" nullable="true" remarks="" size="60" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="42" name="VoidPending" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="43" name="ReportEmployeeID" nullable="true" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="44" name="Uncollectible" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="45" name="AppliedAmount" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="46" name="IsPayNow" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="47" name="AdjReasonCode" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="48" name="CreManlPymt" nullable="true" remarks="" size="1" type="char" typeCode="1" />
+  <primaryKey column="EntryDate" sequenceNumberInPK="1" />
+  <primaryKey column="BatchNumber" sequenceNumberInPK="2" />
+  <primaryKey column="BlkOfBusID" sequenceNumberInPK="3" />
+  <primaryKey column="ClientID" sequenceNumberInPK="4" />
+  <primaryKey column="LocationName" sequenceNumberInPK="5" />
+  <primaryKey column="CertificateNumber" sequenceNumberInPK="6" />
+  <primaryKey column="LineNumber" sequenceNumberInPK="7" />
+  <index name="PK__PaymentD__279AE7E24F8DA3FE" unique="true">
+    <column ascending="true" name="EntryDate" />
+    <column ascending="true" name="BatchNumber" />
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="LocationName" />
+    <column ascending="true" name="CertificateNumber" />
+    <column ascending="true" name="LineNumber" />
+  </index>
+  <index name="Link_with_CCBill" unique="false">
+    <column ascending="true" name="BillingSummaryID" />
+    <column ascending="true" name="CreditCardVendorID" />
+  </index>
+  <index name="PaymentDetails_CT" unique="false">
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="EntryDate" />
+    <column ascending="true" name="BatchNumber" />
+    <column ascending="true" name="LocationName" />
+    <column ascending="true" name="CertificateNumber" />
+    <column ascending="true" name="LineNumber" />
+  </index>
+  <index name="PaymentDetails_onBatchKey" unique="false">
+    <column ascending="true" name="BatchKey" />
+    <column ascending="true" name="ClientBlockOfBusiness" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="LocationName" />
+    <column ascending="true" name="CertificateNumber" />
+  </index>
+  <index name="PaymentDetails_Search1" unique="false">
+    <column ascending="true" name="LineNumber" />
+    <column ascending="true" name="EntryDate" />
+    <column ascending="true" name="BatchNumber" />
+    <column ascending="true" name="ClientBlockOfBusiness" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="LocationName" />
+    <column ascending="true" name="CertificateNumber" />
+  </index>
+  <index name="PaymentDetails_Search10" unique="false">
+    <column ascending="true" name="EntryDate" />
+    <column ascending="true" name="CreationDate" />
+    <column ascending="true" name="ClientBlockOfBusiness" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="LocationName" />
+    <column ascending="true" name="CertificateNumber" />
+    <column ascending="true" name="ApplyPaymentTo" />
+    <column ascending="true" name="PostedIndicator" />
+  </index>
+  <index name="PaymentDetails_Search11" unique="false">
+    <column ascending="true" name="EntryDate" />
+    <column ascending="true" name="BatchNumber" />
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="PostedIndicator" />
+  </index>
+  <index name="PaymentDetails_Search12" unique="false">
+    <column ascending="true" name="EntryDate" />
+    <column ascending="true" name="BatchNumber" />
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="EntryType" />
+  </index>
+  <index name="PaymentDetails_Search13" unique="false">
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="LocationName" />
+    <column ascending="true" name="CertificateNumber" />
+    <column ascending="true" name="IsPayNow" />
+  </index>
+  <index name="PaymentDetails_Search2" unique="false">
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="LocationName" />
+    <column ascending="true" name="CertificateNumber" />
+    <column ascending="true" name="PostedIndicator" />
+  </index>
+  <index name="PaymentDetails_Search3" unique="false">
+    <column ascending="true" name="ClientBlockOfBusiness" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="LocationName" />
+    <column ascending="true" name="CertificateNumber" />
+    <column ascending="true" name="EntryType" />
+  </index>
+  <index name="PaymentDetails_Search4" unique="false">
+    <column ascending="true" name="BatchNumber" />
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="LocationName" />
+    <column ascending="true" name="CertificateNumber" />
+    <column ascending="true" name="CheckNumber" />
+  </index>
+  <index name="PaymentDetails_Search5" unique="false">
+    <column ascending="true" name="BlkOfBusID" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="LineNumber" />
+  </index>
+  <index name="PaymentDetails_Search6" unique="false">
+    <column ascending="true" name="ClientBlockOfBusiness" />
+    <column ascending="true" name="ClientID" />
+    <column ascending="true" name="LocationName" />
+    <column ascending="true" name="CertificateNumber" />
+    <column ascending="true" name="AppearedDate" />
+  </index>
+  <index name="PaymentDetails_Search7" unique="false">
+    <column ascending="true" name="EntryDate" />
+    <column ascending="true" name="CheckNumber" />
+    <column ascending="true" name="Amount" />
+  </index>
+  <index name="PaymentDetails_Search8" unique="false">
+    <column ascending="true" name="FundAccountID" />
+    <column ascending="true" name="SuspenseAccountID" />
+  </index>
+  <index name="PaymentDetails_TransID" unique="false">
+    <column ascending="true" name="TransactionID" />
+  </index>
+</table>

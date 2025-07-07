@@ -1,0 +1,18 @@
+<table catalog="Jv-1.44.18.6_FK" name="RateDefinitionSection" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="CapitationTableEffID" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="RateSectionID" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="2" id="4" name="Rate" nullable="true" remarks="" size="13" type="decimal" typeCode="3" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="CapTableName" nullable="false" remarks="" size="30" type="varchar" typeCode="12">
+    <parent catalog="Jv-1.44.18.6_FK" column="CapTableName" foreignKey="FK__RateDefin__CapTa__230AE7A0" implied="false" onDeleteCascade="false" schema="dbo" table="CapitationTable" />
+  </column>
+  <primaryKey column="CapTableName" sequenceNumberInPK="1" />
+  <primaryKey column="CapitationTableEffID" sequenceNumberInPK="2" />
+  <primaryKey column="RateSectionID" sequenceNumberInPK="3" />
+  <index name="PK__RateDefi__3C9BA314BD68BEA0" unique="true">
+    <column ascending="true" name="CapTableName" />
+    <column ascending="true" name="CapitationTableEffID" />
+    <column ascending="true" name="RateSectionID" />
+  </index>
+</table>

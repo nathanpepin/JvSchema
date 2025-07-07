@@ -1,0 +1,15 @@
+<table catalog="Jv-1.44.18.6_FK" name="CMPAUserDepSettings" remarks="" schema="dbo" type="TABLE">
+  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ChgTS" nullable="true" remarks="" size="54" type="datetime2" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ChgUser" nullable="true" remarks="" size="32" type="varchar" typeCode="12" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="CMPAEmployeeID" nullable="false" remarks="" size="4" type="int" typeCode="4">
+    <parent catalog="Jv-1.44.18.6_FK" column="CMPAEmployeeID" foreignKey="FK__CMPAUserD__CMPAE__19968BFF" implied="false" onDeleteCascade="false" schema="dbo" table="CMPAUserEmpSettings" />
+  </column>
+  <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="DepSequenceNumber" nullable="false" remarks="" size="4" type="int" typeCode="4" />
+  <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="PharmacyID" nullable="true" remarks="" size="20" type="varchar" typeCode="12" />
+  <primaryKey column="CMPAEmployeeID" sequenceNumberInPK="1" />
+  <primaryKey column="DepSequenceNumber" sequenceNumberInPK="2" />
+  <index name="PK__CMPAUser__341BD9894140CC70" unique="true">
+    <column ascending="true" name="CMPAEmployeeID" />
+    <column ascending="true" name="DepSequenceNumber" />
+  </index>
+</table>
