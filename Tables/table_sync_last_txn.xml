@@ -1,8 +1,0 @@
-<table catalog="Jv-1.44.18.6_FK" name="table_sync_last_txn" remarks="" schema="dbo" type="TABLE">
-  <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="conn_id" nullable="false" remarks="" size="4" type="int" typeCode="4" />
-  <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="seqno" nullable="true" remarks="" size="8" type="bigint" typeCode="-5" />
-  <primaryKey column="conn_id" sequenceNumberInPK="1" />
-  <index name="PK__table_sy__9FC140B6DA45C6CD" unique="true">
-    <column ascending="true" name="conn_id" />
-  </index>
-</table>
